@@ -33,10 +33,13 @@ Outside client work, I design and ship **local-first, open-source products** in 
       <p>
         <a href="https://udhawan97.github.io/Orifold/">Website</a> ·
         <a href="https://github.com/udhawan97/Orifold">Source</a> ·
-        <a href="https://github.com/udhawan97/Orifold/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Orifold?style=flat-square&label=Release" alt="Latest Orifold release"></a>
+        <a href="https://github.com/udhawan97/Orifold/releases"><strong>Beta</strong></a>
       </p>
     </td>
   </tr>
+</table>
+
+<table width="100%">
   <tr>
     <td valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/FolioOrb/main/static/img/brand/folio-orbit-icon-1024.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
@@ -45,10 +48,13 @@ Outside client work, I design and ship **local-first, open-source products** in 
       <p>
         <a href="https://udhawan97.github.io/FolioOrb/">Website</a> ·
         <a href="https://github.com/udhawan97/FolioOrb">Source</a> ·
-        <a href="https://github.com/udhawan97/FolioOrb/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/FolioOrb?style=flat-square&label=Release" alt="Latest FolioOrb release"></a>
+        <a href="https://github.com/udhawan97/FolioOrb/releases"><strong>Beta</strong></a>
       </p>
     </td>
   </tr>
+</table>
+
+<table width="100%">
   <tr>
     <td valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Golavo/main/desktop/src-tauri/icons/64x64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
@@ -57,10 +63,13 @@ Outside client work, I design and ship **local-first, open-source products** in 
       <p>
         <a href="https://udhawan97.github.io/Golavo/">Website</a> ·
         <a href="https://github.com/udhawan97/Golavo">Source</a> ·
-        <a href="https://github.com/udhawan97/Golavo/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Golavo?style=flat-square&label=Release" alt="Latest Golavo release"></a>
+        <a href="https://github.com/udhawan97/Golavo/releases"><strong>Beta</strong></a>
       </p>
     </td>
   </tr>
+</table>
+
+<table width="100%">
   <tr>
     <td valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Voyalier/main/apps/desktop/src-tauri/icons/64x64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
@@ -69,7 +78,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
       <p>
         <a href="https://udhawan97.github.io/Voyalier/">Website</a> ·
         <a href="https://github.com/udhawan97/Voyalier">Source</a> ·
-        <a href="https://github.com/udhawan97/Voyalier/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Voyalier?style=flat-square&label=Release" alt="Latest Voyalier release"></a>
+        <a href="https://github.com/udhawan97/Voyalier/releases"><strong>Beta</strong></a>
       </p>
     </td>
   </tr>
