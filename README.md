@@ -13,10 +13,10 @@
 </p>
 
 <p align="center">
-  <a href="https://udhawan97.github.io/"><img src="https://img.shields.io/badge/Portfolio-Visit_site-167D9A?style=flat-square&logo=safari&logoColor=white" alt="Portfolio"></a>
-  <a href="https://udhawan97.github.io/Umang_Dhawan_Resume_Formal.pdf"><img src="https://img.shields.io/badge/Resume-View_PDF-4B5F87?style=flat-square&logo=readme&logoColor=white" alt="Resume"></a>
-  <a href="https://www.linkedin.com/in/umangdhawan97"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:umangdhawan97@gmail.com"><img src="https://img.shields.io/badge/Email-Say_hello-6B4FA1?style=flat-square&logo=gmail&logoColor=white" alt="Email Umang"></a>
+  <a href="https://udhawan97.github.io/"><img src="https://img.shields.io/badge/Portfolio-20252B?style=flat-square&logo=safari&logoColor=7FB7CC" alt="Portfolio"></a>
+  <a href="https://udhawan97.github.io/Umang_Dhawan_Resume_Formal.pdf"><img src="https://img.shields.io/badge/Resume_(PDF)-20252B?style=flat-square&logo=readme&logoColor=C9A227" alt="Resume"></a>
+  <a href="https://www.linkedin.com/in/umangdhawan97"><img src="https://img.shields.io/badge/LinkedIn-20252B?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iIzRBOUVERSIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg%3D%3D" alt="LinkedIn"></a>
+  <a href="mailto:umangdhawan97@gmail.com"><img src="https://img.shields.io/badge/Email-20252B?style=flat-square&logo=gmail&logoColor=D9644D" alt="Email Umang"></a>
 </p>
 
 ## I bridge strategy and engineering
@@ -27,13 +27,20 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 ### Client impact at a glance
 
-> 🏬 **100+ locations** — retail platform shipped<br>✅ **Zero findings** — federal cloud audit<br>☁️ **4 cloud products** — quality leadership<br>🌍 **3 continents** — cross-functional delivery
+<table width="100%">
+  <tr align="center">
+    <td width="25%"><h3>100+</h3><sub><strong>LOCATIONS</strong><br>retail platform shipped</sub></td>
+    <td width="25%"><h3>Zero</h3><sub><strong>FINDINGS</strong><br>federal cloud audit</sub></td>
+    <td width="25%"><h3>4</h3><sub><strong>CLOUD PRODUCTS</strong><br>quality leadership</sub></td>
+    <td width="25%"><h3>3</h3><sub><strong>CONTINENTS</strong><br>cross-functional delivery</sub></td>
+  </tr>
+</table>
 
 ## Open-source products
 
 <table width="100%">
   <tr>
-    <td valign="top">
+    <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Orifold/main/Orifold/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-64.png" width="26" height="26" alt="Orifold app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
       <p>A native macOS PDF workspace for combining, OCR, editing, annotating, signing, protecting, and exporting documents — all on-device.</p>
       <p>
@@ -48,12 +55,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
         <a href="https://github.com/udhawan97/Orifold/releases"><strong>Beta</strong></a>
       </p>
     </td>
-  </tr>
-</table>
-
-<table width="100%">
-  <tr>
-    <td valign="top">
+    <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/FolioOrb/main/static/img/brand/folio-orbit-icon-1024.png" width="26" height="26" alt="FolioOrb app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
       <p>A local-first portfolio cockpit that unifies holdings, market data, risk signals, and clear actions, with deterministic analysis and optional AI narration.</p>
       <p>
@@ -69,11 +71,8 @@ Outside client work, I design and ship **local-first, open-source products** in 
       </p>
     </td>
   </tr>
-</table>
-
-<table width="100%">
   <tr>
-    <td valign="top">
+    <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Golavo/main/desktop/src-tauri/icons/64x64.png" width="26" height="26" alt="Golavo app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
       <p>An auditable football forecasting workbench with sealed pre-match predictions, calibration, and cited AI explanations that never change the numbers.</p>
       <p>
@@ -88,12 +87,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
         <a href="https://github.com/udhawan97/Golavo/releases"><strong>Beta</strong></a>
       </p>
     </td>
-  </tr>
-</table>
-
-<table width="100%">
-  <tr>
-    <td valign="top">
+    <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Voyalier/main/apps/desktop/src-tauri/icons/64x64.png" width="26" height="26" alt="Voyalier app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
       <p>A local-first travel workspace that turns confirmations and sourced research into readiness actions and a reviewed, shareable trip brief.</p>
       <p>
@@ -136,20 +130,25 @@ Outside client work, I design and ship **local-first, open-source products** in 
   <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Microsoft Azure">
 </p>
 
+<sub>Chosen per problem, not per hype cycle.</sub>
+
 ## Experience in brief
 
 | When | Role | Focus |
 |---|---|---|
-| 2025 — now | **Senior Consultant · EY Studio+** | Cloud quality leadership, observability, AI strategy, customer service transformation |
-| 2022 — 2025 | **Consultant · EY** | Lead quality engineering, performance engineering, federal cloud delivery |
+| 2025 — now | **Senior Consultant · EY Studio+** | Cloud quality leadership · observability · applied AI strategy |
+| 2022 — 2025 | **Consultant · EY** | Quality & performance engineering · federal cloud delivery |
 | 2021 | **IT Leadership Intern · SAP America** | SAFe product delivery across Germany, the US, and India |
 
 **Education:** MS, Information Systems — Kelley School of Business · BS, Informatics — Indiana University
 
+<sub>The short version — the <a href="https://udhawan97.github.io/Umang_Dhawan_Resume_Formal.pdf">résumé</a> has the director's cut.</sub>
+
 ---
 
 <p align="center">
-  <strong>Let's talk about trustworthy AI, local-first products, quality engineering, or turning a prototype into software people can actually use.</strong><br><br>
+  <strong>Let's talk about trustworthy AI, local-first products, quality engineering, or turning a prototype into software people can actually use.</strong><br>
+  <sub>I reply to email faster than most CI pipelines finish.</sub><br><br>
   <a href="mailto:umangdhawan97@gmail.com">Email</a> ·
   <a href="https://www.linkedin.com/in/umangdhawan97">LinkedIn</a> ·
   <a href="https://udhawan97.github.io/">Portfolio &amp; case studies</a>
