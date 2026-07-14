@@ -47,7 +47,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
       <p><code>Python</code> <code>FastAPI</code> <code>SQLite</code> <code>JavaScript</code></p>
       <p>
         <a href="https://udhawan97.github.io/FolioOrb/">Website</a> ·
-        <a href="https://github.com/udhawan97/FolioOrb">Source</a> 
+        <a href="https://github.com/udhawan97/FolioOrb">Source</a> ·
         <a href="https://github.com/udhawan97/FolioOrb/releases"><strong>v5</strong></a>
       </p>
     </td>
