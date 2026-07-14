@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="156" viewBox="0 0 1200 156" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="178" viewBox="0 0 1200 178" role="img" aria-labelledby="title desc">
   <title id="title">AI, with guardrails</title>
-  <desc id="desc">A detailed animated pixel-art wizard in a dimensional frame raises a wand, charges runes, and casts a spell while holding a review checklist.</desc>
+  <desc id="desc">A detailed animated pixel-art wizard reviews a laptop, raises a wand, charges runes, and casts a spell. A note says the profile photo is Layla, Umang's Bernedoodle, affectionately called Bear.</desc>
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#101411"/><stop offset=".56" stop-color="#12191C"/><stop offset="1" stop-color="#182139"/>
@@ -31,7 +31,7 @@
     <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.4"/></filter>
     <clipPath id="roomClip"><rect x="8" y="8" width="96" height="104" rx="13"/></clipPath>
     <style>
-      .stage-flash, .mage, .hat, .cloak-left, .cloak-right, .cast-arm, .eyes, .shadow, .wand-glow, .magic-ring, .spell-bolt, .spell-trail, .rune, .dust, .review-laptop, .laptop-screen, .laptop-cursor, .buckle, .phase { transform-box: fill-box; }
+      .stage-flash, .mage, .hat, .cloak-left, .cloak-right, .cast-arm, .eyes, .shadow, .wand-glow, .magic-ring, .spell-bolt, .spell-trail, .rune, .dust, .review-laptop, .laptop-screen, .laptop-cursor, .buckle, .phase, .layla-note, .layla-paw, .bear-word { transform-box: fill-box; }
       .stage-flash { animation: stage-flash 6.4s ease-in-out infinite; }
       .mage { transform-origin: center bottom; animation: mage 6.4s ease-in-out infinite; }
       .hat { transform-origin: 42px 37px; animation: hat 6.4s ease-in-out infinite; }
@@ -57,6 +57,10 @@
       .phase.windup { animation: phase-windup 6.4s steps(1,end) infinite; }
       .phase.cast { animation: phase-cast 6.4s steps(1,end) infinite; }
       .phase.recover { animation: phase-recover 6.4s steps(1,end) infinite; }
+      .layla-note { transform-origin: left center; animation: layla-note 6.4s ease-in-out infinite; }
+      .layla-paw { transform-origin: center; animation: layla-paw 6.4s ease-in-out infinite; }
+      .layla-line { stroke-dasharray: 30; animation: layla-line 6.4s ease-in-out infinite; }
+      .bear-word { animation: bear-word 6.4s ease-in-out infinite; }
       @keyframes stage-flash { 0%,24%,68%,100%{opacity:0} 36%,48%{opacity:.42} }
       @keyframes mage { 0%,16%,70%,100%{transform:translateY(0)} 25%,43%{transform:translateY(-3px)} 54%{transform:translateY(1px)} }
       @keyframes hat { 0%,17%,69%,100%{transform:rotate(0)} 27%,43%{transform:rotate(-4deg)} 52%{transform:rotate(2deg)} }
@@ -80,17 +84,21 @@
       @keyframes phase-windup { 0%,23%,37%,100%{opacity:.18} 24%,36%{opacity:1} }
       @keyframes phase-cast { 0%,36%,59%,100%{opacity:.18} 37%,58%{opacity:1} }
       @keyframes phase-recover { 0%,58%,91%,100%{opacity:.18} 59%,90%{opacity:1} }
+      @keyframes layla-note { 0%,100%{opacity:.68;transform:translateY(0)} 12%,86%{opacity:1;transform:translateY(-1px)} }
+      @keyframes layla-paw { 0%,24%,100%{transform:scale(1) rotate(0)} 31%{transform:scale(1.08) rotate(-4deg)} 43%{transform:scale(1) rotate(0)} }
+      @keyframes layla-line { 0%,7%,100%{stroke-dashoffset:30;opacity:.3} 18%,86%{stroke-dashoffset:0;opacity:.82} }
+      @keyframes bear-word { 0%,30%,100%{fill:#AEB9D4} 42%,58%{fill:#F4D35E} }
       @media (prefers-reduced-motion:reduce){
-        .stage-flash,.mage,.hat,.cloak-left,.cloak-right,.cast-arm,.eyes,.shadow,.wand-glow,.magic-ring,.spell-bolt,.spell-trail,.rune,.dust,.review-laptop,.laptop-screen,.laptop-cursor,.buckle,.phase{animation:none}
+        .stage-flash,.mage,.hat,.cloak-left,.cloak-right,.cast-arm,.eyes,.shadow,.wand-glow,.magic-ring,.spell-bolt,.spell-trail,.rune,.dust,.review-laptop,.laptop-screen,.laptop-cursor,.buckle,.phase,.layla-note,.layla-paw,.layla-line,.bear-word{animation:none}
         .wand-glow{opacity:.55}.magic-ring{opacity:.28}.spell-bolt{opacity:.82;transform:translateX(54px)}.spell-trail{opacity:.32;stroke-dashoffset:0}.rune{opacity:.38}.dust{opacity:.28}
-        .laptop-screen,.laptop-cursor{opacity:1}.phase{opacity:.42}
+        .laptop-screen,.laptop-cursor{opacity:1}.phase{opacity:.42}.layla-note{opacity:1}.layla-line{stroke-dashoffset:0;opacity:.82}
       }
     </style>
   </defs>
 
-  <rect x="1" y="1" width="1198" height="154" rx="23" fill="url(#surface)" stroke="#46536B" stroke-opacity=".72"/>
-  <rect x="1" y="1" width="1198" height="154" rx="23" fill="url(#grid)"/>
-  <path d="M22 154C230 119 390 130 590 151" fill="none" stroke="#C9A227" stroke-opacity=".07"/>
+  <rect x="1" y="1" width="1198" height="176" rx="23" fill="url(#surface)" stroke="#46536B" stroke-opacity=".72"/>
+  <rect x="1" y="1" width="1198" height="176" rx="23" fill="url(#grid)"/>
+  <path d="M22 176C230 141 390 152 590 173" fill="none" stroke="#C9A227" stroke-opacity=".07"/>
 
   <g transform="translate(38 18)" shape-rendering="crispEdges" aria-hidden="true">
     <rect x="0" y="5" width="112" height="116" rx="19" fill="#04070C" opacity=".72" filter="url(#stageShadow)" shape-rendering="geometricPrecision"/>
@@ -165,6 +173,15 @@
     <text x="310" y="52" fill="#C9A227" font-size="14" font-weight="700" letter-spacing="2.1">AI, WITH GUARDRAILS</text>
     <text x="310" y="92" fill="#F4EFE6" font-size="25" font-weight="550" letter-spacing="-.25">AI can draft the spell. <tspan fill="#B9C3D6">I still review the blast radius.</tspan></text>
     <text x="310" y="119" fill="#7886A8" font-size="11" font-weight="700" letter-spacing="1.4">CAST  ·  CHECK  ·  SHIP</text>
+  </g>
+  <g transform="translate(42 151)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" aria-hidden="true">
+    <g class="layla-note">
+      <g transform="translate(6 7)" fill="#C9A227">
+        <g class="layla-paw"><ellipse cx="0" cy="2" rx="4" ry="3"/><circle cx="-4" cy="-2" r="1.7"/><circle cx="0" cy="-3.5" r="1.7"/><circle cx="4" cy="-2" r="1.7"/></g>
+      </g>
+      <path class="layla-line" d="M18 7h30" fill="none" stroke="#C9A227" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="58" y="11" fill="#93A0B8" font-size="11" font-weight="650" letter-spacing="1.1">DP: LAYLA · MY BERNEDOODLE · AKA <tspan class="bear-word">“BEAR”</tspan></text>
+    </g>
   </g>
   <g transform="translate(1144 78)" aria-hidden="true"><circle r="17" fill="#111827" stroke="#46536B"/><path d="M-7 0l4 4 9-10" fill="none" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g>
 </svg>
