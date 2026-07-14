@@ -29,7 +29,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="https://raw.githubusercontent.com/udhawan97/udhawan97.github.io/main/assets/logos/orifold-static.svg" width="32" alt=""> <a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
+      <h3><img src="https://raw.githubusercontent.com/udhawan97/Orifold/main/Orifold/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
       <p>A native macOS PDF workspace for combining, OCR, editing, annotating, signing, protecting, and exporting documents — all on-device.</p>
       <p><code>Swift</code> <code>PDFKit</code> <code>PDFium</code> <code>macOS</code></p>
       <p>
@@ -39,7 +39,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="https://raw.githubusercontent.com/udhawan97/udhawan97.github.io/main/assets/logos/folioorb-static.svg" width="32" alt=""> <a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
+      <h3><img src="https://raw.githubusercontent.com/udhawan97/FolioOrb/main/static/img/brand/folio-orbit-icon-1024.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
       <p>A local-first portfolio cockpit that unifies holdings, market data, risk signals, and clear actions, with deterministic analysis and optional AI narration.</p>
       <p><code>Python</code> <code>FastAPI</code> <code>SQLite</code> <code>JavaScript</code></p>
       <p>
@@ -51,7 +51,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="https://raw.githubusercontent.com/udhawan97/udhawan97.github.io/main/assets/logos/golavo.svg" width="32" alt=""> <a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
+      <h3><img src="https://raw.githubusercontent.com/udhawan97/Golavo/main/desktop/src-tauri/icons/64x64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
       <p>An auditable football forecasting workbench with sealed pre-match predictions, calibration, and cited AI explanations that never change the numbers.</p>
       <p><code>Python</code> <code>TypeScript</code> <code>Rust</code> <code>Tauri</code></p>
       <p>
@@ -61,7 +61,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="https://raw.githubusercontent.com/udhawan97/udhawan97.github.io/main/assets/logos/voyalier.svg" width="32" alt=""> <a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
+      <h3><img src="https://raw.githubusercontent.com/udhawan97/Voyalier/main/apps/desktop/src-tauri/icons/64x64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
       <p>A local-first travel workspace that turns confirmations and sourced research into readiness actions and a reviewed, shareable trip brief.</p>
       <p><code>Rust</code> <code>TypeScript</code> <code>Tauri</code> <code>Astro</code></p>
       <p>
