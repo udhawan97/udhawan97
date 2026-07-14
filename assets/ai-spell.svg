@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="112" viewBox="0 0 1200 112" role="img" aria-labelledby="title desc">
+  <title id="title">AI, with guardrails</title>
+  <desc id="desc">A wizard casts a subtle spell beside the line: AI can draft the spell. I still review the blast radius.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111512"/>
+      <stop offset="0.56" stop-color="#12191C"/>
+      <stop offset="1" stop-color="#182139"/>
+    </linearGradient>
+    <linearGradient id="spell" x1="92" y1="56" x2="180" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9A227"/>
+      <stop offset="0.55" stop-color="#C34E33"/>
+      <stop offset="1" stop-color="#7886C8"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#93A0B8" stroke-opacity="0.055"/>
+    </pattern>
+    <style>
+      .trail {
+        stroke-dasharray: 7 8;
+        animation: cast 5.2s ease-in-out infinite;
+      }
+      .spark {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: spark 5.2s ease-in-out infinite;
+      }
+      .spark.two { animation-delay: .18s; }
+      .spark.three { animation-delay: .36s; }
+      .aura {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: aura 5.2s ease-in-out infinite;
+      }
+      @keyframes cast {
+        0%, 14% { opacity: .18; stroke-dashoffset: 62; }
+        31%, 58% { opacity: .92; stroke-dashoffset: 0; }
+        78%, 100% { opacity: .18; stroke-dashoffset: -30; }
+      }
+      @keyframes spark {
+        0%, 20%, 76%, 100% { opacity: .22; transform: scale(.72) rotate(0deg); }
+        38%, 54% { opacity: 1; transform: scale(1.08) rotate(18deg); }
+      }
+      @keyframes aura {
+        0%, 18%, 76%, 100% { opacity: .18; transform: scale(.94); }
+        38%, 56% { opacity: .52; transform: scale(1.04); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .trail, .spark, .aura { animation: none; }
+        .trail { opacity: .55; stroke-dashoffset: 0; }
+        .spark { opacity: .72; }
+        .aura { opacity: .28; }
+      }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="110" rx="22" fill="url(#surface)" stroke="#46536B" stroke-opacity="0.72"/>
+  <rect x="1" y="1" width="1198" height="110" rx="22" fill="url(#grid)"/>
+  <path d="M22 110C210 80 342 91 520 106" fill="none" stroke="#C9A227" stroke-opacity="0.08"/>
+
+  <g aria-hidden="true">
+    <circle class="aura" cx="68" cy="56" r="34" fill="none" stroke="#7886C8" stroke-width="2"/>
+    <circle cx="68" cy="56" r="27" fill="#070B10" stroke="#93A0B8" stroke-width="1.5"/>
+    <text x="68" y="69" text-anchor="middle" font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif" font-size="34">🧙‍♂️</text>
+
+    <path class="trail" d="M94 60C115 44 134 72 157 52C166 44 173 45 182 48" fill="none" stroke="url(#spell)" stroke-width="2.4" stroke-linecap="round"/>
+    <path class="spark" d="M123 38v10M118 43h10" fill="none" stroke="#C9A227" stroke-width="2" stroke-linecap="round"/>
+    <path class="spark two" d="M151 68l2.5 5.5 5.5 2.5-5.5 2.5-2.5 5.5-2.5-5.5-5.5-2.5 5.5-2.5z" fill="#C34E33"/>
+    <circle class="spark three" cx="179" cy="39" r="3.2" fill="#7886C8"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="210" y="40" fill="#C9A227" font-size="14" font-weight="700" letter-spacing="2.1">AI, WITH GUARDRAILS</text>
+    <text x="210" y="76" fill="#F4EFE6" font-size="25" font-weight="540" letter-spacing="-0.25">AI can draft the spell. <tspan fill="#B9C3D6">I still review the blast radius.</tspan></text>
+  </g>
+
+  <g transform="translate(1144 56)" aria-hidden="true">
+    <circle r="17" fill="#111827" stroke="#46536B"/>
+    <path d="M-7 0l4 4 9-10" fill="none" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

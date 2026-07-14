@@ -6,6 +6,13 @@
 </p>
 
 <p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/ai-spell-mobile.svg">
+    <img src="./assets/ai-spell.svg" alt="AI, with guardrails — AI can draft the spell. I still review the blast radius." width="100%">
+  </picture>
+</p>
+
+<p align="center">
   <a href="https://udhawan97.github.io/"><img src="https://img.shields.io/badge/Portfolio-Visit_site-167D9A?style=flat-square&logo=safari&logoColor=white" alt="Portfolio"></a>
   <a href="https://udhawan97.github.io/Umang_Dhawan_Resume_Formal.pdf"><img src="https://img.shields.io/badge/Resume-View_PDF-4B5F87?style=flat-square&logo=readme&logoColor=white" alt="Resume"></a>
   <a href="https://www.linkedin.com/in/umangdhawan97"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>

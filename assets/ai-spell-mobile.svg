@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="152" viewBox="0 0 720 152" role="img" aria-labelledby="title desc">
+  <title id="title">AI, with guardrails</title>
+  <desc id="desc">A wizard casts a subtle spell beside the line: AI can draft the spell. I still review the blast radius.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111512"/>
+      <stop offset="0.56" stop-color="#12191C"/>
+      <stop offset="1" stop-color="#182139"/>
+    </linearGradient>
+    <linearGradient id="spell" x1="86" y1="76" x2="144" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9A227"/>
+      <stop offset="0.55" stop-color="#C34E33"/>
+      <stop offset="1" stop-color="#7886C8"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#93A0B8" stroke-opacity="0.05"/>
+    </pattern>
+    <style>
+      .trail { stroke-dasharray: 6 7; animation: cast 5.2s ease-in-out infinite; }
+      .spark {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: spark 5.2s ease-in-out infinite;
+      }
+      .spark.two { animation-delay: .24s; }
+      .aura {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: aura 5.2s ease-in-out infinite;
+      }
+      @keyframes cast {
+        0%, 14% { opacity: .18; stroke-dashoffset: 46; }
+        31%, 58% { opacity: .92; stroke-dashoffset: 0; }
+        78%, 100% { opacity: .18; stroke-dashoffset: -22; }
+      }
+      @keyframes spark {
+        0%, 20%, 76%, 100% { opacity: .22; transform: scale(.72) rotate(0deg); }
+        38%, 54% { opacity: 1; transform: scale(1.08) rotate(18deg); }
+      }
+      @keyframes aura {
+        0%, 18%, 76%, 100% { opacity: .18; transform: scale(.94); }
+        38%, 56% { opacity: .52; transform: scale(1.04); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .trail, .spark, .aura { animation: none; }
+        .trail { opacity: .55; stroke-dashoffset: 0; }
+        .spark { opacity: .72; }
+        .aura { opacity: .28; }
+      }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="718" height="150" rx="24" fill="url(#surface)" stroke="#46536B" stroke-opacity="0.72"/>
+  <rect x="1" y="1" width="718" height="150" rx="24" fill="url(#grid)"/>
+  <path d="M18 150C134 128 244 135 370 148" fill="none" stroke="#C9A227" stroke-opacity="0.08"/>
+
+  <g aria-hidden="true">
+    <circle class="aura" cx="56" cy="76" r="34" fill="none" stroke="#7886C8" stroke-width="2"/>
+    <circle cx="56" cy="76" r="27" fill="#070B10" stroke="#93A0B8" stroke-width="1.5"/>
+    <text x="56" y="89" text-anchor="middle" font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif" font-size="34">🧙‍♂️</text>
+    <path class="trail" d="M83 79C99 65 111 91 129 72C136 65 142 66 148 70" fill="none" stroke="url(#spell)" stroke-width="2.4" stroke-linecap="round"/>
+    <path class="spark" d="M101 56v9M96.5 60.5h9" fill="none" stroke="#C9A227" stroke-width="2" stroke-linecap="round"/>
+    <path class="spark two" d="M137 94l2 4.5 4.5 2-4.5 2-2 4.5-2-4.5-4.5-2 4.5-2z" fill="#C34E33"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="170" y="48" fill="#C9A227" font-size="15" font-weight="700" letter-spacing="2">AI, WITH GUARDRAILS</text>
+    <text x="170" y="82" fill="#F4EFE6" font-size="24" font-weight="560" letter-spacing="-0.2">AI can draft the spell.</text>
+    <text x="170" y="113" fill="#B9C3D6" font-size="24" font-weight="540" letter-spacing="-0.2">I still review the blast radius.</text>
+  </g>
+</svg>
