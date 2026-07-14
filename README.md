@@ -18,16 +18,10 @@ I'm a **Senior Consultant at EY Studio+** in Chicago, working where product deli
 
 Outside client work, I design and ship **local-first, open-source products** in Swift, Rust, Python, and TypeScript. I care about the parts beyond the demo: clear product decisions, trustworthy behavior, failure handling, documentation, installers, updates, and evidence that the system works.
 
-<table width="100%">
-  <tr>
-    <td align="center" width="50%">🏬<br><strong>100+ locations</strong><br><sub>retail platform shipped</sub></td>
-    <td align="center" width="50%">✅<br><strong>Zero findings</strong><br><sub>federal cloud audit</sub></td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">☁️<br><strong>4 cloud products</strong><br><sub>quality leadership</sub></td>
-    <td align="center" width="50%">🌍<br><strong>3 continents</strong><br><sub>cross-functional delivery</sub></td>
-  </tr>
-</table>
+### Impact at a glance
+
+> 🏬 **100+ locations** — retail platform shipped · ✅ **Zero findings** — federal cloud audit<br>
+> ☁️ **4 cloud products** — quality leadership · 🌍 **3 continents** — cross-functional delivery
 
 ## Open-source products
 
