@@ -1,80 +1,123 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="112" viewBox="0 0 1200 112" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="132" viewBox="0 0 1200 132" role="img" aria-labelledby="title desc">
   <title id="title">AI, with guardrails</title>
-  <desc id="desc">A wizard casts a subtle spell beside the line: AI can draft the spell. I still review the blast radius.</desc>
+  <desc id="desc">An animated pixel-art wizard raises a wand and casts a small spell beside the line: AI can draft the spell. I still review the blast radius.</desc>
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#111512"/>
+      <stop stop-color="#101411"/>
       <stop offset="0.56" stop-color="#12191C"/>
       <stop offset="1" stop-color="#182139"/>
     </linearGradient>
-    <linearGradient id="spell" x1="92" y1="56" x2="180" y2="56" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#C9A227"/>
+    <linearGradient id="spell" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#F4D35E"/>
       <stop offset="0.55" stop-color="#C34E33"/>
       <stop offset="1" stop-color="#7886C8"/>
     </linearGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#93A0B8" stroke-opacity="0.055"/>
+      <path d="M32 0H0V32" fill="none" stroke="#93A0B8" stroke-opacity="0.05"/>
     </pattern>
     <style>
-      .trail {
-        stroke-dasharray: 7 8;
-        animation: cast 5.2s ease-in-out infinite;
+      .mage, .cast-arm, .spell-bolt, .spell-pixel, .magic-core, .eyes { transform-box: fill-box; }
+      .mage { transform-origin: center bottom; animation: mage-life 4.8s ease-in-out infinite; }
+      .cast-arm { transform-origin: 55px 61px; animation: wand-cast 4.8s ease-in-out infinite; }
+      .eyes { animation: blink 7.4s steps(1, end) infinite; }
+      .magic-core { transform-origin: center; animation: core 4.8s ease-in-out infinite; }
+      .spell-bolt { transform-origin: center; animation: bolt 4.8s cubic-bezier(.2,.7,.2,1) infinite; }
+      .spell-pixel { transform-origin: center; animation: pixel 4.8s ease-out infinite; }
+      .spell-pixel.two { animation-delay: .1s; }
+      .spell-pixel.three { animation-delay: .2s; }
+      @keyframes mage-life {
+        0%, 14%, 72%, 100% { transform: translateY(0); }
+        22%, 38% { transform: translateY(-2px); }
+        48% { transform: translateY(1px); }
       }
-      .spark {
-        transform-box: fill-box;
-        transform-origin: center;
-        animation: spark 5.2s ease-in-out infinite;
+      @keyframes wand-cast {
+        0%, 14%, 70%, 100% { transform: rotate(0deg); }
+        24%, 42% { transform: rotate(-8deg); }
+        49% { transform: rotate(3deg); }
       }
-      .spark.two { animation-delay: .18s; }
-      .spark.three { animation-delay: .36s; }
-      .aura {
-        transform-box: fill-box;
-        transform-origin: center;
-        animation: aura 5.2s ease-in-out infinite;
+      @keyframes blink {
+        0%, 47%, 50%, 100% { opacity: 1; }
+        48%, 49% { opacity: 0; }
       }
-      @keyframes cast {
-        0%, 14% { opacity: .18; stroke-dashoffset: 62; }
-        31%, 58% { opacity: .92; stroke-dashoffset: 0; }
-        78%, 100% { opacity: .18; stroke-dashoffset: -30; }
+      @keyframes core {
+        0%, 18%, 68%, 100% { opacity: .18; transform: scale(.72); }
+        31%, 46% { opacity: 1; transform: scale(1.22); }
       }
-      @keyframes spark {
-        0%, 20%, 76%, 100% { opacity: .22; transform: scale(.72) rotate(0deg); }
-        38%, 54% { opacity: 1; transform: scale(1.08) rotate(18deg); }
+      @keyframes bolt {
+        0%, 24% { opacity: 0; transform: translateX(0) scale(.65) rotate(0deg); }
+        32% { opacity: 1; transform: translateX(0) scale(1) rotate(0deg); }
+        54% { opacity: 1; transform: translateX(78px) scale(.9) rotate(90deg); }
+        64%, 100% { opacity: 0; transform: translateX(98px) scale(.45) rotate(135deg); }
       }
-      @keyframes aura {
-        0%, 18%, 76%, 100% { opacity: .18; transform: scale(.94); }
-        38%, 56% { opacity: .52; transform: scale(1.04); }
+      @keyframes pixel {
+        0%, 27%, 65%, 100% { opacity: 0; transform: translate(0, 0) scale(.6); }
+        36% { opacity: .95; transform: translate(0, 0) scale(1); }
+        58% { opacity: 0; transform: translate(38px, -8px) scale(.7); }
       }
       @media (prefers-reduced-motion: reduce) {
-        .trail, .spark, .aura { animation: none; }
-        .trail { opacity: .55; stroke-dashoffset: 0; }
-        .spark { opacity: .72; }
-        .aura { opacity: .28; }
+        .mage, .cast-arm, .spell-bolt, .spell-pixel, .magic-core, .eyes { animation: none; }
+        .spell-bolt { opacity: .82; transform: translateX(46px); }
+        .spell-pixel { opacity: .62; }
+        .magic-core { opacity: .72; }
       }
     </style>
   </defs>
 
-  <rect x="1" y="1" width="1198" height="110" rx="22" fill="url(#surface)" stroke="#46536B" stroke-opacity="0.72"/>
-  <rect x="1" y="1" width="1198" height="110" rx="22" fill="url(#grid)"/>
-  <path d="M22 110C210 80 342 91 520 106" fill="none" stroke="#C9A227" stroke-opacity="0.08"/>
+  <rect x="1" y="1" width="1198" height="130" rx="22" fill="url(#surface)" stroke="#46536B" stroke-opacity="0.72"/>
+  <rect x="1" y="1" width="1198" height="130" rx="22" fill="url(#grid)"/>
+  <path d="M22 130C210 100 354 108 540 127" fill="none" stroke="#C9A227" stroke-opacity="0.075"/>
 
-  <g aria-hidden="true">
-    <circle class="aura" cx="68" cy="56" r="34" fill="none" stroke="#7886C8" stroke-width="2"/>
-    <circle cx="68" cy="56" r="27" fill="#070B10" stroke="#93A0B8" stroke-width="1.5"/>
-    <text x="68" y="69" text-anchor="middle" font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif" font-size="34">🧙‍♂️</text>
+  <g transform="translate(42 20)" shape-rendering="crispEdges" aria-hidden="true">
+    <rect width="82" height="92" rx="14" fill="#0A0F17" stroke="#46536B" stroke-width="2" shape-rendering="geometricPrecision"/>
+    <rect x="7" y="7" width="68" height="78" rx="10" fill="none" stroke="#7886C8" stroke-opacity="0.28" shape-rendering="geometricPrecision"/>
 
-    <path class="trail" d="M94 60C115 44 134 72 157 52C166 44 173 45 182 48" fill="none" stroke="url(#spell)" stroke-width="2.4" stroke-linecap="round"/>
-    <path class="spark" d="M123 38v10M118 43h10" fill="none" stroke="#C9A227" stroke-width="2" stroke-linecap="round"/>
-    <path class="spark two" d="M151 68l2.5 5.5 5.5 2.5-5.5 2.5-2.5 5.5-2.5-5.5-5.5-2.5 5.5-2.5z" fill="#C34E33"/>
-    <circle class="spark three" cx="179" cy="39" r="3.2" fill="#7886C8"/>
+    <g class="mage">
+      <path d="M31 7h12v7h8v8h7v8h7v7H18v-7h7v-8h6z" fill="#46536B"/>
+      <path d="M31 7h7v7h-7zM25 22h9v8h-9zM50 22h8v8h-8z" fill="#7886C8"/>
+      <rect x="17" y="31" width="49" height="7" fill="#222B44"/>
+      <rect x="24" y="32" width="35" height="5" fill="#C9A227"/>
+
+      <rect x="27" y="39" width="30" height="21" fill="#D6A36C"/>
+      <rect x="30" y="44" width="6" height="5" fill="#101312"/>
+      <rect x="48" y="44" width="6" height="5" fill="#101312"/>
+      <g class="eyes" fill="#77D9FF">
+        <rect x="31" y="44" width="3" height="3"/>
+        <rect x="49" y="44" width="3" height="3"/>
+      </g>
+      <rect x="39" y="51" width="6" height="3" fill="#8C4A3A"/>
+
+      <path d="M23 54h8v7h5v7h5v7h5v-7h5v-7h9v-7h-7v5H30v-5z" fill="#E6E2D9"/>
+      <path d="M27 67h30l8 18H19z" fill="#34446D"/>
+      <path d="M36 67h12v18H36z" fill="#263554"/>
+      <rect x="39" y="71" width="6" height="6" fill="#C9A227"/>
+
+      <g class="cast-arm">
+        <path d="M54 58h9v6h9v7H60v-6h-6z" fill="#34446D"/>
+        <rect x="69" y="57" width="8" height="8" fill="#D6A36C"/>
+        <path d="M74 56h5v-7h5v-7h5v-8h5v5h-5v8h-5v7h-5v7h-5z" fill="#B78621"/>
+        <rect x="90" y="30" width="8" height="8" fill="#F4D35E"/>
+      </g>
+    </g>
+
+    <g transform="translate(98 34)">
+      <rect class="magic-core" width="8" height="8" fill="#F4D35E"/>
+      <g class="spell-bolt">
+        <path d="M12 0h8v8h8v8h-8v8h-8v-8H4V8h8z" fill="url(#spell)"/>
+        <rect x="14" y="6" width="4" height="12" fill="#F4EFE6"/>
+        <rect x="10" y="10" width="12" height="4" fill="#F4EFE6"/>
+      </g>
+      <rect class="spell-pixel" x="34" y="28" width="6" height="6" fill="#C34E33"/>
+      <rect class="spell-pixel two" x="48" y="4" width="5" height="5" fill="#7886C8"/>
+      <rect class="spell-pixel three" x="62" y="22" width="4" height="4" fill="#C9A227"/>
+    </g>
   </g>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-    <text x="210" y="40" fill="#C9A227" font-size="14" font-weight="700" letter-spacing="2.1">AI, WITH GUARDRAILS</text>
-    <text x="210" y="76" fill="#F4EFE6" font-size="25" font-weight="540" letter-spacing="-0.25">AI can draft the spell. <tspan fill="#B9C3D6">I still review the blast radius.</tspan></text>
+    <text x="270" y="49" fill="#C9A227" font-size="14" font-weight="700" letter-spacing="2.1">AI, WITH GUARDRAILS</text>
+    <text x="270" y="86" fill="#F4EFE6" font-size="25" font-weight="540" letter-spacing="-0.25">AI can draft the spell. <tspan fill="#B9C3D6">I still review the blast radius.</tspan></text>
   </g>
 
-  <g transform="translate(1144 56)" aria-hidden="true">
+  <g transform="translate(1144 66)" aria-hidden="true">
     <circle r="17" fill="#111827" stroke="#46536B"/>
     <path d="M-7 0l4 4 9-10" fill="none" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
