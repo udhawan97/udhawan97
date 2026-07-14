@@ -20,10 +20,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 ### Impact at a glance
 
-> 🏬 **100+ locations** — retail platform shipped<br>
-> ✅ **Zero findings** — federal cloud audit<br>
-> ☁️ **4 cloud products** — quality leadership<br>
-> 🌍 **3 continents** — cross-functional delivery
+> 🏬 **100+ locations** — retail platform shipped<br>✅ **Zero findings** — federal cloud audit<br>☁️ **4 cloud products** — quality leadership<br>🌍 **3 continents** — cross-functional delivery
 
 ## Open-source products
 
