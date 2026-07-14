@@ -1,124 +1,147 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="132" viewBox="0 0 1200 132" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="156" viewBox="0 0 1200 156" role="img" aria-labelledby="title desc">
   <title id="title">AI, with guardrails</title>
-  <desc id="desc">An animated pixel-art wizard raises a wand and casts a small spell beside the line: AI can draft the spell. I still review the blast radius.</desc>
+  <desc id="desc">A detailed animated pixel-art wizard in a dimensional frame raises a wand, charges runes, and casts a spell while holding a review checklist.</desc>
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#101411"/>
-      <stop offset="0.56" stop-color="#12191C"/>
-      <stop offset="1" stop-color="#182139"/>
+      <stop stop-color="#101411"/><stop offset=".56" stop-color="#12191C"/><stop offset="1" stop-color="#182139"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#647397"/><stop offset=".16" stop-color="#303C5B"/><stop offset=".72" stop-color="#182139"/><stop offset="1" stop-color="#0A0E17"/>
+    </linearGradient>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#111A2A"/><stop offset=".64" stop-color="#0B111D"/><stop offset="1" stop-color="#080C13"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#263451"/><stop offset="1" stop-color="#0C111C"/>
     </linearGradient>
     <linearGradient id="spell" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#F4D35E"/>
-      <stop offset="0.55" stop-color="#C34E33"/>
-      <stop offset="1" stop-color="#7886C8"/>
+      <stop stop-color="#FFF4A3"/><stop offset=".4" stop-color="#F4D35E"/><stop offset=".72" stop-color="#C34E33"/><stop offset="1" stop-color="#7886C8"/>
     </linearGradient>
+    <radialGradient id="magicGlow">
+      <stop stop-color="#FFF4A3" stop-opacity=".72"/><stop offset=".42" stop-color="#C9A227" stop-opacity=".28"/><stop offset="1" stop-color="#C9A227" stop-opacity="0"/>
+    </radialGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#93A0B8" stroke-opacity="0.05"/>
+      <path d="M32 0H0V32" fill="none" stroke="#93A0B8" stroke-opacity=".045"/>
     </pattern>
+    <pattern id="dither" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect x="1" y="1" width="1" height="1" fill="#AEB9D4" opacity=".12"/><rect x="6" y="5" width="1" height="1" fill="#C9A227" opacity=".08"/>
+    </pattern>
+    <filter id="stageShadow" x="-30%" y="-30%" width="180%" height="190%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#030507" flood-opacity=".62"/></filter>
+    <filter id="spriteShadow" x="-40%" y="-30%" width="190%" height="190%"><feDropShadow dx="2" dy="4" stdDeviation="2" flood-color="#020308" flood-opacity=".68"/></filter>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.4"/></filter>
+    <clipPath id="roomClip"><rect x="8" y="8" width="96" height="104" rx="13"/></clipPath>
     <style>
-      .mage, .cast-arm, .spell-bolt, .spell-pixel, .magic-core, .eyes { transform-box: fill-box; }
-      .mage { transform-origin: center bottom; animation: mage-life 4.8s ease-in-out infinite; }
-      .cast-arm { transform-origin: 55px 61px; animation: wand-cast 4.8s ease-in-out infinite; }
-      .eyes { animation: blink 7.4s steps(1, end) infinite; }
-      .magic-core { transform-origin: center; animation: core 4.8s ease-in-out infinite; }
-      .spell-bolt { transform-origin: center; animation: bolt 4.8s cubic-bezier(.2,.7,.2,1) infinite; }
-      .spell-pixel { transform-origin: center; animation: pixel 4.8s ease-out infinite; }
-      .spell-pixel.two { animation-delay: .1s; }
-      .spell-pixel.three { animation-delay: .2s; }
-      @keyframes mage-life {
-        0%, 14%, 72%, 100% { transform: translateY(0); }
-        22%, 38% { transform: translateY(-2px); }
-        48% { transform: translateY(1px); }
-      }
-      @keyframes wand-cast {
-        0%, 14%, 70%, 100% { transform: rotate(0deg); }
-        24%, 42% { transform: rotate(-8deg); }
-        49% { transform: rotate(3deg); }
-      }
-      @keyframes blink {
-        0%, 47%, 50%, 100% { opacity: 1; }
-        48%, 49% { opacity: 0; }
-      }
-      @keyframes core {
-        0%, 18%, 68%, 100% { opacity: .18; transform: scale(.72); }
-        31%, 46% { opacity: 1; transform: scale(1.22); }
-      }
-      @keyframes bolt {
-        0%, 24% { opacity: 0; transform: translateX(0) scale(.65) rotate(0deg); }
-        32% { opacity: 1; transform: translateX(0) scale(1) rotate(0deg); }
-        54% { opacity: 1; transform: translateX(78px) scale(.9) rotate(90deg); }
-        64%, 100% { opacity: 0; transform: translateX(98px) scale(.45) rotate(135deg); }
-      }
-      @keyframes pixel {
-        0%, 27%, 65%, 100% { opacity: 0; transform: translate(0, 0) scale(.6); }
-        36% { opacity: .95; transform: translate(0, 0) scale(1); }
-        58% { opacity: 0; transform: translate(38px, -8px) scale(.7); }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .mage, .cast-arm, .spell-bolt, .spell-pixel, .magic-core, .eyes { animation: none; }
-        .spell-bolt { opacity: .82; transform: translateX(46px); }
-        .spell-pixel { opacity: .62; }
-        .magic-core { opacity: .72; }
+      .stage-flash, .mage, .hat, .cloak-left, .cloak-right, .cast-arm, .eyes, .shadow, .wand-glow, .magic-ring, .spell-bolt, .spell-trail, .rune, .dust { transform-box: fill-box; }
+      .stage-flash { animation: stage-flash 6.4s ease-in-out infinite; }
+      .mage { transform-origin: center bottom; animation: mage 6.4s ease-in-out infinite; }
+      .hat { transform-origin: 42px 37px; animation: hat 6.4s ease-in-out infinite; }
+      .cloak-left { transform-origin: right top; animation: cloak-left 6.4s ease-in-out infinite; }
+      .cloak-right { transform-origin: left top; animation: cloak-right 6.4s ease-in-out infinite; }
+      .cast-arm { transform-origin: 57px 67px; animation: arm 6.4s ease-in-out infinite; }
+      .eyes { animation: blink 7.8s steps(1,end) infinite; }
+      .shadow { transform-origin: center; animation: shadow 6.4s ease-in-out infinite; }
+      .wand-glow { transform-origin: center; animation: wand-glow 6.4s ease-in-out infinite; }
+      .magic-ring { transform-origin: center; animation: ring 6.4s ease-in-out infinite; }
+      .spell-bolt { transform-origin: center; animation: bolt 6.4s cubic-bezier(.18,.72,.18,1) infinite; }
+      .spell-trail { animation: trail 6.4s ease-out infinite; }
+      .rune { transform-origin: center; animation: rune 6.4s ease-in-out infinite; }
+      .rune.two { animation-delay: .12s; }.rune.three { animation-delay: .24s; }
+      .dust { transform-origin: center; animation: dust 6.4s ease-out infinite; }
+      .dust.two { animation-delay: .16s; }.dust.three { animation-delay: .32s; }
+      @keyframes stage-flash { 0%,24%,68%,100%{opacity:0} 36%,48%{opacity:.42} }
+      @keyframes mage { 0%,16%,70%,100%{transform:translateY(0)} 25%,43%{transform:translateY(-3px)} 54%{transform:translateY(1px)} }
+      @keyframes hat { 0%,17%,69%,100%{transform:rotate(0)} 27%,43%{transform:rotate(-4deg)} 52%{transform:rotate(2deg)} }
+      @keyframes cloak-left { 0%,17%,70%,100%{transform:skewX(0)} 31%,45%{transform:skewX(5deg)} }
+      @keyframes cloak-right { 0%,17%,70%,100%{transform:skewX(0)} 31%,45%{transform:skewX(-6deg)} }
+      @keyframes arm { 0%,18%,69%,100%{transform:rotate(0)} 28%,44%{transform:rotate(-12deg)} 52%{transform:rotate(4deg)} }
+      @keyframes blink { 0%,46%,50%,100%{opacity:1} 47%,49%{opacity:0} }
+      @keyframes shadow { 0%,17%,70%,100%{opacity:.52;transform:scale(1)} 28%,45%{opacity:.34;transform:scale(.86)} }
+      @keyframes wand-glow { 0%,21%,65%,100%{opacity:.12;transform:scale(.55)} 33%,47%{opacity:1;transform:scale(1.35)} }
+      @keyframes ring { 0%,25%{opacity:0;transform:scale(.4) rotate(0)} 35%{opacity:.8;transform:scale(1) rotate(45deg)} 52%{opacity:0;transform:scale(1.8) rotate(110deg)} 53%,100%{opacity:0;transform:scale(.4)} }
+      @keyframes bolt { 0%,34%{opacity:0;transform:translateX(0) scale(.55) rotate(0)} 39%{opacity:1;transform:translateX(0) scale(1) rotate(0)} 57%{opacity:1;transform:translateX(92px) scale(.92) rotate(90deg)} 66%,100%{opacity:0;transform:translateX(120px) scale(.38) rotate(150deg)} }
+      @keyframes trail { 0%,34%{opacity:0;stroke-dashoffset:55} 42%{opacity:.72} 61%{opacity:0;stroke-dashoffset:-25} 62%,100%{opacity:0} }
+      @keyframes rune { 0%,24%,62%,100%{opacity:0;transform:scale(.55) rotate(0)} 35%{opacity:.92;transform:scale(1) rotate(30deg)} 52%{opacity:0;transform:translate(28px,-10px) scale(.7) rotate(90deg)} }
+      @keyframes dust { 0%,35%,66%,100%{opacity:0;transform:translate(0,0) scale(.6)} 44%{opacity:.72;transform:translate(0,0) scale(1)} 60%{opacity:0;transform:translate(42px,-12px) scale(.55)} }
+      @media (prefers-reduced-motion:reduce){
+        .stage-flash,.mage,.hat,.cloak-left,.cloak-right,.cast-arm,.eyes,.shadow,.wand-glow,.magic-ring,.spell-bolt,.spell-trail,.rune,.dust{animation:none}
+        .wand-glow{opacity:.55}.magic-ring{opacity:.28}.spell-bolt{opacity:.82;transform:translateX(54px)}.spell-trail{opacity:.32;stroke-dashoffset:0}.rune{opacity:.38}.dust{opacity:.28}
       }
     </style>
   </defs>
 
-  <rect x="1" y="1" width="1198" height="130" rx="22" fill="url(#surface)" stroke="#46536B" stroke-opacity="0.72"/>
-  <rect x="1" y="1" width="1198" height="130" rx="22" fill="url(#grid)"/>
-  <path d="M22 130C210 100 354 108 540 127" fill="none" stroke="#C9A227" stroke-opacity="0.075"/>
+  <rect x="1" y="1" width="1198" height="154" rx="23" fill="url(#surface)" stroke="#46536B" stroke-opacity=".72"/>
+  <rect x="1" y="1" width="1198" height="154" rx="23" fill="url(#grid)"/>
+  <path d="M22 154C230 119 390 130 590 151" fill="none" stroke="#C9A227" stroke-opacity=".07"/>
 
-  <g transform="translate(42 20)" shape-rendering="crispEdges" aria-hidden="true">
-    <rect width="82" height="92" rx="14" fill="#0A0F17" stroke="#46536B" stroke-width="2" shape-rendering="geometricPrecision"/>
-    <rect x="7" y="7" width="68" height="78" rx="10" fill="none" stroke="#7886C8" stroke-opacity="0.28" shape-rendering="geometricPrecision"/>
+  <g transform="translate(38 18)" shape-rendering="crispEdges" aria-hidden="true">
+    <rect x="0" y="5" width="112" height="116" rx="19" fill="#04070C" opacity=".72" filter="url(#stageShadow)" shape-rendering="geometricPrecision"/>
+    <rect width="112" height="120" rx="19" fill="url(#frame)" shape-rendering="geometricPrecision"/>
+    <path d="M18 2h76l12 12v86l-10 14H16L6 101V15z" fill="none" stroke="#AEB9D4" stroke-opacity=".22" shape-rendering="geometricPrecision"/>
+    <rect x="8" y="8" width="96" height="104" rx="13" fill="url(#room)" stroke="#060A11" stroke-width="2" shape-rendering="geometricPrecision"/>
+    <g clip-path="url(#roomClip)">
+      <rect x="8" y="8" width="96" height="104" fill="url(#dither)"/>
+      <rect class="stage-flash" x="8" y="8" width="96" height="104" fill="url(#magicGlow)" opacity="0"/>
+      <path d="M8 82 56 64l48 18v30H8z" fill="url(#floor)"/>
+      <path d="M8 82h96M56 64v48M23 77l10 35M89 77l-10 35" fill="none" stroke="#7886C8" stroke-opacity=".18" stroke-width="1" shape-rendering="geometricPrecision"/>
+      <rect x="16" y="17" width="2" height="2" fill="#7886C8" opacity=".5"/><rect x="90" y="25" width="2" height="2" fill="#C9A227" opacity=".45"/><rect x="82" y="49" width="1" height="1" fill="#AEB9D4" opacity=".5"/>
+    </g>
+    <path d="M13 17v-5h6M93 12h6v5M13 102v5h6M99 102v5h-6" fill="none" stroke="#F4EFE6" stroke-opacity=".28" stroke-width="2" shape-rendering="geometricPrecision"/>
+    <rect x="45" y="114" width="22" height="3" fill="#C9A227" opacity=".46"/>
 
-    <g class="mage">
-      <path d="M31 7h12v7h8v8h7v8h7v7H18v-7h7v-8h6z" fill="#46536B"/>
-      <path d="M31 7h7v7h-7zM25 22h9v8h-9zM50 22h8v8h-8z" fill="#7886C8"/>
-      <rect x="17" y="31" width="49" height="7" fill="#222B44"/>
-      <rect x="24" y="32" width="35" height="5" fill="#C9A227"/>
-
-      <rect x="27" y="39" width="30" height="21" fill="#D6A36C"/>
-      <rect x="30" y="44" width="6" height="5" fill="#101312"/>
-      <rect x="48" y="44" width="6" height="5" fill="#101312"/>
-      <g class="eyes" fill="#77D9FF">
-        <rect x="31" y="44" width="3" height="3"/>
-        <rect x="49" y="44" width="3" height="3"/>
+    <ellipse class="shadow" cx="54" cy="101" rx="28" ry="6" fill="#02040A" opacity=".52" filter="url(#softGlow)" shape-rendering="geometricPrecision"/>
+    <g class="mage" filter="url(#spriteShadow)">
+      <g class="hat">
+        <path d="M31 14h13v7h9v8h7v8h8v8H18v-8h7v-8h6z" fill="#263554"/>
+        <path d="M32 14h7v7h-7zM26 29h10v8H26zM52 29h8v8h-8z" fill="#6577AD"/>
+        <path d="M39 21h12v8H39z" fill="#465C94"/>
+        <rect x="17" y="39" width="52" height="8" fill="#151D31"/>
+        <rect x="24" y="40" width="37" height="6" fill="#C9A227"/>
+        <rect x="40" y="40" width="8" height="6" fill="#F4D35E"/>
       </g>
-      <rect x="39" y="51" width="6" height="3" fill="#8C4A3A"/>
-
-      <path d="M23 54h8v7h5v7h5v7h5v-7h5v-7h9v-7h-7v5H30v-5z" fill="#E6E2D9"/>
-      <path d="M27 67h30l8 18H19z" fill="#34446D"/>
-      <path d="M36 67h12v18H36z" fill="#263554"/>
-      <rect x="39" y="71" width="6" height="6" fill="#C9A227"/>
-
+      <rect x="28" y="47" width="32" height="23" fill="#B9784F"/>
+      <rect x="31" y="47" width="27" height="20" fill="#D6A36C"/>
+      <rect x="31" y="53" width="7" height="6" fill="#101312"/><rect x="50" y="53" width="7" height="6" fill="#101312"/>
+      <g class="eyes" fill="#77D9FF"><rect x="32" y="53" width="4" height="3"/><rect x="51" y="53" width="4" height="3"/></g>
+      <rect x="41" y="61" width="7" height="3" fill="#8C4A3A"/>
+      <path d="M23 64h9v8h5v7h5v8h5v-8h5v-7h10v-8h-8v6H31v-6z" fill="#D5D3D0"/>
+      <path d="M28 69h6v7h5v7h4v4h4v-8h5v-7h5v-3h5v9h-5v8h-5v7H37v-7h-5v-8h-4z" fill="#F4EFE6"/>
+      <g class="cloak-left"><path d="M31 78h13v24H17l8-21z" fill="#34446D"/><path d="M25 82h8v18H20z" fill="#263554"/><rect x="30" y="81" width="4" height="16" fill="#596B9C"/></g>
+      <g class="cloak-right"><path d="M45 78h14l9 24H45z" fill="#34446D"/><path d="M55 81h6l5 19H55z" fill="#263554"/><rect x="47" y="81" width="4" height="16" fill="#596B9C"/></g>
+      <rect x="41" y="82" width="8" height="8" fill="#C9A227"/><rect x="43" y="84" width="4" height="4" fill="#FFF4A3"/>
+      <rect x="22" y="96" width="18" height="6" fill="#121827"/><rect x="48" y="96" width="18" height="6" fill="#121827"/>
+      <g aria-hidden="true">
+        <rect x="12" y="67" width="13" height="17" fill="#E8DFC8"/><rect x="14" y="69" width="9" height="13" fill="#FFF8E8"/>
+        <path d="m16 74 2 2 4-5" fill="none" stroke="#2E7D68" stroke-width="2"/>
+      </g>
       <g class="cast-arm">
-        <path d="M54 58h9v6h9v7H60v-6h-6z" fill="#34446D"/>
-        <rect x="69" y="57" width="8" height="8" fill="#D6A36C"/>
-        <path d="M74 56h5v-7h5v-7h5v-8h5v5h-5v8h-5v7h-5v7h-5z" fill="#B78621"/>
-        <rect x="90" y="30" width="8" height="8" fill="#F4D35E"/>
+        <path d="M56 69h10v7h10v8H63v-7h-7z" fill="#34446D"/><rect x="73" y="70" width="9" height="9" fill="#D6A36C"/>
+        <path d="M79 69h5v-8h5v-8h5v-9h5v6h-5v8h-5v8h-5v8h-5z" fill="#8C6220"/>
+        <path d="M84 61h5v-8h5v-9h5" fill="none" stroke="#E0B84B" stroke-width="2"/>
+        <rect x="95" y="39" width="9" height="9" fill="#F4D35E"/><rect x="98" y="41" width="4" height="4" fill="#FFF4A3"/>
       </g>
     </g>
 
-    <g transform="translate(98 34)">
-      <rect class="magic-core" width="8" height="8" fill="#F4D35E"/>
-      <g class="spell-bolt">
-        <path d="M12 0h8v8h8v8h-8v8h-8v-8H4V8h8z" fill="url(#spell)"/>
-        <rect x="14" y="6" width="4" height="12" fill="#F4EFE6"/>
-        <rect x="10" y="10" width="12" height="4" fill="#F4EFE6"/>
+    <g transform="translate(103 43)">
+      <circle class="wand-glow" r="17" fill="url(#magicGlow)" opacity=".12" filter="url(#softGlow)"/>
+      <g class="magic-ring" opacity="0" fill="none" stroke="#F4D35E" stroke-width="1.5">
+        <circle r="10"/><path d="M-14 0h28M0-14v28M-10-10l20 20M10-10l-20 20"/>
       </g>
-      <rect class="spell-pixel" x="34" y="28" width="6" height="6" fill="#C34E33"/>
-      <rect class="spell-pixel two" x="48" y="4" width="5" height="5" fill="#7886C8"/>
-      <rect class="spell-pixel three" x="62" y="22" width="4" height="4" fill="#C9A227"/>
+      <path class="spell-trail" d="M8 1C35-12 56 16 85 0" fill="none" stroke="url(#spell)" stroke-width="3" stroke-linecap="square" stroke-dasharray="7 7" stroke-dashoffset="55" opacity="0"/>
+      <g class="spell-bolt" opacity="0">
+        <path d="M14-10h8v7h8v8h-8v8h-8V5H6v-8h8z" fill="url(#spell)"/>
+        <rect x="16" y="-6" width="4" height="15" fill="#FFF8D8"/><rect x="10" y="-1" width="16" height="4" fill="#FFF8D8"/>
+      </g>
+      <rect class="rune" x="31" y="-22" width="6" height="6" fill="#7886C8" opacity="0"/>
+      <path class="rune two" d="M48 15h6v6h-6zM51 12h1v12h-1zM45 18h12v1H45z" fill="#C34E33" opacity="0"/>
+      <rect class="rune three" x="67" y="-13" width="5" height="5" fill="#C9A227" opacity="0"/>
+      <rect class="dust" x="24" y="23" width="5" height="5" fill="#C34E33" opacity="0"/><rect class="dust two" x="45" y="-4" width="4" height="4" fill="#7886C8" opacity="0"/><rect class="dust three" x="61" y="18" width="3" height="3" fill="#F4D35E" opacity="0"/>
     </g>
   </g>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-    <text x="270" y="49" fill="#C9A227" font-size="14" font-weight="700" letter-spacing="2.1">AI, WITH GUARDRAILS</text>
-    <text x="270" y="86" fill="#F4EFE6" font-size="25" font-weight="540" letter-spacing="-0.25">AI can draft the spell. <tspan fill="#B9C3D6">I still review the blast radius.</tspan></text>
+    <text x="310" y="59" fill="#C9A227" font-size="14" font-weight="700" letter-spacing="2.1">AI, WITH GUARDRAILS</text>
+    <text x="310" y="99" fill="#F4EFE6" font-size="25" font-weight="550" letter-spacing="-.25">AI can draft the spell. <tspan fill="#B9C3D6">I still review the blast radius.</tspan></text>
+    <text x="310" y="126" fill="#7886A8" font-size="11" font-weight="700" letter-spacing="1.4">CAST  ·  CHECK  ·  SHIP</text>
   </g>
-
-  <g transform="translate(1144 66)" aria-hidden="true">
-    <circle r="17" fill="#111827" stroke="#46536B"/>
-    <path d="M-7 0l4 4 9-10" fill="none" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
+  <g transform="translate(1144 78)" aria-hidden="true"><circle r="17" fill="#111827" stroke="#46536B"/><path d="M-7 0l4 4 9-10" fill="none" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g>
 </svg>
