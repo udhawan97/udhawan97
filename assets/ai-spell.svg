@@ -31,7 +31,7 @@
     <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.4"/></filter>
     <clipPath id="roomClip"><rect x="8" y="8" width="96" height="104" rx="13"/></clipPath>
     <style>
-      .stage-flash, .mage, .hat, .cloak-left, .cloak-right, .cast-arm, .eyes, .shadow, .wand-glow, .magic-ring, .spell-bolt, .spell-trail, .rune, .dust, .review-scroll, .review-check, .buckle, .phase { transform-box: fill-box; }
+      .stage-flash, .mage, .hat, .cloak-left, .cloak-right, .cast-arm, .eyes, .shadow, .wand-glow, .magic-ring, .spell-bolt, .spell-trail, .rune, .dust, .review-laptop, .laptop-screen, .laptop-cursor, .buckle, .phase { transform-box: fill-box; }
       .stage-flash { animation: stage-flash 6.4s ease-in-out infinite; }
       .mage { transform-origin: center bottom; animation: mage 6.4s ease-in-out infinite; }
       .hat { transform-origin: 42px 37px; animation: hat 6.4s ease-in-out infinite; }
@@ -48,8 +48,9 @@
       .rune.two { animation-delay: .12s; }.rune.three { animation-delay: .24s; }
       .dust { transform-origin: center; animation: dust 6.4s ease-out infinite; }
       .dust.two { animation-delay: .16s; }.dust.three { animation-delay: .32s; }
-      .review-scroll { transform-origin: right bottom; animation: review-scroll 6.4s steps(1,end) infinite; }
-      .review-check { animation: review-check 6.4s steps(1,end) infinite; }
+      .review-laptop { transform-origin: right bottom; animation: review-laptop 6.4s steps(1,end) infinite; }
+      .laptop-screen { animation: laptop-screen 6.4s steps(1,end) infinite; }
+      .laptop-cursor { animation: laptop-cursor 6.4s steps(1,end) infinite; }
       .buckle { transform-origin: center; animation: buckle 6.4s steps(1,end) infinite; }
       .phase.idle { animation: phase-idle 6.4s steps(1,end) infinite; }
       .phase.review { animation: phase-review 6.4s steps(1,end) infinite; }
@@ -70,8 +71,9 @@
       @keyframes trail { 0%,34%{opacity:0;stroke-dashoffset:55} 42%{opacity:.72} 61%{opacity:0;stroke-dashoffset:-25} 62%,100%{opacity:0} }
       @keyframes rune { 0%,24%,62%,100%{opacity:0;transform:scale(.55) rotate(0)} 35%{opacity:.92;transform:scale(1) rotate(30deg)} 52%{opacity:0;transform:translate(28px,-10px) scale(.7) rotate(90deg)} }
       @keyframes dust { 0%,35%,66%,100%{opacity:0;transform:translate(0,0) scale(.6)} 44%{opacity:.72;transform:translate(0,0) scale(1)} 60%{opacity:0;transform:translate(42px,-12px) scale(.55)} }
-      @keyframes review-scroll { 0%,8%,28%,100%{transform:translate(0,0) rotate(0)} 9%,14%{transform:translate(1px,-2px) rotate(-3deg)} 15%,22%{transform:translate(2px,-4px) rotate(-5deg)} 23%,27%{transform:translate(1px,-2px) rotate(-2deg)} }
-      @keyframes review-check { 0%,12%,100%{opacity:.18} 13%,24%{opacity:1} 25%,99%{opacity:.52} }
+      @keyframes review-laptop { 0%,8%,28%,100%{transform:translate(0,0) rotate(0)} 9%,14%{transform:translate(1px,-2px) rotate(-3deg)} 15%,22%{transform:translate(2px,-4px) rotate(-5deg)} 23%,27%{transform:translate(1px,-2px) rotate(-2deg)} }
+      @keyframes laptop-screen { 0%,10%,27%,100%{opacity:.58} 11%,24%{opacity:1} 25%,26%{opacity:.78} }
+      @keyframes laptop-cursor { 0%,12%,15%,18%,24%,100%{opacity:.18} 13%,14%,16%,17%,19%,23%{opacity:1} }
       @keyframes buckle { 0%,30%,55%,100%{filter:none;transform:scale(1)} 36%,46%{filter:brightness(1.45);transform:scale(1.18)} }
       @keyframes phase-idle { 0%,8%,91%,100%{opacity:1} 9%,90%{opacity:.18} }
       @keyframes phase-review { 0%,8%,24%,100%{opacity:.18} 9%,23%{opacity:1} }
@@ -79,9 +81,9 @@
       @keyframes phase-cast { 0%,36%,59%,100%{opacity:.18} 37%,58%{opacity:1} }
       @keyframes phase-recover { 0%,58%,91%,100%{opacity:.18} 59%,90%{opacity:1} }
       @media (prefers-reduced-motion:reduce){
-        .stage-flash,.mage,.hat,.cloak-left,.cloak-right,.cast-arm,.eyes,.shadow,.wand-glow,.magic-ring,.spell-bolt,.spell-trail,.rune,.dust,.review-scroll,.review-check,.buckle,.phase{animation:none}
+        .stage-flash,.mage,.hat,.cloak-left,.cloak-right,.cast-arm,.eyes,.shadow,.wand-glow,.magic-ring,.spell-bolt,.spell-trail,.rune,.dust,.review-laptop,.laptop-screen,.laptop-cursor,.buckle,.phase{animation:none}
         .wand-glow{opacity:.55}.magic-ring{opacity:.28}.spell-bolt{opacity:.82;transform:translateX(54px)}.spell-trail{opacity:.32;stroke-dashoffset:0}.rune{opacity:.38}.dust{opacity:.28}
-        .review-check{opacity:1}.phase{opacity:.42}
+        .laptop-screen,.laptop-cursor{opacity:1}.phase{opacity:.42}
       }
     </style>
   </defs>
@@ -126,9 +128,13 @@
       <g class="cloak-right"><path d="M45 78h14l9 24H45z" fill="#34446D"/><path d="M55 81h6l5 19H55z" fill="#263554"/><rect x="47" y="81" width="4" height="16" fill="#596B9C"/></g>
       <g class="buckle"><rect x="41" y="82" width="8" height="8" fill="#C9A227"/><rect x="43" y="84" width="4" height="4" fill="#FFF4A3"/></g>
       <rect x="22" y="96" width="18" height="6" fill="#121827"/><rect x="48" y="96" width="18" height="6" fill="#121827"/>
-      <g class="review-scroll" aria-hidden="true">
-        <rect x="12" y="67" width="13" height="17" fill="#E8DFC8"/><rect x="14" y="69" width="9" height="13" fill="#FFF8E8"/>
-        <path class="review-check" d="m16 74 2 2 4-5" fill="none" stroke="#2E7D68" stroke-width="2"/>
+      <g class="review-laptop" aria-hidden="true">
+        <rect x="10" y="67" width="16" height="12" rx="1" fill="#0A0F1A" stroke="#93A0B8" stroke-width="1"/>
+        <rect class="laptop-screen" x="12" y="69" width="12" height="8" fill="#163044" opacity=".58"/>
+        <path d="M13 71h3v1h-3zM17 71h4v1h-4zM13 73h6v1h-6z" fill="#77D9FF"/>
+        <rect class="laptop-cursor" x="20" y="73" width="2" height="1" fill="#F4D35E" opacity=".18"/>
+        <path d="M8 80h20l-3 4H11z" fill="#46536B" stroke="#101827" stroke-width="1"/>
+        <path d="M13 81h10l-1 1h-8z" fill="#AEB9D4" opacity=".72"/>
       </g>
       <g class="cast-arm">
         <path d="M56 69h10v7h10v8H63v-7h-7z" fill="#34446D"/><rect x="73" y="70" width="9" height="9" fill="#D6A36C"/>
