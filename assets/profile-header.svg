@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Umang Dhawan — technology consultant and open-source product builder</title>
+  <desc id="desc">A dark blue profile banner connecting product delivery, quality engineering, cloud reliability, and applied AI, with symbols for Umang's four open-source products.</desc>
+  <defs>
+    <linearGradient id="background" x1="40" y1="20" x2="1160" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.58" stop-color="#0B1B31"/>
+      <stop offset="1" stop-color="#14233E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="70" y1="0" x2="650" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#61DAFB"/>
+      <stop offset="0.52" stop-color="#8B9EFF"/>
+      <stop offset="1" stop-color="#B98CFF"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#172A48" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#101D33" stop-opacity="0.95"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1030 45) rotate(135) scale(360 280)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5E81FF" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#5E81FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#C9D7F2" stroke-opacity="0.055"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#020817" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="340" rx="28" fill="url(#background)"/>
+  <rect width="1200" height="340" rx="28" fill="url(#glow)"/>
+  <rect width="1200" height="340" rx="28" fill="url(#grid)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="338.5" rx="27.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
+
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <circle cx="72" cy="65" r="5" fill="#61DAFB"/>
+    <text x="88" y="71" fill="#AFC1DD" font-size="17" font-weight="650" letter-spacing="2.2">CHICAGO · BUILDING IN PUBLIC</text>
+    <text x="68" y="146" fill="#FFFFFF" font-size="56" font-weight="760" letter-spacing="-1.8">UMANG DHAWAN</text>
+    <text x="70" y="188" fill="url(#accent)" font-size="24" font-weight="620">Technology consultant · open-source product builder</text>
+    <text x="70" y="225" fill="#B8C7DD" font-size="18">I turn complex ideas into reliable systems that ship.</text>
+
+    <g transform="translate(70 260)" font-size="14" font-weight="650">
+      <g>
+        <rect width="138" height="40" rx="20" fill="#10263C" stroke="#61DAFB" stroke-opacity="0.38"/>
+        <circle cx="22" cy="20" r="5" fill="#61DAFB"/>
+        <text x="36" y="25" fill="#DCE9F8">PRODUCT</text>
+      </g>
+      <g transform="translate(150)">
+        <rect width="147" height="40" rx="20" fill="#14233E" stroke="#8B9EFF" stroke-opacity="0.38"/>
+        <path d="M18 20l5 5 9-11" fill="none" stroke="#91A4FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="42" y="25" fill="#DCE9F8">QUALITY</text>
+      </g>
+      <g transform="translate(309)">
+        <rect width="140" height="40" rx="20" fill="#17213E" stroke="#A18CFF" stroke-opacity="0.38"/>
+        <path d="M17 24h14M20 18h11M24 12h7" fill="none" stroke="#A997FF" stroke-width="2" stroke-linecap="round"/>
+        <text x="42" y="25" fill="#DCE9F8">CLOUD</text>
+      </g>
+      <g transform="translate(461)">
+        <rect width="158" height="40" rx="20" fill="#1A203E" stroke="#B98CFF" stroke-opacity="0.38"/>
+        <path d="M24 11v18M15 20h18M18 14l12 12M30 14L18 26" fill="none" stroke="#C19BFF" stroke-width="1.6" stroke-linecap="round"/>
+        <text x="43" y="25" fill="#DCE9F8">APPLIED AI</text>
+      </g>
+    </g>
+
+    <path d="M765 52v236" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="810" y="59" fill="#91A3BE" font-size="13" font-weight="700" letter-spacing="1.7">SELECTED BUILDS</text>
+
+    <g filter="url(#shadow)">
+      <g transform="translate(810 79)">
+        <rect width="164" height="92" rx="18" fill="url(#tile)" stroke="#6DC8DA" stroke-opacity="0.35"/>
+        <g transform="translate(17 18)">
+          <rect width="42" height="42" rx="11" fill="#294B67"/>
+          <path d="M8 23l13-10 8 12 8 2-18 10zM5 17l6 4 2-6z" fill="#F4F7FA"/>
+        </g>
+        <text x="72" y="42" fill="#FFFFFF" font-size="16" font-weight="700">Orifold</text>
+        <text x="72" y="64" fill="#93A9C7" font-size="12">PDF workspace</text>
+      </g>
+
+      <g transform="translate(990 79)">
+        <rect width="164" height="92" rx="18" fill="url(#tile)" stroke="#8C9FFF" stroke-opacity="0.35"/>
+        <g transform="translate(17 18)">
+          <rect width="42" height="42" rx="11" fill="#202A47"/>
+          <ellipse cx="21" cy="21" rx="16" ry="8" transform="rotate(-24 21 21)" fill="none" stroke="#93A9F2" stroke-width="1.4"/>
+          <circle cx="21" cy="21" r="4" fill="#61D7EE"/>
+          <circle cx="21" cy="7" r="3" fill="#61D7EE"/>
+        </g>
+        <text x="72" y="42" fill="#FFFFFF" font-size="16" font-weight="700">FolioOrb</text>
+        <text x="72" y="64" fill="#93A9C7" font-size="12">Portfolio cockpit</text>
+      </g>
+
+      <g transform="translate(810 187)">
+        <rect width="164" height="92" rx="18" fill="url(#tile)" stroke="#E7B35D" stroke-opacity="0.36"/>
+        <g transform="translate(17 18)">
+          <rect width="42" height="42" rx="11" fill="#283126"/>
+          <circle cx="21" cy="21" r="13" fill="#F4EBDD" stroke="#C99B45" stroke-width="1.5"/>
+          <path d="M21 13l5 4-2 6h-6l-2-6zM21 13V8M26 17l5-2M24 23l4 5M18 23l-4 5M16 17l-5-2" fill="none" stroke="#24221E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <text x="72" y="42" fill="#FFFFFF" font-size="16" font-weight="700">Golavo</text>
+        <text x="72" y="64" fill="#93A9C7" font-size="12">Football models</text>
+      </g>
+
+      <g transform="translate(990 187)">
+        <rect width="164" height="92" rx="18" fill="url(#tile)" stroke="#E8825F" stroke-opacity="0.36"/>
+        <g transform="translate(17 18)">
+          <rect width="42" height="42" rx="11" fill="#343B56"/>
+          <path d="M7 12l29 7-13 6-6 12-3-11z" fill="#FBF7EE"/>
+          <path d="M14 26l22-7-13 6z" fill="#AEB8D0"/>
+          <circle cx="34" cy="11" r="3" fill="#E8734F"/>
+        </g>
+        <text x="72" y="42" fill="#FFFFFF" font-size="16" font-weight="700">Voyalier</text>
+        <text x="72" y="64" fill="#93A9C7" font-size="12">Travel workspace</text>
+      </g>
+    </g>
+  </g>
+</svg>
