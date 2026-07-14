@@ -31,7 +31,7 @@
     <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.4"/></filter>
     <clipPath id="roomClip"><rect x="8" y="8" width="96" height="104" rx="13"/></clipPath>
     <style>
-      .stage-flash, .mage, .hat, .cloak-left, .cloak-right, .cast-arm, .eyes, .shadow, .wand-glow, .magic-ring, .spell-bolt, .spell-trail, .rune, .dust { transform-box: fill-box; }
+      .stage-flash, .mage, .hat, .cloak-left, .cloak-right, .cast-arm, .eyes, .shadow, .wand-glow, .magic-ring, .spell-bolt, .spell-trail, .rune, .dust, .review-scroll, .review-check, .buckle, .phase { transform-box: fill-box; }
       .stage-flash { animation: stage-flash 6.4s ease-in-out infinite; }
       .mage { transform-origin: center bottom; animation: mage 6.4s ease-in-out infinite; }
       .hat { transform-origin: 42px 37px; animation: hat 6.4s ease-in-out infinite; }
@@ -48,6 +48,14 @@
       .rune.two { animation-delay: .12s; }.rune.three { animation-delay: .24s; }
       .dust { transform-origin: center; animation: dust 6.4s ease-out infinite; }
       .dust.two { animation-delay: .16s; }.dust.three { animation-delay: .32s; }
+      .review-scroll { transform-origin: right bottom; animation: review-scroll 6.4s steps(1,end) infinite; }
+      .review-check { animation: review-check 6.4s steps(1,end) infinite; }
+      .buckle { transform-origin: center; animation: buckle 6.4s steps(1,end) infinite; }
+      .phase.idle { animation: phase-idle 6.4s steps(1,end) infinite; }
+      .phase.review { animation: phase-review 6.4s steps(1,end) infinite; }
+      .phase.windup { animation: phase-windup 6.4s steps(1,end) infinite; }
+      .phase.cast { animation: phase-cast 6.4s steps(1,end) infinite; }
+      .phase.recover { animation: phase-recover 6.4s steps(1,end) infinite; }
       @keyframes stage-flash { 0%,24%,68%,100%{opacity:0} 36%,48%{opacity:.42} }
       @keyframes mage { 0%,16%,70%,100%{transform:translateY(0)} 25%,43%{transform:translateY(-3px)} 54%{transform:translateY(1px)} }
       @keyframes hat { 0%,17%,69%,100%{transform:rotate(0)} 27%,43%{transform:rotate(-4deg)} 52%{transform:rotate(2deg)} }
@@ -62,9 +70,18 @@
       @keyframes trail { 0%,34%{opacity:0;stroke-dashoffset:55} 42%{opacity:.72} 61%{opacity:0;stroke-dashoffset:-25} 62%,100%{opacity:0} }
       @keyframes rune { 0%,24%,62%,100%{opacity:0;transform:scale(.55) rotate(0)} 35%{opacity:.92;transform:scale(1) rotate(30deg)} 52%{opacity:0;transform:translate(28px,-10px) scale(.7) rotate(90deg)} }
       @keyframes dust { 0%,35%,66%,100%{opacity:0;transform:translate(0,0) scale(.6)} 44%{opacity:.72;transform:translate(0,0) scale(1)} 60%{opacity:0;transform:translate(42px,-12px) scale(.55)} }
+      @keyframes review-scroll { 0%,8%,28%,100%{transform:translate(0,0) rotate(0)} 9%,14%{transform:translate(1px,-2px) rotate(-3deg)} 15%,22%{transform:translate(2px,-4px) rotate(-5deg)} 23%,27%{transform:translate(1px,-2px) rotate(-2deg)} }
+      @keyframes review-check { 0%,12%,100%{opacity:.18} 13%,24%{opacity:1} 25%,99%{opacity:.52} }
+      @keyframes buckle { 0%,30%,55%,100%{filter:none;transform:scale(1)} 36%,46%{filter:brightness(1.45);transform:scale(1.18)} }
+      @keyframes phase-idle { 0%,8%,91%,100%{opacity:1} 9%,90%{opacity:.18} }
+      @keyframes phase-review { 0%,8%,24%,100%{opacity:.18} 9%,23%{opacity:1} }
+      @keyframes phase-windup { 0%,23%,37%,100%{opacity:.18} 24%,36%{opacity:1} }
+      @keyframes phase-cast { 0%,36%,59%,100%{opacity:.18} 37%,58%{opacity:1} }
+      @keyframes phase-recover { 0%,58%,91%,100%{opacity:.18} 59%,90%{opacity:1} }
       @media (prefers-reduced-motion:reduce){
-        .stage-flash,.mage,.hat,.cloak-left,.cloak-right,.cast-arm,.eyes,.shadow,.wand-glow,.magic-ring,.spell-bolt,.spell-trail,.rune,.dust{animation:none}
+        .stage-flash,.mage,.hat,.cloak-left,.cloak-right,.cast-arm,.eyes,.shadow,.wand-glow,.magic-ring,.spell-bolt,.spell-trail,.rune,.dust,.review-scroll,.review-check,.buckle,.phase{animation:none}
         .wand-glow{opacity:.55}.magic-ring{opacity:.28}.spell-bolt{opacity:.82;transform:translateX(54px)}.spell-trail{opacity:.32;stroke-dashoffset:0}.rune{opacity:.38}.dust{opacity:.28}
+        .review-check{opacity:1}.phase{opacity:.42}
       }
     </style>
   </defs>
@@ -86,7 +103,7 @@
       <rect x="16" y="17" width="2" height="2" fill="#7886C8" opacity=".5"/><rect x="90" y="25" width="2" height="2" fill="#C9A227" opacity=".45"/><rect x="82" y="49" width="1" height="1" fill="#AEB9D4" opacity=".5"/>
     </g>
     <path d="M13 17v-5h6M93 12h6v5M13 102v5h6M99 102v5h-6" fill="none" stroke="#F4EFE6" stroke-opacity=".28" stroke-width="2" shape-rendering="geometricPrecision"/>
-    <rect x="45" y="114" width="22" height="3" fill="#C9A227" opacity=".46"/>
+    <g fill="#C9A227"><rect class="phase idle" x="37" y="114" width="6" height="3"/><rect class="phase review" x="45" y="114" width="6" height="3" opacity=".18"/><rect class="phase windup" x="53" y="114" width="6" height="3" opacity=".18"/><rect class="phase cast" x="61" y="114" width="6" height="3" opacity=".18"/><rect class="phase recover" x="69" y="114" width="6" height="3" opacity=".18"/></g>
 
     <ellipse class="shadow" cx="54" cy="101" rx="28" ry="6" fill="#02040A" opacity=".52" filter="url(#softGlow)" shape-rendering="geometricPrecision"/>
     <g class="mage" filter="url(#spriteShadow)">
@@ -107,11 +124,11 @@
       <path d="M28 69h6v7h5v7h4v4h4v-8h5v-7h5v-3h5v9h-5v8h-5v7H37v-7h-5v-8h-4z" fill="#F4EFE6"/>
       <g class="cloak-left"><path d="M31 78h13v24H17l8-21z" fill="#34446D"/><path d="M25 82h8v18H20z" fill="#263554"/><rect x="30" y="81" width="4" height="16" fill="#596B9C"/></g>
       <g class="cloak-right"><path d="M45 78h14l9 24H45z" fill="#34446D"/><path d="M55 81h6l5 19H55z" fill="#263554"/><rect x="47" y="81" width="4" height="16" fill="#596B9C"/></g>
-      <rect x="41" y="82" width="8" height="8" fill="#C9A227"/><rect x="43" y="84" width="4" height="4" fill="#FFF4A3"/>
+      <g class="buckle"><rect x="41" y="82" width="8" height="8" fill="#C9A227"/><rect x="43" y="84" width="4" height="4" fill="#FFF4A3"/></g>
       <rect x="22" y="96" width="18" height="6" fill="#121827"/><rect x="48" y="96" width="18" height="6" fill="#121827"/>
-      <g aria-hidden="true">
+      <g class="review-scroll" aria-hidden="true">
         <rect x="12" y="67" width="13" height="17" fill="#E8DFC8"/><rect x="14" y="69" width="9" height="13" fill="#FFF8E8"/>
-        <path d="m16 74 2 2 4-5" fill="none" stroke="#2E7D68" stroke-width="2"/>
+        <path class="review-check" d="m16 74 2 2 4-5" fill="none" stroke="#2E7D68" stroke-width="2"/>
       </g>
       <g class="cast-arm">
         <path d="M56 69h10v7h10v8H63v-7h-7z" fill="#34446D"/><rect x="73" y="70" width="9" height="9" fill="#D6A36C"/>
@@ -139,9 +156,9 @@
   </g>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-    <text x="310" y="59" fill="#C9A227" font-size="14" font-weight="700" letter-spacing="2.1">AI, WITH GUARDRAILS</text>
-    <text x="310" y="99" fill="#F4EFE6" font-size="25" font-weight="550" letter-spacing="-.25">AI can draft the spell. <tspan fill="#B9C3D6">I still review the blast radius.</tspan></text>
-    <text x="310" y="126" fill="#7886A8" font-size="11" font-weight="700" letter-spacing="1.4">CAST  ·  CHECK  ·  SHIP</text>
+    <text x="310" y="52" fill="#C9A227" font-size="14" font-weight="700" letter-spacing="2.1">AI, WITH GUARDRAILS</text>
+    <text x="310" y="92" fill="#F4EFE6" font-size="25" font-weight="550" letter-spacing="-.25">AI can draft the spell. <tspan fill="#B9C3D6">I still review the blast radius.</tspan></text>
+    <text x="310" y="119" fill="#7886A8" font-size="11" font-weight="700" letter-spacing="1.4">CAST  ·  CHECK  ·  SHIP</text>
   </g>
   <g transform="translate(1144 78)" aria-hidden="true"><circle r="17" fill="#111827" stroke="#46536B"/><path d="M-7 0l4 4 9-10" fill="none" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g>
 </svg>
