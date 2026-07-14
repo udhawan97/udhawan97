@@ -48,7 +48,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
       <p>
         <a href="https://udhawan97.github.io/FolioOrb/">Website</a> ·
         <a href="https://github.com/udhawan97/FolioOrb">Source</a> ·
-        <a href="https://github.com/udhawan97/FolioOrb/releases"><strong>Beta</strong></a>
+        <a href="https://github.com/udhawan97/FolioOrb/releases">
       </p>
     </td>
   </tr>
