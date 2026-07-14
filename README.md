@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./assets/profile-header.svg" alt="Umang Dhawan — technology consultant and open-source product builder" width="100%">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/profile-header-mobile.svg">
+    <img src="./assets/profile-header.svg" alt="Umang Dhawan — technology consultant and open-source product builder" width="100%">
+  </picture>
 </p>
 
 <p align="center">
@@ -15,58 +18,64 @@ I'm a **Senior Consultant at EY Studio+** in Chicago, working where product deli
 
 Outside client work, I design and ship **local-first, open-source products** in Swift, Rust, Python, and TypeScript. I care about the parts beyond the demo: clear product decisions, trustworthy behavior, failure handling, documentation, installers, updates, and evidence that the system works.
 
-<table>
+<table width="100%">
   <tr>
-    <td align="center" width="25%">🏬<br><strong>100+ locations</strong><br><sub>retail platform shipped</sub></td>
-    <td align="center" width="25%">✅<br><strong>Zero findings</strong><br><sub>federal cloud audit</sub></td>
-    <td align="center" width="25%">☁️<br><strong>4 products</strong><br><sub>cloud quality leadership</sub></td>
-    <td align="center" width="25%">🌍<br><strong>3 continents</strong><br><sub>cross-functional delivery</sub></td>
+    <td align="center" width="50%">🏬<br><strong>100+ locations</strong><br><sub>retail platform shipped</sub></td>
+    <td align="center" width="50%">✅<br><strong>Zero findings</strong><br><sub>federal cloud audit</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">☁️<br><strong>4 cloud products</strong><br><sub>quality leadership</sub></td>
+    <td align="center" width="50%">🌍<br><strong>3 continents</strong><br><sub>cross-functional delivery</sub></td>
   </tr>
 </table>
 
-## Selected open-source products
+## Open-source products
 
-<table>
+<table width="100%">
   <tr>
-    <td width="50%" valign="top">
+    <td valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Orifold/main/Orifold/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
       <p>A native macOS PDF workspace for combining, OCR, editing, annotating, signing, protecting, and exporting documents — all on-device.</p>
       <p><code>Swift</code> <code>PDFKit</code> <code>PDFium</code> <code>macOS</code></p>
       <p>
         <a href="https://udhawan97.github.io/Orifold/">Website</a> ·
-        <a href="https://github.com/udhawan97/Orifold/releases/latest">Latest release</a> ·
+        <a href="https://github.com/udhawan97/Orifold">Source</a> ·
         <a href="https://github.com/udhawan97/Orifold/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Orifold?style=flat-square&label=Release" alt="Latest Orifold release"></a>
       </p>
     </td>
-    <td width="50%" valign="top">
+  </tr>
+  <tr>
+    <td valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/FolioOrb/main/static/img/brand/folio-orbit-icon-1024.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
       <p>A local-first portfolio cockpit that unifies holdings, market data, risk signals, and clear actions, with deterministic analysis and optional AI narration.</p>
       <p><code>Python</code> <code>FastAPI</code> <code>SQLite</code> <code>JavaScript</code></p>
       <p>
         <a href="https://udhawan97.github.io/FolioOrb/">Website</a> ·
-        <a href="https://github.com/udhawan97/FolioOrb/releases/latest">Latest release</a> ·
+        <a href="https://github.com/udhawan97/FolioOrb">Source</a> ·
         <a href="https://github.com/udhawan97/FolioOrb/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/FolioOrb?style=flat-square&label=Release" alt="Latest FolioOrb release"></a>
       </p>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
+    <td valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Golavo/main/desktop/src-tauri/icons/64x64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
       <p>An auditable football forecasting workbench with sealed pre-match predictions, calibration, and cited AI explanations that never change the numbers.</p>
       <p><code>Python</code> <code>TypeScript</code> <code>Rust</code> <code>Tauri</code></p>
       <p>
         <a href="https://udhawan97.github.io/Golavo/">Website</a> ·
-        <a href="https://github.com/udhawan97/Golavo/releases/latest">Latest release</a> ·
+        <a href="https://github.com/udhawan97/Golavo">Source</a> ·
         <a href="https://github.com/udhawan97/Golavo/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Golavo?style=flat-square&label=Release" alt="Latest Golavo release"></a>
       </p>
     </td>
-    <td width="50%" valign="top">
+  </tr>
+  <tr>
+    <td valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Voyalier/main/apps/desktop/src-tauri/icons/64x64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
       <p>A local-first travel workspace that turns confirmations and sourced research into readiness actions and a reviewed, shareable trip brief.</p>
       <p><code>Rust</code> <code>TypeScript</code> <code>Tauri</code> <code>Astro</code></p>
       <p>
         <a href="https://udhawan97.github.io/Voyalier/">Website</a> ·
-        <a href="https://github.com/udhawan97/Voyalier/releases/latest">Latest release</a> ·
+        <a href="https://github.com/udhawan97/Voyalier">Source</a> ·
         <a href="https://github.com/udhawan97/Voyalier/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Voyalier?style=flat-square&label=Release" alt="Latest Voyalier release"></a>
       </p>
     </td>
