@@ -27,9 +27,14 @@ Outside client work, I design and ship **local-first, open-source products** in 
 <table width="100%">
   <tr>
     <td valign="top">
-      <h3><img src="https://raw.githubusercontent.com/udhawan97/Orifold/main/Orifold/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
+      <h3><img src="https://raw.githubusercontent.com/udhawan97/Orifold/main/Orifold/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-64.png" width="40" height="40" alt="Orifold app icon" align="middle">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
       <p>A native macOS PDF workspace for combining, OCR, editing, annotating, signing, protecting, and exporting documents — all on-device.</p>
-      <p><code>Swift</code> <code>PDFKit</code> <code>PDFium</code> <code>macOS</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/Swift-20252B?style=flat-square&amp;logo=swift&amp;logoColor=F05138" alt="Swift">
+        <img src="https://img.shields.io/badge/PDFKit-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="PDFKit">
+        <img src="https://img.shields.io/badge/PDFium-20252B?style=flat-square&amp;logo=googlechrome&amp;logoColor=4285F4" alt="PDFium">
+        <img src="https://img.shields.io/badge/macOS-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="macOS">
+      </p>
       <p>
         <a href="https://udhawan97.github.io/Orifold/">Website</a> ·
         <a href="https://github.com/udhawan97/Orifold">Source</a> ·
@@ -42,9 +47,14 @@ Outside client work, I design and ship **local-first, open-source products** in 
 <table width="100%">
   <tr>
     <td valign="top">
-      <h3><img src="https://raw.githubusercontent.com/udhawan97/FolioOrb/main/static/img/brand/folio-orbit-icon-1024.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
+      <h3><img src="https://raw.githubusercontent.com/udhawan97/FolioOrb/main/static/img/brand/folio-orbit-icon-1024.png" width="40" height="40" alt="FolioOrb app icon" align="middle">&nbsp;&nbsp;<a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
       <p>A local-first portfolio cockpit that unifies holdings, market data, risk signals, and clear actions, with deterministic analysis and optional AI narration.</p>
-      <p><code>Python</code> <code>FastAPI</code> <code>SQLite</code> <code>JavaScript</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
+        <img src="https://img.shields.io/badge/FastAPI-20252B?style=flat-square&amp;logo=fastapi&amp;logoColor=009688" alt="FastAPI">
+        <img src="https://img.shields.io/badge/SQLite-20252B?style=flat-square&amp;logo=sqlite&amp;logoColor=5EB6E4" alt="SQLite">
+        <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
+      </p>
       <p>
         <a href="https://udhawan97.github.io/FolioOrb/">Website</a> ·
         <a href="https://github.com/udhawan97/FolioOrb">Source</a> ·
@@ -57,9 +67,14 @@ Outside client work, I design and ship **local-first, open-source products** in 
 <table width="100%">
   <tr>
     <td valign="top">
-      <h3><img src="https://raw.githubusercontent.com/udhawan97/Golavo/main/desktop/src-tauri/icons/64x64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
+      <h3><img src="https://raw.githubusercontent.com/udhawan97/Golavo/main/desktop/src-tauri/icons/64x64.png" width="40" height="40" alt="Golavo app icon" align="middle">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
       <p>An auditable football forecasting workbench with sealed pre-match predictions, calibration, and cited AI explanations that never change the numbers.</p>
-      <p><code>Python</code> <code>TypeScript</code> <code>Rust</code> <code>Tauri</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
+        <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
+      </p>
       <p>
         <a href="https://udhawan97.github.io/Golavo/">Website</a> ·
         <a href="https://github.com/udhawan97/Golavo">Source</a> ·
@@ -72,9 +87,14 @@ Outside client work, I design and ship **local-first, open-source products** in 
 <table width="100%">
   <tr>
     <td valign="top">
-      <h3><img src="https://raw.githubusercontent.com/udhawan97/Voyalier/main/apps/desktop/src-tauri/icons/64x64.png" width="36" height="36" alt=""> <a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
+      <h3><img src="https://raw.githubusercontent.com/udhawan97/Voyalier/main/apps/desktop/src-tauri/icons/64x64.png" width="40" height="40" alt="Voyalier app icon" align="middle">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
       <p>A local-first travel workspace that turns confirmations and sourced research into readiness actions and a reviewed, shareable trip brief.</p>
-      <p><code>Rust</code> <code>TypeScript</code> <code>Tauri</code> <code>Astro</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
+        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
+      </p>
       <p>
         <a href="https://udhawan97.github.io/Voyalier/">Website</a> ·
         <a href="https://github.com/udhawan97/Voyalier">Source</a> ·

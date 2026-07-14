@@ -54,13 +54,9 @@
 
     <text x="58" y="282" fill="#C9A227" font-size="10.5" font-weight="800" letter-spacing="1.6">FOCUS</text>
     <path d="M107 266v20" stroke="#F4EFE6" stroke-opacity="0.13"/>
-    <text x="125" y="282" fill="#E6E2D9" font-size="12.2" font-weight="700" letter-spacing="0.45">PRODUCT SYSTEMS</text>
-    <circle cx="260" cy="278" r="2.5" fill="#C9A227"/>
-    <text x="277" y="282" fill="#E6E2D9" font-size="12.2" font-weight="700" letter-spacing="0.45">QUALITY ENGINEERING</text>
-    <circle cx="449" cy="278" r="2.5" fill="#6082B8"/>
-    <text x="466" y="282" fill="#E6E2D9" font-size="12.2" font-weight="700" letter-spacing="0.45">CLOUD RELIABILITY</text>
-    <circle cx="608" cy="278" r="2.5" fill="#C34E33"/>
-    <text x="625" y="282" fill="#E6E2D9" font-size="12.2" font-weight="700" letter-spacing="0.45">APPLIED AI</text>
+    <text x="125" y="282" fill="#E6E2D9" font-size="12.2" font-weight="700" letter-spacing="0.35">
+      <tspan>PRODUCT SYSTEMS&#160;&#160;&#160;</tspan><tspan fill="#C9A227" letter-spacing="0">•</tspan><tspan fill="#E6E2D9">&#160;&#160;&#160;QUALITY ENGINEERING&#160;&#160;&#160;</tspan><tspan fill="#6082B8" letter-spacing="0">•</tspan><tspan fill="#E6E2D9">&#160;&#160;&#160;CLOUD RELIABILITY&#160;&#160;&#160;</tspan><tspan fill="#C34E33" letter-spacing="0">•</tspan><tspan fill="#E6E2D9">&#160;&#160;&#160;APPLIED AI</tspan>
+    </text>
 
     <text x="774" y="66" fill="#E6E2D9" font-size="12" font-weight="800" letter-spacing="1.6">SELECTED BUILDS</text>
     <path d="M774 88h356M960 103v181M774 198h356" stroke="#F4EFE6" stroke-opacity="0.09"/>
