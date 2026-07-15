@@ -73,9 +73,9 @@
     <text x="56" y="133" fill="#F4EFE6" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" letter-spacing="-1.7">Umang Dhawan</text>
     <rect class="name-shimmer" x="-70" y="75" width="78" height="68" fill="url(#nameShimmer)" clip-path="url(#nameClip)"/>
 
-    <text x="58" y="177" fill="#F4EFE6" font-size="20" font-weight="650">Technology consultant</text>
-    <circle cx="282" cy="171" r="3" fill="#C34E33"/>
-    <text x="298" y="177" fill="#AEB9D4" font-size="20" font-weight="600">Open-source product builder</text>
+    <text x="58" y="177" fill="#F4EFE6" font-size="20" font-weight="650" textLength="218" lengthAdjust="spacingAndGlyphs">Technology consultant</text>
+    <circle cx="291" cy="171" r="3" fill="#C34E33"/>
+    <text x="307" y="177" fill="#AEB9D4" font-size="20" font-weight="600">Open-source product builder</text>
     <text x="58" y="216" fill="#BDB9B0" font-size="16.5">I turn complex ideas into reliable systems that ship.</text>
 
     <rect x="58" y="242" width="52" height="2.5" rx="1.25" fill="#C9A227"/>
