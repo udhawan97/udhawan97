@@ -64,8 +64,8 @@
     <rect class="name-shimmer" x="-70" y="78" width="76" height="68" fill="url(#nameShimmer)" clip-path="url(#nameClip)"/>
 
     <text x="44" y="184" fill="#F4EFE6" font-size="22" font-weight="650">Technology consultant</text>
-    <circle cx="292" cy="177" r="3" fill="#C34E33"/>
-    <text x="308" y="184" fill="#AEB9D4" font-size="22" font-weight="600">Open-source builder</text>
+    <circle cx="300" cy="177" r="3" fill="#C34E33"/>
+    <text x="316" y="184" fill="#AEB9D4" font-size="22" font-weight="600">Open-source builder</text>
     <text x="44" y="226" fill="#BDB9B0" font-size="19">Reliable systems, thoughtfully shipped.</text>
 
     <rect x="44" y="250" width="55" height="3" rx="1.5" fill="#C9A227"/>
