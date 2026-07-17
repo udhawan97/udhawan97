@@ -1,52 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
   <title id="title">Umang Dhawan — technology consultant and open-source product builder</title>
-  <desc id="desc">An editorial masthead in ink, slate, and gold. The left column carries the name and focus areas; a catalogue panel on the right lists four shipped products as numbered specimens.</desc>
+  <desc id="desc">An editorial masthead in ink, slate, and gold. The left column carries the name, focus areas, and a contents line for the sections below; a catalogue panel on the right lists four shipped products.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FAF6EC"/>
-      <stop offset="0.58" stop-color="#F5EEDD"/>
-      <stop offset="1" stop-color="#EDE2C7"/>
-    </linearGradient>
     <linearGradient id="panel" x1="748" y1="30" x2="1156" y2="310" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F7F1E2"/>
-      <stop offset="1" stop-color="#ECE0C4"/>
+      <stop stop-color="#F7F1E2"/><stop offset="1" stop-color="#ECE0C4"/>
     </linearGradient>
-    <radialGradient id="indigoGlow" cx="0" cy="0" r="1" gradientTransform="translate(1115 22) rotate(140) scale(510 320)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#46536B" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="#46536B" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="goldGlow" cx="0" cy="0" r="1" gradientTransform="translate(70 330) rotate(-28) scale(430 180)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#C9A227" stop-opacity="0.07"/>
-      <stop offset="1" stop-color="#C9A227" stop-opacity="0"/>
-    </radialGradient>
     <linearGradient id="nameShimmer" x1="0" y1="0" x2="1" y2="0">
       <stop stop-color="#1E1B16" stop-opacity="0"/>
-      <stop offset="0.42" stop-color="#1E1B16" stop-opacity="0.08"/>
-      <stop offset="0.58" stop-color="#9C7A12" stop-opacity="0.5"/>
+      <stop offset="0.42" stop-color="#1E1B16" stop-opacity="0.06"/>
+      <stop offset="0.58" stop-color="#9C7A12" stop-opacity="0.45"/>
       <stop offset="1" stop-color="#9C7A12" stop-opacity="0"/>
     </linearGradient>
     <filter id="panelShadow" x="-20%" y="-20%" width="140%" height="150%">
       <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#2B2318" flood-opacity="0.10"/>
     </filter>
-    <clipPath id="frameClip"><rect width="1200" height="340" rx="28"/></clipPath>
     <clipPath id="nameClip">
-      <text x="56" y="145" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="600" letter-spacing="-1.7">Umang Dhawan</text>
+      <text class="mast" x="56" y="140" font-size="62" font-weight="600" letter-spacing="-1.2">Umang Dhawan</text>
     </clipPath>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAF6EC"/><stop offset="0.58" stop-color="#F5EEDD"/><stop offset="1" stop-color="#EDE2C7"/>
+    </linearGradient>
+    <radialGradient id="indigoGlow" cx="0" cy="0" r="1" gradientTransform="translate(1116 22) rotate(140) scale(510 320)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#46536B" stop-opacity="0.10"/><stop offset="1" stop-color="#46536B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="0" cy="0" r="1" gradientTransform="translate(70 390) rotate(-28) scale(430 180)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9A227" stop-opacity="0.07"/><stop offset="1" stop-color="#C9A227" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Paper grain: fine fractal noise, desaturated, laid over the whole sheet. -->
+    <filter id="grain" x="0" y="0" width="100%" height="100%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" seed="7" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0" result="d"/>
+      <feComponentTransfer in="d" result="c"><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+      <feComposite in="c" in2="SourceGraphic" operator="in"/>
+    </filter>
+
+    <clipPath id="frameClip"><rect width="1200" height="400" rx="28"/></clipPath>
+
     <style>
-      .signal-dot, .name-shimmer { transform-box: fill-box; }
-      .signal-dot { transform-origin: center; animation: signal 5.6s ease-in-out infinite; }
-      .name-shimmer { animation: name-shimmer 8.5s ease-in-out infinite; }
+      @font-face {
+        font-family: 'FrauncesMast';
+        src: url(data:font/woff2;base64,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) format('woff2');
+        font-weight: 600; font-display: block;
+      }
+      .mast { font-family: 'FrauncesMast', Georgia, 'Times New Roman', serif; }
+
+      /* One entrance, played once. Ambient loops wait until it lands. */
+      .in-rule   { animation: draw-rule .72s cubic-bezier(.22,.61,.36,1) backwards; }
+      .in-kick   { animation: rise .5s cubic-bezier(.22,.61,.36,1) .18s backwards; }
+      .in-name   { animation: settle .78s cubic-bezier(.22,.61,.36,1) .3s backwards; }
+      .in-sub    { animation: rise .55s cubic-bezier(.22,.61,.36,1) .52s backwards; }
+      .in-tag    { animation: rise .55s cubic-bezier(.22,.61,.36,1) .62s backwards; }
+      .in-accent { animation: grow .5s cubic-bezier(.22,.61,.36,1) .74s backwards; }
+      .in-focus  { animation: rise .55s cubic-bezier(.22,.61,.36,1) .84s backwards; }
+      .in-panel  { animation: panel .7s cubic-bezier(.22,.61,.36,1) .46s backwards; }
+      .in-tile   { animation: rise .5s cubic-bezier(.22,.61,.36,1) backwards; }
+      .in-tile.t1 { animation-delay: .72s; } .in-tile.t2 { animation-delay: .82s; }
+      .in-tile.t3 { animation-delay: .92s; } .in-tile.t4 { animation-delay: 1.02s; }
+      .in-issue  { animation: rise .6s cubic-bezier(.22,.61,.36,1) 1.1s backwards; }
+
+      .in-rule, .in-kick, .in-name, .in-sub, .in-tag, .in-accent,
+      .in-focus, .in-panel, .in-tile, .in-issue, .signal-dot, .name-shimmer { transform-box: fill-box; }
+      .in-name, .in-panel { transform-origin: left center; }
+      .in-accent { transform-origin: left center; }
+
+      @keyframes draw-rule { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
+      @keyframes rise   { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+      @keyframes settle { from { opacity: 0; transform: translateY(12px) scale(.985); } to { opacity: 1; transform: none; } }
+      @keyframes grow   { from { opacity: 0; transform: scaleX(0); } to { opacity: 1; transform: none; } }
+      @keyframes panel  { from { opacity: 0; transform: translateY(10px) scale(.99); } to { opacity: 1; transform: none; } }
+
+      /* Ambient loops, held back until the entrance resolves. */
+      .signal-dot   { transform-origin: center; animation: signal 5.6s ease-in-out 1.4s infinite; }
+      .name-shimmer { animation: name-shimmer 9s ease-in-out 2s infinite; }
       @keyframes signal {
         0%, 72%, 100% { opacity: .78; transform: scale(.88); }
         80%, 88% { opacity: 1; transform: scale(1.18); }
       }
-      @keyframes name-shimmer {
-        0%, 78% { opacity: 0; transform: translateX(0); }
-        82% { opacity: .7; }
-        94% { opacity: .7; transform: translateX(460px); }
-        98%, 100% { opacity: 0; transform: translateX(500px); }
-      }
+
       @media (prefers-reduced-motion: reduce) {
+        .in-rule, .in-kick, .in-name, .in-sub, .in-tag, .in-accent,
+        .in-focus, .in-panel, .in-tile, .in-issue { animation: none; }
+        .in-rule { stroke-dashoffset: 0; }
         .signal-dot, .name-shimmer { animation: none; }
         .name-shimmer { opacity: 0; }
       }
@@ -54,44 +89,52 @@
   </defs>
 
   <g clip-path="url(#frameClip)">
-    <rect width="1200" height="340" fill="url(#background)"/>
-    <rect width="1200" height="340" fill="url(#indigoGlow)"/>
-    <rect width="1200" height="340" fill="url(#goldGlow)"/>
+    <rect width="1200" height="400" fill="url(#background)"/>
+    <rect width="1200" height="400" fill="url(#indigoGlow)"/>
+    <rect width="1200" height="400" fill="url(#goldGlow)"/>
     <path d="M982 -34 1058 91 1137 -32" fill="none" stroke="#46527A" stroke-opacity="0.07" stroke-width="2"/>
     <circle cx="1060" cy="88" r="112" fill="none" stroke="#46527A" stroke-opacity="0.06"/>
     <path d="M1058 91 1100 162 1147 91" fill="none" stroke="#A23A22" stroke-opacity="0.07" stroke-width="1.5"/>
-    <path d="M-30 304C164 265 384 284 631 333" fill="none" stroke="#9C7A12" stroke-opacity="0.09" stroke-width="1.5"/>
-    <rect x="748" y="30" width="408" height="280" rx="22" fill="url(#panel)" stroke="#1E1B16" stroke-opacity="0.10" filter="url(#panelShadow)"/>
+    <path d="M-30 344C164 305 384 324 631 373" fill="none" stroke="#9C7A12" stroke-opacity="0.09" stroke-width="1.5"/>
+    <rect class="in-panel" x="748" y="30" width="408" height="270" rx="22" fill="url(#panel)" stroke="#1E1B16" stroke-opacity="0.10" filter="url(#panelShadow)"/>
   </g>
 
-  <rect x="0.75" y="0.75" width="1198.5" height="338.5" rx="27.25" fill="none" stroke="#1E1B16" stroke-opacity="0.14" stroke-width="1.5"/>
-  <line x1="56" y1="31" x2="712" y2="31" stroke="#9C7A12" stroke-opacity="0.6" stroke-width="1.5"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="398.5" rx="27.25" fill="none" stroke="#1E1B16" stroke-opacity="0.14" stroke-width="1.5"/>
+  <line class="in-rule" x1="56" y1="31" x2="712" y2="31" stroke="#9C7A12" stroke-opacity="0.6" stroke-width="1.5"
+        stroke-dasharray="656" style="--len:656"/>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-    <circle class="signal-dot" cx="60" cy="55" r="4.5" fill="#9C7A12"/>
-    <text x="74" y="60" fill="#6B6558" font-size="12.5" font-weight="700" letter-spacing="1.8">CHICAGO · BUILDING IN PUBLIC</text>
-    <text x="712" y="60" fill="#8A7F63" font-size="11" font-weight="700" letter-spacing="1.5" text-anchor="end">SHIPS ON FRIDAYS · SLEEPS FINE</text>
+    <g class="in-kick">
+      <circle class="signal-dot" cx="60" cy="55" r="4.5" fill="#9C7A12"/>
+      <text x="74" y="60" fill="#6B6558" font-size="12.5" font-weight="700" letter-spacing="1.8">CHICAGO · BUILDING IN PUBLIC</text>
+    </g>
 
-    <text x="56" y="145" fill="#1E1B16" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="600" letter-spacing="-1.7">Umang Dhawan</text>
-    <rect class="name-shimmer" x="-70" y="87" width="78" height="68" fill="url(#nameShimmer)" clip-path="url(#nameClip)"/>
+    <g class="in-name">
+      <text class="mast" x="56" y="141.6" fill="#FFFFFF" fill-opacity="0.5" font-size="62" font-weight="600" letter-spacing="-1.2" aria-hidden="true">Umang Dhawan</text>
+    <text class="mast" x="56" y="140" fill="#1E1B16" font-size="62" font-weight="600" letter-spacing="-1.2">Umang Dhawan</text>
+      <rect class="name-shimmer" x="-70" y="82" width="78" height="70" fill="url(#nameShimmer)" clip-path="url(#nameClip)"/>
+    </g>
 
-    <text x="58" y="187" font-size="20"><tspan fill="#1E1B16" font-weight="650">Technology consultant</tspan><tspan fill="#A23A22" font-weight="700">  ✦  </tspan><tspan fill="#46527A" font-weight="600">Open-source product builder</tspan></text>
-    <text x="58" y="225" fill="#6B6558" font-size="16.5">I turn complex ideas into reliable systems that ship.</text>
+    <text class="in-sub" x="58" y="182" font-size="20"><tspan fill="#1E1B16" font-weight="650">Technology consultant</tspan><tspan fill="#A23A22" font-weight="700">  ✦  </tspan><tspan fill="#46527A" font-weight="600">Open-source product builder</tspan></text>
+    <text class="in-tag" x="58" y="218" fill="#6B6558" font-size="16.5">I turn complex ideas into reliable systems that ship.</text>
 
-    <rect x="58" y="251" width="52" height="2.5" rx="1.25" fill="#9C7A12"/>
-    <rect x="116" y="251" width="17" height="2.5" rx="1.25" fill="#A23A22"/>
+    <g class="in-accent">
+      <rect x="58" y="242" width="52" height="2.5" rx="1.25" fill="#9C7A12"/>
+      <rect x="116" y="242" width="17" height="2.5" rx="1.25" fill="#A23A22"/>
+    </g>
 
-    <text x="58" y="291" fill="#9C7A12" font-size="10.5" font-weight="800" letter-spacing="1.6">FOCUS</text>
-    <path d="M107 275v20" stroke="#1E1B16" stroke-opacity="0.14"/>
-    <text x="125" y="291" fill="#2B271F" font-size="12.2" font-weight="700" letter-spacing="0.35">
-      <tspan>PRODUCT SYSTEMS&#160;&#160;&#160;</tspan><tspan fill="#9C7A12" letter-spacing="0">◆</tspan><tspan fill="#2B271F">&#160;&#160;&#160;QUALITY ENGINEERING&#160;&#160;&#160;</tspan><tspan fill="#46527A" letter-spacing="0">◆</tspan><tspan fill="#2B271F">&#160;&#160;&#160;CLOUD RELIABILITY&#160;&#160;&#160;</tspan><tspan fill="#A23A22" letter-spacing="0">◆</tspan><tspan fill="#2B271F">&#160;&#160;&#160;APPLIED AI</tspan>
-    </text>
+    <g class="in-focus">
+      <text x="58" y="282" fill="#9C7A12" font-size="10.5" font-weight="800" letter-spacing="1.6">FOCUS</text>
+      <path d="M107 266v20" stroke="#1E1B16" stroke-opacity="0.14"/>
+      <text x="125" y="282" fill="#2B271F" font-size="12.2" font-weight="700" letter-spacing="0.35"><tspan>PRODUCT SYSTEMS&#160;&#160;&#160;</tspan><tspan fill="#9C7A12" letter-spacing="0">◆</tspan><tspan fill="#2B271F">&#160;&#160;&#160;QUALITY ENGINEERING&#160;&#160;&#160;</tspan><tspan fill="#46527A" letter-spacing="0">◆</tspan><tspan fill="#2B271F">&#160;&#160;&#160;CLOUD RELIABILITY&#160;&#160;&#160;</tspan><tspan fill="#A23A22" letter-spacing="0">◆</tspan><tspan fill="#2B271F">&#160;&#160;&#160;APPLIED AI</tspan></text>
+    </g>
 
     <text x="774" y="66" fill="#2B271F" font-size="12" font-weight="800" letter-spacing="1.6">SELECTED BUILDS</text>
-    <text x="1130" y="66" fill="#9C7A12" font-size="10.5" font-weight="700" letter-spacing="1.4" text-anchor="end">CATALOGUE I–IV</text>
-    <path d="M774 88h356M960 103v181M774 198h356" stroke="#1E1B16" stroke-opacity="0.08"/>
-    <g transform="translate(774 113)">
-      <rect width="44" height="44" rx="11" fill="#222725" stroke="#9C7A12" stroke-opacity="0.32"/>
+    <text x="1130" y="66" fill="#9C7A12" font-size="10.5" font-weight="700" letter-spacing="1.4" text-anchor="end">CATALOGUE 01–04</text>
+    <path d="M774 88h356M960 100v172M774 190h356" stroke="#1E1B16" stroke-opacity="0.08"/>
+    <g class="in-tile t1">
+      <g transform="translate(774 108)">
+        <rect width="44" height="44" rx="11" fill="#222725" stroke="#9C7A12" stroke-opacity="0.32"/>
       <svg x="4" y="4" width="36" height="36" viewBox="0 0 340 340" preserveAspectRatio="xMidYMid meet" overflow="hidden">
   <title>Orifold — paper folds into an origami crane, then the app icon</title>
   <defs>
@@ -453,15 +496,15 @@
     </image>
   </g>
 </svg>
+      </g>
+      <circle cx="772" cy="106" r="9.5" fill="#F7F1E2" stroke="#9C7A12" stroke-width="1.1" stroke-opacity="0.9"/>
+      <text class="mast" x="772" y="109.4" fill="#9C7A12" font-size="9" font-weight="600" text-anchor="middle">01</text>
+      <text x="832" y="128" fill="#1E1B16" font-size="15.5" font-weight="700">Orifold</text>
+      <text x="832" y="146" fill="#6B6558" font-size="11.2">PDF workspace</text>
     </g>
-    <circle cx="772" cy="111" r="9.5" fill="#F7F1E2" stroke="#9C7A12" stroke-width="1.1" stroke-opacity="0.9"/>
-    <text x="772" y="114.28" fill="#9C7A12" font-family="Georgia, serif" font-size="9.5" font-weight="700" letter-spacing="0.2" text-anchor="middle">I</text>
-    <text x="832" y="133" fill="#1E1B16" font-size="15.5" font-weight="700">Orifold</text>
-    <text x="832" y="151" fill="#6B6558" font-size="11.2">PDF workspace</text>
-    <circle cx="943" cy="119" r="2.5" fill="#46527A"/>
-
-    <g transform="translate(976 113)">
-      <rect width="44" height="44" rx="11" fill="#222725" stroke="#9C7A12" stroke-opacity="0.32"/>
+    <g class="in-tile t2">
+      <g transform="translate(976 108)">
+        <rect width="44" height="44" rx="11" fill="#222725" stroke="#9C7A12" stroke-opacity="0.32"/>
       <svg x="4" y="4" width="36" height="36" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" overflow="hidden">
   <title id="fol_title">FolioOrb animated orbit mark</title>
   <desc id="fol_desc">A portfolio orbit logo with a slowly moving satellite and pulsing center.</desc>
@@ -501,16 +544,15 @@
     <animate attributeName="r" values="5.4;6.8;5.4" dur="3.2s" repeatCount="indefinite"></animate>
   </circle>
 </svg>
-
+      </g>
+      <circle cx="974" cy="106" r="9.5" fill="#F7F1E2" stroke="#9C7A12" stroke-width="1.1" stroke-opacity="0.9"/>
+      <text class="mast" x="974" y="109.4" fill="#9C7A12" font-size="9" font-weight="600" text-anchor="middle">02</text>
+      <text x="1034" y="128" fill="#1E1B16" font-size="15.5" font-weight="700">FolioOrb</text>
+      <text x="1034" y="146" fill="#6B6558" font-size="11.2">Portfolio cockpit</text>
     </g>
-    <circle cx="974" cy="111" r="9.5" fill="#F7F1E2" stroke="#9C7A12" stroke-width="1.1" stroke-opacity="0.9"/>
-    <text x="974" y="114.17" fill="#9C7A12" font-family="Georgia, serif" font-size="9.2" font-weight="700" letter-spacing="0.2" text-anchor="middle">II</text>
-    <text x="1034" y="133" fill="#1E1B16" font-size="15.5" font-weight="700">FolioOrb</text>
-    <text x="1034" y="151" fill="#6B6558" font-size="11.2">Portfolio cockpit</text>
-    <circle cx="1141" cy="119" r="2.5" fill="#6B6558"/>
-
-    <g transform="translate(774 222)">
-      <rect width="44" height="44" rx="11" fill="#222725" stroke="#9C7A12" stroke-opacity="0.32"/>
+    <g class="in-tile t3">
+      <g transform="translate(774 210)">
+        <rect width="44" height="44" rx="11" fill="#222725" stroke="#9C7A12" stroke-opacity="0.32"/>
       <svg x="4" y="4" width="36" height="36" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" overflow="hidden">
 <title id="gol_gDt">GOLAVO</title>
 <desc id="gol_gDd">A sumi brushstroke ball trajectory draws the letter G and curls into the top corner of a minimal goal under a rising gold sun, above a drifting seigaiha wave ground. Loops every 6.5s; honors prefers-reduced-motion with the composed static frame.</desc>
@@ -583,15 +625,15 @@
 <path fill="none" stroke="#1A1A1A" stroke-width="1.8" stroke-linecap="round" d="M376 280V274M381.7 284.1L387 282M379.5 290.9L382.5 296M372.5 290.9L369.5 296M370.3 284.1L365 282"/>
 </g>
 </svg>
+      </g>
+      <circle cx="772" cy="208" r="9.5" fill="#F7F1E2" stroke="#9C7A12" stroke-width="1.1" stroke-opacity="0.9"/>
+      <text class="mast" x="772" y="211.4" fill="#9C7A12" font-size="9" font-weight="600" text-anchor="middle">03</text>
+      <text x="832" y="230" fill="#1E1B16" font-size="15.5" font-weight="700">Golavo</text>
+      <text x="832" y="248" fill="#6B6558" font-size="11.2">Football models</text>
     </g>
-    <circle cx="772" cy="220" r="9.5" fill="#F7F1E2" stroke="#9C7A12" stroke-width="1.1" stroke-opacity="0.9"/>
-    <text x="772" y="222.76" fill="#9C7A12" font-family="Georgia, serif" font-size="8" font-weight="700" letter-spacing="0.2" text-anchor="middle">III</text>
-    <text x="832" y="242" fill="#1E1B16" font-size="15.5" font-weight="700">Golavo</text>
-    <text x="832" y="260" fill="#6B6558" font-size="11.2">Football models</text>
-    <circle cx="943" cy="228" r="2.5" fill="#9C7A12"/>
-
-    <g transform="translate(976 222)">
-      <rect width="44" height="44" rx="11" fill="#222725" stroke="#9C7A12" stroke-opacity="0.32"/>
+    <g class="in-tile t4">
+      <g transform="translate(976 210)">
+        <rect width="44" height="44" rx="11" fill="#222725" stroke="#9C7A12" stroke-opacity="0.32"/>
       <svg x="4" y="4" width="36" height="36" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" overflow="hidden">
   <title id="voy_t">Voyalier app icon</title>
   <desc id="voy_d">The folded-route mark — a vermilion waypoint trace draws down through the fold and arrives with a pulse — embossed on a deep indigo tile. Loops every 6s; honors prefers-reduced-motion.</desc>
@@ -715,12 +757,20 @@
     }
   </style>
 </svg>
-
+      </g>
+      <circle cx="974" cy="208" r="9.5" fill="#F7F1E2" stroke="#9C7A12" stroke-width="1.1" stroke-opacity="0.9"/>
+      <text class="mast" x="974" y="211.4" fill="#9C7A12" font-size="9" font-weight="600" text-anchor="middle">04</text>
+      <text x="1034" y="230" fill="#1E1B16" font-size="15.5" font-weight="700">Voyalier</text>
+      <text x="1034" y="248" fill="#6B6558" font-size="11.2">Travel workspace</text>
     </g>
-    <circle cx="974" cy="220" r="9.5" fill="#F7F1E2" stroke="#9C7A12" stroke-width="1.1" stroke-opacity="0.9"/>
-    <text x="974" y="223.10" fill="#9C7A12" font-family="Georgia, serif" font-size="9" font-weight="700" letter-spacing="0.2" text-anchor="middle">IV</text>
-    <text x="1034" y="242" fill="#1E1B16" font-size="15.5" font-weight="700">Voyalier</text>
-    <text x="1034" y="260" fill="#6B6558" font-size="11.2">Travel workspace</text>
-    <circle cx="1141" cy="228" r="2.5" fill="#A23A22"/>
+    <g class="in-issue">
+      <path d="M56 326h1088" stroke="#1E1B16" stroke-opacity="0.14"/>
+      <text x="56" y="358" fill="#9C7A12" font-size="10.5" font-weight="800" letter-spacing="1.6">IN THIS ISSUE</text>
+      <text x="176" y="358" font-size="12" font-weight="700" letter-spacing="1.1"><tspan class="mast" fill="#9C7A12" font-size="13">01</tspan><tspan fill="#6B6558">&#160;&#160;STRATEGY</tspan></text>
+      <text x="420" y="358" font-size="12" font-weight="700" letter-spacing="1.1"><tspan class="mast" fill="#9C7A12" font-size="13">02</tspan><tspan fill="#6B6558">&#160;&#160;PRODUCTS</tspan></text>
+      <text x="664" y="358" font-size="12" font-weight="700" letter-spacing="1.1"><tspan class="mast" fill="#9C7A12" font-size="13">03</tspan><tspan fill="#6B6558">&#160;&#160;HOW I BUILD</tspan></text>
+      <text x="908" y="358" font-size="12" font-weight="700" letter-spacing="1.1"><tspan class="mast" fill="#9C7A12" font-size="13">04</tspan><tspan fill="#6B6558">&#160;&#160;EXPERIENCE</tspan></text>
+    </g>
   </g>
+  <rect width="1200" height="400" rx="28" fill="#1E1B16" filter="url(#grain)" style="mix-blend-mode:overlay" pointer-events="none"/>
 </svg>

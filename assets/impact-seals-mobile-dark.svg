@@ -8,47 +8,101 @@
     <linearGradient id="seal" x1="0" y1="0" x2="0" y2="1">
       <stop stop-color="#1A1F1E"/><stop offset="1" stop-color="#232C3A"/>
     </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" seed="11" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0" result="d"/>
+      <feComponentTransfer in="d" result="c"><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+      <feComposite in="c" in2="SourceGraphic" operator="in"/>
+    </filter>
     <clipPath id="frameClip"><rect width="720" height="530" rx="28"/></clipPath>
     <style>
-      .seal { transform-box: fill-box; transform-origin: center; animation: press 7.2s ease-in-out infinite; }
-      .seal.s2 { animation-delay: .5s; } .seal.s3 { animation-delay: 1s; } .seal.s4 { animation-delay: 1.5s; }
-      .dash { transform-box: fill-box; transform-origin: center; animation: turn 40s linear infinite; }
-      @keyframes press { 0%, 88%, 100% { transform: scale(1); } 93% { transform: scale(1.035); } }
-      @keyframes turn { to { transform: rotate(360deg); } }
-      @media (prefers-reduced-motion: reduce) { .seal, .dash { animation: none; } }
-    </style>
-  </defs>
+      @font-face {
+        font-family: 'FrauncesMast';
+        src: url(data:font/woff2;base64,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) format('woff2');
+        font-weight: 600; font-display: block;
+      }
+      .mast { font-family: 'FrauncesMast', Georgia, 'Times New Roman', serif; }
+
+      .in-rule, .in-head, .seal-in, .cap-in { transform-box: fill-box; }
+      .in-rule { animation: draw-rule .72s cubic-bezier(.22,.61,.36,1) backwards; }
+      .in-head { animation: rise .5s cubic-bezier(.22,.61,.36,1) .2s backwards; }
+      /* Each seal presses in, then keeps a slow ambient beat. */
+      .seal-in { transform-origin: center; animation: stamp .52s cubic-bezier(.34,1.3,.64,1) backwards; }
+      .cap-in  { animation: rise .45s cubic-bezier(.22,.61,.36,1) backwards; }
+      .s1 { animation-delay: .42s; } .s2 { animation-delay: .56s; }
+      .s3 { animation-delay: .70s; } .s4 { animation-delay: .84s; }
+      .c1 { animation-delay: .60s; } .c2 { animation-delay: .74s; }
+      .c3 { animation-delay: .88s; } .c4 { animation-delay: 1.02s; }
+      .dash { transform-box: fill-box; transform-origin: center; animation: turn 44s linear 1.2s infinite; }
+      .beat { transform-box: fill-box; transform-origin: center; animation: beat 7.2s ease-in-out 1.4s infinite; }
+      .beat.b2 { animation-delay: 1.9s; } .beat.b3 { animation-delay: 2.4s; } .beat.b4 { animation-delay: 2.9s; }
+
+      @keyframes draw-rule { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
+      @keyframes rise  { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+      @keyframes stamp { from { opacity: 0; transform: scale(1.5); } to { opacity: 1; transform: none; } }
+      @keyframes turn  { to { transform: rotate(360deg); } }
+      @keyframes beat  { 0%, 88%, 100% { transform: scale(1); } 93% { transform: scale(1.035); } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .in-rule, .in-head, .seal-in, .cap-in, .dash, .beat { animation: none; }
+        .in-rule { stroke-dashoffset: 0; }
+      }
+    </style></defs>
   <g clip-path="url(#frameClip)"><rect width="720" height="530" fill="url(#bg)"/></g>
   <rect x="0.75" y="0.75" width="718.5" height="528.5" rx="27.25" fill="none" stroke="#F4EFE6" stroke-opacity="0.14" stroke-width="1.5"/>
-  <line x1="42" y1="32" x2="678" y2="32" stroke="#C9A227" stroke-opacity="0.55" stroke-width="1.5"/>
-  <text x="42" y="62" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="800" letter-spacing="1.5">CLIENT IMPACT</text>
-  <text x="678" y="62" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" letter-spacing="1.2" text-anchor="end">CERTIFIED BY AUDIT, NOT BY VIBES</text>
-  <g class="seal s1">
-    <circle cx="200" cy="170" r="58" fill="url(#seal)" stroke="#C9A227" stroke-opacity="0.9" stroke-width="1.8"/>
-    <circle class="dash" cx="200" cy="170" r="50" fill="none" stroke="#C9A227" stroke-opacity="0.32" stroke-width="1.1" stroke-dasharray="2 5"/>
-    <text x="200" y="180.8" fill="#F4EFE6" font-family="Georgia, 'Times New Roman', serif" font-size="31" font-weight="600" letter-spacing="-0.5" text-anchor="middle">100+</text>
+  <line class="in-rule" x1="42" y1="31" x2="678" y2="31" stroke="#C9A227" stroke-opacity="0.55" stroke-width="1.5"
+        stroke-dasharray="636" style="--len:636"/>
+  <g class="in-head" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="42" y="62" fill="#E6E2D9" font-size="14" font-weight="800" letter-spacing="1.5">CLIENT IMPACT</text>
+    <text x="678" y="62" fill="#8A93A8" font-size="12" font-weight="700" letter-spacing="1.3" text-anchor="end">CERTIFIED BY AUDIT, NOT BY VIBES</text>
   </g>
-  <text x="200" y="262" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="800" letter-spacing="1.2" text-anchor="middle">LOCATIONS</text>
-  <text x="200" y="283" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" text-anchor="middle">retail platform shipped</text>
-  <g class="seal s2">
-    <circle cx="520" cy="170" r="58" fill="url(#seal)" stroke="#C34E33" stroke-opacity="0.9" stroke-width="1.8"/>
-    <circle class="dash" cx="520" cy="170" r="50" fill="none" stroke="#C34E33" stroke-opacity="0.32" stroke-width="1.1" stroke-dasharray="2 5"/>
-    <text x="520" y="180.8" fill="#F4EFE6" font-family="Georgia, 'Times New Roman', serif" font-size="31" font-weight="600" letter-spacing="-0.5" text-anchor="middle">Zero</text>
+  <g class="seal-in s1">
+    <g class="beat b1">
+      <circle cx="200" cy="170" r="58" fill="url(#seal)" stroke="#C9A227" stroke-opacity="0.9" stroke-width="1.8"/>
+      <circle class="dash" cx="200" cy="170" r="50" fill="none" stroke="#C9A227" stroke-opacity="0.32" stroke-width="1.1" stroke-dasharray="2 5"/>
+      <text class="mast" x="200" y="182.2" fill="#000000" fill-opacity="0.55" font-size="31" font-weight="600" letter-spacing="-0.5" text-anchor="middle" aria-hidden="true">100+</text>
+      <text class="mast" x="200" y="180.8" fill="#F4EFE6" font-size="31" font-weight="600" letter-spacing="-0.5" text-anchor="middle">100+</text>
+    </g>
   </g>
-  <text x="520" y="262" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="800" letter-spacing="1.2" text-anchor="middle">AUDIT FINDINGS</text>
-  <text x="520" y="283" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" text-anchor="middle">federal cloud delivery</text>
-  <g class="seal s3">
-    <circle cx="200" cy="380" r="58" fill="url(#seal)" stroke="#6082B8" stroke-opacity="0.9" stroke-width="1.8"/>
-    <circle class="dash" cx="200" cy="380" r="50" fill="none" stroke="#6082B8" stroke-opacity="0.32" stroke-width="1.1" stroke-dasharray="2 5"/>
-    <text x="200" y="393.3" fill="#F4EFE6" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="600" letter-spacing="-0.5" text-anchor="middle">4</text>
+  <g class="cap-in c1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="200" y="262" fill="#E6E2D9" font-size="16" font-weight="800" letter-spacing="1.2" text-anchor="middle">LOCATIONS</text>
+    <text x="200" y="283" fill="#8A93A8" font-size="14" text-anchor="middle">retail platform shipped</text>
   </g>
-  <text x="200" y="472" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="800" letter-spacing="1.2" text-anchor="middle">CLOUD PRODUCTS</text>
-  <text x="200" y="493" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" text-anchor="middle">quality leadership</text>
-  <g class="seal s4">
-    <circle cx="520" cy="380" r="58" fill="url(#seal)" stroke="#C9A227" stroke-opacity="0.9" stroke-width="1.8"/>
-    <circle class="dash" cx="520" cy="380" r="50" fill="none" stroke="#C9A227" stroke-opacity="0.32" stroke-width="1.1" stroke-dasharray="2 5"/>
-    <text x="520" y="393.3" fill="#F4EFE6" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="600" letter-spacing="-0.5" text-anchor="middle">3</text>
+  <g class="seal-in s2">
+    <g class="beat b2">
+      <circle cx="520" cy="170" r="58" fill="url(#seal)" stroke="#C34E33" stroke-opacity="0.9" stroke-width="1.8"/>
+      <circle class="dash" cx="520" cy="170" r="50" fill="none" stroke="#C34E33" stroke-opacity="0.32" stroke-width="1.1" stroke-dasharray="2 5"/>
+      <text class="mast" x="520" y="182.2" fill="#000000" fill-opacity="0.55" font-size="31" font-weight="600" letter-spacing="-0.5" text-anchor="middle" aria-hidden="true">Zero</text>
+      <text class="mast" x="520" y="180.8" fill="#F4EFE6" font-size="31" font-weight="600" letter-spacing="-0.5" text-anchor="middle">Zero</text>
+    </g>
   </g>
-  <text x="520" y="472" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="800" letter-spacing="1.2" text-anchor="middle">CONTINENTS</text>
-  <text x="520" y="493" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" text-anchor="middle">teams shipped with</text>
+  <g class="cap-in c2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="520" y="262" fill="#E6E2D9" font-size="16" font-weight="800" letter-spacing="1.2" text-anchor="middle">AUDIT FINDINGS</text>
+    <text x="520" y="283" fill="#8A93A8" font-size="14" text-anchor="middle">federal cloud delivery</text>
+  </g>
+  <g class="seal-in s3">
+    <g class="beat b3">
+      <circle cx="200" cy="380" r="58" fill="url(#seal)" stroke="#6082B8" stroke-opacity="0.9" stroke-width="1.8"/>
+      <circle class="dash" cx="200" cy="380" r="50" fill="none" stroke="#6082B8" stroke-opacity="0.32" stroke-width="1.1" stroke-dasharray="2 5"/>
+      <text class="mast" x="200" y="394.7" fill="#000000" fill-opacity="0.55" font-size="38" font-weight="600" letter-spacing="-0.5" text-anchor="middle" aria-hidden="true">4</text>
+      <text class="mast" x="200" y="393.3" fill="#F4EFE6" font-size="38" font-weight="600" letter-spacing="-0.5" text-anchor="middle">4</text>
+    </g>
+  </g>
+  <g class="cap-in c3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="200" y="472" fill="#E6E2D9" font-size="16" font-weight="800" letter-spacing="1.2" text-anchor="middle">CLOUD PRODUCTS</text>
+    <text x="200" y="493" fill="#8A93A8" font-size="14" text-anchor="middle">quality leadership</text>
+  </g>
+  <g class="seal-in s4">
+    <g class="beat b4">
+      <circle cx="520" cy="380" r="58" fill="url(#seal)" stroke="#C9A227" stroke-opacity="0.9" stroke-width="1.8"/>
+      <circle class="dash" cx="520" cy="380" r="50" fill="none" stroke="#C9A227" stroke-opacity="0.32" stroke-width="1.1" stroke-dasharray="2 5"/>
+      <text class="mast" x="520" y="394.7" fill="#000000" fill-opacity="0.55" font-size="38" font-weight="600" letter-spacing="-0.5" text-anchor="middle" aria-hidden="true">3</text>
+      <text class="mast" x="520" y="393.3" fill="#F4EFE6" font-size="38" font-weight="600" letter-spacing="-0.5" text-anchor="middle">3</text>
+    </g>
+  </g>
+  <g class="cap-in c4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="520" y="472" fill="#E6E2D9" font-size="16" font-weight="800" letter-spacing="1.2" text-anchor="middle">CONTINENTS</text>
+    <text x="520" y="493" fill="#8A93A8" font-size="14" text-anchor="middle">teams shipped with</text>
+  </g>
+  <rect width="720" height="530" rx="28" fill="#F4EFE6" filter="url(#grain)" style="mix-blend-mode:overlay" pointer-events="none"/>
 </svg>

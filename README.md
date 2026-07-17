@@ -24,7 +24,7 @@
   <a href="mailto:umangdhawan97@gmail.com"><img src="https://img.shields.io/badge/Email-20252B?style=flat-square&logo=gmail&logoColor=D9644D" alt="Email Umang"></a>
 </p>
 
-## I · Strategy, meet engineering
+## 01 · Strategy, meet engineering
 
 I'm a **Senior Consultant at EY Studio+** in Chicago, working where product delivery, cloud reliability, quality engineering, and applied AI meet. I've helped ship a retail platform across **100+ locations**, supported a federal cloud implementation with **zero audit findings**, and built the observability and release practices that let enterprise teams deploy without a group chat full of prayers.
 
@@ -40,7 +40,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
   </picture>
 </p>
 
-## II · Open-source products
+## 02 · Open-source products
 
 <table width="100%">
   <tr>
@@ -113,7 +113,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
   </tr>
 </table>
 
-## III · How I build
+## 03 · How I build
 
 | | Principle | What it means in practice |
 |---|---|---|
@@ -140,7 +140,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 <sub>Chosen per problem, not per hype cycle.</sub>
 
-## IV · Experience in brief
+## 04 · Experience in brief
 
 | When | Role | Focus |
 |---|---|---|
