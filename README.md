@@ -1,14 +1,20 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/profile-header-mobile.svg">
-    <img src="./assets/profile-header.svg" alt="Umang Dhawan — technology consultant and open-source product builder" width="100%">
+    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/profile-header-mobile-dark.svg">
+    <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/profile-header-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg">
+    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, applied AI. Selected builds: Orifold, FolioOrb, Golavo, Voyalier." width="100%">
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/ai-spell-mobile.svg">
-    <img src="./assets/ai-spell.svg" alt="AI, with guardrails — AI can draft the spell. I still review the blast radius." width="100%">
+    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-dark.svg">
+    <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/ai-spell-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/ai-spell-light.svg">
+    <img src="./assets/ai-spell-dark.svg" alt="AI, with guardrails — AI can draft the spell. I still review the blast radius." width="100%">
   </picture>
 </p>
 
@@ -18,30 +24,30 @@
   <a href="mailto:umangdhawan97@gmail.com"><img src="https://img.shields.io/badge/Email-20252B?style=flat-square&logo=gmail&logoColor=D9644D" alt="Email Umang"></a>
 </p>
 
-## I bridge strategy and engineering
+## I · Strategy, meet engineering
 
-I'm a **Senior Consultant at EY Studio+** in Chicago, working where product delivery, cloud reliability, quality engineering, and applied AI meet. I've helped ship a retail platform across **100+ locations**, supported a federal cloud implementation with **zero audit findings**, and built observability and release practices for enterprise teams.
+I'm a **Senior Consultant at EY Studio+** in Chicago, working where product delivery, cloud reliability, quality engineering, and applied AI meet. I've helped ship a retail platform across **100+ locations**, supported a federal cloud implementation with **zero audit findings**, and built the observability and release practices that let enterprise teams deploy without a group chat full of prayers.
 
-Outside client work, I design and ship **local-first, open-source products** in Swift, Rust, Python, and TypeScript. I care about the parts beyond the demo: clear product decisions, trustworthy behavior, failure handling, documentation, installers, updates, and evidence that the system works.
+Outside client work, I design and ship **local-first, open-source products** in Swift, Rust, Python, and TypeScript. I care about the unglamorous part that starts where the demo ends: clear product decisions, trustworthy behavior, failure handling, documentation, installers, updates, and evidence that the thing actually works.
 
-### Client impact at a glance
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-dark.svg">
+    <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/impact-seals-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/impact-seals-light.svg">
+    <img src="./assets/impact-seals-dark.svg" alt="Client impact: retail platform shipped to 100+ locations, zero findings on a federal cloud audit, quality leadership across 4 cloud products, teams shipped with on 3 continents." width="100%">
+  </picture>
+</p>
 
-<table width="100%">
-  <tr align="center">
-    <td width="25%"><h3>100+</h3><sub><strong>LOCATIONS</strong><br>retail platform shipped</sub></td>
-    <td width="25%"><h3>Zero</h3><sub><strong>FINDINGS</strong><br>federal cloud audit</sub></td>
-    <td width="25%"><h3>4</h3><sub><strong>CLOUD PRODUCTS</strong><br>quality leadership</sub></td>
-    <td width="25%"><h3>3</h3><sub><strong>CONTINENTS</strong><br>cross-functional delivery</sub></td>
-  </tr>
-</table>
-
-## Open-source products
+## II · Open-source products
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Orifold/main/Orifold/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-64.png" width="26" height="26" alt="Orifold app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
       <p>A native macOS PDF workspace for combining, OCR, editing, annotating, signing, protecting, and exporting documents — all on-device.</p>
+      <p><sub><i>Your tax returns shouldn't need a round trip to someone else's GPU.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/Swift-20252B?style=flat-square&amp;logo=swift&amp;logoColor=F05138" alt="Swift">
         <img src="https://img.shields.io/badge/PDFKit-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="PDFKit">
@@ -57,6 +63,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/FolioOrb/main/static/img/brand/folio-orbit-icon-1024.png" width="26" height="26" alt="FolioOrb app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
       <p>A local-first portfolio cockpit that unifies holdings, market data, risk signals, and clear actions, with deterministic analysis and optional AI narration.</p>
+      <p><sub><i>The math is deterministic. The AI only narrates — it never touches the numbers.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
         <img src="https://img.shields.io/badge/FastAPI-20252B?style=flat-square&amp;logo=fastapi&amp;logoColor=009688" alt="FastAPI">
@@ -74,6 +81,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Golavo/main/desktop/src-tauri/icons/64x64.png" width="26" height="26" alt="Golavo app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
       <p>An auditable football forecasting workbench with sealed pre-match predictions, calibration, and cited AI explanations that never change the numbers.</p>
+      <p><sub><i>Predictions are sealed before kickoff, so hindsight can't quietly improve them.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
         <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
@@ -89,6 +97,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Voyalier/main/apps/desktop/src-tauri/icons/64x64.png" width="26" height="26" alt="Voyalier app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
       <p>A local-first travel workspace that turns confirmations and sourced research into readiness actions and a reviewed, shareable trip brief.</p>
+      <p><sub><i>Turns an inbox full of confirmations into a brief you'd actually hand someone.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
         <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
@@ -104,14 +113,14 @@ Outside client work, I design and ship **local-first, open-source products** in 
   </tr>
 </table>
 
-## How I build
+## III · How I build
 
 | | Principle | What it means in practice |
 |---|---|---|
-| 🔐 | **Local-first by default** | Keep user data on-device and make privacy a product property. |
-| 🧭 | **Evidence before AI** | Deterministic systems stay authoritative; AI explains, cites, and assists. |
-| 🧪 | **Quality is architecture** | Design for observability, failure modes, testability, and safe releases. |
-| 📦 | **Ship the whole product** | Include docs, installers, updates, demos, and release automation — not just source. |
+| 🔐 | **Local-first by default** | Keep user data on-device and make privacy a product property, not a policy page. |
+| 🧭 | **Evidence before AI** | Deterministic systems stay authoritative. AI explains, cites, and assists — it doesn't get a vote on the numbers. |
+| 🧪 | **Quality is architecture** | Design for observability, failure modes, testability, and releases that don't need a hero. |
+| 📦 | **Ship the whole product** | Docs, installers, updates, demos, and release automation. Source code is the easy half. |
 
 ### Tools I reach for
 
@@ -131,7 +140,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 <sub>Chosen per problem, not per hype cycle.</sub>
 
-## Experience in brief
+## IV · Experience in brief
 
 | When | Role | Focus |
 |---|---|---|
@@ -141,7 +150,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 **Education:** MS, Information Systems — Kelley School of Business · BS, Informatics — Indiana University
 
-<sub>The short version — the <a href="https://udhawan97.github.io/Umang_Dhawan_Resume_Formal.pdf">résumé</a> has the director's cut.</sub>
+<sub>The short version — <a href="https://www.linkedin.com/in/umangdhawan97">LinkedIn</a> has the director's cut.</sub>
 
 ---
 

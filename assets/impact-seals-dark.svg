@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="252" viewBox="0 0 1200 252" role="img" aria-labelledby="title desc">
+  <title id="title">Client impact at a glance</title>
+  <desc id="desc">Four certification seals: a retail platform shipped to over 100 locations, zero findings on a federal cloud audit, quality leadership across four cloud products, and delivery with teams on three continents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="252" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C0F0E"/><stop offset="0.58" stop-color="#111514"/><stop offset="1" stop-color="#18202B"/>
+    </linearGradient>
+    <linearGradient id="seal" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1A1F1E"/><stop offset="1" stop-color="#232C3A"/>
+    </linearGradient>
+    <clipPath id="frameClip"><rect width="1200" height="252" rx="28"/></clipPath>
+    <style>
+      .seal { transform-box: fill-box; transform-origin: center; animation: press 7.2s ease-in-out infinite; }
+      .seal.s2 { animation-delay: .5s; } .seal.s3 { animation-delay: 1s; } .seal.s4 { animation-delay: 1.5s; }
+      .dash { transform-box: fill-box; transform-origin: center; animation: turn 40s linear infinite; }
+      @keyframes press { 0%, 88%, 100% { transform: scale(1); } 93% { transform: scale(1.035); } }
+      @keyframes turn { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) { .seal, .dash { animation: none; } }
+    </style>
+  </defs>
+  <g clip-path="url(#frameClip)">
+    <rect width="1200" height="252" fill="url(#bg)"/>
+  </g>
+  <rect x="0.75" y="0.75" width="1198.5" height="250.5" rx="27.25" fill="none" stroke="#F4EFE6" stroke-opacity="0.14" stroke-width="1.5"/>
+  <line x1="56" y1="31" x2="1144" y2="31" stroke="#C9A227" stroke-opacity="0.55" stroke-width="1.5"/>
+  <text x="56" y="60" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="800" letter-spacing="1.6">CLIENT IMPACT · CERTIFIED BY AUDIT, NOT BY VIBES</text>
+  <text x="1144" y="60" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.4" text-anchor="end">EY STUDIO+ · 2022—NOW</text>
+  <g class="seal s1">
+    <circle cx="192" cy="132" r="46" fill="url(#seal)" stroke="#C9A227" stroke-opacity="0.9" stroke-width="1.6"/>
+    <circle class="dash" cx="192" cy="132" r="39" fill="none" stroke="#C9A227" stroke-opacity="0.32" stroke-width="1" stroke-dasharray="2 4"/>
+    <text x="192" y="140.8" fill="#F4EFE6" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="600" letter-spacing="-0.5" text-anchor="middle">100+</text>
+  </g>
+  <text x="192" y="208" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" letter-spacing="1.3" text-anchor="middle">LOCATIONS</text>
+  <text x="192" y="227" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" text-anchor="middle">retail platform shipped</text>
+  <g class="seal s2">
+    <circle cx="464" cy="132" r="46" fill="url(#seal)" stroke="#C34E33" stroke-opacity="0.9" stroke-width="1.6"/>
+    <circle class="dash" cx="464" cy="132" r="39" fill="none" stroke="#C34E33" stroke-opacity="0.32" stroke-width="1" stroke-dasharray="2 4"/>
+    <text x="464" y="140.8" fill="#F4EFE6" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="600" letter-spacing="-0.5" text-anchor="middle">Zero</text>
+  </g>
+  <text x="464" y="208" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" letter-spacing="1.3" text-anchor="middle">AUDIT FINDINGS</text>
+  <text x="464" y="227" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" text-anchor="middle">federal cloud delivery</text>
+  <g class="seal s3">
+    <circle cx="736" cy="132" r="46" fill="url(#seal)" stroke="#6082B8" stroke-opacity="0.9" stroke-width="1.6"/>
+    <circle class="dash" cx="736" cy="132" r="39" fill="none" stroke="#6082B8" stroke-opacity="0.32" stroke-width="1" stroke-dasharray="2 4"/>
+    <text x="736" y="142.5" fill="#F4EFE6" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="600" letter-spacing="-0.5" text-anchor="middle">4</text>
+  </g>
+  <text x="736" y="208" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" letter-spacing="1.3" text-anchor="middle">CLOUD PRODUCTS</text>
+  <text x="736" y="227" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" text-anchor="middle">quality leadership</text>
+  <g class="seal s4">
+    <circle cx="1008" cy="132" r="46" fill="url(#seal)" stroke="#C9A227" stroke-opacity="0.9" stroke-width="1.6"/>
+    <circle class="dash" cx="1008" cy="132" r="39" fill="none" stroke="#C9A227" stroke-opacity="0.32" stroke-width="1" stroke-dasharray="2 4"/>
+    <text x="1008" y="142.5" fill="#F4EFE6" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="600" letter-spacing="-0.5" text-anchor="middle">3</text>
+  </g>
+  <text x="1008" y="208" fill="#E6E2D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" letter-spacing="1.3" text-anchor="middle">CONTINENTS</text>
+  <text x="1008" y="227" fill="#8A93A8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" text-anchor="middle">teams shipped with</text>
+</svg>
