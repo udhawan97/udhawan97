@@ -44,6 +44,24 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 <table width="100%">
   <tr>
+    <td colspan="2" valign="top">
+      <h3><img src="https://raw.githubusercontent.com/udhawan97/Codemble/main/docs-site/public/brand/icon-180.png" width="26" height="26" alt="Codemble app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Codemble">Codemble</a></h3>
+      <p>A local-first learning game that turns AI-written Python, JavaScript, and TypeScript projects into a parser-proven galaxy you light up by understanding the code.</p>
+      <p><sub><i>The AI can write the code. Codemble makes sure you can explain it.</i></sub></p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
+        <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
+      </p>
+      <p>
+        <a href="https://udhawan97.github.io/Codemble/">Website</a> ·
+        <a href="https://github.com/udhawan97/Codemble">Source</a> ·
+        <a href="https://github.com/udhawan97/Codemble/releases/tag/v0.2.0"><strong>v0.2.0</strong></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Orifold/main/Orifold/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-64.png" width="26" height="26" alt="Orifold app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
       <p>A native macOS PDF workspace for combining, OCR, editing, annotating, signing, protecting, and exporting documents — all on-device.</p>
