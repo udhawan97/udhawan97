@@ -164,8 +164,6 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 **Education:** MS, Information Systems — Kelley School of Business · BS, Informatics — Indiana University
 
-<sub>The short version — <a href="https://www.linkedin.com/in/umangdhawan97">LinkedIn</a> has the director's cut.</sub>
-
 ---
 <p align="center">
   <a href="https://udhawan97.github.io/"><img src="https://img.shields.io/badge/Portfolio-20252B?style=flat-square&logo=safari&logoColor=7FB7CC" alt="Portfolio"></a>
@@ -175,8 +173,5 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 <p align="center">
   <strong>Let's talk about trustworthy AI, local-first products, quality engineering, or turning a prototype into software people can actually use.</strong><br>
-  <sub>I reply to email faster than most CI pipelines finish.</sub><br><br>
-  <a href="mailto:umangdhawan97@gmail.com">Email</a> ·
-  <a href="https://www.linkedin.com/in/umangdhawan97">LinkedIn</a> ·
   <a href="https://udhawan97.github.io/">Portfolio &amp; case studies</a>
 </p>
