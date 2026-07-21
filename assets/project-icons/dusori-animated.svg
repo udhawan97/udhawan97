@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Dusori animated app icon</title>
+  <desc id="desc">An ink enso breathes around a turning rangoli learning wheel while a vermilion katana catches the light.</desc>
+  <rect width="512" height="512" rx="115" fill="#f7f1e8"/>
+  <g transform="translate(92 90) scale(5.125)">
+    <path class="enso" d="M55.77 26.51C57.03 31.96 58.05 38.06 55.43 43.43 52.81 48.8 48.57 53.28 43.11 55.83 37.65 58.38 31.48 59.05 25.62 57.59 19.76 56.13 14.65 52.61 11.03 47.8 7.41 42.99 5.8 37.05 6.01 31.09 6.22 25.13 8.71 19.57 12.58 15.12 16.45 10.67 21.8 7.86 27.56 6.84 33.32 5.82 38.85 8.28 43.67 10.95 44.92 11.64 43.88 13.51 42.63 12.82 38.24 10.38 33.06 11.05 28.45 11.86 23.84 12.67 19.75 15.2 16.7 18.7 13.65 22.2 12.18 26.72 12.02 31.3 11.86 35.88 13.52 40.27 16.24 43.88 18.96 47.49 22.89 49.95 27.25 51.04 31.61 52.13 36.24 51.77 40.33 49.86 44.42 47.95 47.92 44.84 49.92 40.74 51.92 36.64 54.16 31.96 53.05 27.14 52.63 25.33 55.35 24.7 55.77 26.51Z" fill="#1a1511"/>
+    <g class="wheel" fill="none" stroke="#c9862e" opacity=".9">
+      <circle cx="32" cy="32" r="7.6" stroke-width=".2"/>
+      <circle cx="32" cy="32" r="5.2" stroke-width=".34"/>
+      <circle cx="32" cy="32" r="1.9" stroke-width=".3"/>
+      <path d="M32 24.4V39.6M24.4 32H39.6M26.6 26.6 37.4 37.4M37.4 26.6 26.6 37.4" stroke-width=".3"/>
+      <path d="M32 29.6 34.4 32 32 34.4 29.6 32Z" stroke-width=".26"/>
+      <circle cx="32" cy="32" r=".85" fill="#c9862e" stroke="none"/>
+    </g>
+    <g transform="translate(8.7 -6.8) rotate(142 32 32)">
+      <path d="M7.1 30.9H13.8V33.1H7.1Q5.75 32 7.1 30.9Z" fill="#1a1511"/>
+      <ellipse cx="14.8" cy="32" rx="1.05" ry="3.35" fill="#1a1511"/>
+      <path d="M15.75 30.95H17.2V33.05H15.75Z" fill="#1a1511"/>
+      <path d="M17.2 30.95H55.9L58.2 31.3 55.5 32.3 17.2 33.05Z" fill="#cb4832"/>
+      <path class="blade-light" pathLength="1" d="M18.3 31.55H53.2" fill="none" stroke="#f7f1e8" stroke-width=".5" stroke-linecap="round"/>
+    </g>
+  </g>
+  <style>
+    .enso{animation:dus-breath 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .wheel{animation:dus-turn 18s linear infinite;transform-origin:32px 32px}
+    .blade-light{stroke-dasharray:.18 .82;stroke-dashoffset:0;animation:dus-glint 5.8s ease-in-out infinite}
+    @keyframes dus-breath{50%{opacity:.88;transform:scale(1.018)}}
+    @keyframes dus-turn{to{transform:rotate(360deg)}}
+    @keyframes dus-glint{0%,28%{stroke-dashoffset:0;opacity:.25}58%{stroke-dashoffset:-1;opacity:1}72%,100%{stroke-dashoffset:-1;opacity:.25}}
+    @media (prefers-reduced-motion:reduce){.enso,.wheel,.blade-light{animation:none!important}}
+  </style>
+</svg>

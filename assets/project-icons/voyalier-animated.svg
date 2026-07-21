@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+  <title id="title">Voyalier animated app icon</title>
+  <desc id="desc">A vermilion route follows a folded paper V and arrives at a waypoint.</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#55617e"/><stop offset=".52" stop-color="#3c4762"/><stop offset="1" stop-color="#20242f"/></linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2=".3" y2="1"><stop stop-color="#fdfbf5"/><stop offset="1" stop-color="#e7e1d3"/></linearGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c3cad9"/><stop offset="1" stop-color="#93a0b8"/></linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="url(#tile)"/>
+  <circle cx="77" cy="20" r="28" fill="#e8825f" opacity=".1"/>
+  <g>
+    <polygon points="22,18 38,18 58,80 42,80" fill="url(#paper)"/>
+    <polygon class="fold" points="42,80 58,80 73.5,32 57.5,32" fill="url(#fold)"/>
+    <polyline points="22,18 42,80" fill="none" stroke="#fff" stroke-width="1" opacity=".55"/>
+    <polyline class="route" pathLength="1" points="30,18 50,80 69,21" fill="none" stroke="#e8734f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="halo" cx="69" cy="21" r="5" fill="none" stroke="#e8734f" stroke-width="1.2"/>
+    <g class="waypoint"><circle cx="69" cy="21" r="6" fill="#c34e33"/><circle cx="67" cy="19" r="1.5" fill="#fff" opacity=".6"/></g>
+  </g>
+  <style>
+    .fold{animation:voy-fold 6s ease-in-out infinite;transform-box:fill-box;transform-origin:25% 100%}
+    .route{stroke-dasharray:1;stroke-dashoffset:0;animation:voy-route 6s ease-in-out infinite}
+    .halo{animation:voy-ping 6s ease-out infinite;transform-box:fill-box;transform-origin:center}
+    .waypoint{animation:voy-arrive 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes voy-fold{0%,36%,74%,100%{transform:skewX(0) scaleY(1)}54%{transform:skewX(-1.8deg) scaleY(.986)}}
+    @keyframes voy-route{0%,6%{stroke-dashoffset:1;opacity:0}10%{opacity:.9}38%{stroke-dashoffset:0;opacity:.9}56%,100%{stroke-dashoffset:0;opacity:.2}}
+    @keyframes voy-ping{0%,36%{opacity:0;transform:scale(.5)}44%{opacity:.6;transform:scale(1)}62%,100%{opacity:0;transform:scale(2)}}
+    @keyframes voy-arrive{0%,34%{transform:scale(1)}43%{transform:scale(1.18)}52%,100%{transform:scale(1)}}
+    @media (prefers-reduced-motion:reduce){.fold,.route,.halo,.waypoint{animation:none!important}}
+  </style>
+</svg>
