@@ -43,7 +43,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Orifold"><img src="./assets/project-icons/orifold-animated.svg" width="72" height="72" alt="Animated Orifold app icon"></a><br><a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
+      <h3 align="center"><a href="https://github.com/udhawan97/Orifold"><img src="https://github.com/udhawan97/Orifold/raw/main/docs/assets/orifold-crane-fold.svg" width="72" height="72" alt="Animated Orifold logo: a sheet of paper folds into an origami crane, then becomes the app icon"></a><br><a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
       <p>A native macOS workspace that takes a pile of PDFs, scans, images, and office files through repair, organization, OCR, editing, review, signing, protection, and export — without bouncing between specialist tools.</p>
       <p><sub><i>Fifty messy files in. One finished document out.</i></sub></p>
       <p>
@@ -59,7 +59,13 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/FolioOrb"><img src="./assets/project-icons/folioorb-animated.svg" width="72" height="72" alt="Animated FolioOrb app icon"></a><br><a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
+      <h3 align="center">
+        <a href="https://github.com/udhawan97/FolioOrb"><picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-light-animated.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-dark-animated.svg">
+          <img src="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-dark-animated.svg" width="72" height="72" alt="Animated FolioOrb orbit mark">
+        </picture></a><br><a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a>
+      </h3>
       <p>A portfolio decision cockpit that combines holdings, live prices, risk math, market regime, news, and SEC context into plain Hold / Add / Trim / Exit calls, prioritized actions, and reviewable DCA steps.</p>
       <p><sub><i>Most trackers stop at the number. FolioOrb shows what deserves attention next.</i></sub></p>
       <p>
@@ -77,7 +83,13 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Golavo"><img src="./assets/project-icons/golavo-animated.svg" width="72" height="72" alt="Animated Golavo app icon"></a><br><a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
+      <h3 align="center">
+        <a href="https://github.com/udhawan97/Golavo"><picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-light.svg">
+          <img src="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-light.svg" width="72" height="72" alt="Animated Golavo mark: a football traces a golden arc through a rising-sun goal">
+        </picture></a><br><a href="https://github.com/udhawan97/Golavo">Golavo</a>
+      </h3>
       <p>An accountable football forecasting workbench where model voices show their evidence, predictions are sealed before kickoff, and results build a visible forward track record and calibration history.</p>
       <p><sub><i>Predictions are sealed before kickoff, so hindsight can't quietly improve them.</i></sub></p>
       <p>
@@ -93,7 +105,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Voyalier"><img src="./assets/project-icons/voyalier-animated.svg" width="72" height="72" alt="Animated Voyalier app icon"></a><br><a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
+      <h3 align="center"><a href="https://github.com/udhawan97/Voyalier"><img src="https://github.com/udhawan97/Voyalier/raw/main/packages/brand/src/voyalier-app-icon.svg" width="72" height="72" alt="Animated Voyalier folded-route app icon"></a><br><a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
       <p>A trip-readiness workspace that turns reservation evidence, official advice, weather, saved places, and traveler-authored plans into conflicts to resolve, an offline Today view, and a redacted brief worth sharing.</p>
       <p><sub><i>Planning ends in a reviewed handoff, not seventeen open tabs.</i></sub></p>
       <p>
@@ -111,7 +123,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Codemble"><img src="./assets/project-icons/codemble-animated.svg" width="72" height="72" alt="Animated Codemble app icon"></a><br><a href="https://github.com/udhawan97/Codemble">Codemble</a></h3>
+      <h3 align="center"><a href="https://github.com/udhawan97/Codemble"><img src="https://github.com/udhawan97/Codemble/raw/main/docs-site/public/brand/mark-animated.svg" width="72" height="72" alt="Codemble — an open lapis ensō whose amber star systems light up"></a><br><a href="https://github.com/udhawan97/Codemble">Codemble</a></h3>
       <p>A code-learning game that maps real Python, JavaScript, and TypeScript projects into a parser-proven galaxy, then makes learners study source, follow relationships, and pass graph-derived checks to light it up.</p>
       <p><sub><i>It turns a codebase into a game you can win only by understanding it.</i></sub></p>
       <p>
