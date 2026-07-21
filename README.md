@@ -4,7 +4,7 @@
     <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/profile-header-mobile-light.svg">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg">
-    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, and applied AI." width="100%">
+    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, applied AI. Selected builds: Dusori, Codemble, Orifold, FolioOrb, Golavo, Voyalier." width="100%">
   </picture>
 </p>
 
@@ -36,7 +36,129 @@ Outside client work, I design and ship **open-source product systems** in Swift,
   </picture>
 </p>
 
-## 02 · How I build
+## 02 · Products that close the loop
+
+Each product takes a fragmented workflow and gives it a clear end state: one finished document, a reviewable portfolio decision, a forecast with a track record, a trip-ready brief, a codebase you can explain, or a learning practice that survives the app.
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/udhawan97/Orifold"><img src="https://github.com/udhawan97/Orifold/raw/main/docs/assets/orifold-crane-fold.svg" width="72" height="72" alt="Animated Orifold logo: a sheet of paper folds into an origami crane, then becomes the app icon"></a><br><a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
+      <p>A native macOS workspace that takes a pile of PDFs, scans, images, and office files through repair, organization, OCR, editing, review, signing, protection, and export — without bouncing between specialist tools.</p>
+      <p><sub><i>Fifty messy files in. One finished document out.</i></sub></p>
+      <p>
+        <img src="https://img.shields.io/badge/Swift-20252B?style=flat-square&amp;logo=swift&amp;logoColor=F05138" alt="Swift">
+        <img src="https://img.shields.io/badge/PDFKit-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="PDFKit">
+        <img src="https://img.shields.io/badge/PDFium-20252B?style=flat-square&amp;logo=googlechrome&amp;logoColor=4285F4" alt="PDFium">
+        <img src="https://img.shields.io/badge/macOS-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="macOS">
+      </p>
+      <p>
+        <a href="https://udhawan97.github.io/Orifold/">Website</a> ·
+        <a href="https://github.com/udhawan97/Orifold">Source</a> ·
+        <a href="https://github.com/udhawan97/Orifold/releases/tag/v0.8.14"><strong>v0.8.14</strong></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/udhawan97/FolioOrb"><picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-light-animated.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-dark-animated.svg">
+          <img src="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-dark-animated.svg" width="72" height="72" alt="Animated FolioOrb orbit mark">
+        </picture></a><br><a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a>
+      </h3>
+      <p>A portfolio decision cockpit that combines holdings, live prices, risk math, market regime, news, and SEC context into plain Hold / Add / Trim / Exit calls, prioritized actions, and reviewable DCA steps.</p>
+      <p><sub><i>Most trackers stop at the number. FolioOrb shows what deserves attention next.</i></sub></p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
+        <img src="https://img.shields.io/badge/FastAPI-20252B?style=flat-square&amp;logo=fastapi&amp;logoColor=009688" alt="FastAPI">
+        <img src="https://img.shields.io/badge/SQLite-20252B?style=flat-square&amp;logo=sqlite&amp;logoColor=5EB6E4" alt="SQLite">
+        <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
+      </p>
+      <p>
+        <a href="https://udhawan97.github.io/FolioOrb/">Website</a> ·
+        <a href="https://github.com/udhawan97/FolioOrb">Source</a> ·
+        <a href="https://github.com/udhawan97/FolioOrb/releases/tag/v5.7.0"><strong>v5.7.0</strong></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/udhawan97/Golavo"><picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-light.svg">
+          <img src="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-light.svg" width="72" height="72" alt="Animated Golavo mark: a football traces a golden arc through a rising-sun goal">
+        </picture></a><br><a href="https://github.com/udhawan97/Golavo">Golavo</a>
+      </h3>
+      <p>An accountable football forecasting workbench where model voices show their evidence, predictions are sealed before kickoff, and results build a visible forward track record and calibration history.</p>
+      <p><sub><i>Predictions are sealed before kickoff, so hindsight can't quietly improve them.</i></sub></p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
+        <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
+      </p>
+      <p>
+        <a href="https://udhawan97.github.io/Golavo/">Website</a> ·
+        <a href="https://github.com/udhawan97/Golavo">Source</a> ·
+        <a href="https://github.com/udhawan97/Golavo/releases/tag/v0.15.0"><strong>v0.15.0</strong></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/udhawan97/Voyalier"><img src="https://github.com/udhawan97/Voyalier/raw/main/packages/brand/src/voyalier-app-icon.svg" width="72" height="72" alt="Animated Voyalier folded-route app icon"></a><br><a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
+      <p>A trip-readiness workspace that turns reservation evidence, official advice, weather, saved places, and traveler-authored plans into conflicts to resolve, an offline Today view, and a redacted brief worth sharing.</p>
+      <p><sub><i>Planning ends in a reviewed handoff, not seventeen open tabs.</i></sub></p>
+      <p>
+        <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
+        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
+      </p>
+      <p>
+        <a href="https://udhawan97.github.io/Voyalier/">Website</a> ·
+        <a href="https://github.com/udhawan97/Voyalier">Source</a> ·
+        <a href="https://github.com/udhawan97/Voyalier/releases/tag/v0.5.0"><strong>v0.5.0</strong></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/udhawan97/Codemble"><img src="https://github.com/udhawan97/Codemble/raw/main/docs-site/public/brand/mark-animated.svg" width="72" height="72" alt="Codemble — an open lapis ensō whose amber star systems light up"></a><br><a href="https://github.com/udhawan97/Codemble">Codemble</a></h3>
+      <p>A code-learning game that maps real Python, JavaScript, and TypeScript projects into a parser-proven galaxy, then makes learners study source, follow relationships, and pass graph-derived checks to light it up.</p>
+      <p><sub><i>It turns a codebase into a game you can win only by understanding it.</i></sub></p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
+        <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
+      </p>
+      <p>
+        <a href="https://udhawan97.github.io/Codemble/">Website</a> ·
+        <a href="https://github.com/udhawan97/Codemble">Source</a> ·
+        <a href="https://github.com/udhawan97/Codemble/releases/tag/v0.5.2"><strong>v0.5.2</strong></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/udhawan97/Dusori"><img src="./assets/project-icons/dusori-animated.svg" width="72" height="72" alt="Animated inverted-black Dusori app icon"></a><br><a href="https://github.com/udhawan97/Dusori">Dusori</a></h3>
+      <p>A learning workspace that turns curricula and source material into a living system: a checkable roadmap, today's next objective, durable notes, dated progress, and a knowledge graph that follows Obsidian-style links.</p>
+      <p><sub><i>Not another course catalog — a place to turn what you want to learn into a practice you can continue.</i></sub></p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Svelte-20252B?style=flat-square&amp;logo=svelte&amp;logoColor=FF3E00" alt="Svelte">
+        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
+        <img src="https://img.shields.io/badge/Markdown-20252B?style=flat-square&amp;logo=markdown&amp;logoColor=F4EFE6" alt="Markdown">
+      </p>
+      <p>
+        <a href="https://udhawan97.github.io/Dusori/">Website</a> ·
+        <a href="https://udhawan97.github.io/Dusori/app/">Web app</a> ·
+        <a href="https://github.com/udhawan97/Dusori">Source</a> ·
+        <a href="https://github.com/udhawan97/Dusori/releases/tag/v0.1.0"><strong>v0.1.0</strong></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+## 03 · How I build
 
 | | Principle | What it means in practice |
 |---|---|---|
@@ -64,7 +186,7 @@ Outside client work, I design and ship **open-source product systems** in Swift,
 
 <sub>Chosen per problem, not per hype cycle.</sub>
 
-## 03 · Experience in brief
+## 04 · Experience in brief
 
 | When | Role | Focus |
 |---|---|---|
