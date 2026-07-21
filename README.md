@@ -139,7 +139,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Dusori"><img src="./assets/project-icons/dusori-animated.svg" width="72" height="72" alt="Animated Dusori app icon"></a><br><a href="https://github.com/udhawan97/Dusori">Dusori</a></h3>
+      <h3 align="center"><a href="https://github.com/udhawan97/Dusori"><img src="./assets/project-icons/dusori-animated.svg" width="72" height="72" alt="Animated inverted-black Dusori app icon"></a><br><a href="https://github.com/udhawan97/Dusori">Dusori</a></h3>
       <p>A learning workspace that turns curricula and source material into a living system: a checkable roadmap, today's next objective, durable notes, dated progress, and a knowledge graph that follows Obsidian-style links.</p>
       <p><sub><i>Not another course catalog — a place to turn what you want to learn into a practice you can continue.</i></sub></p>
       <p>
