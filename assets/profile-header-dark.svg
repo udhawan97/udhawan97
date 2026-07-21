@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
   <title id="title">Umang Dhawan — technology consultant and open-source product builder</title>
-  <desc id="desc">An editorial masthead in ink, slate, and gold. The left column carries the name, focus areas, and a contents line for the sections below; a catalogue panel on the right lists four shipped products.</desc>
+  <desc id="desc">An editorial masthead in ink, slate, and gold with Umang Dhawan's name, focus areas, and a contents line for the sections below.</desc>
   <defs>
     <linearGradient id="panel" x1="748" y1="30" x2="1156" y2="310" gradientUnits="userSpaceOnUse">
       <stop stop-color="#161A19"/><stop offset="1" stop-color="#202A3A"/>
@@ -96,7 +96,7 @@
     <circle cx="1060" cy="88" r="112" fill="none" stroke="#93A0B8" stroke-opacity="0.045"/>
     <path d="M1058 91 1100 162 1147 91" fill="none" stroke="#C34E33" stroke-opacity="0.055" stroke-width="1.5"/>
     <path d="M-30 344C164 305 384 324 631 373" fill="none" stroke="#C9A227" stroke-opacity="0.07" stroke-width="1.5"/>
-    <rect class="in-panel" x="748" y="30" width="408" height="270" rx="22" fill="url(#panel)" stroke="#F4EFE6" stroke-opacity="0.11" filter="url(#panelShadow)"/>
+    <rect class="in-panel" x="748" y="30" width="408" height="270" rx="22" fill="url(#panel)" stroke="#F4EFE6" stroke-opacity="0.11" filter="url(#panelShadow)" display="none"/>
   </g>
 
   <rect x="0.75" y="0.75" width="1198.5" height="398.5" rx="27.25" fill="none" stroke="#F4EFE6" stroke-opacity="0.14" stroke-width="1.5"/>
@@ -129,6 +129,7 @@
       <text x="125" y="282" fill="#E6E2D9" font-size="12.2" font-weight="700" letter-spacing="0.35"><tspan>PRODUCT SYSTEMS&#160;&#160;&#160;</tspan><tspan fill="#C9A227" letter-spacing="0">◆</tspan><tspan fill="#E6E2D9">&#160;&#160;&#160;QUALITY ENGINEERING&#160;&#160;&#160;</tspan><tspan fill="#6082B8" letter-spacing="0">◆</tspan><tspan fill="#E6E2D9">&#160;&#160;&#160;CLOUD RELIABILITY&#160;&#160;&#160;</tspan><tspan fill="#C34E33" letter-spacing="0">◆</tspan><tspan fill="#E6E2D9">&#160;&#160;&#160;APPLIED AI</tspan></text>
     </g>
 
+    <g class="selected-builds" display="none" aria-hidden="true">
     <text x="774" y="66" fill="#E6E2D9" font-size="12" font-weight="800" letter-spacing="1.6">SELECTED BUILDS</text>
     <text x="1130" y="66" fill="#C9A227" font-size="10.5" font-weight="700" letter-spacing="1.4" text-anchor="end">CATALOGUE 01–04</text>
     <path d="M774 88h356M960 100v172M774 190h356" stroke="#F4EFE6" stroke-opacity="0.09"/>
@@ -762,6 +763,7 @@
       <text class="mast" x="974" y="211.4" fill="#C9A227" font-size="9" font-weight="600" text-anchor="middle">04</text>
       <text x="1034" y="230" fill="#F4EFE6" font-size="15.5" font-weight="700">Voyalier</text>
       <text x="1034" y="248" fill="#93A0B8" font-size="11.2">Travel workspace</text>
+    </g>
     </g>
     <g class="in-issue">
       <path d="M56 326h1088" stroke="#F4EFE6" stroke-opacity="0.13"/>
