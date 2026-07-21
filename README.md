@@ -55,7 +55,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/Orifold/">Website</a> ·
         <a href="https://github.com/udhawan97/Orifold">Source</a> ·
-        <a href="https://github.com/udhawan97/Orifold/releases"><strong>Beta</strong></a>
+        <a href="https://github.com/udhawan97/Orifold/releases/tag/v0.8.14"><strong>v0.8.14</strong></a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -71,7 +71,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/FolioOrb/">Website</a> ·
         <a href="https://github.com/udhawan97/FolioOrb">Source</a> ·
-        <a href="https://github.com/udhawan97/FolioOrb/releases"><strong>v5</strong></a>
+        <a href="https://github.com/udhawan97/FolioOrb/releases/tag/v5.7.0"><strong>v5.7.0</strong></a>
       </p>
     </td>
   </tr>
@@ -89,7 +89,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/Golavo/">Website</a> ·
         <a href="https://github.com/udhawan97/Golavo">Source</a> ·
-        <a href="https://github.com/udhawan97/Golavo/releases"><strong>Beta</strong></a>
+        <a href="https://github.com/udhawan97/Golavo/releases/tag/v0.15.0"><strong>v0.15.0</strong></a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -105,7 +105,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/Voyalier/">Website</a> ·
         <a href="https://github.com/udhawan97/Voyalier">Source</a> ·
-        <a href="https://github.com/udhawan97/Voyalier/releases"><strong>Beta</strong></a>
+        <a href="https://github.com/udhawan97/Voyalier/releases/tag/v0.5.0"><strong>v0.5.0</strong></a>
       </p>
     </td>
   </tr>
@@ -123,7 +123,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/Codemble/">Website</a> ·
         <a href="https://github.com/udhawan97/Codemble">Source</a> ·
-        <a href="https://github.com/udhawan97/Codemble/releases/tag/v0.2.0"><strong>v0.2.0</strong></a>
+        <a href="https://github.com/udhawan97/Codemble/releases/tag/v0.5.2"><strong>v0.5.2</strong></a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -139,7 +139,8 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/Dusori/">Website</a> ·
         <a href="https://udhawan97.github.io/Dusori/app/">Web app</a> ·
-        <a href="https://github.com/udhawan97/Dusori">Source</a>
+        <a href="https://github.com/udhawan97/Dusori">Source</a> ·
+        <a href="https://github.com/udhawan97/Dusori/releases/tag/v0.1.0"><strong>v0.1.0</strong></a>
       </p>
     </td>
   </tr>
