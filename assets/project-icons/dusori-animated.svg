@@ -21,10 +21,15 @@
     </g>
   </g>
   <style>
-    .enso{animation:dus-breath 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .enso{animation:dus-enso 5.2s cubic-bezier(.45,0,.2,1) infinite;transform-box:fill-box;transform-origin:center}
     .wheel{animation:dus-turn 18s linear infinite;transform-origin:32px 32px}
     .blade-light{stroke-dasharray:.18 .82;stroke-dashoffset:0;animation:dus-glint 5.8s ease-in-out infinite}
-    @keyframes dus-breath{50%{opacity:.88;transform:scale(1.018)}}
+    @keyframes dus-enso{
+      0%,12%,100%{opacity:1;transform:rotate(0) scale(1)}
+      34%{opacity:.72;transform:rotate(-7deg) scale(.93)}
+      56%{opacity:1;transform:rotate(4deg) scale(1.07)}
+      74%{opacity:.94;transform:rotate(-1deg) scale(.99)}
+    }
     @keyframes dus-turn{to{transform:rotate(360deg)}}
     @keyframes dus-glint{0%,28%{stroke-dashoffset:0;opacity:.25}58%{stroke-dashoffset:-1;opacity:1}72%,100%{stroke-dashoffset:-1;opacity:.25}}
     @media (prefers-reduced-motion:reduce){.enso,.wheel,.blade-light{animation:none!important}}
