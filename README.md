@@ -40,7 +40,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 <table width="100%">
   <tr>
-    <td width="50%" valign="top">
+    <td colspan="2" valign="top">
       <h3><img src="./assets/dusori-app-icon.svg" width="26" height="26" alt="Dusori app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Dusori">Dusori</a></h3>
       <p>A free, local-first learning workspace that keeps roadmaps, notes, sources, and progress in portable Markdown and JSON — no account or hosted database required.</p>
       <p><sub><i>Your learning plan belongs in files you can read, edit, and keep.</i></sub></p>
@@ -56,7 +56,9 @@ Outside client work, I design and ship **local-first, open-source products** in 
         <a href="https://github.com/udhawan97/Dusori">Source</a>
       </p>
     </td>
-    <td width="50%" valign="top">
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Codemble/main/docs-site/public/brand/icon-180.png" width="26" height="26" alt="Codemble app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Codemble">Codemble</a></h3>
       <p>A local-first learning game that turns AI-written Python, JavaScript, and TypeScript projects into a parser-proven galaxy you light up by understanding the code.</p>
       <p><sub><i>The AI can write the code. Codemble makes sure you can explain it.</i></sub></p>
