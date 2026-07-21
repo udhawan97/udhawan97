@@ -24,7 +24,7 @@
 
 I'm a **Senior Consultant at EY Studio+** in Chicago, working where product delivery, cloud reliability, quality engineering, and applied AI meet. I've helped ship a retail platform across **100+ locations**, supported a federal cloud implementation with **zero audit findings**, and built the observability and release practices that let enterprise teams deploy without a group chat full of prayers.
 
-Outside client work, I design and ship **local-first, open-source products** in Swift, Rust, Python, and TypeScript. I care about the unglamorous part that starts where the demo ends: clear product decisions, trustworthy behavior, failure handling, documentation, installers, updates, and evidence that the thing actually works.
+Outside client work, I design and ship **open-source product systems** in Swift, Rust, Python, and TypeScript. Each starts with a messy decision or workflow — finishing a document, understanding a portfolio, preparing a trip, learning a codebase — and turns it into something people can inspect, act on, and keep. I care about the unglamorous part that starts where the demo ends: failure handling, documentation, installers, updates, and evidence that the thing actually works.
 
 <p align="center">
   <picture>
@@ -36,14 +36,16 @@ Outside client work, I design and ship **local-first, open-source products** in 
   </picture>
 </p>
 
-## 02 · Open-source products
+## 02 · Products that close the loop
+
+Each product takes a fragmented workflow and gives it a clear end state: one finished document, a reviewable portfolio decision, a forecast with a track record, a trip-ready brief, a codebase you can explain, or a learning practice that survives the app.
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Orifold/main/Orifold/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-64.png" width="26" height="26" alt="Orifold app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
-      <p>A native macOS PDF workspace for combining, OCR, editing, annotating, signing, protecting, and exporting documents — all on-device.</p>
-      <p><sub><i>Your tax returns shouldn't need a round trip to someone else's GPU.</i></sub></p>
+      <p>A native macOS workspace that takes a pile of PDFs, scans, images, and office files through repair, organization, OCR, editing, review, signing, protection, and export — without bouncing between specialist tools.</p>
+      <p><sub><i>Fifty messy files in. One finished document out.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/Swift-20252B?style=flat-square&amp;logo=swift&amp;logoColor=F05138" alt="Swift">
         <img src="https://img.shields.io/badge/PDFKit-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="PDFKit">
@@ -58,8 +60,8 @@ Outside client work, I design and ship **local-first, open-source products** in 
     </td>
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/FolioOrb/main/static/img/brand/folio-orbit-icon-1024.png" width="26" height="26" alt="FolioOrb app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a></h3>
-      <p>A local-first portfolio cockpit that unifies holdings, market data, risk signals, and clear actions, with deterministic analysis and optional AI narration.</p>
-      <p><sub><i>The math is deterministic. The AI only narrates — it never touches the numbers.</i></sub></p>
+      <p>A portfolio decision cockpit that combines holdings, live prices, risk math, market regime, news, and SEC context into plain Hold / Add / Trim / Exit calls, prioritized actions, and reviewable DCA steps.</p>
+      <p><sub><i>Most trackers stop at the number. FolioOrb shows what deserves attention next.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
         <img src="https://img.shields.io/badge/FastAPI-20252B?style=flat-square&amp;logo=fastapi&amp;logoColor=009688" alt="FastAPI">
@@ -76,7 +78,7 @@ Outside client work, I design and ship **local-first, open-source products** in 
   <tr>
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Golavo/main/desktop/src-tauri/icons/64x64.png" width="26" height="26" alt="Golavo app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Golavo">Golavo</a></h3>
-      <p>An auditable football forecasting workbench with sealed pre-match predictions, calibration, and cited AI explanations that never change the numbers.</p>
+      <p>An accountable football forecasting workbench where model voices show their evidence, predictions are sealed before kickoff, and results build a visible forward track record and calibration history.</p>
       <p><sub><i>Predictions are sealed before kickoff, so hindsight can't quietly improve them.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
@@ -92,8 +94,8 @@ Outside client work, I design and ship **local-first, open-source products** in 
     </td>
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Voyalier/main/apps/desktop/src-tauri/icons/64x64.png" width="26" height="26" alt="Voyalier app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
-      <p>A local-first travel workspace that turns confirmations and sourced research into readiness actions and a reviewed, shareable trip brief.</p>
-      <p><sub><i>Turns an inbox full of confirmations into a brief you'd actually hand someone.</i></sub></p>
+      <p>A trip-readiness workspace that turns reservation evidence, official advice, weather, saved places, and traveler-authored plans into conflicts to resolve, an offline Today view, and a redacted brief worth sharing.</p>
+      <p><sub><i>Planning ends in a reviewed handoff, not seventeen open tabs.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
         <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
@@ -110,8 +112,8 @@ Outside client work, I design and ship **local-first, open-source products** in 
   <tr>
     <td width="50%" valign="top">
       <h3><img src="https://raw.githubusercontent.com/udhawan97/Codemble/main/docs-site/public/brand/icon-180.png" width="26" height="26" alt="Codemble app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Codemble">Codemble</a></h3>
-      <p>A local-first learning game that turns AI-written Python, JavaScript, and TypeScript projects into a parser-proven galaxy you light up by understanding the code.</p>
-      <p><sub><i>The AI can write the code. Codemble makes sure you can explain it.</i></sub></p>
+      <p>A code-learning game that maps real Python, JavaScript, and TypeScript projects into a parser-proven galaxy, then makes learners study source, follow relationships, and pass graph-derived checks to light it up.</p>
+      <p><sub><i>It turns a codebase into a game you can win only by understanding it.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
         <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
@@ -126,8 +128,8 @@ Outside client work, I design and ship **local-first, open-source products** in 
     </td>
     <td width="50%" valign="top">
       <h3><img src="./assets/dusori-app-icon.svg" width="26" height="26" alt="Dusori app icon" align="texttop">&nbsp;&nbsp;<a href="https://github.com/udhawan97/Dusori">Dusori</a></h3>
-      <p>A free, local-first learning workspace that keeps roadmaps, notes, sources, and progress in portable Markdown and JSON — no account or hosted database required.</p>
-      <p><sub><i>Your learning plan belongs in files you can read, edit, and keep.</i></sub></p>
+      <p>A learning workspace that turns curricula and source material into a living system: a checkable roadmap, today's next objective, durable notes, dated progress, and a knowledge graph that follows Obsidian-style links.</p>
+      <p><sub><i>Not another course catalog — a place to turn what you want to learn into a practice you can continue.</i></sub></p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
         <img src="https://img.shields.io/badge/Svelte-20252B?style=flat-square&amp;logo=svelte&amp;logoColor=FF3E00" alt="Svelte">
@@ -147,8 +149,9 @@ Outside client work, I design and ship **local-first, open-source products** in 
 
 | | Principle | What it means in practice |
 |---|---|---|
-| 🔐 | **Local-first by default** | Keep user data on-device and make privacy a product property, not a policy page. |
-| 🧭 | **Evidence before AI** | Deterministic systems stay authoritative. AI explains, cites, and assists — it doesn't get a vote on the numbers. |
+| 🎯 | **Outcome before feature** | Start with the job someone needs to finish, then make every screen move that work forward. |
+| 🧭 | **Make reasoning inspectable** | Preserve sources, calculations, provenance, and history so an answer can be challenged instead of merely trusted. |
+| 🗃️ | **Users own the artifact** | Prefer durable formats, reversible changes, and deliberate sharing when the work or data is personal. |
 | 🧪 | **Quality is architecture** | Design for observability, failure modes, testability, and releases that don't need a hero. |
 | 📦 | **Ship the whole product** | Docs, installers, updates, demos, and release automation. Source code is the easy half. |
 
@@ -188,6 +191,6 @@ Outside client work, I design and ship **local-first, open-source products** in 
 </p>
 
 <p align="center">
-  <strong>Let's talk about trustworthy AI, local-first products, quality engineering, or turning a prototype into software people can actually use.</strong><br>
+  <strong>Let's talk about decision products, learning software, workflow design, quality engineering, or turning a prototype into software people can actually use.</strong><br>
   <a href="https://udhawan97.github.io/">Portfolio &amp; case studies</a>
 </p>
