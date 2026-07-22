@@ -52,9 +52,9 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
         <img src="https://img.shields.io/badge/PDFium-20252B?style=flat-square&amp;logo=googlechrome&amp;logoColor=4285F4" alt="PDFium">
         <img src="https://img.shields.io/badge/macOS-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="macOS">
       </p>
-      <p>
-        <a href="https://udhawan97.github.io/Orifold/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Orifold website"></a> ·
-        <a href="https://github.com/udhawan97/Orifold"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Orifold source code"></a> ·
+      <p align="center">
+        <a href="https://udhawan97.github.io/Orifold/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Orifold website"></a>
+        <a href="https://github.com/udhawan97/Orifold"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Orifold source code"></a>
         <a href="https://github.com/udhawan97/Orifold/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Orifold?style=flat-square&amp;label=release" alt="Latest Orifold release"></a>
       </p>
     </td>
@@ -74,9 +74,9 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
         <img src="https://img.shields.io/badge/SQLite-20252B?style=flat-square&amp;logo=sqlite&amp;logoColor=5EB6E4" alt="SQLite">
         <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
       </p>
-      <p>
-        <a href="https://udhawan97.github.io/FolioOrb/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="FolioOrb website"></a> ·
-        <a href="https://github.com/udhawan97/FolioOrb"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="FolioOrb source code"></a> ·
+      <p align="center">
+        <a href="https://udhawan97.github.io/FolioOrb/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="FolioOrb website"></a>
+        <a href="https://github.com/udhawan97/FolioOrb"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="FolioOrb source code"></a>
         <a href="https://github.com/udhawan97/FolioOrb/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/FolioOrb?style=flat-square&amp;label=release" alt="Latest FolioOrb release"></a>
       </p>
     </td>
@@ -98,9 +98,9 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
         <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
         <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
       </p>
-      <p>
-        <a href="https://udhawan97.github.io/Golavo/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Golavo website"></a> ·
-        <a href="https://github.com/udhawan97/Golavo"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Golavo source code"></a> ·
+      <p align="center">
+        <a href="https://udhawan97.github.io/Golavo/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Golavo website"></a>
+        <a href="https://github.com/udhawan97/Golavo"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Golavo source code"></a>
         <a href="https://github.com/udhawan97/Golavo/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Golavo?style=flat-square&amp;label=release" alt="Latest Golavo release"></a>
       </p>
     </td>
@@ -114,9 +114,9 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
         <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
         <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
       </p>
-      <p>
-        <a href="https://udhawan97.github.io/Voyalier/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Voyalier website"></a> ·
-        <a href="https://github.com/udhawan97/Voyalier"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Voyalier source code"></a> ·
+      <p align="center">
+        <a href="https://udhawan97.github.io/Voyalier/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Voyalier website"></a>
+        <a href="https://github.com/udhawan97/Voyalier"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Voyalier source code"></a>
         <a href="https://github.com/udhawan97/Voyalier/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Voyalier?style=flat-square&amp;label=release" alt="Latest Voyalier release"></a>
       </p>
     </td>
@@ -132,9 +132,9 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
         <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
         <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
       </p>
-      <p>
-        <a href="https://udhawan97.github.io/Codemble/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Codemble website"></a> ·
-        <a href="https://github.com/udhawan97/Codemble"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Codemble source code"></a> ·
+      <p align="center">
+        <a href="https://udhawan97.github.io/Codemble/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Codemble website"></a>
+        <a href="https://github.com/udhawan97/Codemble"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Codemble source code"></a>
         <a href="https://github.com/udhawan97/Codemble/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Codemble?style=flat-square&amp;label=release" alt="Latest Codemble release"></a>
       </p>
     </td>
@@ -148,10 +148,10 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
         <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
         <img src="https://img.shields.io/badge/Markdown-20252B?style=flat-square&amp;logo=markdown&amp;logoColor=F4EFE6" alt="Markdown">
       </p>
-      <p>
-        <a href="https://udhawan97.github.io/Dusori/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Dusori website"></a> ·
-        <a href="https://udhawan97.github.io/Dusori/app/">Web app</a> ·
-        <a href="https://github.com/udhawan97/Dusori"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Dusori source code"></a> ·
+      <p align="center">
+        <a href="https://udhawan97.github.io/Dusori/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Dusori website"></a>
+        <a href="https://udhawan97.github.io/Dusori/app/"><img src="https://img.shields.io/badge/web_app-20252B?style=flat-square&amp;logo=svelte&amp;logoColor=FF3E00" alt="Dusori web app"></a>
+        <a href="https://github.com/udhawan97/Dusori"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Dusori source code"></a>
         <a href="https://github.com/udhawan97/Dusori/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Dusori?style=flat-square&amp;label=release" alt="Latest Dusori release"></a>
       </p>
     </td>
