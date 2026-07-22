@@ -55,7 +55,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/Orifold/">Website</a> ·
         <a href="https://github.com/udhawan97/Orifold">Source</a> ·
-        <a href="https://github.com/udhawan97/Orifold/releases/tag/v0.8.14"><strong>v0.8.14</strong></a>
+        <a href="https://github.com/udhawan97/Orifold/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Orifold?style=flat-square&amp;label=release" alt="Latest Orifold release"></a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -77,7 +77,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/FolioOrb/">Website</a> ·
         <a href="https://github.com/udhawan97/FolioOrb">Source</a> ·
-        <a href="https://github.com/udhawan97/FolioOrb/releases/tag/v5.7.0"><strong>v5.7.0</strong></a>
+        <a href="https://github.com/udhawan97/FolioOrb/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/FolioOrb?style=flat-square&amp;label=release" alt="Latest FolioOrb release"></a>
       </p>
     </td>
   </tr>
@@ -101,7 +101,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/Golavo/">Website</a> ·
         <a href="https://github.com/udhawan97/Golavo">Source</a> ·
-        <a href="https://github.com/udhawan97/Golavo/releases/tag/v0.15.0"><strong>v0.15.0</strong></a>
+        <a href="https://github.com/udhawan97/Golavo/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Golavo?style=flat-square&amp;label=release" alt="Latest Golavo release"></a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -117,7 +117,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/Voyalier/">Website</a> ·
         <a href="https://github.com/udhawan97/Voyalier">Source</a> ·
-        <a href="https://github.com/udhawan97/Voyalier/releases/tag/v0.5.0"><strong>v0.5.0</strong></a>
+        <a href="https://github.com/udhawan97/Voyalier/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Voyalier?style=flat-square&amp;label=release" alt="Latest Voyalier release"></a>
       </p>
     </td>
   </tr>
@@ -135,7 +135,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
       <p>
         <a href="https://udhawan97.github.io/Codemble/">Website</a> ·
         <a href="https://github.com/udhawan97/Codemble">Source</a> ·
-        <a href="https://github.com/udhawan97/Codemble/releases/tag/v0.5.2"><strong>v0.5.2</strong></a>
+        <a href="https://github.com/udhawan97/Codemble/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Codemble?style=flat-square&amp;label=release" alt="Latest Codemble release"></a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -152,7 +152,7 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
         <a href="https://udhawan97.github.io/Dusori/">Website</a> ·
         <a href="https://udhawan97.github.io/Dusori/app/">Web app</a> ·
         <a href="https://github.com/udhawan97/Dusori">Source</a> ·
-        <a href="https://github.com/udhawan97/Dusori/releases/tag/v0.1.0"><strong>v0.1.0</strong></a>
+        <a href="https://github.com/udhawan97/Dusori/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Dusori?style=flat-square&amp;label=release" alt="Latest Dusori release"></a>
       </p>
     </td>
   </tr>
