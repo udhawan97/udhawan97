@@ -4,7 +4,7 @@
     <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/profile-header-mobile-light.svg">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg">
-    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, applied AI. Selected builds: Dusori, Codemble, Orifold, FolioOrb, Golavo, Voyalier." width="100%">
+    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, applied AI. Selected builds: Dusori, Codemble, Nindova, Orifold, FolioOrb, Golavo, Voyalier." width="100%">
   </picture>
 </p>
 
@@ -38,7 +38,7 @@ Outside client work, I design and ship **open-source product systems** in Swift,
 
 ## 02 · Products that close the loop
 
-Each product takes a fragmented workflow and gives it a clear end state: one finished document, a reviewable portfolio decision, a forecast with a track record, a trip-ready brief, a codebase you can explain, or a learning practice that survives the app.
+Each product takes a fragmented workflow and gives it a clear end state: one finished document, a reviewable portfolio decision, a forecast with a track record, a trip-ready brief, a codebase you can explain, a learning practice that survives the app, or a late-night loop that actually ends.
 
 ### Finish the work
 
@@ -195,6 +195,41 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
         <a href="https://udhawan97.github.io/Dusori/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Dusori website"></a>
         <a href="https://github.com/udhawan97/Dusori"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Dusori source code"></a>
         <a href="https://github.com/udhawan97/Dusori/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Dusori?style=flat-square&amp;label=release" alt="Latest Dusori release"></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+### End the loop
+
+<sub>Design an experience that knows when to stop.</sub>
+
+<table width="100%">
+  <tr>
+    <td width="100%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/udhawan97/Nindova"><picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark-light.svg">
+          <img src="https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark.svg" width="72" height="72" alt="Nindova nine-diamond mark, with four matched pairs around a saffron center">
+        </picture></a><br><a href="https://github.com/udhawan97/Nindova">Nindova</a>
+      </h3>
+      <p>A calm, browser-first pair-removal game for the end of the day. Masala Mound turns familiar Indian kitchen forms into one finite, always-solvable Session that closes itself instead of escalating into scores, streaks, rankings, or another round.</p>
+      <blockquote>
+        <p><strong>The distinction</strong><br><sub>A nightly game with a built-in ending: nothing to win, nothing tracked, and no reward loop asking you to stay.</sub></p>
+      </blockquote>
+      <p align="center">
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
+        <img src="https://img.shields.io/badge/PWA-20252B?style=flat-square&amp;logo=pwa&amp;logoColor=5A0FC8" alt="Progressive Web App">
+        <img src="https://img.shields.io/badge/Playwright-20252B?style=flat-square&amp;logo=playwright&amp;logoColor=45BA4B" alt="Playwright">
+      </p>
+      <hr>
+      <p align="center">
+        <sub><strong>EXPLORE</strong></sub><br>
+        <a href="https://udhawan97.github.io/Nindova/play/"><img src="https://img.shields.io/badge/play_live-E0A64B?style=flat-square&amp;logo=pwa&amp;logoColor=150D20" alt="Play Nindova"></a>
+        <a href="https://udhawan97.github.io/Nindova/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Nindova website"></a>
+        <a href="https://github.com/udhawan97/Nindova"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Nindova source code"></a>
+        <a href="https://github.com/udhawan97/Nindova/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Nindova?style=flat-square&amp;label=release" alt="Latest Nindova release"></a>
       </p>
     </td>
   </tr>
