@@ -101,36 +101,6 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
 
 <table width="100%">
   <tr>
-    <td width="100%" valign="top">
-      <p align="center">
-        <a href="https://github.com/udhawan97/Nimanto"><img src="https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/social-card.svg" width="100%" alt="Open Nimanto: an evidence-first, candidate-controlled job-search workbench for H-1B professionals."></a>
-      </p>
-      <h3 align="center"><a href="https://github.com/udhawan97/Nimanto">Nimanto</a></h3>
-      <p align="center"><sub><strong>CONFIRM EVIDENCE</strong> &nbsp;→&nbsp; <strong>EXPLAIN THE MATCH</strong> &nbsp;→&nbsp; <strong>APPROVE THE HANDOFF</strong></sub></p>
-      <p>A private, local-first job-search workbench for H-1B professionals. Nimanto brings candidate-confirmed career evidence, roles from allowlisted job boards, historical sponsorship signals, deterministic requirement matching, application memory, and grounded packets into one candidate-controlled path.</p>
-      <blockquote>
-        <p><strong>The distinction</strong><br><sub>Packets draw only from confirmed evidence; packet approval, action approval, and an off-by-default runtime switch remain separate gates before an external handoff.</sub></p>
-      </blockquote>
-      <p align="center">
-        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
-        <img src="https://img.shields.io/badge/Next.js-20252B?style=flat-square&amp;logo=nextdotjs&amp;logoColor=F4EFE6" alt="Next.js">
-        <img src="https://img.shields.io/badge/Fastify-20252B?style=flat-square&amp;logo=fastify&amp;logoColor=F4EFE6" alt="Fastify">
-        <img src="https://img.shields.io/badge/PGlite-20252B?style=flat-square&amp;logo=postgresql&amp;logoColor=B8935A" alt="PGlite">
-      </p>
-      <hr>
-      <p align="center">
-        <sub><strong>EXPLORE</strong></sub><br>
-        <a href="https://udhawan97.github.io/Nimanto/"><img src="https://img.shields.io/badge/website-B8935A?style=flat-square&amp;logo=safari&amp;logoColor=0A0908" alt="Nimanto website"></a>
-        <a href="https://github.com/udhawan97/Nimanto#run-it"><img src="https://img.shields.io/badge/run_locally-20252B?style=flat-square&amp;logo=nodedotjs&amp;logoColor=B8935A" alt="Run Nimanto locally"></a>
-        <a href="https://github.com/udhawan97/Nimanto"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Nimanto source code"></a>
-        <a href="https://github.com/udhawan97/Nimanto/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Nimanto?style=flat-square&amp;label=local%20beta" alt="Latest Nimanto local beta release"></a>
-      </p>
-    </td>
-  </tr>
-</table>
-
-<table width="100%">
-  <tr>
     <td width="50%" valign="top">
       <h3 align="center">
         <a href="https://github.com/udhawan97/Golavo"><picture>
@@ -232,11 +202,11 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
 
 ### End the loop
 
-<sub>Design entertainment that knows when to stop.</sub>
+<sub>Make the last step deliberate: an approved handoff or a curtain call.</sub>
 
 <table width="100%">
   <tr>
-    <td width="100%" valign="top">
+    <td width="50%" valign="top">
       <h3 align="center">
         <a href="https://github.com/udhawan97/Nindova"><picture>
           <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark-light.svg">
@@ -261,6 +231,26 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
         <a href="https://udhawan97.github.io/Nindova/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Nindova website"></a>
         <a href="https://github.com/udhawan97/Nindova"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Nindova source code"></a>
         <a href="https://github.com/udhawan97/Nindova/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Nindova?style=flat-square&amp;label=tagged%20Night" alt="Latest tagged Nindova Night Room release; Nindova House is available from the live site and current source"></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/udhawan97/Nimanto"><img src="https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/emblem-animated.svg" width="72" height="72" alt="Animated Nimanto fold lotus opening around an emerald seed"></a><br><a href="https://github.com/udhawan97/Nimanto">Nimanto</a></h3>
+      <p>A private, local-first job-search workbench for H-1B professionals that turns candidate-confirmed evidence, roles from allowlisted job boards, deterministic matches, and grounded application packets into one reviewable path.</p>
+      <blockquote>
+        <p><strong>The distinction</strong><br><sub>Packets use confirmed evidence only; any external handoff must clear separate packet approval, action approval, and an off-by-default runtime switch.</sub></p>
+      </blockquote>
+      <p align="center">
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Next.js-20252B?style=flat-square&amp;logo=nextdotjs&amp;logoColor=F4EFE6" alt="Next.js">
+        <img src="https://img.shields.io/badge/Fastify-20252B?style=flat-square&amp;logo=fastify&amp;logoColor=F4EFE6" alt="Fastify">
+        <img src="https://img.shields.io/badge/PGlite-20252B?style=flat-square&amp;logo=postgresql&amp;logoColor=B8935A" alt="PGlite">
+      </p>
+      <hr>
+      <p align="center">
+        <sub><strong>EXPLORE</strong></sub><br>
+        <a href="https://udhawan97.github.io/Nimanto/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Nimanto website"></a>
+        <a href="https://github.com/udhawan97/Nimanto"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Nimanto source code"></a>
+        <a href="https://github.com/udhawan97/Nimanto/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Nimanto?style=flat-square&amp;label=release" alt="Latest Nimanto local beta release"></a>
       </p>
     </td>
   </tr>
