@@ -4,7 +4,7 @@
     <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/profile-header-mobile-light.svg">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg">
-    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, applied AI. Selected builds: Dusori, Codemble, Nindova, Orifold, FolioOrb, Golavo, Voyalier." width="100%">
+    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, applied AI. Selected builds: Nimanto, Dusori, Codemble, Nindova, Orifold, FolioOrb, Golavo, Voyalier." width="100%">
   </picture>
 </p>
 
@@ -38,7 +38,7 @@ Outside client work, I design and ship **open-source product systems** in Swift,
 
 ## 02 · Products that close the loop
 
-Each product takes a fragmented workflow and gives it a clear end state: one finished document, a reviewable portfolio decision, a forecast with a track record, a trip-ready brief, a codebase you can explain, a learning practice that survives the app, or authored entertainment designed to end.
+Each product takes a fragmented workflow and gives it a clear end state: one finished document, a reviewable portfolio decision, a candidate-approved application packet, a forecast with a track record, a trip-ready brief, a codebase you can explain, a learning practice that survives the app, or authored entertainment designed to end.
 
 ### Finish the work
 
@@ -98,6 +98,36 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
 ### Make reasoning inspectable
 
 <sub>Keep the evidence, timing, and handoff visible enough to challenge.</sub>
+
+<table width="100%">
+  <tr>
+    <td width="100%" valign="top">
+      <p align="center">
+        <a href="https://github.com/udhawan97/Nimanto"><img src="https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/social-card.svg" width="100%" alt="Open Nimanto: an evidence-first, candidate-controlled job-search workbench for H-1B professionals."></a>
+      </p>
+      <h3 align="center"><a href="https://github.com/udhawan97/Nimanto">Nimanto</a></h3>
+      <p align="center"><sub><strong>CONFIRM EVIDENCE</strong> &nbsp;→&nbsp; <strong>EXPLAIN THE MATCH</strong> &nbsp;→&nbsp; <strong>APPROVE THE HANDOFF</strong></sub></p>
+      <p>A private, local-first job-search workbench for H-1B professionals. Nimanto brings candidate-confirmed career evidence, roles from allowlisted job boards, historical sponsorship signals, deterministic requirement matching, application memory, and grounded packets into one candidate-controlled path.</p>
+      <blockquote>
+        <p><strong>The distinction</strong><br><sub>Packets draw only from confirmed evidence; packet approval, action approval, and an off-by-default runtime switch remain separate gates before an external handoff.</sub></p>
+      </blockquote>
+      <p align="center">
+        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Next.js-20252B?style=flat-square&amp;logo=nextdotjs&amp;logoColor=F4EFE6" alt="Next.js">
+        <img src="https://img.shields.io/badge/Fastify-20252B?style=flat-square&amp;logo=fastify&amp;logoColor=F4EFE6" alt="Fastify">
+        <img src="https://img.shields.io/badge/PGlite-20252B?style=flat-square&amp;logo=postgresql&amp;logoColor=B8935A" alt="PGlite">
+      </p>
+      <hr>
+      <p align="center">
+        <sub><strong>EXPLORE</strong></sub><br>
+        <a href="https://udhawan97.github.io/Nimanto/"><img src="https://img.shields.io/badge/website-B8935A?style=flat-square&amp;logo=safari&amp;logoColor=0A0908" alt="Nimanto website"></a>
+        <a href="https://github.com/udhawan97/Nimanto#run-it"><img src="https://img.shields.io/badge/run_locally-20252B?style=flat-square&amp;logo=nodedotjs&amp;logoColor=B8935A" alt="Run Nimanto locally"></a>
+        <a href="https://github.com/udhawan97/Nimanto"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Nimanto source code"></a>
+        <a href="https://github.com/udhawan97/Nimanto/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Nimanto?style=flat-square&amp;label=local%20beta" alt="Latest Nimanto local beta release"></a>
+      </p>
+    </td>
+  </tr>
+</table>
 
 <table width="100%">
   <tr>
