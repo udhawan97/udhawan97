@@ -49,6 +49,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Produces finished, protected documents from mixed files in one native Mac workflow.</p>
 <p><strong>Problem solved</strong><br>PDF work splinters across repair, OCR, editing, signing, and export tools.</p>
 <p><strong>Different</strong><br>Keeps the entire document lifecycle local instead of stitching together specialist apps or cloud uploads.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/Swift-20252B?style=flat-square&amp;logo=swift&amp;logoColor=F05138" alt="Swift">
+  <img src="https://img.shields.io/badge/PDFKit-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="PDFKit">
+  <img src="https://img.shields.io/badge/PDFium-20252B?style=flat-square&amp;logo=googlechrome&amp;logoColor=4285F4" alt="PDFium">
+  <img src="https://img.shields.io/badge/macOS-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="macOS">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://udhawan97.github.io/Orifold/"><img src="https://img.shields.io/badge/product_site-1F6FEB?style=flat-square&amp;logo=safari&amp;logoColor=white" alt="Open the Orifold product site"></a>
+  <a href="https://github.com/udhawan97/Orifold/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Orifold?style=flat-square&amp;label=latest" alt="View the latest Orifold release"></a>
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/Orifold#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read Orifold project details"></a>
+</p>
 
 ---
 
@@ -57,6 +70,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Turns holdings, market data, and risk context into explainable portfolio decision support.</p>
 <p><strong>Problem solved</strong><br>It is hard to tell what deserves attention when holdings, risk, news, and market context are scattered.</p>
 <p><strong>Different</strong><br>Keeps data and reasoning local, shows its evidence, and never connects to a brokerage or places trades.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
+  <img src="https://img.shields.io/badge/FastAPI-20252B?style=flat-square&amp;logo=fastapi&amp;logoColor=009688" alt="FastAPI">
+  <img src="https://img.shields.io/badge/SQLite-20252B?style=flat-square&amp;logo=sqlite&amp;logoColor=5EB6E4" alt="SQLite">
+  <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://udhawan97.github.io/FolioOrb/"><img src="https://img.shields.io/badge/product_site-1F6FEB?style=flat-square&amp;logo=safari&amp;logoColor=white" alt="Open the FolioOrb product site"></a>
+  <a href="https://github.com/udhawan97/FolioOrb/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/FolioOrb?style=flat-square&amp;label=latest" alt="View the latest FolioOrb release"></a>
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/FolioOrb#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read FolioOrb project details"></a>
+</p>
 
 ---
 
@@ -65,6 +91,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Presents complex disease mechanisms as source-linked journeys through an interactive conceptual 3D map.</p>
 <p><strong>Problem solved</strong><br>Cause and effect across multiple body systems is hard to follow when structure and explanation live separately.</p>
 <p><strong>Different</strong><br>Synchronizes causal phases, system highlights, plain or clinical depth, and direct sources while explicitly bounding unreviewed synthesis.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+  <img src="https://img.shields.io/badge/React-20252B?style=flat-square&amp;logo=react&amp;logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/Three.js-20252B?style=flat-square&amp;logo=threedotjs&amp;logoColor=F4EFE6" alt="Three.js">
+  <img src="https://img.shields.io/badge/Vite-20252B?style=flat-square&amp;logo=vite&amp;logoColor=646CFF" alt="Vite">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://udhawan97.github.io/PalDawn/"><img src="https://img.shields.io/badge/live_experience-1F6FEB?style=flat-square&amp;logo=safari&amp;logoColor=white" alt="Open the live PalDawn experience"></a>
+  <a href="https://github.com/udhawan97/PalDawn/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/PalDawn?style=flat-square&amp;label=latest" alt="View the latest PalDawn release"></a>
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/PalDawn#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read PalDawn project details"></a>
+</p>
 
 ---
 
@@ -73,6 +112,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Lets people locally rehearse who should receive which documents, and when, without releasing anything; currently pre-alpha.</p>
 <p><strong>Problem solved</strong><br>A contingency plan must handle prolonged silence without confusing it with proof, an emergency, or permission to release.</p>
 <p><strong>Different</strong><br>A missed Check-in enters reversible Concern—not a conclusion; human verification, holds, vetoes, and Release remain planned.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+  <img src="https://img.shields.io/badge/React-20252B?style=flat-square&amp;logo=react&amp;logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/Vite-20252B?style=flat-square&amp;logo=vite&amp;logoColor=646CFF" alt="Vite">
+  <img src="https://img.shields.io/badge/PostgreSQL-20252B?style=flat-square&amp;logo=postgresql&amp;logoColor=4169E1" alt="PostgreSQL">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://github.com/udhawan97/Vidha#run-the-local-prototype"><img src="https://img.shields.io/badge/local_prototype-1F6FEB?style=flat-square&amp;logo=nodedotjs&amp;logoColor=white" alt="Run the Vidha prototype locally"></a>
+  <img src="https://img.shields.io/badge/public_release-not_available-6E7781?style=flat-square" alt="No public Vidha release is available">
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/Vidha#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read Vidha project details"></a>
+</p>
 
 ---
 
@@ -81,6 +133,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Makes football forecasts accountable through pre-match predictions and a visible calibration history.</p>
 <p><strong>Problem solved</strong><br>Forecast quality is hard to judge when past calls can be rewritten or selectively remembered.</p>
 <p><strong>Different</strong><br>Seals forecasts before kickoff and scores the track record forward, so hindsight cannot edit the story.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
+  <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
+  <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://udhawan97.github.io/Golavo/"><img src="https://img.shields.io/badge/product_site-1F6FEB?style=flat-square&amp;logo=safari&amp;logoColor=white" alt="Open the Golavo product site"></a>
+  <a href="https://github.com/udhawan97/Golavo/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Golavo?style=flat-square&amp;label=latest" alt="View the latest Golavo release"></a>
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/Golavo#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read Golavo project details"></a>
+</p>
 
 ---
 
@@ -89,6 +154,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Produces an offline-ready, shareable trip brief from reservations, official advice, weather, places, and plans.</p>
 <p><strong>Problem solved</strong><br>Critical travel details stay fragmented across tabs, inboxes, and single-purpose apps.</p>
 <p><strong>Different</strong><br>Optimizes for a reviewed departure artifact—not another itinerary builder or booking feed.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
+  <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
+  <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://udhawan97.github.io/Voyalier/"><img src="https://img.shields.io/badge/product_site-1F6FEB?style=flat-square&amp;logo=safari&amp;logoColor=white" alt="Open the Voyalier product site"></a>
+  <a href="https://github.com/udhawan97/Voyalier/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Voyalier?style=flat-square&amp;label=latest" alt="View the latest Voyalier release"></a>
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/Voyalier#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read Voyalier project details"></a>
+</p>
 
 ---
 
@@ -97,6 +175,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Turns a real codebase into a playable learning map grounded in parser-verified structure.</p>
 <p><strong>Problem solved</strong><br>Unfamiliar codebases are hard to learn when tutorials and diagrams drift from the real source.</p>
 <p><strong>Different</strong><br>Progress comes from proving understanding of actual files and relationships—not completing canned exercises.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
+  <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
+  <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://udhawan97.github.io/Codemble/"><img src="https://img.shields.io/badge/live_experience-1F6FEB?style=flat-square&amp;logo=safari&amp;logoColor=white" alt="Open the live Codemble experience"></a>
+  <a href="https://github.com/udhawan97/Codemble/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Codemble?style=flat-square&amp;label=latest" alt="View the latest Codemble release"></a>
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/Codemble#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read Codemble project details"></a>
+</p>
 
 ---
 
@@ -105,6 +196,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Turns a hard question into a cited research brief with a durable evidence trail.</p>
 <p><strong>Problem solved</strong><br>Search, reading, notes, and synthesis fragment across tabs and files, making claims hard to audit.</p>
 <p><strong>Different</strong><br>Searches only permitted sources, preserves failures and gaps, and stores ordinary local files—AI optional.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Svelte-20252B?style=flat-square&amp;logo=svelte&amp;logoColor=FF3E00" alt="Svelte">
+  <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
+  <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://udhawan97.github.io/Dusori/app/"><img src="https://img.shields.io/badge/open_app-1F6FEB?style=flat-square&amp;logo=svelte&amp;logoColor=white" alt="Open the live Dusori app"></a>
+  <a href="https://github.com/udhawan97/Dusori/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Dusori?style=flat-square&amp;label=latest" alt="View the latest Dusori release"></a>
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/Dusori#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read Dusori project details"></a>
+</p>
 
 ---
 
@@ -113,6 +217,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Offers eight finite authored games and a separate self-ending wind-down session for private, offline play.</p>
 <p><strong>Problem solved</strong><br>Many digital games are designed around endless engagement, tracking, rankings, and return loops.</p>
 <p><strong>Different</strong><br>Every experience has a curtain call—no account, ads, telemetry, public leaderboard, or game that refuses to end.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-20252B?style=flat-square&amp;logo=vite&amp;logoColor=646CFF" alt="Vite">
+  <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
+  <img src="https://img.shields.io/badge/PWA-20252B?style=flat-square&amp;logo=pwa&amp;logoColor=5A0FC8" alt="Progressive web app">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://udhawan97.github.io/Nindova/"><img src="https://img.shields.io/badge/live_experience-1F6FEB?style=flat-square&amp;logo=safari&amp;logoColor=white" alt="Open the live Nindova experience"></a>
+  <a href="https://github.com/udhawan97/Nindova/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Nindova?style=flat-square&amp;label=latest" alt="View the latest Nindova release"></a>
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/Nindova#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read Nindova project details"></a>
+</p>
 
 ---
 
@@ -121,6 +238,19 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 <p><strong>Value</strong><br>Turns candidate-confirmed evidence and allowlisted roles into reviewable job matches and application packets.</p>
 <p><strong>Problem solved</strong><br>Job-search automation can invent qualifications or act before candidates approve the story.</p>
 <p><strong>Different</strong><br>Uses confirmed evidence only, separates packet and action approval, and keeps external handoff disabled by default.</p>
+<p><strong>Tech stack</strong><br>
+  <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Next.js-20252B?style=flat-square&amp;logo=nextdotjs&amp;logoColor=F4EFE6" alt="Next.js">
+  <img src="https://img.shields.io/badge/Fastify-20252B?style=flat-square&amp;logo=fastify&amp;logoColor=F4EFE6" alt="Fastify">
+  <img src="https://img.shields.io/badge/PGlite-20252B?style=flat-square&amp;logo=postgresql&amp;logoColor=B8935A" alt="PGlite">
+</p>
+<p><strong>Live &amp; release</strong><br>
+  <a href="https://udhawan97.github.io/Nimanto/"><img src="https://img.shields.io/badge/product_site-1F6FEB?style=flat-square&amp;logo=safari&amp;logoColor=white" alt="Open the Nimanto product site"></a>
+  <a href="https://github.com/udhawan97/Nimanto/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Nimanto?style=flat-square&amp;label=local_beta" alt="View the latest Nimanto local beta release"></a>
+</p>
+<p><strong>Details</strong><br>
+  <a href="https://github.com/udhawan97/Nimanto#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read Nimanto project details"></a>
+</p>
 
 ## 03 · How I build
 
