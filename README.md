@@ -4,7 +4,7 @@
     <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/profile-header-mobile-light.svg">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg">
-    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, applied AI. Selected builds: Nimanto, Dusori, Codemble, Nindova, Orifold, FolioOrb, Golavo, Voyalier." width="100%">
+    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, applied AI. Selected builds: Orifold, FolioOrb, PalDawn, Vidha, Golavo, Voyalier, Codemble, Dusori, Nindova, Nimanto." width="100%">
   </picture>
 </p>
 
@@ -36,35 +36,17 @@ Outside client work, I design and ship **open-source product systems** in Swift,
   </picture>
 </p>
 
-## 02 · Products that close the loop
+## 02 · Products, at a glance
 
-Each product takes a fragmented workflow and gives it a clear end state: one finished document, a reviewable portfolio decision, a candidate-approved application packet, a forecast with a track record, a trip-ready brief, a codebase you can explain, a learning practice that survives the app, or authored entertainment designed to end.
-
-### Finish the work
-
-<sub>Turn fragmented inputs into a finished artifact or a reviewable decision.</sub>
+Ten open-source products, distilled to value, problem, and differentiation.
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Orifold"><img src="https://github.com/udhawan97/Orifold/raw/main/docs/assets/orifold-crane-fold.svg" width="72" height="72" alt="Animated Orifold logo: a sheet of paper folds into an origami crane, then becomes the app icon"></a><br><a href="https://github.com/udhawan97/Orifold">Orifold</a></h3>
-      <p>A native macOS workspace that takes a pile of PDFs, scans, images, and office files through repair, organization, OCR, editing, review, signing, protection, and export — without bouncing between specialist tools.</p>
-      <blockquote>
-        <p><strong>The distinction</strong><br><sub>One local workflow carries messy inputs all the way to a finished document.</sub></p>
-      </blockquote>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Swift-20252B?style=flat-square&amp;logo=swift&amp;logoColor=F05138" alt="Swift">
-        <img src="https://img.shields.io/badge/PDFKit-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="PDFKit">
-        <img src="https://img.shields.io/badge/PDFium-20252B?style=flat-square&amp;logo=googlechrome&amp;logoColor=4285F4" alt="PDFium">
-        <img src="https://img.shields.io/badge/macOS-20252B?style=flat-square&amp;logo=apple&amp;logoColor=F4EFE6" alt="macOS">
-      </p>
-      <hr>
-      <p align="center">
-        <sub><strong>EXPLORE</strong></sub><br>
-        <a href="https://udhawan97.github.io/Orifold/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Orifold website"></a>
-        <a href="https://github.com/udhawan97/Orifold"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Orifold source code"></a>
-        <a href="https://github.com/udhawan97/Orifold/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Orifold?style=flat-square&amp;label=release" alt="Latest Orifold release"></a>
-      </p>
+      <h3 align="center"><a href="https://github.com/udhawan97/Orifold"><img src="https://github.com/udhawan97/Orifold/raw/main/docs/assets/orifold-crane-fold.svg" width="72" height="72" alt="Animated Orifold logo: a sheet of paper folds into an origami crane, then becomes the app icon"></a><br><a href="https://udhawan97.github.io/Orifold/">Orifold</a></h3>
+      <p><strong>Value</strong><br>Produces finished, protected documents from mixed files in one native Mac workflow.</p>
+      <p><strong>Problem solved</strong><br>PDF work splinters across repair, OCR, editing, signing, and export tools.</p>
+      <p><strong>Different</strong><br>Keeps the entire document lifecycle local instead of stitching together specialist apps or cloud uploads.</p>
     </td>
     <td width="50%" valign="top">
       <h3 align="center">
@@ -72,34 +54,33 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
           <source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-light-animated.svg">
           <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-dark-animated.svg">
           <img src="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-dark-animated.svg" width="72" height="72" alt="Animated FolioOrb orbit mark">
-        </picture></a><br><a href="https://github.com/udhawan97/FolioOrb">FolioOrb</a>
+        </picture></a><br><a href="https://udhawan97.github.io/FolioOrb/">FolioOrb</a>
       </h3>
-      <p>A portfolio decision cockpit that combines holdings, live prices, risk math, market regime, news, and SEC context into plain Hold / Add / Trim / Exit calls, prioritized actions, and reviewable DCA steps.</p>
-      <blockquote>
-        <p><strong>The distinction</strong><br><sub>Portfolio evidence becomes a reviewable Hold / Add / Trim / Exit decision.</sub></p>
-      </blockquote>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
-        <img src="https://img.shields.io/badge/FastAPI-20252B?style=flat-square&amp;logo=fastapi&amp;logoColor=009688" alt="FastAPI">
-        <img src="https://img.shields.io/badge/SQLite-20252B?style=flat-square&amp;logo=sqlite&amp;logoColor=5EB6E4" alt="SQLite">
-        <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
-      </p>
-      <hr>
-      <p align="center">
-        <sub><strong>EXPLORE</strong></sub><br>
-        <a href="https://udhawan97.github.io/FolioOrb/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="FolioOrb website"></a>
-        <a href="https://github.com/udhawan97/FolioOrb"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="FolioOrb source code"></a>
-        <a href="https://github.com/udhawan97/FolioOrb/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/FolioOrb?style=flat-square&amp;label=release" alt="Latest FolioOrb release"></a>
-      </p>
+      <p><strong>Value</strong><br>Turns holdings, market data, and risk context into explainable portfolio decision support.</p>
+      <p><strong>Problem solved</strong><br>It is hard to tell what deserves attention when holdings, risk, news, and market context are scattered.</p>
+      <p><strong>Different</strong><br>Keeps data and reasoning local, shows its evidence, and never connects to a brokerage or places trades.</p>
     </td>
   </tr>
-</table>
-
-### Make reasoning inspectable
-
-<sub>Keep the evidence, timing, and handoff visible enough to challenge.</sub>
-
-<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/udhawan97/PalDawn"><img src="https://github.com/udhawan97/PalDawn/raw/main/app/public/icon.svg" width="72" height="72" alt="Animated PalDawn mark: a cyan signal travels through a porcelain listening tube into a gold disc"></a><br><a href="https://udhawan97.github.io/PalDawn/">PalDawn</a></h3>
+      <p><strong>Value</strong><br>Presents complex disease mechanisms as source-linked journeys through an interactive conceptual 3D map.</p>
+      <p><strong>Problem solved</strong><br>Cause and effect across multiple body systems is hard to follow when structure and explanation live separately.</p>
+      <p><strong>Different</strong><br>Synchronizes causal phases, system highlights, plain or clinical depth, and direct sources while explicitly bounding unreviewed synthesis.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">
+        <a href="https://github.com/udhawan97/Vidha"><picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark-reversed.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark.svg">
+          <img src="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark.svg" width="72" height="72" alt="Vidha courier working-concept mark: a small bird standing on a marigold continuity line">
+        </picture></a><br><a href="https://github.com/udhawan97/Vidha">Vidha</a>
+      </h3>
+      <p><strong>Value</strong><br>Lets people locally rehearse who should receive which documents, and when, without releasing anything; currently pre-alpha.</p>
+      <p><strong>Problem solved</strong><br>A contingency plan must handle prolonged silence without confusing it with proof, an emergency, or permission to release.</p>
+      <p><strong>Different</strong><br>A missed Check-in enters reversible Concern—not a conclusion; human verification, holds, vetoes, and Release remain planned.</p>
+    </td>
+  </tr>
   <tr>
     <td width="50%" valign="top">
       <h3 align="center">
@@ -107,151 +88,50 @@ Each product takes a fragmented workflow and gives it a clear end state: one fin
           <source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-dark.svg">
           <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-light.svg">
           <img src="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-light.svg" width="72" height="72" alt="Animated Golavo mark: a football traces a golden arc through a rising-sun goal">
-        </picture></a><br><a href="https://github.com/udhawan97/Golavo">Golavo</a>
+        </picture></a><br><a href="https://udhawan97.github.io/Golavo/">Golavo</a>
       </h3>
-      <p>An accountable football forecasting workbench where model voices show their evidence, predictions are sealed before kickoff, and results build a visible forward track record and calibration history.</p>
-      <blockquote>
-        <p><strong>The distinction</strong><br><sub>Forecasts are sealed before kickoff, so hindsight cannot rewrite the track record.</sub></p>
-      </blockquote>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
-        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
-        <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
-        <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
-      </p>
-      <hr>
-      <p align="center">
-        <sub><strong>EXPLORE</strong></sub><br>
-        <a href="https://udhawan97.github.io/Golavo/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Golavo website"></a>
-        <a href="https://github.com/udhawan97/Golavo"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Golavo source code"></a>
-        <a href="https://github.com/udhawan97/Golavo/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Golavo?style=flat-square&amp;label=release" alt="Latest Golavo release"></a>
-      </p>
+      <p><strong>Value</strong><br>Makes football forecasts accountable through pre-match predictions and a visible calibration history.</p>
+      <p><strong>Problem solved</strong><br>Forecast quality is hard to judge when past calls can be rewritten or selectively remembered.</p>
+      <p><strong>Different</strong><br>Seals forecasts before kickoff and scores the track record forward, so hindsight cannot edit the story.</p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Voyalier"><img src="https://github.com/udhawan97/Voyalier/raw/main/packages/brand/src/voyalier-app-icon.svg" width="72" height="72" alt="Animated Voyalier folded-route app icon"></a><br><a href="https://github.com/udhawan97/Voyalier">Voyalier</a></h3>
-      <p>A trip-readiness workspace that turns reservation evidence, official advice, weather, saved places, and traveler-authored plans into conflicts to resolve, an offline Today view, and a redacted brief worth sharing.</p>
-      <blockquote>
-        <p><strong>The distinction</strong><br><sub>Planning ends in an offline-ready, reviewed brief — not another collection of tabs.</sub></p>
-      </blockquote>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Rust-20252B?style=flat-square&amp;logo=rust&amp;logoColor=F4EFE6" alt="Rust">
-        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
-        <img src="https://img.shields.io/badge/Tauri-20252B?style=flat-square&amp;logo=tauri&amp;logoColor=24C8DB" alt="Tauri">
-        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
-      </p>
-      <hr>
-      <p align="center">
-        <sub><strong>EXPLORE</strong></sub><br>
-        <a href="https://udhawan97.github.io/Voyalier/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Voyalier website"></a>
-        <a href="https://github.com/udhawan97/Voyalier"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Voyalier source code"></a>
-        <a href="https://github.com/udhawan97/Voyalier/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Voyalier?style=flat-square&amp;label=release" alt="Latest Voyalier release"></a>
-      </p>
+      <h3 align="center"><a href="https://github.com/udhawan97/Voyalier"><img src="https://github.com/udhawan97/Voyalier/raw/main/packages/brand/src/voyalier-app-icon.svg" width="72" height="72" alt="Animated Voyalier folded-route app icon"></a><br><a href="https://udhawan97.github.io/Voyalier/">Voyalier</a></h3>
+      <p><strong>Value</strong><br>Produces an offline-ready, shareable trip brief from reservations, official advice, weather, places, and plans.</p>
+      <p><strong>Problem solved</strong><br>Critical travel details stay fragmented across tabs, inboxes, and single-purpose apps.</p>
+      <p><strong>Different</strong><br>Optimizes for a reviewed departure artifact—not another itinerary builder or booking feed.</p>
     </td>
   </tr>
-</table>
-
-### Make learning durable
-
-<sub>Move from consuming content to understanding and practice that persist.</sub>
-
-<table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Codemble"><img src="https://github.com/udhawan97/Codemble/raw/main/docs-site/public/brand/mark-animated.svg" width="72" height="72" alt="Codemble — an open lapis ensō whose amber star systems light up"></a><br><a href="https://github.com/udhawan97/Codemble">Codemble</a></h3>
-      <p>A code-learning game that maps real Python, JavaScript, and TypeScript projects into a parser-proven galaxy, then makes learners study source, follow relationships, and pass graph-derived checks to light it up.</p>
-      <blockquote>
-        <p><strong>The distinction</strong><br><sub>The galaxy lights up only when you prove you understand the real codebase.</sub></p>
-      </blockquote>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Python-20252B?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Python">
-        <img src="https://img.shields.io/badge/JavaScript-20252B?style=flat-square&amp;logo=javascript&amp;logoColor=F7DF1E" alt="JavaScript">
-        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
-        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
-      </p>
-      <hr>
-      <p align="center">
-        <sub><strong>EXPLORE</strong></sub><br>
-        <a href="https://udhawan97.github.io/Codemble/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Codemble website"></a>
-        <a href="https://github.com/udhawan97/Codemble"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Codemble source code"></a>
-        <a href="https://github.com/udhawan97/Codemble/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Codemble?style=flat-square&amp;label=release" alt="Latest Codemble release"></a>
-      </p>
+      <h3 align="center"><a href="https://github.com/udhawan97/Codemble"><img src="https://github.com/udhawan97/Codemble/raw/main/docs-site/public/brand/mark-animated.svg" width="72" height="72" alt="Codemble — an open lapis ensō whose amber star systems light up"></a><br><a href="https://udhawan97.github.io/Codemble/">Codemble</a></h3>
+      <p><strong>Value</strong><br>Turns a real codebase into a playable learning map grounded in parser-verified structure.</p>
+      <p><strong>Problem solved</strong><br>Unfamiliar codebases are hard to learn when tutorials and diagrams drift from the real source.</p>
+      <p><strong>Different</strong><br>Progress comes from proving understanding of actual files and relationships—not completing canned exercises.</p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Dusori"><img src="./assets/project-icons/dusori-animated.svg" width="72" height="72" alt="Animated inverted-black Dusori app icon"></a><br><a href="https://github.com/udhawan97/Dusori">Dusori</a></h3>
-      <p>A learning workspace that turns curricula and source material into a living system: a checkable roadmap, today's next objective, durable notes, dated progress, and a knowledge graph that follows Obsidian-style links.</p>
-      <blockquote>
-        <p><strong>The distinction</strong><br><sub>The roadmap, notes, graph, and progress stay portable — even when the app is gone.</sub></p>
-      </blockquote>
-      <p align="center">
-        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
-        <img src="https://img.shields.io/badge/Svelte-20252B?style=flat-square&amp;logo=svelte&amp;logoColor=FF3E00" alt="Svelte">
-        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
-        <img src="https://img.shields.io/badge/Markdown-20252B?style=flat-square&amp;logo=markdown&amp;logoColor=F4EFE6" alt="Markdown">
-      </p>
-      <hr>
-      <p align="center">
-        <sub><strong>EXPLORE</strong></sub><br>
-        <a href="https://udhawan97.github.io/Dusori/app/"><img src="https://img.shields.io/badge/open_app-C9862E?style=flat-square&amp;logo=svelte&amp;logoColor=14100D" alt="Open Dusori web app"></a>
-        <a href="https://udhawan97.github.io/Dusori/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Dusori website"></a>
-        <a href="https://github.com/udhawan97/Dusori"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Dusori source code"></a>
-        <a href="https://github.com/udhawan97/Dusori/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Dusori?style=flat-square&amp;label=release" alt="Latest Dusori release"></a>
-      </p>
+      <h3 align="center"><a href="https://github.com/udhawan97/Dusori"><img src="./assets/project-icons/dusori-animated.svg" width="72" height="72" alt="Animated inverted-black Dusori app icon"></a><br><a href="https://udhawan97.github.io/Dusori/app/">Dusori</a></h3>
+      <p><strong>Value</strong><br>Turns a hard question into a cited research brief with a durable evidence trail.</p>
+      <p><strong>Problem solved</strong><br>Search, reading, notes, and synthesis fragment across tabs and files, making claims hard to audit.</p>
+      <p><strong>Different</strong><br>Searches only permitted sources, preserves failures and gaps, and stores ordinary local files—AI optional.</p>
     </td>
   </tr>
-</table>
-
-### End the loop
-
-<sub>Make the last step deliberate: an approved handoff or a curtain call.</sub>
-
-<table width="100%">
   <tr>
     <td width="50%" valign="top">
       <h3 align="center">
         <a href="https://github.com/udhawan97/Nindova"><picture>
           <source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark-light.svg">
           <img src="https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark.svg" width="72" height="72" alt="Nindova nine-diamond mark, with four matched pairs around a saffron center">
-        </picture></a><br><a href="https://github.com/udhawan97/Nindova">Nindova</a>
+        </picture></a><br><a href="https://udhawan97.github.io/Nindova/">Nindova</a>
       </h3>
-      <p>A private, offline-ready browser house for adults. Its Grand Salon holds five finite authored games — Pattern Court, Mirror Forge, Stack Architect, Lantern Ledger, and Sector Sprint — while the separate Night Room keeps Masala Mound as one self-ending wind-down Session.</p>
-      <blockquote>
-        <p><strong>The distinction</strong><br><sub>A house of games with curtain calls, plus a separate room for goodnight — no account, public ranking, ads, telemetry, or game that refuses to end.</sub></p>
-      </blockquote>
-      <p align="center">
-        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
-        <img src="https://img.shields.io/badge/Vite-20252B?style=flat-square&amp;logo=vite&amp;logoColor=646CFF" alt="Vite">
-        <img src="https://img.shields.io/badge/Astro-20252B?style=flat-square&amp;logo=astro&amp;logoColor=BC52EE" alt="Astro">
-        <img src="https://img.shields.io/badge/PWA-20252B?style=flat-square&amp;logo=pwa&amp;logoColor=5A0FC8" alt="Progressive Web App">
-      </p>
-      <hr>
-      <p align="center">
-        <sub><strong>EXPLORE</strong></sub><br>
-        <a href="https://udhawan97.github.io/Nindova/house/"><img src="https://img.shields.io/badge/enter_house-E0A64B?style=flat-square&amp;logo=pwa&amp;logoColor=150D20" alt="Enter Nindova House"></a>
-        <a href="https://udhawan97.github.io/Nindova/play/"><img src="https://img.shields.io/badge/night_room-20252B?style=flat-square&amp;logo=pwa&amp;logoColor=C4638A" alt="Visit Nindova's Night Room"></a>
-        <a href="https://udhawan97.github.io/Nindova/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Nindova website"></a>
-        <a href="https://github.com/udhawan97/Nindova"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Nindova source code"></a>
-        <a href="https://github.com/udhawan97/Nindova/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Nindova?style=flat-square&amp;label=tagged%20Night" alt="Latest tagged Nindova Night Room release; Nindova House is available from the live site and current source"></a>
-      </p>
+      <p><strong>Value</strong><br>Offers eight finite authored games and a separate self-ending wind-down session for private, offline play.</p>
+      <p><strong>Problem solved</strong><br>Many digital games are designed around endless engagement, tracking, rankings, and return loops.</p>
+      <p><strong>Different</strong><br>Every experience has a curtain call—no account, ads, telemetry, public leaderboard, or game that refuses to end.</p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/udhawan97/Nimanto"><img src="https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/emblem-animated.svg" width="72" height="72" alt="Animated Nimanto fold lotus opening around an emerald seed"></a><br><a href="https://github.com/udhawan97/Nimanto">Nimanto</a></h3>
-      <p>A private, local-first job-search workbench for H-1B professionals that turns candidate-confirmed evidence, roles from allowlisted job boards, deterministic matches, and grounded application packets into one reviewable path.</p>
-      <blockquote>
-        <p><strong>The distinction</strong><br><sub>Packets use confirmed evidence only; any external handoff must clear separate packet approval, action approval, and an off-by-default runtime switch.</sub></p>
-      </blockquote>
-      <p align="center">
-        <img src="https://img.shields.io/badge/TypeScript-20252B?style=flat-square&amp;logo=typescript&amp;logoColor=5B9BD5" alt="TypeScript">
-        <img src="https://img.shields.io/badge/Next.js-20252B?style=flat-square&amp;logo=nextdotjs&amp;logoColor=F4EFE6" alt="Next.js">
-        <img src="https://img.shields.io/badge/Fastify-20252B?style=flat-square&amp;logo=fastify&amp;logoColor=F4EFE6" alt="Fastify">
-        <img src="https://img.shields.io/badge/PGlite-20252B?style=flat-square&amp;logo=postgresql&amp;logoColor=B8935A" alt="PGlite">
-      </p>
-      <hr>
-      <p align="center">
-        <sub><strong>EXPLORE</strong></sub><br>
-        <a href="https://udhawan97.github.io/Nimanto/"><img src="https://img.shields.io/badge/website-20252B?style=flat-square&amp;logo=safari&amp;logoColor=7FB7CC" alt="Nimanto website"></a>
-        <a href="https://github.com/udhawan97/Nimanto"><img src="https://img.shields.io/badge/source-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Nimanto source code"></a>
-        <a href="https://github.com/udhawan97/Nimanto/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Nimanto?style=flat-square&amp;label=release" alt="Latest Nimanto local beta release"></a>
-      </p>
+      <h3 align="center"><a href="https://github.com/udhawan97/Nimanto"><img src="https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/emblem-animated.svg" width="72" height="72" alt="Animated Nimanto fold lotus opening around an emerald seed"></a><br><a href="https://udhawan97.github.io/Nimanto/">Nimanto</a></h3>
+      <p><strong>Value</strong><br>Turns candidate-confirmed evidence and allowlisted roles into reviewable job matches and application packets.</p>
+      <p><strong>Problem solved</strong><br>Job-search automation can invent qualifications or act before candidates approve the story.</p>
+      <p><strong>Different</strong><br>Uses confirmed evidence only, separates packet and action approval, and keeps external handoff disabled by default.</p>
     </td>
   </tr>
 </table>
