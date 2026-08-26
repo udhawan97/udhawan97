@@ -1,3 +1,5 @@
+<!-- Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V4 -->
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/profile-header-mobile-dark.svg">
@@ -40,7 +42,7 @@ Outside client work, I design and ship **open-source product systems** in Swift,
 
 Ten products—each distilled to what it delivers, the problem it solves, and why it stands apart.
 
-<!-- Hallmark · genre: modern-minimal · macrostructure: Portfolio Grid · theme: Cobalt · enrichment: product marks -->
+<!-- Hallmark · genre: modern-minimal · macrostructure: Index-First · theme: Cobalt · enrichment: product marks -->
 
 <h3><a href="https://github.com/udhawan97/Orifold"><img src="https://github.com/udhawan97/Orifold/raw/main/docs/assets/orifold-crane-fold.svg" width="64" height="64" align="middle" alt="Orifold source code — animated logo of paper folding into an origami crane"></a>&nbsp;&nbsp;<a href="https://udhawan97.github.io/Orifold/">Orifold</a></h3>
 
