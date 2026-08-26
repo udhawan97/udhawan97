@@ -52,7 +52,7 @@ Ten products—each distilled to what it delivers, the problem it solves, and wh
 
 ---
 
-<h3><a href="https://github.com/udhawan97/FolioOrb"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-light-animated.svg"><source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-dark-animated.svg"><img src="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-mark-dark-animated.svg" width="64" height="64" align="middle" alt="FolioOrb source code — animated orbit mark"></picture></a>&nbsp;&nbsp;<a href="https://udhawan97.github.io/FolioOrb/">FolioOrb</a></h3>
+<h3><a href="https://github.com/udhawan97/FolioOrb"><img src="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-icon.svg" width="64" height="64" align="middle" alt="FolioOrb source code — orbit mark"></a>&nbsp;&nbsp;<a href="https://udhawan97.github.io/FolioOrb/">FolioOrb</a></h3>
 
 <p><strong>Value</strong><br>Turns holdings, market data, and risk context into explainable portfolio decision support.</p>
 <p><strong>Problem solved</strong><br>It is hard to tell what deserves attention when holdings, risk, news, and market context are scattered.</p>
