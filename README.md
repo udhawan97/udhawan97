@@ -40,7 +40,7 @@ Outside client work, I design and ship **open-source product systems** in Swift,
 
 ## 02 · Products, at a glance
 
-Ten products—each distilled to what it delivers, the problem it solves, and why it stands apart.
+Ten products, ranked by total commits in each repository’s default-branch history as of August 26, 2026. The badges under **Details** update live; this order is a manual snapshot. Each entry shows what it delivers, the problem it solves, and why it stands apart.
 
 <!-- Hallmark · genre: modern-minimal · macrostructure: Index-First · theme: Cobalt · enrichment: product marks -->
 
