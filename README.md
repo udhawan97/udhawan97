@@ -262,7 +262,29 @@ Ten products, ranked by total commits in each repository’s default-branch hist
   <a href="https://github.com/udhawan97/PalDawn/commits/main"><img src="https://img.shields.io/github/commit-activity/t/udhawan97/PalDawn?style=flat-square&amp;label=commits" alt="View PalDawn commit history"></a>
 </p>
 
-## 03 · How I build
+## 03 · Agent infrastructure
+
+The products above are the output. **[Agent Toolkit](https://github.com/udhawan97/agent-toolkit)** is a separate open-source distribution layer for the agent workflows I use to build and review them: one portable setup that installs the same curated plugin and skills through the native marketplaces in Codex and Claude Code.
+
+<p align="center">
+  <a href="https://github.com/udhawan97/agent-toolkit#readme">
+    <img src="https://github.com/udhawan97/agent-toolkit/raw/stable/assets/brand/agent-toolkit-hero.png" width="100%" alt="Agent Toolkit — a central modular toolkit routing portable skills through native Codex and Claude Code paths">
+  </a>
+</p>
+
+| One source | Native on both sides | Explicit boundaries |
+|---|---|---|
+| A canonical skill payload keeps behavior aligned across clients. | Thin manifests preserve each client's own discovery, permissions, and authentication. | Setup records what it owns, stops before taking over existing plugins, and removes only receipt-managed state. |
+
+The public preview packages **tech-debt**, **improve-userflow-design**, and **council-review** as one deliberately small, reviewable plugin. It copies no credentials, replaces no client configuration, and runs no background service.
+
+<p>
+  <a href="https://github.com/udhawan97/agent-toolkit#quick-install"><img src="https://img.shields.io/badge/install_guide-1F6FEB?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Open the Agent Toolkit install guide"></a>
+  <a href="https://github.com/udhawan97/agent-toolkit/blob/stable/docs/GETTING_STARTED.md"><img src="https://img.shields.io/badge/getting_started-20252B?style=flat-square&amp;logo=readthedocs&amp;logoColor=F4EFE6" alt="Read the Agent Toolkit getting-started guide"></a>
+  <a href="https://github.com/udhawan97/agent-toolkit/actions/workflows/validate.yml"><img src="https://github.com/udhawan97/agent-toolkit/actions/workflows/validate.yml/badge.svg?branch=stable" alt="Agent Toolkit validation status"></a>
+</p>
+
+## 04 · How I build
 
 | | Principle | What it means in practice |
 |---|---|---|
@@ -290,7 +312,7 @@ Ten products, ranked by total commits in each repository’s default-branch hist
 
 <sub>Chosen per problem, not per hype cycle.</sub>
 
-## 04 · Experience in brief
+## 05 · Experience in brief
 
 | When | Role | Focus |
 |---|---|---|
