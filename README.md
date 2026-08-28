@@ -40,9 +40,18 @@ Outside client work, I design and ship **open-source product systems** in Swift,
 
 ## 02 · Products, at a glance
 
-Ten products, ranked by total commits in each repository’s default-branch history as of August 26, 2026. The badges under **Details** update live; this order is a manual snapshot. Each entry shows what it delivers, the problem it solves, and why it stands apart.
+Ten products, organized around the systems problems they tackle. Start with the compact map; expand a group for the full **Value / Problem solved / Different** story, stack, release state, and repository evidence.
+
+- **Operational & decision systems**<br>Document workflows · travel briefs · portfolio reasoning · accountable forecasts<br>[Orifold](https://udhawan97.github.io/Orifold/) · [Voyalier](https://udhawan97.github.io/Voyalier/) · [FolioOrb](https://udhawan97.github.io/FolioOrb/) · [Golavo](https://udhawan97.github.io/Golavo/)
+- **Learning, research & finite experiences**<br>Codebase learning · cited research · intentionally bounded play<br>[Codemble](https://udhawan97.github.io/Codemble/) · [Dusori](https://udhawan97.github.io/Dusori/app/) · [Nindova](https://udhawan97.github.io/Nindova/)
+- **Bounded & evidence-linked systems**<br>Candidate-controlled matching · reversible contingency planning · source-linked conceptual medical learning<br>[Nimanto](https://udhawan97.github.io/Nimanto/) · [Vidha](https://github.com/udhawan97/Vidha) · [PalDawn](https://udhawan97.github.io/PalDawn/)
+
+*Ordering note:* Projects remain ranked by total commits in each repository’s default-branch history as of August 26, 2026. This is a manual snapshot; the commit badges inside each group update live.
 
 <!-- Hallmark · genre: modern-minimal · macrostructure: Index-First · theme: Cobalt · enrichment: product marks -->
+
+<details>
+<summary><strong>Operational &amp; decision systems</strong> · 4 products</summary>
 
 <h3><a href="https://github.com/udhawan97/Orifold"><img src="https://github.com/udhawan97/Orifold/raw/main/docs/assets/orifold-crane-fold.svg" width="64" height="64" align="middle" alt="Orifold source code — animated logo of paper folding into an origami crane"></a>&nbsp;&nbsp;<a href="https://udhawan97.github.io/Orifold/">Orifold</a></h3>
 
@@ -130,7 +139,10 @@ Ten products, ranked by total commits in each repository’s default-branch hist
   <a href="https://github.com/udhawan97/Golavo/commits/main"><img src="https://img.shields.io/github/commit-activity/t/udhawan97/Golavo?style=flat-square&amp;label=commits" alt="View Golavo commit history"></a>
 </p>
 
----
+</details>
+
+<details>
+<summary><strong>Learning, research &amp; finite experiences</strong> · 3 products</summary>
 
 <h3><a href="https://github.com/udhawan97/Codemble"><img src="https://github.com/udhawan97/Codemble/raw/main/docs-site/public/brand/mark-animated.svg" width="64" height="64" align="middle" alt="Codemble source code — animated open ensō and amber star systems"></a>&nbsp;&nbsp;<a href="https://udhawan97.github.io/Codemble/">Codemble</a></h3>
 
@@ -196,7 +208,10 @@ Ten products, ranked by total commits in each repository’s default-branch hist
   <a href="https://github.com/udhawan97/Nindova/commits/main"><img src="https://img.shields.io/github/commit-activity/t/udhawan97/Nindova?style=flat-square&amp;label=commits" alt="View Nindova commit history"></a>
 </p>
 
----
+</details>
+
+<details>
+<summary><strong>Bounded &amp; evidence-linked systems</strong> · 3 products</summary>
 
 <h3><a href="https://github.com/udhawan97/Nimanto"><img src="https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/emblem-animated.svg" width="64" height="64" align="middle" alt="Nimanto source code — animated fold lotus around an emerald seed"></a>&nbsp;&nbsp;<a href="https://udhawan97.github.io/Nimanto/">Nimanto</a></h3>
 
@@ -261,6 +276,8 @@ Ten products, ranked by total commits in each repository’s default-branch hist
   <a href="https://github.com/udhawan97/PalDawn#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read PalDawn project details"></a>
   <a href="https://github.com/udhawan97/PalDawn/commits/main"><img src="https://img.shields.io/github/commit-activity/t/udhawan97/PalDawn?style=flat-square&amp;label=commits" alt="View PalDawn commit history"></a>
 </p>
+
+</details>
 
 ## 03 · Agent infrastructure
 
