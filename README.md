@@ -40,17 +40,65 @@ Outside client work, I design and ship **open-source product systems** in Swift,
 
 ## 02 · Products, at a glance
 
-Ten products, organized around the systems problems they tackle. Start with the compact map; expand a group for the full **Value / Problem solved / Different** story, stack, release state, and repository evidence.
+Ten products, organized around the systems problems they tackle. Start with the gallery; expand a group for the full **Value / Problem solved / Different** story, stack, release state, and repository evidence.
 
-| Group | Focus | Products |
-|---|---|---|
-| **Operational & decision systems** | Document workflows · travel briefs · portfolio reasoning · accountable forecasts | [Orifold](https://udhawan97.github.io/Orifold/) · [Voyalier](https://udhawan97.github.io/Voyalier/) · [FolioOrb](https://udhawan97.github.io/FolioOrb/) · [Golavo](https://udhawan97.github.io/Golavo/) |
-| **Learning, research & finite experiences** | Codebase learning · cited research · intentionally bounded play | [Codemble](https://udhawan97.github.io/Codemble/) · [Dusori](https://udhawan97.github.io/Dusori/app/) · [Nindova](https://udhawan97.github.io/Nindova/) |
-| **Bounded & evidence-linked systems** | Candidate-controlled matching · reversible contingency planning · source-linked conceptual medical learning | [Nimanto](https://udhawan97.github.io/Nimanto/) · [Vidha](https://github.com/udhawan97/Vidha) · [PalDawn](https://udhawan97.github.io/PalDawn/) |
+<table>
+  <tr>
+    <th colspan="4" align="left">Operational &amp; decision systems<br><sub>Document workflows · travel briefs · portfolio reasoning · accountable forecasts</sub></th>
+  </tr>
+  <tr>
+    <td align="center" width="170">
+      <a href="https://udhawan97.github.io/Orifold/"><img src="https://github.com/udhawan97/Orifold/raw/main/docs/assets/orifold-crane-fold.svg" width="48" alt="Orifold — origami crane mark"><br><strong>Orifold</strong></a><br><sub>Native Mac document workflow</sub>
+    </td>
+    <td align="center" width="170">
+      <a href="https://udhawan97.github.io/Voyalier/"><img src="https://github.com/udhawan97/Voyalier/raw/main/packages/brand/src/voyalier-app-icon.svg" width="48" alt="Voyalier — folded-route mark"><br><strong>Voyalier</strong></a><br><sub>Offline-ready trip briefs</sub>
+    </td>
+    <td align="center" width="170">
+      <a href="https://udhawan97.github.io/FolioOrb/"><img src="https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-icon.svg" width="48" alt="FolioOrb — orbit mark"><br><strong>FolioOrb</strong></a><br><sub>Explainable portfolio decisions</sub>
+    </td>
+    <td align="center" width="170">
+      <a href="https://udhawan97.github.io/Golavo/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-light.svg"><img src="https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-light.svg" width="48" alt="Golavo — football and rising-sun mark"></picture><br><strong>Golavo</strong></a><br><sub>Accountable football forecasts</sub>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="3" align="left">Learning, research &amp; finite experiences<br><sub>Codebase learning · cited research · intentionally bounded play</sub></th>
+  </tr>
+  <tr>
+    <td align="center" width="170">
+      <a href="https://udhawan97.github.io/Codemble/"><img src="https://github.com/udhawan97/Codemble/raw/main/docs-site/public/brand/mark-animated.svg" width="48" alt="Codemble — open ensō mark"><br><strong>Codemble</strong></a><br><sub>Playable codebase learning</sub>
+    </td>
+    <td align="center" width="170">
+      <a href="https://udhawan97.github.io/Dusori/app/"><img src="./assets/project-icons/dusori-animated.svg" width="48" alt="Dusori — app icon"><br><strong>Dusori</strong></a><br><sub>Cited research briefs</sub>
+    </td>
+    <td align="center" width="170">
+      <a href="https://udhawan97.github.io/Nindova/"><picture><source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark-light.svg"><img src="https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark.svg" width="48" alt="Nindova — nine-diamond mark"></picture><br><strong>Nindova</strong></a><br><sub>Finite, private games</sub>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="3" align="left">Bounded &amp; evidence-linked systems<br><sub>Candidate-controlled matching · reversible contingency planning · source-linked conceptual medical learning</sub></th>
+  </tr>
+  <tr>
+    <td align="center" width="170">
+      <a href="https://udhawan97.github.io/Nimanto/"><img src="https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/emblem-animated.svg" width="48" alt="Nimanto — fold lotus mark"><br><strong>Nimanto</strong></a><br><sub>Evidence-backed job matching</sub>
+    </td>
+    <td align="center" width="170">
+      <a href="https://github.com/udhawan97/Vidha"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark-reversed.svg"><source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark.svg"><img src="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark.svg" width="48" alt="Vidha — courier bird mark"></picture><br><strong>Vidha</strong></a><br><sub>Reversible contingency rehearsal</sub>
+    </td>
+    <td align="center" width="170">
+      <a href="https://udhawan97.github.io/PalDawn/"><img src="https://github.com/udhawan97/PalDawn/raw/main/app/public/icon.svg" width="48" alt="PalDawn — listening-tube mark"><br><strong>PalDawn</strong></a><br><sub>Source-linked disease journeys</sub>
+    </td>
+  </tr>
+</table>
 
 <sub>*Ordering note:* Projects remain ranked by total commits in each repository’s default-branch history as of August 26, 2026. This is a manual snapshot; the commit badges inside each group update live.</sub>
 
-<!-- Hallmark · genre: modern-minimal · macrostructure: Index-First · theme: Cobalt · enrichment: product marks · lists: label-rail tables -->
+<!-- Hallmark · genre: modern-minimal · macrostructure: Index-First · theme: Cobalt · enrichment: product marks · lists: label-rail tables · index: icon-tile gallery -->
 
 <details>
 <summary><strong>Operational &amp; decision systems</strong> · 4 products</summary>

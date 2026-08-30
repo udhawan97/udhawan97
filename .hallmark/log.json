@@ -1,3 +1,4 @@
 [
+  { "date": "2026-08-29", "macrostructure": "Index-First", "theme": "Cobalt", "enrichment": "product marks", "brief": "GitHub profile README · redesign scope: gallery index → icon-tile tables per group", "scope": "redesign" },
   { "date": "2026-08-29", "macrostructure": "Index-First", "theme": "Cobalt", "enrichment": "product marks", "brief": "GitHub profile README · redesign scope: lists/layout → label-rail tables", "scope": "redesign" }
 ]
