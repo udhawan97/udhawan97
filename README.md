@@ -71,7 +71,7 @@ Ten products, organized around the systems problems they tackle. Start with the 
       <a href="https://udhawan97.github.io/Codemble/"><img src="https://github.com/udhawan97/Codemble/raw/main/docs-site/public/brand/mark-animated.svg" width="48" alt="Codemble — open ensō mark"><br><strong>Codemble</strong></a><br><sub>Playable codebase learning</sub>
     </td>
     <td align="center" width="170">
-      <a href="https://udhawan97.github.io/Dusori/app/"><img src="./assets/project-icons/dusori-animated.svg" width="48" alt="Dusori — app icon"><br><strong>Dusori</strong></a><br><sub>Cited research briefs</sub>
+      <a href="https://udhawan97.github.io/Dusori/"><img src="./assets/project-icons/dusori-animated.svg" width="48" alt="Dusori — app icon"><br><strong>Dusori</strong></a><br><sub>Cited research briefs</sub>
     </td>
     <td align="center" width="170">
       <a href="https://udhawan97.github.io/Nindova/"><picture><source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark-light.svg"><img src="https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark.svg" width="48" alt="Nindova — nine-diamond mark"></picture><br><strong>Nindova</strong></a><br><sub>Finite, private games</sub>
@@ -291,7 +291,7 @@ Ten products, organized around the systems problems they tackle. Start with the 
 
 ---
 
-<h3><a href="https://github.com/udhawan97/Dusori"><img src="./assets/project-icons/dusori-animated.svg" width="64" height="64" align="middle" alt="Dusori source code — animated app icon"></a>&nbsp;&nbsp;<a href="https://udhawan97.github.io/Dusori/app/">Dusori</a></h3>
+<h3><a href="https://github.com/udhawan97/Dusori"><img src="./assets/project-icons/dusori-animated.svg" width="64" height="64" align="middle" alt="Dusori source code — animated app icon"></a>&nbsp;&nbsp;<a href="https://udhawan97.github.io/Dusori/">Dusori</a></h3>
 
 <table>
   <tr>
@@ -318,7 +318,7 @@ Ten products, organized around the systems problems they tackle. Start with the 
   <tr>
     <td valign="top"><strong>Links</strong></td>
     <td>
-      <a href="https://udhawan97.github.io/Dusori/app/"><img src="https://img.shields.io/badge/open_app-1F6FEB?style=flat-square&amp;logo=svelte&amp;logoColor=white" alt="Open the live Dusori app"></a>
+      <a href="https://udhawan97.github.io/Dusori/"><img src="https://img.shields.io/badge/live_experience-1F6FEB?style=flat-square&amp;logo=safari&amp;logoColor=white" alt="Open the live Dusori site"></a>
       <a href="https://github.com/udhawan97/Dusori/releases/latest"><img src="https://img.shields.io/github/v/release/udhawan97/Dusori?style=flat-square&amp;label=latest" alt="View the latest Dusori release"></a>
       <a href="https://github.com/udhawan97/Dusori#readme"><img src="https://img.shields.io/badge/project_details-20252B?style=flat-square&amp;logo=github&amp;logoColor=F4EFE6" alt="Read Dusori project details"></a>
       <a href="https://github.com/udhawan97/Dusori/commits/main"><img src="https://img.shields.io/github/commit-activity/t/udhawan97/Dusori?style=flat-square&amp;label=commits" alt="View Dusori commit history"></a>
