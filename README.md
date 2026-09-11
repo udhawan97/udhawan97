@@ -30,7 +30,7 @@ I'm a **Senior Consultant at EY Studio+ in Chicago**, working across product del
 
 Outside client work, I build **open-source products in Swift, Rust, Python, and TypeScript**. I turn fragmented workflows into software people can use, inspect, and keep. The work includes what comes after the demo: failure handling, documentation, installers, updates, and evidence that the product works.
 
-**Explore:** [Selected builds](#selected-builds) · [Full collection](#the-full-collection) · [How I build](#03--how-i-build) · [Experience](#04--experience-in-brief)
+**Explore:** [Full collection](#the-full-collection) · [How I build](#03--how-i-build) · [Experience](#04--experience-in-brief)
 
 ## 02 · Products, with a point of view
 
