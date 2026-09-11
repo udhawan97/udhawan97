@@ -88,7 +88,7 @@ Ten products, organized around the systems problems they tackle. Start with the 
       <a href="https://udhawan97.github.io/Nimanto/"><img src="https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/emblem-animated.svg" width="48" alt="Nimanto — fold lotus mark"><br><strong>Nimanto</strong></a><br><sub>Evidence-backed job matching</sub>
     </td>
     <td align="center" width="170">
-      <a href="https://github.com/udhawan97/Vidha"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark-reversed.svg"><source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark.svg"><img src="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark.svg" width="48" alt="Vidha — courier bird mark"></picture><br><strong>Vidha</strong></a><br><sub>Reversible contingency rehearsal</sub>
+      <a href="https://github.com/udhawan97/Vidha"><img src="./assets/vidha-app-icon.svg" width="48" height="48" alt="Vidha app icon — ivory courier bird and marigold sun on indigo"><br><strong>Vidha</strong></a><br><sub>Reversible contingency rehearsal</sub>
     </td>
     <td align="center" width="170">
       <a href="https://udhawan97.github.io/PalDawn/"><img src="https://github.com/udhawan97/PalDawn/raw/main/app/public/icon.svg" width="48" alt="PalDawn — listening-tube mark"><br><strong>PalDawn</strong></a><br><sub>Source-linked disease journeys</sub>
@@ -405,7 +405,7 @@ Ten products, organized around the systems problems they tackle. Start with the 
 
 ---
 
-<h3><a href="https://github.com/udhawan97/Vidha"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark-reversed.svg"><source media="(prefers-color-scheme: light)" srcset="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark.svg"><img src="https://github.com/udhawan97/Vidha/raw/main/apps/web/public/vidha-mark.svg" width="64" height="64" align="middle" alt="Vidha source code — working-concept courier bird mark"></picture></a>&nbsp;&nbsp;<a href="https://github.com/udhawan97/Vidha">Vidha</a></h3>
+<h3><a href="https://github.com/udhawan97/Vidha"><img src="./assets/vidha-app-icon.svg" width="64" height="64" align="middle" alt="Vidha app icon — ivory courier bird and marigold sun on indigo"></a>&nbsp;&nbsp;<a href="https://github.com/udhawan97/Vidha">Vidha</a></h3>
 
 <table>
   <tr>
