@@ -1,0 +1,112 @@
+[
+  {
+    "project": "Orifold",
+    "artwork": [
+      {
+        "file": "orifold-0.svg",
+        "source": "https://github.com/udhawan97/Orifold/raw/main/docs/assets/orifold-crane-fold.svg",
+        "bytes": 155004
+      }
+    ]
+  },
+  {
+    "project": "Voyalier",
+    "artwork": [
+      {
+        "file": "voyalier-0.svg",
+        "source": "https://github.com/udhawan97/Voyalier/raw/main/packages/brand/src/voyalier-app-icon.svg",
+        "bytes": 6090
+      }
+    ]
+  },
+  {
+    "project": "FolioOrb",
+    "artwork": [
+      {
+        "file": "folioorb-0.svg",
+        "source": "https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-icon.svg",
+        "bytes": 1949
+      }
+    ]
+  },
+  {
+    "project": "Golavo",
+    "artwork": [
+      {
+        "file": "golavo-0.svg",
+        "source": "https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-dark.svg",
+        "bytes": 6828
+      },
+      {
+        "file": "golavo-1.svg",
+        "source": "https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-light.svg",
+        "bytes": 6828
+      }
+    ]
+  },
+  {
+    "project": "Codemble",
+    "artwork": [
+      {
+        "file": "codemble-0.svg",
+        "source": "https://github.com/udhawan97/Codemble/raw/main/docs-site/public/brand/mark-animated.svg",
+        "bytes": 14643
+      }
+    ]
+  },
+  {
+    "project": "Dusori",
+    "artwork": [
+      {
+        "file": "dusori-0.svg",
+        "source": "./assets/project-icons/dusori-animated.svg",
+        "bytes": 3860
+      }
+    ]
+  },
+  {
+    "project": "Nindova",
+    "artwork": [
+      {
+        "file": "nindova-0.svg",
+        "source": "https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark-light.svg",
+        "bytes": 789
+      },
+      {
+        "file": "nindova-1.svg",
+        "source": "https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark.svg",
+        "bytes": 781
+      }
+    ]
+  },
+  {
+    "project": "Nimanto",
+    "artwork": [
+      {
+        "file": "nimanto-0.svg",
+        "source": "https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/emblem-animated.svg",
+        "bytes": 12779
+      }
+    ]
+  },
+  {
+    "project": "Vidha",
+    "artwork": [
+      {
+        "file": "vidha-0.svg",
+        "source": "https://raw.githubusercontent.com/udhawan97/Vidha/main/apps/web/public/vidha-icon.svg",
+        "bytes": 3664
+      }
+    ]
+  },
+  {
+    "project": "PalDawn",
+    "artwork": [
+      {
+        "file": "paldawn-0.svg",
+        "source": "https://github.com/udhawan97/PalDawn/raw/main/app/public/icon.svg",
+        "bytes": 6858
+      }
+    ]
+  }
+]

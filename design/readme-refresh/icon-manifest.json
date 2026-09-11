@@ -1,0 +1,82 @@
+[
+  {
+    "project": "Orifold",
+    "file": "icons/orifold.svg",
+    "static": "icons/orifold-static.svg",
+    "source": "https://github.com/udhawan97/Orifold/raw/main/docs/assets/orifold-crane-fold.svg",
+    "source_sha256": "101c5a29446c12d8ec7b96408dd6b1bcd9c881c94e9fd4215a046711cc0e963d",
+    "motion": "Preserved original project animation"
+  },
+  {
+    "project": "Voyalier",
+    "file": "icons/voyalier.svg",
+    "static": "icons/voyalier-static.svg",
+    "source": "https://github.com/udhawan97/Voyalier/raw/main/packages/brand/src/voyalier-app-icon.svg",
+    "source_sha256": "012ec818eda145a1d035295bdfe37da2c53509dad55d283693a6d1ef5888f5e4",
+    "motion": "Preserved original project animation"
+  },
+  {
+    "project": "FolioOrb",
+    "file": "icons/folioorb.svg",
+    "static": "icons/folioorb-static.svg",
+    "source": "https://github.com/udhawan97/FolioOrb/raw/main/static/img/brand/folio-orbit-icon.svg",
+    "source_sha256": "4b95ff97646976e71d2f65330c6c08f231a58ddf478031221669950c67e380e6",
+    "motion": "Added orbit / diamond / courier motion"
+  },
+  {
+    "project": "Golavo",
+    "file": "icons/golavo.svg",
+    "static": "icons/golavo-static.svg",
+    "source": "https://github.com/udhawan97/Golavo/raw/main/assets/brand/animated/golavo-icon-dark.svg",
+    "source_sha256": "1619781919345ba1e70a7fe3361ad09857c59a0cb12f8198d50870903df62a28",
+    "motion": "Preserved original project animation"
+  },
+  {
+    "project": "Codemble",
+    "file": "icons/codemble.svg",
+    "static": "icons/codemble-static.svg",
+    "source": "https://github.com/udhawan97/Codemble/raw/main/docs-site/public/brand/mark-animated.svg",
+    "source_sha256": "d2aeb9ef49b14ef096894e4441496dec1fc649f244aed472df8e89e09b613774",
+    "motion": "Preserved original project animation"
+  },
+  {
+    "project": "Dusori",
+    "file": "icons/dusori.svg",
+    "static": "icons/dusori-static.svg",
+    "source": "./assets/project-icons/dusori-animated.svg",
+    "source_sha256": "cf26ce2bb54ed766c45e3b895b1eb13fbab7b4afc326a4985f82bcd5b86a6f7b",
+    "motion": "Preserved original project animation"
+  },
+  {
+    "project": "Nindova",
+    "file": "icons/nindova.svg",
+    "static": "icons/nindova-static.svg",
+    "source": "https://github.com/udhawan97/Nindova/raw/main/apps/site/public/brand/nindova-mark.svg",
+    "source_sha256": "9dba2a036492db9ada09dd45c0a1e21265844e7a53b2c421ddd92c6d70948795",
+    "motion": "Added orbit / diamond / courier motion"
+  },
+  {
+    "project": "Nimanto",
+    "file": "icons/nimanto.svg",
+    "static": "icons/nimanto-static.svg",
+    "source": "https://github.com/udhawan97/Nimanto/raw/main/apps/web/public/assets/emblem-animated.svg",
+    "source_sha256": "281bcc5be5ca87537c00b6dcaa8d85c8bcbd0be602569034a92bd1454f139af9",
+    "motion": "Preserved original project animation"
+  },
+  {
+    "project": "Vidha",
+    "file": "icons/vidha.svg",
+    "static": "icons/vidha-static.svg",
+    "source": "https://raw.githubusercontent.com/udhawan97/Vidha/main/apps/web/public/vidha-icon.svg",
+    "source_sha256": "19afb19d13ac4f0dbf4c0c0cbf78f2224c10e0c3ec8f8b466a7e07fdb00fe329",
+    "motion": "Added orbit / diamond / courier motion"
+  },
+  {
+    "project": "PalDawn",
+    "file": "icons/paldawn.svg",
+    "static": "icons/paldawn-static.svg",
+    "source": "https://github.com/udhawan97/PalDawn/raw/main/app/public/icon.svg",
+    "source_sha256": "8ce77172132b7481fc76b4e8dd782e3ed3dc417db0d1ec48c9516870d971c7b2",
+    "motion": "Preserved original project animation"
+  }
+]

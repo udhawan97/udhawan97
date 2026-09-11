@@ -1,0 +1,14 @@
+{
+  "svg_count": 48,
+  "local_references": 88,
+  "preserved_original_assets": true,
+  "render_failures": [],
+  "deterministic_generators": true,
+  "vidha_current_artwork_sha256": "19afb19d13ac4f0dbf4c0c0cbf78f2224c10e0c3ec8f8b466a7e07fdb00fe329",
+  "safari_review": [
+    "desktop dark",
+    "390px dark column",
+    "320px light column with static app icons"
+  ],
+  "notes": "Column widths in a local preview, not physical iPhone device tests. Original GitHub API rendering passed before the final icon additions; final live GitHub rendering is checked after publication."
+}

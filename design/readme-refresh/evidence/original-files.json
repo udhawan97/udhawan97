@@ -1,0 +1,21 @@
+{
+  "base_commit": "f0537c15db6d8bd757abf0d4dadaec6b24732522",
+  "files": {
+    "README.md": "555e5d933f372d30c1761b7926da69c103048ee9311e345283e4fabc77c82ab0",
+    "assets/impact-seals-light.svg": "6056d1d77d0873fa4b72ff66a01b9a1f5ce83debfd160749b883867258398d7b",
+    "assets/impact-seals-mobile-light.svg": "e23bacd28c848b56b0d8b0a5490cf293b90242b39edb7ce3e663dc2a89566d21",
+    "assets/profile-header-mobile-dark.svg": "41c13c70427e2ab97676b333b83023f33f60646f16fa13af5530ff639473781e",
+    "assets/ai-spell-dark.svg": "6aec1bc03eeaa6c24794c1671f1e3d3a8f5c01ce0f27b593e03f5d1f5c48d995",
+    "assets/profile-header-dark.svg": "719e39516f5ff1d53a105456b40796fbb4fc67ec44ad1281531a2fc1abda89e0",
+    "assets/profile-header-mobile-light.svg": "c1b05c6013b599af01998ce4d727d3cba381e904f36298de2e1644b09db09b24",
+    "assets/impact-seals-mobile-dark.svg": "39fe9a901ff1ada868faeeeb8dbe3d316826bd2a4b9dbdd2ab0d5c6d34d482fe",
+    "assets/ai-spell-mobile-dark.svg": "178e127fc76ec46472da8ebbd59ff71af950f644d2cd91903d0d666ea41d0f3a",
+    "assets/dusori-app-icon.svg": "68cd5a724f965f526484666b4b6feaeb916e7ed0e2673ba158ea843226f3003c",
+    "assets/ai-spell-mobile-light.svg": "532e9edee0a7afd021cc82b217a688facbc962b43dd1fb2ea4ecb785d0f41632",
+    "assets/impact-seals-dark.svg": "38aabb0c6122b67c341e0d215207648282d8f33b26b399e5d263fba3ae3155df",
+    "assets/vidha-app-icon.svg": "b63f2bbe9ea67a144a89ec10ed79f4f8a0fad92e80b19f48a4d2dcbb2cf55eca",
+    "assets/ai-spell-light.svg": "8b8452a000de2168968eb16f2160445ac70ac413b082c446fb118a7f9d824f23",
+    "assets/profile-header-light.svg": "992592c5b3bfac29b91de5c61d84b6ce0efc18707c31d918b9383c19c944947e",
+    "assets/project-icons/dusori-animated.svg": "cf26ce2bb54ed766c45e3b895b1eb13fbab7b4afc326a4985f82bcd5b86a6f7b"
+  }
+}
