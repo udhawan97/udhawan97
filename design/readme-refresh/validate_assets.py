@@ -67,7 +67,7 @@ def generated_svgs() -> list[Path]:
 
 
 def run_generators() -> None:
-    for script in ("build_legacy_assets.py", "build_assets.py", "build_icons.py"):
+    for script in ("build_legacy_assets.py", "build_icons.py", "build_assets.py"):
         subprocess.run(["python3", str(HERE / script)], cwd=ROOT, check=True, capture_output=True, text=True)
 
 
@@ -177,7 +177,7 @@ def main() -> None:
         warnings.append("rsvg-convert unavailable; raster validation skipped")
 
     readme = README.read_text()
-    for family in ("profile-header", "ai-spell", "impact-seals", "systems-atlas", "delivery-loop"):
+    for family in ("profile-header", "ai-spell", "impact-seals", "systems-atlas", "delivery-loop", "engineering-workbench"):
         if f"{family}-mobile-dark-static.svg" not in readme:
             failures.append(f"README missing reduced-motion mobile source: {family}")
 

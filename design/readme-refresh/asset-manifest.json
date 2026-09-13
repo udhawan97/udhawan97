@@ -1,14 +1,36 @@
 [
   {
+    "file": "engineering-workbench-dark.svg",
+    "family": "engineering-workbench",
+    "theme": "dark",
+    "mobile": false,
+    "motion": true,
+    "width": 1200,
+    "height": 446,
+    "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
+    "bytes": 10410
+  },
+  {
+    "file": "engineering-workbench-dark-static.svg",
+    "family": "engineering-workbench",
+    "theme": "dark",
+    "mobile": false,
+    "motion": false,
+    "width": 1200,
+    "height": 446,
+    "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
+    "bytes": 8229
+  },
+  {
     "file": "systems-atlas-dark.svg",
     "family": "systems-atlas",
     "theme": "dark",
     "mobile": false,
     "motion": true,
-    "width": 1120,
-    "height": 620,
-    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Layered sheets at the center represent the shared engineering practice, not shared application infrastructure.",
-    "bytes": 10075
+    "width": 1200,
+    "height": 864,
+    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
+    "bytes": 263900
   },
   {
     "file": "systems-atlas-dark-static.svg",
@@ -16,10 +38,10 @@
     "theme": "dark",
     "mobile": false,
     "motion": false,
-    "width": 1120,
-    "height": 620,
-    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Layered sheets at the center represent the shared engineering practice, not shared application infrastructure.",
-    "bytes": 9666
+    "width": 1200,
+    "height": 864,
+    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
+    "bytes": 261719
   },
   {
     "file": "orifold-cutaway-dark.svg",
@@ -77,15 +99,37 @@
     "bytes": 5521
   },
   {
+    "file": "engineering-workbench-mobile-dark.svg",
+    "family": "engineering-workbench",
+    "theme": "dark",
+    "mobile": true,
+    "motion": true,
+    "width": 360,
+    "height": 752,
+    "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
+    "bytes": 9402
+  },
+  {
+    "file": "engineering-workbench-mobile-dark-static.svg",
+    "family": "engineering-workbench",
+    "theme": "dark",
+    "mobile": true,
+    "motion": false,
+    "width": 360,
+    "height": 752,
+    "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
+    "bytes": 7221
+  },
+  {
     "file": "systems-atlas-mobile-dark.svg",
     "family": "systems-atlas",
     "theme": "dark",
     "mobile": true,
     "motion": true,
     "width": 360,
-    "height": 780,
-    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Layered sheets at the center represent the shared engineering practice, not shared application infrastructure.",
-    "bytes": 8049
+    "height": 1385,
+    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
+    "bytes": 263010
   },
   {
     "file": "systems-atlas-mobile-dark-static.svg",
@@ -94,9 +138,9 @@
     "mobile": true,
     "motion": false,
     "width": 360,
-    "height": 780,
-    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Layered sheets at the center represent the shared engineering practice, not shared application infrastructure.",
-    "bytes": 7640
+    "height": 1385,
+    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
+    "bytes": 260829
   },
   {
     "file": "orifold-cutaway-mobile-dark.svg",
@@ -154,15 +198,37 @@
     "bytes": 5543
   },
   {
+    "file": "engineering-workbench-light.svg",
+    "family": "engineering-workbench",
+    "theme": "light",
+    "mobile": false,
+    "motion": true,
+    "width": 1200,
+    "height": 446,
+    "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
+    "bytes": 10410
+  },
+  {
+    "file": "engineering-workbench-light-static.svg",
+    "family": "engineering-workbench",
+    "theme": "light",
+    "mobile": false,
+    "motion": false,
+    "width": 1200,
+    "height": 446,
+    "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
+    "bytes": 8229
+  },
+  {
     "file": "systems-atlas-light.svg",
     "family": "systems-atlas",
     "theme": "light",
     "mobile": false,
     "motion": true,
-    "width": 1120,
-    "height": 620,
-    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Layered sheets at the center represent the shared engineering practice, not shared application infrastructure.",
-    "bytes": 10075
+    "width": 1200,
+    "height": 864,
+    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
+    "bytes": 263900
   },
   {
     "file": "systems-atlas-light-static.svg",
@@ -170,10 +236,10 @@
     "theme": "light",
     "mobile": false,
     "motion": false,
-    "width": 1120,
-    "height": 620,
-    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Layered sheets at the center represent the shared engineering practice, not shared application infrastructure.",
-    "bytes": 9666
+    "width": 1200,
+    "height": 864,
+    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
+    "bytes": 261719
   },
   {
     "file": "orifold-cutaway-light.svg",
@@ -231,15 +297,37 @@
     "bytes": 5521
   },
   {
+    "file": "engineering-workbench-mobile-light.svg",
+    "family": "engineering-workbench",
+    "theme": "light",
+    "mobile": true,
+    "motion": true,
+    "width": 360,
+    "height": 752,
+    "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
+    "bytes": 9402
+  },
+  {
+    "file": "engineering-workbench-mobile-light-static.svg",
+    "family": "engineering-workbench",
+    "theme": "light",
+    "mobile": true,
+    "motion": false,
+    "width": 360,
+    "height": 752,
+    "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
+    "bytes": 7221
+  },
+  {
     "file": "systems-atlas-mobile-light.svg",
     "family": "systems-atlas",
     "theme": "light",
     "mobile": true,
     "motion": true,
     "width": 360,
-    "height": 780,
-    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Layered sheets at the center represent the shared engineering practice, not shared application infrastructure.",
-    "bytes": 8049
+    "height": 1385,
+    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
+    "bytes": 263010
   },
   {
     "file": "systems-atlas-mobile-light-static.svg",
@@ -248,9 +336,9 @@
     "mobile": true,
     "motion": false,
     "width": 360,
-    "height": 780,
-    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Layered sheets at the center represent the shared engineering practice, not shared application infrastructure.",
-    "bytes": 7640
+    "height": 1385,
+    "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
+    "bytes": 260829
   },
   {
     "file": "orifold-cutaway-mobile-light.svg",

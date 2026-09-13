@@ -13,8 +13,8 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fo
 @keyframes enter{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.draw,.enter,.wizard-motion,.spell-motion{animation:none!important;stroke-dashoffset:0!important;opacity:1!important;transform:none!important}}
 </style>
-<linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0D1318"/><stop offset="1" stop-color="#14202B"/></linearGradient>
-<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#334657" stroke-width=".6" opacity=".22"/></pattern>
+<linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111719"/><stop offset="1" stop-color="#223137"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#3B4948" stroke-width=".6" opacity=".22"/></pattern>
 <clipPath id="frame"><rect width="1200" height="230" rx="20"/></clipPath></defs>
 <g clip-path="url(#frame)"><rect width="1200" height="230" fill="url(#surface)"/><rect width="1200" height="230" fill="url(#grid)"/>
 <style>
@@ -23,14 +23,14 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fo
 @keyframes wizard{0%,18%,72%,100%{transform:translateY(0)}34%,50%{transform:translateY(-4px)}}
 @keyframes spell{0%,25%,68%,100%{opacity:0;transform:translateX(0) scale(.7)}38%{opacity:1;transform:translateX(0) scale(1)}58%{opacity:.9;transform:translateX(50px) scale(.9)}}
 </style><g transform="translate(38 40) scale(1)">
-<rect width="220" height="150" rx="18" fill="#090D11" stroke="#334657"/>
+<rect width="220" height="150" rx="18" fill="#0B1012" stroke="#3B4948"/>
 <clipPath id="scene-clip"><rect x="1" y="1" width="218" height="148" rx="17"/></clipPath>
-<g clip-path="url(#scene-clip)"><path d="M0 116L110 82L220 116V150H0Z" fill="#14202B"/><path d="M0 116H220M110 82V150M44 103L63 150M176 103L157 150" fill="none" stroke="#334657" opacity=".5"/>
-<g class="wizard-motion"><ellipse cx="71" cy="130" rx="39" ry="7" fill="#0D1318" opacity=".65"/>
-<path d="M39 41H58V29H80V38H94V51H108V64H28V52H39Z" fill="#7898CC"/><rect x="25" y="59" width="88" height="12" fill="#0D1318"/><rect x="36" y="61" width="61" height="8" fill="#D9B963"/>
-<rect x="48" y="71" width="45" height="32" fill="#D66B58"/><rect x="53" y="72" width="36" height="27" fill="#D9B963"/><rect x="58" y="81" width="7" height="6" fill="#0D1318"/><rect x="78" y="81" width="7" height="6" fill="#0D1318"/>
-<path d="M43 102H98L116 137H27Z" fill="#7898CC"/><path d="M61 101H81L87 137H55Z" fill="#F4EFE6" opacity=".86"/><rect x="65" y="109" width="13" height="13" fill="#D9B963"/><rect x="22" y="105" width="32" height="23" rx="2" fill="#0D1318" stroke="#8291A0"/><path d="M26 110H48M26 116H43" stroke="#67AEB0" stroke-width="3"/>
-<path d="M94 101H112V111H126V121H109V112H94Z" fill="#7898CC"/><rect x="122" y="109" width="11" height="11" fill="#D9B963"/><path d="M130 112L151 67" stroke="#D9B963" stroke-width="5" stroke-linecap="square"/></g>
-<g class="spell-motion"><path d="M151 61H162V50H171V61H182V70H171V81H162V70H151Z" fill="#D9B963"/><path d="M171 65C187 52 200 72 218 57" fill="none" stroke="#67AEB0" stroke-width="4" stroke-linecap="round"/><circle cx="197" cy="45" r="4" fill="#D66B58"/><circle cx="211" cy="83" r="3" fill="#7898CC"/></g></g></g><text x="302" y="57" class="mono enter" fill="#D9B963" font-size="15" font-weight="700" text-anchor="start" >AI, WITH GUARDRAILS</text><text x="302" y="113" class="display enter d1" fill="#F4EFE6" font-size="34" font-weight="600" text-anchor="start" >AI can draft the spell.</text><text x="302" y="153" class="display enter d2" fill="#AEB9C6" font-size="30" font-weight="500" text-anchor="start" >I still review the blast radius.</text><path d="M304 179L374 179" fill="none" stroke="#D9B963" stroke-width="3" stroke-linecap="round" class="" /><text x="394" y="185" class="mono" fill="#8291A0" font-size="14" font-weight="700" text-anchor="start" >CAST · CHECK · SHIP</text><text x="1148" y="203" class="mono" fill="#AEB9C6" font-size="14" font-weight="650" text-anchor="end" >DP: LAYLA · MY BERNEDOODLE · AKA “BEAR”</text></g>
-<rect x=".75" y=".75" width="1198.5" height="228.5" rx="19.25" fill="none" stroke="#334657" stroke-width="1.5"/>
+<g clip-path="url(#scene-clip)"><path d="M0 116L110 82L220 116V150H0Z" fill="#223137"/><path d="M0 116H220M110 82V150M44 103L63 150M176 103L157 150" fill="none" stroke="#3B4948" opacity=".5"/>
+<g class="wizard-motion"><ellipse cx="71" cy="130" rx="39" ry="7" fill="#111719" opacity=".65"/>
+<path d="M39 41H58V29H80V38H94V51H108V64H28V52H39Z" fill="#99B5CB"/><rect x="25" y="59" width="88" height="12" fill="#111719"/><rect x="36" y="61" width="61" height="8" fill="#E58B78"/>
+<rect x="48" y="71" width="45" height="32" fill="#CCAC72"/><rect x="53" y="72" width="36" height="27" fill="#E58B78"/><rect x="58" y="81" width="7" height="6" fill="#111719"/><rect x="78" y="81" width="7" height="6" fill="#111719"/>
+<path d="M43 102H98L116 137H27Z" fill="#99B5CB"/><path d="M61 101H81L87 137H55Z" fill="#F5F0E8" opacity=".86"/><rect x="65" y="109" width="13" height="13" fill="#E58B78"/><rect x="22" y="105" width="32" height="23" rx="2" fill="#111719" stroke="#97A39F"/><path d="M26 110H48M26 116H43" stroke="#A5BBA7" stroke-width="3"/>
+<path d="M94 101H112V111H126V121H109V112H94Z" fill="#99B5CB"/><rect x="122" y="109" width="11" height="11" fill="#E58B78"/><path d="M130 112L151 67" stroke="#E58B78" stroke-width="5" stroke-linecap="square"/></g>
+<g class="spell-motion"><path d="M151 61H162V50H171V61H182V70H171V81H162V70H151Z" fill="#E58B78"/><path d="M171 65C187 52 200 72 218 57" fill="none" stroke="#A5BBA7" stroke-width="4" stroke-linecap="round"/><circle cx="197" cy="45" r="4" fill="#CCAC72"/><circle cx="211" cy="83" r="3" fill="#99B5CB"/></g></g></g><text x="302" y="57" class="mono enter" fill="#E58B78" font-size="15" font-weight="700" text-anchor="start" >AI, WITH GUARDRAILS</text><text x="302" y="113" class="display enter d1" fill="#F5F0E8" font-size="34" font-weight="600" text-anchor="start" >AI can draft the spell.</text><text x="302" y="153" class="display enter d2" fill="#B7C2BD" font-size="30" font-weight="500" text-anchor="start" >I still review the blast radius.</text><path d="M304 179L374 179" fill="none" stroke="#E58B78" stroke-width="3" stroke-linecap="round" class="" /><text x="394" y="185" class="mono" fill="#97A39F" font-size="14" font-weight="700" text-anchor="start" >CAST · CHECK · SHIP</text><text x="1148" y="203" class="mono" fill="#B7C2BD" font-size="14" font-weight="650" text-anchor="end" >DP: LAYLA · MY BERNEDOODLE · AKA “BEAR”</text></g>
+<rect x=".75" y=".75" width="1198.5" height="228.5" rx="19.25" fill="none" stroke="#3B4948" stroke-width="1.5"/>
 </svg>

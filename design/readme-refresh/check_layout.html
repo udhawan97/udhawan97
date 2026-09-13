@@ -9,8 +9,10 @@
 <script>
 const params=new URLSearchParams(location.search),theme=params.get('theme')==='light'?'light':'dark',width=Number(params.get('width'))||900,mobile=params.has('mobile'),motion=params.has('motion');
 document.body.className=theme;document.querySelector('main').style.width=width+'px';document.querySelector('h1').textContent=`${theme} · ${width}px image column · ${motion?'animated':'static'} · ${mobile?'mobile':'desktop'}`;
-const bases=['/assets/impact-seals','/assets/profile-refresh/delivery-loop'];
-for(const base of bases){const img=new Image();img.alt=base.includes('impact')?'Selected delivery impact':'Build beyond the demo';img.src=base+(mobile?'-mobile':'')+'-'+theme+(motion?'':'-static')+'.svg?revision=ledger-v3';document.querySelector('#art').append(img)}
+const bases=['/assets/impact-seals','/assets/profile-refresh/delivery-loop','/assets/profile-refresh/systems-atlas','/assets/profile-header','/assets/ai-spell','/assets/profile-refresh/engineering-workbench'];
+const shown=params.has('bench')?bases.slice(-1):params.has('atlas')?bases.slice(2,3):bases.slice(0,2);
+for(const base of shown){const img=new Image();img.alt=base.includes('impact')?'Selected delivery impact':base.includes('atlas')?'The systems atlas':base.includes('workbench')?'The engineering workbench':'Build beyond the demo';img.src=base+(mobile?'-mobile':'')+'-'+theme+(motion?'':'-static')+'.svg?revision=paper-v6';document.querySelector('#art').append(img)}
+for(const flag of ['atlas','bench'])if(params.has(flag))for(const a of document.querySelectorAll('nav a'))a.href+='&'+flag+'=1';
 const results=[];
 function overlap(a,b,pad=0){return a.x<b.x+b.width+pad&&a.x+a.width+pad>b.x&&a.y<b.y+b.height+pad&&a.y+a.height+pad>b.y}
 async function check(url){
@@ -26,5 +28,5 @@ async function check(url){
  results.push({file:url,font,texts:texts.length,failures:[...new Set(faults)]});override.remove();}
  wrap.remove();
 }
-(async()=>{for(const base of bases)for(const size of ['', '-mobile'])for(const theme of ['dark','light'])for(const still of ['', '-static'])await check(base+size+'-'+theme+still+'.svg');const failed=results.filter(r=>r.failures.length);document.querySelector('#result').textContent=JSON.stringify({status:failed.length?'FAIL':'PASS',variants:16,fontChecks:results.length,textBoxes:results.reduce((s,r)=>s+r.texts,0),checks:'16-unit outer inset; 3-unit text separation; 5-unit connector clearance; native, Arial and Times fallback fonts',failures:[...new Set(failed.flatMap(r=>r.failures))]},null,2);window.layoutResults=results;})();
+(async()=>{for(const base of bases)for(const size of ['', '-mobile'])for(const theme of ['dark','light'])for(const still of ['', '-static'])await check(base+size+'-'+theme+still+'.svg');const failed=results.filter(r=>r.failures.length);document.querySelector('#result').textContent=JSON.stringify({status:failed.length?'FAIL':'PASS',variants:bases.length*8,fontChecks:results.length,textBoxes:results.reduce((s,r)=>s+r.texts,0),checks:'16-unit outer inset; 3-unit text separation; 5-unit connector clearance; native, Arial and Times fallback fonts',failures:[...new Set(failed.flatMap(r=>r.failures))]},null,2);window.layoutResults=results;})();
 </script></html>

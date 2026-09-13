@@ -6,15 +6,16 @@ Run from any working directory. Re-running produces identical SVG bytes.
 from pathlib import Path
 from html import escape
 import json
+import base64
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent.parent / 'assets' / 'profile-refresh'
 OUT.mkdir(exist_ok=True)
 PALETTES = {
-    'dark': dict(bg='#101923', panel='#172432', edge='#35485B', text='#F3EFE7',
-                 muted='#B6C3CF', gold='#DEC078', blue='#9EBAF0', teal='#82CDD0', low='#21354A'),
-    'light': dict(bg='#FAF8F2', panel='#FFFEFA', edge='#C5CFD7', text='#202D3C',
-                  muted='#506173', gold='#8B651A', blue='#365BA0', teal='#206E73', low='#EAF0F4'),
+    'dark': dict(bg='#111719', panel='#1A2326', edge='#3B4948', text='#F5F0E8',
+                 muted='#B7C2BD', gold='#E58B78', blue='#99B5CB', teal='#A5BBA7', low='#223137'),
+    'light': dict(bg='#F7F5EF', panel='#FFFEFA', edge='#C8CDC5', text='#20292B',
+                  muted='#53615E', gold='#994535', blue='#3F627A', teal='#4B6956', low='#EDEEE8'),
 }
 MANIFEST = []
 
@@ -75,6 +76,28 @@ text{font-kerning:normal}.trace{stroke-dasharray:1;stroke-dashoffset:0}.sheet{tr
 .endpoint{animation:settle 1.2s ease-out 2.2s both}
 @media(prefers-reduced-motion:reduce){.trace,.sheet,.endpoint{animation:none!important;stroke-dashoffset:0;opacity:1;transform:none}}
 '''
+    if motion and not static and name in ('systems-atlas', 'engineering-workbench'):
+        css += '''
+@keyframes enso-draw{0%,8%{stroke-dashoffset:1;opacity:.15}55%,82%{stroke-dashoffset:0;opacity:.6}100%{stroke-dashoffset:-1;opacity:.15}}
+.enso-stroke{stroke-dasharray:1;animation:enso-draw 12s ease-in-out infinite}
+@keyframes atlas-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes orbit-turn{to{transform:rotate(360deg)}}
+@keyframes signal-run{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes ink-write{0%,12%{stroke-dashoffset:1;opacity:.2}60%,88%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:.2}}
+@keyframes node-light{0%,70%,100%{opacity:.25}25%,45%{opacity:1}}
+@keyframes cursor-blink{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}
+.atlas-plane{animation:atlas-float 6s ease-in-out infinite}
+.atlas-plane.p1{animation-delay:-2s}.atlas-plane.p2{animation-delay:-4s}
+.atlas-orbit{animation:orbit-turn 18s linear infinite;transform-origin:0px 0px}
+.atlas-signal,.bench-signal{stroke-dasharray:7 93;animation:signal-run 4.5s linear infinite}
+.atlas-signal.p1{animation-delay:-1.5s}.atlas-signal.p2{animation-delay:-3s}
+.bench-rotor{animation:orbit-turn 12s linear infinite;transform-origin:55px 48px}
+.bench-ink{stroke-dasharray:1;animation:ink-write 6s ease-in-out infinite}
+.bench-node{animation:node-light 4s ease-in-out infinite}
+.bench-node.n1{animation-delay:.6s}.bench-node.n2{animation-delay:1.2s}.bench-node.n3{animation-delay:1.8s}.bench-node.n4{animation-delay:2.4s}
+.bench-cursor{animation:cursor-blink 1.2s steps(1,end) infinite}
+@media(prefers-reduced-motion:reduce){.enso-stroke,.atlas-plane,.atlas-orbit,.atlas-signal,.bench-rotor,.bench-ink,.bench-node,.bench-cursor,.bench-signal{animation:none!important;transform:none!important;stroke-dashoffset:0!important;opacity:1!important}}
+'''
     grad = f'''<linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{C['bg']}"/><stop offset="1" stop-color="{C['low']}"/></linearGradient>
 <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="{C['edge']}" stroke-width=".6" opacity=".28"/></pattern>'''
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title desc">
@@ -87,6 +110,7 @@ text{font-kerning:normal}.trace{stroke-dasharray:1;stroke-dashoffset:0}.sheet{tr
 
 
 TITLES = {
+ 'engineering-workbench':'The engineering workbench — different tools, deliberate choices',
  'systems-atlas':'The systems atlas — ten products, one engineering practice',
  'orifold-cutaway':'Orifold — from mixed files to a finished document',
  'voyalier-cutaway':'Voyalier — from scattered travel details to a departure brief',
@@ -94,7 +118,8 @@ TITLES = {
  'delivery-loop':'Build beyond the demo — define, build, verify, ship',
 }
 DESCRIPTIONS = {
- 'systems-atlas':'A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Layered sheets at the center represent the shared engineering practice, not shared application infrastructure.',
+ 'engineering-workbench':'A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.',
+ 'systems-atlas':'A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.',
  'orifold-cutaway':'Conceptual illustration: mixed input files enter a local Mac document workflow and emerge as a finished document. The diagram is an editorial illustration, not an application screenshot.',
  'voyalier-cutaway':'Conceptual illustration: reservations, official advice and plans are assembled into a reviewed, offline-ready departure brief. This is an editorial illustration, not an application screenshot.',
  'golavo-cutaway':'Conceptual illustration: a forecast is sealed before kickoff, then the result is observed and the track record is scored forward. No forecast probabilities or performance results are invented.',
@@ -102,54 +127,185 @@ DESCRIPTIONS = {
 }
 
 
+# The atlas uses the same pinned app identities as the README collection.
+# Data URLs keep nested SVG IDs/styles isolated and the artwork self-contained.
+def atlas_icon(name, x, y, size):
+    icon = (OUT / 'icons' / f'{name.lower()}-static.svg').read_bytes()
+    encoded = base64.b64encode(icon).decode('ascii')
+    return f'<image x="{x}" y="{y}" width="{size}" height="{size}" href="data:image/svg+xml;base64,{encoded}"/>'
+
+
+ATLAS_GROUPS = [
+    ('WORKFLOWS', '+ DECISIONS', 'gold', [
+        ('Orifold', 'Finish the document'),
+        ('Voyalier', 'Prepare the departure'),
+        ('FolioOrb', 'Understand the portfolio'),
+        ('Golavo', 'Inspect the forecast'),
+    ]),
+    ('LEARNING', '+ EXPLORATION', 'blue', [
+        ('Codemble', 'Understand the codebase'),
+        ('Dusori', 'Research with sources'),
+        ('Nindova', 'Play something finite'),
+    ]),
+    ('EVIDENCE', '+ BOUNDARIES', 'teal', [
+        ('Nimanto', 'Explore job matches'),
+        ('Vidha', 'Rehearse a contingency'),
+        ('PalDawn', 'Explore disease mechanisms'),
+    ]),
+]
+
+
+def atlas_sculpture(cx, cy, scale=1):
+    # Three etched planes, with 4/3/3 nodes matching the product group counts.
+    # This is a conceptual atlas, not a dependency or data-flow graph.
+    art = ''
+    arc = 'M-177 97C-229 60 -206 -35 -123 -68C-32 -104 104 -78 169 -28C230 18 204 103 128 139C49 176 -74 160 -130 133'
+    art += path(arc, 'edge', 1.5, extra='opacity=".7"')
+    art += path(arc, 'gold', 3, extra='class="enso-stroke" pathLength="1" opacity=".65"')
+    art += path('M-224 35H-207M207 35H224M0 -98V-84M0 155V172', 'edge', 1)
+    for plane_index, (yy, col, nodes) in enumerate([(76, 'teal', [(-55, 40), (0, 64), (55, 40)]),
+                           (24, 'blue', [(-55, 40), (0, 64), (55, 40)]),
+                           (-28, 'gold', [(-90, -12), (-30, 20), (29, -11), (90, -28)])]):
+        art += f'<g transform="translate(0 {yy})"><g class="atlas-plane p{plane_index}">'
+        art += path('M-154 0L0 -82L154 0L0 82Z', col, 1.5, 'panel')
+        art += path('M-154 0V10L0 92L154 10V0L0 82Z', col, 1, 'low')
+        art += path('M-122 0L0 -65L122 0L0 65Z', col, .8, extra='opacity=".3"')
+        for dx in [-62, 0, 62]:
+            art += path(f'M{dx-46} -24L{dx+46} 25', col, .6, extra='opacity=".16"')
+        route = 'M' + 'L'.join(f'{x} {y}' for x, y in nodes)
+        art += path(route, col, 3, extra='class="trace" pathLength="1"')
+        art += path(route, 'text', 2, extra=f'class="atlas-signal p{plane_index}" pathLength="100"')
+        for x, y in nodes:
+            art += dot(x, y, col, 4)
+            art += f'<circle cx="{x}" cy="{y}" r="8" fill="none" stroke="{C[col]}" opacity=".3"/>'
+        art += '</g></g>'
+    art += path('M-178 97L-168 103M178 -17L168 -23', 'gold', 2)
+    return f'<g aria-hidden="true" transform="translate({cx} {cy}) scale({scale})">{art}</g>'
+
+
 def atlas(mobile):
     if mobile:
-        w,h=360,780
-        s=label(20,36,'THE SYSTEMS ATLAS','gold',15)
-        s+=text(20,78,'Many problems.',30,family='serif')+text(20,112,'One engineering practice.',28,family='serif')
-        s+=prism(180,187,.49)
-        s+=line(180,260,180,286,'gold',2,extra='class="trace" pathLength="1"')
-        s+=rect(18,282,324,186)
-        s+=dot(38,312,'gold',4)+label(52,317,'WORKFLOWS + DECISIONS','gold',14)
-        for x,y,name in [(38,355,'Orifold'),(198,355,'Voyalier'),(38,393,'FolioOrb'),(198,393,'Golavo')]:
-            s+=text(x,y,name,20,weight=600)
-        s+=text(38,438,'Documents · travel · portfolios · forecasts',15,'muted')
-        s+=rect(18,484,324,116)
-        s+=dot(38,514,'blue',4)+label(52,519,'LEARNING + EXPLORATION','blue',14)
-        s+=text(38,556,'Codemble · Dusori',19,weight=600)+text(38,584,'Nindova',19,weight=600)
-        s+=rect(18,616,324,116)
-        s+=dot(38,646,'teal',4)+label(52,651,'EVIDENCE + BOUNDARIES','teal',14)
-        s+=text(38,688,'Nimanto · Vidha',19,weight=600)+text(38,716,'PalDawn',19,weight=600)
-        s+=text(20,760,'Independent products · one standard of care',15,'muted')
-        return w,h,s
-    w,h=1120,620
-    s=label(40,43,'THE SYSTEMS ATLAS','gold')
-    s+=text(40,92,'Many problems. One engineering practice.',39,family='serif')
-    s+=text(40,126,'Ten products, connected by the care between an idea and a useful artifact.',19,'muted')
-    # Lines sit behind the three semantic groupings, never cross through labels.
-    s+=path('M334 326 H388 Q408 326 428 311 L455 296','gold',2.2,extra='class="trace" pathLength="1"')
-    s+=path('M642 289 L672 272 Q694 260 714 260 H757','blue',2.2,extra='class="trace t1" pathLength="1"')
-    s+=path('M642 352 L680 386 Q699 407 720 407 H757','teal',2.2,extra='class="trace t2" pathLength="1"')
-    s+=prism(550,290,1.03)
-    s+=text(550,494,'Beyond the demo.',26,'text',family='serif',anchor='middle')
-    s+=text(550,525,'Reasoning. Failure modes. Ownership.',16,'muted',anchor='middle')
-    s+=rect(40,178,294,334)
-    s+=label(60,212,'WORKFLOWS + DECISIONS','gold',13)
-    for i,(n,d) in enumerate([('Orifold','Finish the document'),('Voyalier','Prepare the departure'),('FolioOrb','Explain the portfolio'),('Golavo','Account for the forecast')]):
-        y=251+i*66
-        s+=dot(61,y-6,'gold',3)+text(76,y,n,23,weight=600)+text(76,y+23,d,16,'muted')
-    s+=rect(757,178,323,167)
-    s+=label(778,212,'LEARNING + EXPLORATION','blue',13)
-    s+=text(778,249,'Codemble · Dusori',23,weight=600)+text(778,282,'Nindova',23,weight=600)
-    s+=text(778,320,'Codebases · research · finite play',16,'muted')
-    s+=rect(757,367,323,145)
-    s+=label(778,401,'EVIDENCE + BOUNDARIES','teal',13)
-    s+=text(778,438,'Nimanto · Vidha · PalDawn',21,weight=600)
-    s+=text(778,478,'Matching · rehearsal · learning',16,'muted')
-    s+=line(40,563,1080,563)
-    s+=label(40,593,'INDEPENDENT PRODUCTS · ONE STANDARD OF CARE',size=15)
-    s+=text(1080,593,'Explore below ↓',17,'gold',anchor='end')
-    return w,h,s
+        w, h = 360, 1385
+        s = label(24, 37, 'THE SYSTEMS ATLAS', 'gold', 14)
+        s += text(24, 86, 'Different problems.', 31, family='serif')
+        s += text(24, 133, 'The same care.', 34, family='serif')
+        s += text(24, 176, 'Ten independent products.', 19, 'muted')
+        s += atlas_sculpture(180, 255, .5)
+        s += line(24, 350, 336, 350)
+        starts = [390, 737, 1018]
+        for (title, subtitle, col, products), top in zip(ATLAS_GROUPS, starts):
+            s += dot(30, top-5, col, 4)
+            s += label(46, top, title + ' ' + subtitle, col, 13)
+            for i, (name, detail) in enumerate(products):
+                y = top + 48 + i * 70
+                if i < len(products)-1:
+                    s += line(47, y+37, 47, y+66, col, 1, extra='opacity=".45"')
+                s += atlas_icon(name, 24, y-18, 46)
+                s += text(84, y+3, name, 24, weight=600)
+                # Explicit wraps keep descriptions legible at a 288px image width.
+                lines = {'FolioOrb':['Understand the portfolio'],
+                         'Codemble':['Understand the codebase'],
+                         'PalDawn':['Explore disease', 'mechanisms']}.get(name, [detail])
+                for j, words in enumerate(lines):
+                    s += text(84, y+31+j*25, words, 17, 'muted')
+            if top != starts[-1]:
+                s += line(24, top+len(products)*70+42, 336, top+len(products)*70+42)
+        s += line(24, 1300, 336, 1300)
+        s += text(24, 1333, 'Independent by design.', 21, family='serif')
+        s += text(24, 1361, 'Explore the collection below ↓', 17, 'muted')
+        return w, h, s
+
+    w, h = 1200, 864
+    s = label(44, 46, 'THE SYSTEMS ATLAS', 'gold', 15)
+    s += text(44, 117, 'Different problems.', 59, family='serif')
+    s += text(44, 202, 'The same care.', 64, family='serif')
+    s += text(47, 255, 'Ten independent products. One engineering practice.', 22, 'muted')
+    s += text(47, 294, 'Built to be used, inspected, and kept.', 22, 'muted')
+    s += atlas_sculpture(948, 156, 1.02)
+    # Three branches occupy the open band above the product trails.
+    s += path('M948 338V350H226Q208 350 208 366V379', 'gold', 1.5,
+              extra='class="trace t1" pathLength="1" data-connector="atlas"')
+    s += path('M948 338V350H600V379', 'blue', 1.5,
+              extra='class="trace t1" pathLength="1" data-connector="atlas"')
+    s += path('M948 338V350H992V379', 'teal', 1.5,
+              extra='class="trace t2" pathLength="1" data-connector="atlas"')
+    for x in [407, 799]:
+        s += line(x, 397, x, 774, 'edge', 1)
+    for (title, subtitle, col, products), x in zip(ATLAS_GROUPS, [44, 436, 828]):
+        s += label(x, 408, title, col, 16)
+        s += label(x, 434, subtitle, col, 14)
+        for i, (name, detail) in enumerate(products):
+            y = 481 + i * 82
+            if i < len(products)-1:
+                s += line(x+25, y+33, x+25, y+77, col, 1, extra='opacity=".4"')
+            s += atlas_icon(name, x, y-21, 50)
+            s += text(x+68, y+3, name, 28, weight=600)
+            s += text(x+68, y+35, detail, 20, 'muted')
+    s += line(44, 793, 1156, 793)
+    s += text(44, 833, 'Independent by design.', 26, family='serif')
+    s += text(1156, 832, 'Explore the collection below ↓', 20, 'gold', anchor='end')
+    return w, h, s
+
+
+def bench_glyph(x, y, kind, col, scale=1):
+    """Original tool illustrations: a document, a chassis, a graph, and a window."""
+    shapes = {
+        'Swift': 'M24 6H65L86 27V89H24ZM65 6V27H86M37 42H71M37 55H65M37 68H57',
+        'Rust': 'M55 8L89 28V68L55 88L21 68V28ZM55 28L72 38V58L55 68L38 58V38ZM55 0V8M55 88V96M13 24L21 28M89 68L97 72M13 72L21 68M89 28L97 24',
+        'Python': 'M23 23H55V49H88M23 75H55V49M55 49V13M23 23V75',
+        'TypeScript': 'M12 13H98V83H12ZM12 31H98M24 22H25M33 22H34M42 22H43M38 47L27 57L38 67M71 47L82 57L71 67M60 43L50 71',
+    }
+    art = f'<ellipse cx="55" cy="101" rx="48" ry="8" fill="{C["bg"]}" opacity=".6"/>'
+    art += path(shapes[kind], col, 2.4, extra=('class="bench-rotor"' if kind == 'Rust' else 'class="trace" pathLength="1"'))
+    if kind == 'Swift':
+        art += path('M37 42H71M37 55H65M37 68H57', 'text', 3, extra='class="bench-ink" pathLength="1"')
+    if kind == 'TypeScript':
+        art += path('M76 74H88', 'text', 3, extra='class="bench-cursor"')
+    if kind == 'Python':
+        for index, (px, py) in enumerate([(23,23),(23,75),(55,49),(88,49),(55,13)]):
+            art += dot(px, py, col, 7, extra=f'class="bench-node n{index}"')
+            art += f'<circle cx="{px}" cy="{py}" r="7" fill="none" stroke="{C[col]}" stroke-width="2"/>'
+    return f'<g aria-hidden="true" transform="translate({x} {y}) scale({scale})">{art}</g>'
+
+
+def workbench(mobile):
+    tools = [('Swift', 'PDFKit', 'gold'), ('Rust', 'Tauri', 'blue'),
+             ('Python', 'FastAPI · SQLite', 'teal'), ('TypeScript', 'Astro', 'gold')]
+    if mobile:
+        w, h = 360, 752
+        s = label(24, 37, 'THE ENGINEERING WORKBENCH', 'gold', 13)
+        s += text(24, 85, 'Different tools.', 32, family='serif')
+        s += text(24, 130, 'Deliberate choices.', 31, family='serif')
+        for i, (name, detail, col) in enumerate(tools):
+            x, y = 24 + (i%2)*168, 166 + (i//2)*230
+            s += rect(x, y, 144, 202, 'panel', 'edge', 14)
+            s += bench_glyph(x+22, y+15, name, col, .9)
+            s += text(x+14, y+144, name, 22, weight=600)
+            s += text(x+14, y+177, detail, 15 if name=='Python' else 18, 'muted')
+        s += path('M96 616V640H264V616M180 640V662', 'edge', 1.5,
+                  extra='class="trace t2" pathLength="1" data-connector="bench"')
+        s += path('M96 616V640H264V616', 'gold', 2.5, extra='class="bench-signal" pathLength="100"')
+        s += text(24, 695, 'Delivery & cloud', 22, weight=600)
+        s += text(24, 726, 'GitHub Actions · AWS · Azure', 18, 'muted')
+    else:
+        w, h = 1200, 446
+        s = label(44, 42, 'THE ENGINEERING WORKBENCH', 'gold', 15)
+        s += text(44, 93, 'Different tools. Deliberate choices.', 40, family='serif')
+        for i, (name, detail, col) in enumerate(tools):
+            x = 44 + i*284
+            s += rect(x, 131, 260, 203, 'panel', 'edge', 14)
+            s += bench_glyph(x+145, 151, name, col, .85)
+            s += line(x+22, 157, x+60, 157, col, 3)
+            s += text(x+22, 272, name, 29, weight=600)
+            s += text(x+22, 307, detail, 21, 'muted')
+            s += path(f'M{x+130} 334V365', col, 1.5,
+                      extra='class="trace t1" pathLength="1" data-connector="bench"')
+        s += path('M174 365H1026', 'edge', 1.5,
+                  extra='class="trace t2" pathLength="1" data-connector="bench"')
+        s += path('M174 365H1026', 'gold', 3, extra='class="bench-signal" pathLength="100"')
+        s += text(44, 413, 'Delivery & cloud', 25, family='serif')
+        s += text(1156, 413, 'GitHub Actions · AWS · Azure', 23, 'muted', anchor='end')
+    return w, h, s
 
 
 def document(x,y,accent='blue',scale=1,seal=False):
@@ -269,9 +425,10 @@ for theme in PALETTES:
     C=PALETTES[theme]
     for mobile in (False,True):
         for name in TITLES:
-            animated = name in ('systems-atlas','delivery-loop')
+            animated = name in ('systems-atlas','delivery-loop','engineering-workbench')
             if name=='systems-atlas':w,h,s=atlas(mobile)
             elif name=='delivery-loop':w,h,s=delivery(mobile)
+            elif name=='engineering-workbench':w,h,s=workbench(mobile)
             else:w,h,s=cutaway(name.split('-')[0],mobile)
             for static in ((False,True) if animated else (True,)):
                 filename=f'{name}{"-mobile" if mobile else ""}-{theme}{"-static" if animated and static else ""}.svg'

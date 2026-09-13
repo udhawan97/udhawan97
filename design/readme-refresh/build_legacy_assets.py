@@ -15,29 +15,29 @@ OUT = HERE.parent.parent / "assets"
 
 PALETTES = {
     "dark": {
-        "paper": "#0D1318",
-        "paper_2": "#14202B",
-        "ink": "#F4EFE6",
-        "muted": "#AEB9C6",
-        "faint": "#8291A0",
-        "rule": "#334657",
-        "accent": "#D9B963",
-        "accent_2": "#D66B58",
-        "blue": "#7898CC",
-        "teal": "#67AEB0",
-        "shade": "#090D11",
+        "paper": "#111719",
+        "paper_2": "#223137",
+        "ink": "#F5F0E8",
+        "muted": "#B7C2BD",
+        "faint": "#97A39F",
+        "rule": "#3B4948",
+        "accent": "#E58B78",
+        "accent_2": "#CCAC72",
+        "blue": "#99B5CB",
+        "teal": "#A5BBA7",
+        "shade": "#0B1012",
     },
     "light": {
-        "paper": "#F8F4EB",
-        "paper_2": "#EDF1F2",
-        "ink": "#1B2936",
-        "muted": "#4E6071",
-        "faint": "#586977",
-        "rule": "#BFCAD0",
-        "accent": "#8B671A",
-        "accent_2": "#9E4434",
-        "blue": "#3D659F",
-        "teal": "#2C7477",
+        "paper": "#F7F5EF",
+        "paper_2": "#EDEEE8",
+        "ink": "#20292B",
+        "muted": "#53615E",
+        "faint": "#53615E",
+        "rule": "#C8CDC5",
+        "accent": "#994535",
+        "accent_2": "#806329",
+        "blue": "#3F627A",
+        "teal": "#4B6956",
         "shade": "#FFFEFA",
     },
 }
@@ -108,16 +108,27 @@ def rule(x1, y1, x2, y2, color="rule", width=1.5, cls="", extra=""):
     )
 
 
+def maker_mark() -> str:
+    """An original folded UD monogram for the desktop masthead."""
+    return '''<g aria-hidden="true" transform="translate(994 64)">
+<path d="M-13 -7H136V115H-13Z" fill="none" stroke="var(--rule)" stroke-width="1"/>
+<path d="M-3 3L125 1L128 105L-1 108Z" fill="var(--accent)"/>
+<path d="M15 24V63Q15 83 34 83Q53 83 53 63V24M70 24V83H85Q112 83 112 53Q112 24 85 24Z" fill="none" stroke="var(--paper)" stroke-width="4.5" stroke-linecap="square" stroke-linejoin="miter" class="draw" pathLength="1"/>
+<path d="M-20 54H-13M136 54H143" stroke="var(--faint)" stroke-width="1"/>
+</g>'''
+
+
+
 def masthead(mobile: bool, animated: bool) -> tuple[int, int, str]:
     if mobile:
         width, height = 360, 488
         body = rule(24, 24, 336, 24, "accent", 1.5, "draw", 'pathLength="1"')
         body += txt(24, 52, "CHICAGO · BUILDING IN PUBLIC", 13, "mono enter", "muted", 700)
-        body += txt(24, 112, "Umang Dhawan", 39, "display enter d1", "ink", 600)
+        body += txt(24, 112, "Umang Dhawan", 36, "display enter d1", "ink", 600)
         body += txt(24, 148, "Technology consultant", 20, "enter d2", "ink", 700)
         body += txt(24, 176, "Open-source product builder", 18, "enter d2", "blue", 650)
         body += txt(24, 213, "Complex ideas, made reliable", 16, "enter d3", "muted", 500)
-        body += txt(24, 234, "enough to ship.", 16, "enter d3", "muted", 500)
+        body += txt(24, 239, "enough to ship.", 16, "enter d3", "muted", 500)
         body += rule(24, 258, 336, 258)
         body += txt(24, 286, "FOCUS / 01—04", 13, "mono", "accent", 700)
         cells = [
@@ -133,7 +144,8 @@ def masthead(mobile: bool, animated: bool) -> tuple[int, int, str]:
         return width, height, body
 
     width, height = 1200, 360
-    body = rule(52, 30, 1148, 30, "accent", 1.5, "draw", 'pathLength="1"')
+    body = maker_mark()
+    body += rule(52, 30, 1148, 30, "accent", 1.5, "draw", 'pathLength="1"')
     body += txt(52, 62, "CHICAGO · BUILDING IN PUBLIC", 15, "mono enter", "muted", 700)
     body += txt(52, 139, "Umang Dhawan", 68, "display enter d1", "ink", 600)
     body += txt(54, 181, "Technology consultant  ·  Open-source product builder", 23, "enter d2", "ink", 650)
@@ -178,7 +190,7 @@ def wizard_scene(x: int, y: int, scale: float, animated: bool) -> str:
 
 def wizard(mobile: bool, animated: bool) -> tuple[int, int, str]:
     if mobile:
-        width, height = 360, 430
+        width, height = 360, 440
         body = txt(24, 37, "AI, WITH GUARDRAILS", 14, "mono", "accent", 700)
         body += wizard_scene(70, 55, 1, animated)
         body += txt(24, 255, "AI can draft the spell.", 25, "display enter d1", "ink", 600)

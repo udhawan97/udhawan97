@@ -7,7 +7,7 @@
     "motion": true,
     "width": 1200,
     "height": 360,
-    "bytes": 4550
+    "bytes": 5023
   },
   {
     "file": "profile-header-dark-static.svg",
@@ -17,7 +17,7 @@
     "motion": false,
     "width": 1200,
     "height": 360,
-    "bytes": 3990
+    "bytes": 4463
   },
   {
     "file": "ai-spell-dark.svg",
@@ -86,7 +86,7 @@
     "mobile": true,
     "motion": true,
     "width": 360,
-    "height": 430,
+    "height": 440,
     "bytes": 5294
   },
   {
@@ -96,7 +96,7 @@
     "mobile": true,
     "motion": false,
     "width": 360,
-    "height": 430,
+    "height": 440,
     "bytes": 4246
   },
   {
@@ -127,7 +127,7 @@
     "motion": true,
     "width": 1200,
     "height": 360,
-    "bytes": 4550
+    "bytes": 5023
   },
   {
     "file": "profile-header-light-static.svg",
@@ -137,7 +137,7 @@
     "motion": false,
     "width": 1200,
     "height": 360,
-    "bytes": 3990
+    "bytes": 4463
   },
   {
     "file": "ai-spell-light.svg",
@@ -206,7 +206,7 @@
     "mobile": true,
     "motion": true,
     "width": 360,
-    "height": 430,
+    "height": 440,
     "bytes": 5294
   },
   {
@@ -216,7 +216,7 @@
     "mobile": true,
     "motion": false,
     "width": 360,
-    "height": 430,
+    "height": 440,
     "bytes": 4246
   },
   {
