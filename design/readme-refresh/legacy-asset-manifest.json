@@ -7,7 +7,7 @@
     "motion": true,
     "width": 1200,
     "height": 360,
-    "bytes": 5023
+    "bytes": 4550
   },
   {
     "file": "profile-header-dark-static.svg",
@@ -17,7 +17,7 @@
     "motion": false,
     "width": 1200,
     "height": 360,
-    "bytes": 4463
+    "bytes": 3990
   },
   {
     "file": "ai-spell-dark.svg",
@@ -127,7 +127,7 @@
     "motion": true,
     "width": 1200,
     "height": 360,
-    "bytes": 5023
+    "bytes": 4550
   },
   {
     "file": "profile-header-light-static.svg",
@@ -137,7 +137,7 @@
     "motion": false,
     "width": 1200,
     "height": 360,
-    "bytes": 4463
+    "bytes": 3990
   },
   {
     "file": "ai-spell-light.svg",

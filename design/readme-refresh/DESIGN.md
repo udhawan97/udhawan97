@@ -5,7 +5,7 @@ assessment and a developer deciding which repository to explore.
 
 ## Reading order
 
-1. Name masthead with an original drawn UD monogram; contact links immediately below.
+1. Clean typographic name masthead; contact links immediately below.
 2. A concise introduction, current role, and four working navigation anchors.
 3. The illustrated ten-product atlas, three direct starting points, and three
    expandable collections. Each project opens into an icon heading and description,
@@ -44,7 +44,7 @@ The palette is defined in `build_assets.py`.
 
 Three opening/impact families produce 24 additional self-contained SVG files:
 
-- **Masthead:** an editorial introduction, original drawn UD mark, and four-part focus index.
+- **Masthead:** an editorial introduction and four-part focus index, with generous negative space.
 - **AI with guardrails:** a contained pixel-wizard scene with stationary copy.
 - **Selected delivery impact:** an open four-column typographic ledger with large
   color-coded figures. Mobile uses four spacious rows with wrapped descriptions.
@@ -167,7 +167,7 @@ The workbench replaces the plain stack inventory, retaining every listed tool.
 Its original illustrations are category symbols, not third-party language logos.
 The document writes, the systems symbol rotates, graph nodes light in sequence,
 and a browser cursor blinks. These are illustrations, not live activity indicators.
-The masthead monogram is likewise original vector work. Neither introduces a
+The masthead uses a clean typographic composition without a monogram. These illustrations introduce no
 new dependency. Atlas and workbench motion loops continuously at restrained speeds. Explicit
 static siblings and reduced-motion CSS stop the loops.
 

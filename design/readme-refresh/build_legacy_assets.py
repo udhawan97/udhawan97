@@ -108,17 +108,6 @@ def rule(x1, y1, x2, y2, color="rule", width=1.5, cls="", extra=""):
     )
 
 
-def maker_mark() -> str:
-    """An original folded UD monogram for the desktop masthead."""
-    return '''<g aria-hidden="true" transform="translate(994 64)">
-<path d="M-13 -7H136V115H-13Z" fill="none" stroke="var(--rule)" stroke-width="1"/>
-<path d="M-3 3L125 1L128 105L-1 108Z" fill="var(--accent)"/>
-<path d="M15 24V63Q15 83 34 83Q53 83 53 63V24M70 24V83H85Q112 83 112 53Q112 24 85 24Z" fill="none" stroke="var(--paper)" stroke-width="4.5" stroke-linecap="square" stroke-linejoin="miter" class="draw" pathLength="1"/>
-<path d="M-20 54H-13M136 54H143" stroke="var(--faint)" stroke-width="1"/>
-</g>'''
-
-
-
 def masthead(mobile: bool, animated: bool) -> tuple[int, int, str]:
     if mobile:
         width, height = 360, 488
@@ -144,8 +133,7 @@ def masthead(mobile: bool, animated: bool) -> tuple[int, int, str]:
         return width, height, body
 
     width, height = 1200, 360
-    body = maker_mark()
-    body += rule(52, 30, 1148, 30, "accent", 1.5, "draw", 'pathLength="1"')
+    body = rule(52, 30, 1148, 30, "accent", 1.5, "draw", 'pathLength="1"')
     body += txt(52, 62, "CHICAGO · BUILDING IN PUBLIC", 15, "mono enter", "muted", 700)
     body += txt(52, 139, "Umang Dhawan", 68, "display enter d1", "ink", 600)
     body += txt(54, 181, "Technology consultant  ·  Open-source product builder", 23, "enter d2", "ink", 650)
