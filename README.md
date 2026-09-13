@@ -1,20 +1,28 @@
 <p align="center">
   <picture>
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/profile-header-mobile-dark-static.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/profile-header-mobile-light-static.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/profile-header-dark-static.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/profile-header-light-static.svg">
     <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/profile-header-mobile-dark.svg">
     <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/profile-header-mobile-light.svg">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg">
-    <img src="./assets/profile-header-dark.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, applied AI. Selected builds: Orifold, FolioOrb, PalDawn, Vidha, Golavo, Voyalier, Codemble, Dusori, Nindova, Nimanto." width="100%">
+    <img src="./assets/profile-header-dark-static.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, and applied AI." width="100%">
   </picture>
 </p>
 
 <p align="center">
   <picture>
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-dark-static.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-light-static.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/ai-spell-dark-static.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/ai-spell-light-static.svg">
     <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-dark.svg">
     <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-light.svg">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/ai-spell-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/ai-spell-light.svg">
-    <img src="./assets/ai-spell-dark.svg" alt="AI, with guardrails — AI can draft the spell. I still review the blast radius." width="100%">
+    <img src="./assets/ai-spell-dark-static.svg" alt="AI, with guardrails — AI can draft the spell. I still review the blast radius." width="100%">
   </picture>
 </p>
 
@@ -107,11 +115,15 @@ I've helped ship a retail platform across **100+ locations**, supported a federa
 
 <p align="center">
   <picture>
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-dark-static.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-light-static.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/impact-seals-dark-static.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/impact-seals-light-static.svg">
     <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-dark.svg">
     <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-light.svg">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/impact-seals-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/impact-seals-light.svg">
-    <img src="./assets/impact-seals-dark.svg" alt="Client impact: retail platform shipped to 100+ locations, zero findings on a federal cloud audit, quality leadership across 4 cloud products, teams shipped with on 3 continents." width="100%">
+    <img src="./assets/impact-seals-dark-static.svg" alt="Selected delivery impact: retail platform shipped to 100+ locations, zero findings on a federal cloud audit, quality leadership across 4 cloud products, and work with teams on 3 continents." width="100%">
   </picture>
 </p>
 

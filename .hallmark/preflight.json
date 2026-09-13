@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-13",
+  "design_source": "design/readme-refresh/DESIGN.md",
+  "font_stack": "Georgia/Fraunces display, system sans, system mono",
+  "palette": "ink, ivory, gold, slate blue, muted teal",
+  "motion": "restrained SVG entrance and contained wizard loop",
+  "framework": "GitHub profile README with generated SVG assets",
+  "preserve": [
+    "editorial identity",
+    "product claims and provenance",
+    "responsive picture sources",
+    "reduced-motion alternatives"
+  ]
+}

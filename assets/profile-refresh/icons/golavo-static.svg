@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="gDt gDd">
-<title id="gDt">GOLAVO</title>
-<desc id="gDd">A sumi brushstroke ball trajectory draws the letter G and curls into the top corner of a minimal goal under a rising gold sun, above a drifting seigaiha wave ground. Loops every 6.5s; honors prefers-reduced-motion with the composed static frame.</desc>
+<title id="gDt">Golavo — app mark</title>
+<desc id="gDd">Golavo project icon in its composed resting frame, presented at a compact profile size.</desc>
 <style>
 .sunG{animation:kSun 6.5s ease-in-out infinite}
 .drift{animation:kDrift 6.5s linear infinite}

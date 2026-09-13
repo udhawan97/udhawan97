@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-13",
+  "status": "pass",
+  "safari": {
+    "native_readme": "desktop dark variant rendered without clipped or bleeding content",
+    "direct_mobile_static": "profile-header-mobile-light-static.svg rendered at its 360 x 488 intrinsic size with all labels inside the frame"
+  },
+  "responsive_review": {
+    "engine": "Codex in-app browser",
+    "viewports_px": [320, 375, 414, 768, 914, 1280],
+    "horizontal_overflow": false,
+    "all_gallery_assets_loaded": true,
+    "forced_state": "light theme, reduced-motion static variants, 320px review column"
+  },
+  "gallery_sources_at_320px": [
+    "profile-header-mobile-light-static.svg",
+    "ai-spell-mobile-light-static.svg",
+    "impact-seals-mobile-light-static.svg",
+    "systems-atlas-mobile-light-static.svg",
+    "orifold-cutaway-mobile-light.svg",
+    "voyalier-cutaway-mobile-light.svg",
+    "golavo-cutaway-mobile-light.svg",
+    "delivery-loop-mobile-light-static.svg"
+  ],
+  "notes": [
+    "The three cutaway families contain no motion and therefore use the same file for regular and reduced-motion states.",
+    "Obscura could not open localhost because its private-address policy blocked the target; Safari was used for native acceptance."
+  ]
+}

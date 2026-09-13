@@ -17,7 +17,7 @@ def sub(root,tag,attrs=None,words=None):
     if words is not None:el.text=words
     return el
 
-def still(svg,name):
+def still(svg,name,project):
     root=ET.fromstring(svg)
     for parent in list(root.iter()):
         for child in list(parent):
@@ -32,6 +32,12 @@ def still(svg,name):
                         i=max(i for i,t in enumerate(times) if t<=.8)
                         parent.set(child.get('attributeName'),vals[i])
                 parent.remove(child)
+    title=root.find('{'+NS+'}title')
+    desc=root.find('{'+NS+'}desc')
+    if title is not None:
+        title.text=project+' — app mark'
+    if desc is not None:
+        desc.text=project+' project icon in its composed resting frame, presented at a compact profile size.'
     sub(root,'style',words='* { animation: none !important; transition: none !important; }')
     return '\n'.join(line.rstrip() for line in ET.tostring(root,encoding='unicode').splitlines())+'\n'
 
@@ -41,10 +47,16 @@ for item in sources:
     index=1 if name=='nindova' else 0
     source=HERE/'icon-sources'/item['artwork'][index]['file']
     content=source.read_text()
+    root=ET.fromstring(content)
+    if root.find('{'+NS+'}title') is None:
+        title=ET.Element('{'+NS+'}title')
+        title.text=item['project']+' — animated app mark'
+        root.insert(0,title)
+    if root.find('{'+NS+'}desc') is None:
+        desc=ET.Element('{'+NS+'}desc')
+        desc.text=item['project']+' project icon, presented at a compact profile size.'
+        root.insert(1,desc)
     if name in ('folioorb','nindova','vidha'):
-        root=ET.fromstring(content)
-        if root.find('{'+NS+'}title') is None:
-            sub(root,'title',words=item['project']+' — animated app mark')
         if name=='folioorb':
             art=root.find('{'+NS+'}g')
             root.remove(art)
@@ -68,10 +80,10 @@ for item in sources:
             css='.profile-courier{transform-origin:256px 256px;animation:profile-courier 7s ease-in-out infinite}@keyframes profile-courier{0%,48%,100%{transform:translateY(0) rotate(0)}20%{transform:translateY(-7px) rotate(-1.4deg)}32%{transform:translateY(-3px) rotate(.7deg)}}'
         css+='@media(prefers-reduced-motion:reduce){*{animation:none!important}}'
         sub(root,'style',words=css)
-        content=ET.tostring(root,encoding='unicode')+'\n'
+    content=ET.tostring(root,encoding='unicode')+'\n'
     content='\n'.join(line.rstrip() for line in content.splitlines())+'\n'
     (OUT/f'{name}.svg').write_text(content)
-    (OUT/f'{name}-static.svg').write_text(still(content,name))
+    (OUT/f'{name}-static.svg').write_text(still(content,name,item['project']))
     manifest.append({'project':item['project'],'file':f'icons/{name}.svg','static':f'icons/{name}-static.svg',
                      'source':item['artwork'][index]['source'],'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
                      'motion':'Added orbit / diamond / courier motion' if name in ('folioorb','nindova','vidha') else 'Preserved original project animation'})

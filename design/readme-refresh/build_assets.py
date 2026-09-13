@@ -13,7 +13,7 @@ OUT.mkdir(exist_ok=True)
 PALETTES = {
     'dark': dict(bg='#101923', panel='#172432', edge='#35485B', text='#F3EFE7',
                  muted='#B6C3CF', gold='#DEC078', blue='#9EBAF0', teal='#82CDD0', low='#21354A'),
-    'light': dict(bg='#FAF8F2', panel='#FFFFFF', edge='#C5CFD7', text='#202D3C',
+    'light': dict(bg='#FAF8F2', panel='#FFFEFA', edge='#C5CFD7', text='#202D3C',
                   muted='#506173', gold='#8B651A', blue='#365BA0', teal='#206E73', low='#EAF0F4'),
 }
 MANIFEST = []
@@ -62,7 +62,9 @@ def prism(x,y,scale=1):
 
 def frame(name,w,h,content,motion=False,static=False):
     desc = DESCRIPTIONS[name]
-    css='''text{font-kerning:normal}.trace{stroke-dasharray:1;stroke-dashoffset:0}.sheet{transform:translateY(0)}
+    css='''/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
+/* Hallmark · genre: editorial · macrostructure: Map / Diagram · theme: Atelier · enrichment: hand-built SVG · nav: N6 · footer: Ft2 */
+text{font-kerning:normal}.trace{stroke-dasharray:1;stroke-dashoffset:0}.sheet{transform:translateY(0)}
 @keyframes route{from{stroke-dashoffset:1;opacity:.12}to{stroke-dashoffset:0;opacity:1}}
 @keyframes assemble{from{transform:translateY(9px);opacity:.5}to{transform:translateY(0);opacity:1}}
 @keyframes settle{from{opacity:.3}to{opacity:1}}
@@ -102,24 +104,23 @@ DESCRIPTIONS = {
 
 def atlas(mobile):
     if mobile:
-        w,h=600,1010
-        s=label(32,42,'THE SYSTEMS ATLAS','gold',16)
-        s+=text(32,91,'Many problems.',40,family='serif')+text(32,137,'One engineering practice.',36,family='serif')
-        s+=prism(300,256,.77)
-        s+=line(300,384,300,438,'gold',2,extra='class="trace" pathLength="1"')
-        groups=[('WORKFLOWS + DECISIONS','gold',[('Orifold','Voyalier'),('FolioOrb','Golavo')],422,210),
-                ('LEARNING + EXPLORATION','blue',[('Codemble','Dusori'),('Nindova','')],648,144),
-                ('EVIDENCE + BOUNDARIES','teal',[('Nimanto','Vidha'),('PalDawn','')],808,144)]
-        for title,col,rows,y,hh in groups:
-            s+=rect(28,y,544,hh)
-            s+=line(46,y+24,46,y+hh-24,col,3)
-            s+=label(64,y+38,title,col,15)
-            for i,row in enumerate(rows):
-                for j,name in enumerate(row):
-                    s+=text(64+250*j,y+81+44*i,name,26,weight=600)
-            if title.startswith('WORKFLOWS'):
-                s+=text(64,y+174,'Documents · travel · portfolios · forecasts',18,'muted')
-        s+=text(32,982,'Portfolio map · Explore the projects below',17,'muted')
+        w,h=360,780
+        s=label(20,36,'THE SYSTEMS ATLAS','gold',15)
+        s+=text(20,78,'Many problems.',30,family='serif')+text(20,112,'One engineering practice.',28,family='serif')
+        s+=prism(180,187,.49)
+        s+=line(180,260,180,286,'gold',2,extra='class="trace" pathLength="1"')
+        s+=rect(18,282,324,186)
+        s+=dot(38,312,'gold',4)+label(52,317,'WORKFLOWS + DECISIONS','gold',14)
+        for x,y,name in [(38,355,'Orifold'),(198,355,'Voyalier'),(38,393,'FolioOrb'),(198,393,'Golavo')]:
+            s+=text(x,y,name,20,weight=600)
+        s+=text(38,438,'Documents · travel · portfolios · forecasts',15,'muted')
+        s+=rect(18,484,324,116)
+        s+=dot(38,514,'blue',4)+label(52,519,'LEARNING + EXPLORATION','blue',14)
+        s+=text(38,556,'Codemble · Dusori',19,weight=600)+text(38,584,'Nindova',19,weight=600)
+        s+=rect(18,616,324,116)
+        s+=dot(38,646,'teal',4)+label(52,651,'EVIDENCE + BOUNDARIES','teal',14)
+        s+=text(38,688,'Nimanto · Vidha',19,weight=600)+text(38,716,'PalDawn',19,weight=600)
+        s+=text(20,760,'Independent products · one standard of care',15,'muted')
         return w,h,s
     w,h=1120,620
     s=label(40,43,'THE SYSTEMS ATLAS','gold')
@@ -146,8 +147,8 @@ def atlas(mobile):
     s+=text(778,438,'Nimanto · Vidha · PalDawn',21,weight=600)
     s+=text(778,478,'Matching · rehearsal · learning',16,'muted')
     s+=line(40,563,1080,563)
-    s+=label(40,593,'INDEPENDENT PRODUCTS. A CONSISTENT STANDARD OF CARE.',size=12)
-    s+=text(1080,593,'Explore below ↓',15,'gold',anchor='end')
+    s+=label(40,593,'INDEPENDENT PRODUCTS · ONE STANDARD OF CARE',size=15)
+    s+=text(1080,593,'Explore below ↓',17,'gold',anchor='end')
     return w,h,s
 
 
@@ -172,21 +173,25 @@ def cutaway(kind,mobile):
               'voyalier':['TRAVEL DETAILS','REVIEW + ASSEMBLE','DEPARTURE BRIEF'],
               'golavo':['SEAL FORECAST','OBSERVE RESULT','SCORE FORWARD']}
     if mobile:
-        # A deliberately vertical composition: labels remain 14+ CSS pixels at 320px.
+        # A 360-unit vertical composition keeps primary labels readable when the
+        # image is displayed in a narrow 320px profile column.
+        w,h=360,560
+        s=label(20,34,a.upper()+' / ENGINEERING NOTE',col,14)
+        s+=text(20,75,b,27,family='serif')
         for i,cap in enumerate(captions[kind]):
-            y=148+i*128
-            s+=rect(28,y,544,106)
-            s+=text(144,y+41,cap,21,col,600)
+            y=112+i*126
+            s+=rect(18,y,324,104)
+            s+=text(101,y+39,cap,16,col,600)
             detail={'orifold':['PDFs, scans and documents','Repair, edit and protect','Keep the result on your Mac'],
                     'voyalier':['Reservations, advice and plans','Check the brief before you go','Carry the brief offline'],
-                    'golavo':['Before kickoff','After the match','Keep the track record visible']}[kind][i]
-            s+=text(144,y+76,detail,20,'muted')
-            if i<2:s+=path(f'M80 {y+106} V{y+128}',col,2)
+                    'golavo':['Before kickoff','After the match','Keep the record visible']}[kind][i]
+            s+=text(101,y+70,detail,15,'muted')
+            if i<2:s+=path(f'M61 {y+104} V{y+126}',col,2)
             if kind=='golavo':
-                s+=f'<circle cx="81" cy="{y+52}" r="28" fill="{C["low"]}" stroke="{C[col]}"/>'
-                s+=text(81,y+61,['S','→','✓'][i],27,col,500,anchor='middle')
-            else:s+=document(60,y+17,col,.60,i==2)
-        s+=text(32,556,'Conceptual workflow · not an app screenshot',17,'muted')
+                s+=f'<circle cx="61" cy="{y+52}" r="25" fill="{C["low"]}" stroke="{C[col]}"/>'
+                s+=text(61,y+60,['S','→','✓'][i],24,col,500,anchor='middle')
+            else:s+=document(40,y+17,col,.55,i==2)
+        s+=text(20,536,'Conceptual workflow · not an app screenshot',15,'muted')
         return w,h,s
     # Three stages, read left-to-right, with artifact silhouettes at actual readable scale.
     for x in [48,428,808]:s+=rect(x,129,264,130)
@@ -220,13 +225,16 @@ def delivery(mobile):
     s=label(32 if mobile else 40,41,'BUILD BEYOND THE DEMO','gold',15)
     steps=[('Define','The outcome'),('Build','The workflow'),('Verify','The failure modes'),('Ship','The whole product')]
     if mobile:
+        w,h=360,560
+        s=label(20,36,'BUILD BEYOND THE DEMO','gold',15)
         for i,(title,desc) in enumerate(steps):
-            y=106+112*i
-            s+=dot(58,y+4,['gold','blue','teal','gold'][i],7)
-            if i<3:s+=path(f'M58 {y+19}V{y+95}','edge',2,extra=f'class="trace t{i%3}" pathLength="1"')
-            s+=text(92,y+13,title,31,weight=600)+text(92,y+45,desc,22,'muted')
-        s+=path('M546 487V89H530M536 82L528 89L536 96','gold',1.5,extra='class="trace t2" pathLength="1"')
-        s+=text(32,592,'Let the lessons shape the next version.',22,'muted')
+            y=92+101*i
+            s+=dot(38,y+4,['gold','blue','teal','gold'][i],6)
+            if i<3:s+=path(f'M38 {y+18}V{y+88}','edge',2,extra=f'class="trace t{i%3}" pathLength="1"')
+            s+=text(65,y+12,title,26,weight=600)+text(65,y+39,desc,17,'muted')
+        s+=path('M330 416V83H317M324 77L317 83L324 89','gold',1.5,extra='class="trace t2" pathLength="1"')
+        s+=line(20,500,340,500)
+        s+=text(20,532,'Lessons shape the next version.',17,'muted')
     else:
         s+=path('M57 106H861','edge',2)
         s+=path('M57 106H861','gold',2,extra='class="trace" pathLength="1"')

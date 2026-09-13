@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="430" viewBox="0 0 360 430" role="img" aria-labelledby="title desc" data-family="ai-spell" data-static="true">
+<title id="title">AI, with guardrails</title><desc id="desc">A contained pixel-art wizard reviews a laptop and casts a spell. The accompanying line says AI can draft the spell while Umang reviews the blast radius. A note credits Layla, Umang&#x27;s Bernedoodle, called Bear.</desc>
+<defs><style>/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
+/* Hallmark · genre: editorial · macrostructure: Map / Diagram · theme: Atelier · enrichment: hand-built SVG · nav: N6 · footer: Ft2 */
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-kerning:normal}
+.display{font-family:Georgia,'Times New Roman',serif;font-style:normal}
+.mono{font-family:'SFMono-Regular',Consolas,monospace;letter-spacing:1.4px}
+</style>
+<linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8F4EB"/><stop offset="1" stop-color="#EDF1F2"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#BFCAD0" stroke-width=".6" opacity=".22"/></pattern>
+<clipPath id="frame"><rect width="360" height="430" rx="20"/></clipPath></defs>
+<g clip-path="url(#frame)"><rect width="360" height="430" fill="url(#surface)"/><rect width="360" height="430" fill="url(#grid)"/><text x="24" y="37" class="mono" fill="#8B671A" font-size="14" font-weight="700" text-anchor="start" >AI, WITH GUARDRAILS</text><g transform="translate(70 55) scale(1)">
+<rect width="220" height="150" rx="18" fill="#FFFEFA" stroke="#BFCAD0"/>
+<clipPath id="scene-clip"><rect x="1" y="1" width="218" height="148" rx="17"/></clipPath>
+<g clip-path="url(#scene-clip)"><path d="M0 116L110 82L220 116V150H0Z" fill="#EDF1F2"/><path d="M0 116H220M110 82V150M44 103L63 150M176 103L157 150" fill="none" stroke="#BFCAD0" opacity=".5"/>
+<g class="wizard-motion"><ellipse cx="71" cy="130" rx="39" ry="7" fill="#F8F4EB" opacity=".65"/>
+<path d="M39 41H58V29H80V38H94V51H108V64H28V52H39Z" fill="#3D659F"/><rect x="25" y="59" width="88" height="12" fill="#F8F4EB"/><rect x="36" y="61" width="61" height="8" fill="#8B671A"/>
+<rect x="48" y="71" width="45" height="32" fill="#9E4434"/><rect x="53" y="72" width="36" height="27" fill="#8B671A"/><rect x="58" y="81" width="7" height="6" fill="#F8F4EB"/><rect x="78" y="81" width="7" height="6" fill="#F8F4EB"/>
+<path d="M43 102H98L116 137H27Z" fill="#3D659F"/><path d="M61 101H81L87 137H55Z" fill="#1B2936" opacity=".86"/><rect x="65" y="109" width="13" height="13" fill="#8B671A"/><rect x="22" y="105" width="32" height="23" rx="2" fill="#F8F4EB" stroke="#586977"/><path d="M26 110H48M26 116H43" stroke="#2C7477" stroke-width="3"/>
+<path d="M94 101H112V111H126V121H109V112H94Z" fill="#3D659F"/><rect x="122" y="109" width="11" height="11" fill="#8B671A"/><path d="M130 112L151 67" stroke="#8B671A" stroke-width="5" stroke-linecap="square"/></g>
+<g class="spell-motion"><path d="M151 61H162V50H171V61H182V70H171V81H162V70H151Z" fill="#8B671A"/><path d="M171 65C187 52 200 72 218 57" fill="none" stroke="#2C7477" stroke-width="4" stroke-linecap="round"/><circle cx="197" cy="45" r="4" fill="#9E4434"/><circle cx="211" cy="83" r="3" fill="#3D659F"/></g></g></g><text x="24" y="255" class="display enter d1" fill="#1B2936" font-size="25" font-weight="600" text-anchor="start" >AI can draft the spell.</text><text x="24" y="288" class="display enter d2" fill="#4E6071" font-size="23" font-weight="500" text-anchor="start" >I still review the blast radius.</text><path d="M24 316L86 316" fill="none" stroke="#8B671A" stroke-width="3" stroke-linecap="round" class="" /><text x="24" y="349" class="mono" fill="#586977" font-size="14" font-weight="700" text-anchor="start" >CAST · CHECK · SHIP</text><text x="24" y="391" class="mono" fill="#4E6071" font-size="13" font-weight="650" text-anchor="start" >DP: LAYLA · MY BERNEDOODLE</text><text x="24" y="414" class="mono" fill="#8B671A" font-size="13" font-weight="700" text-anchor="start" >AKA “BEAR”</text></g>
+<rect x=".75" y=".75" width="358.5" height="428.5" rx="19.25" fill="none" stroke="#BFCAD0" stroke-width="1.5"/>
+</svg>

@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="320" viewBox="0 0 1120 320" role="img" aria-labelledby="title desc">
 <title id="title">Voyalier — from scattered travel details to a departure brief</title><desc id="desc">Conceptual illustration: reservations, official advice and plans are assembled into a reviewed, offline-ready departure brief. This is an editorial illustration, not an application screenshot.</desc>
 <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101923"/><stop offset="1" stop-color="#21354A"/></linearGradient>
-<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#35485B" stroke-width=".6" opacity=".28"/></pattern><style>text{font-kerning:normal}.trace{stroke-dasharray:1;stroke-dashoffset:0}.sheet{transform:translateY(0)}
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#35485B" stroke-width=".6" opacity=".28"/></pattern><style>/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
+/* Hallmark · genre: editorial · macrostructure: Map / Diagram · theme: Atelier · enrichment: hand-built SVG · nav: N6 · footer: Ft2 */
+text{font-kerning:normal}.trace{stroke-dasharray:1;stroke-dashoffset:0}.sheet{transform:translateY(0)}
 @keyframes route{from{stroke-dashoffset:1;opacity:.12}to{stroke-dashoffset:0;opacity:1}}
 @keyframes assemble{from{transform:translateY(9px);opacity:.5}to{transform:translateY(0);opacity:1}}
 @keyframes settle{from{opacity:.3}to{opacity:1}}

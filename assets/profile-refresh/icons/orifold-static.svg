@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="340" height="340" role="img" aria-label="Orifold: a sheet of paper folds into an origami crane, then becomes the app icon" style="background:transparent">
-  <title>Orifold — paper folds into an origami crane, then the app icon</title>
-  <defs>
+  <title>Orifold — app mark</title>
+  <desc>Orifold project icon in its composed resting frame, presented at a compact profile size.</desc><defs>
     <linearGradient id="tileG" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2b4566" /><stop offset="1" stop-color="#75bfd4" /></linearGradient>
     <radialGradient id="moonG" cx="0.71" cy="0.30" r="0.20"><stop offset="0" stop-color="rgba(219,242,247,0.26)" /><stop offset="1" stop-color="rgba(179,230,242,0)" /></radialGradient>
     <radialGradient id="tileGlow" cx="0.82" cy="0.2" r="0.75"><stop offset="0" stop-color="rgba(128,209,219,0.22)" /><stop offset="1" stop-color="rgba(128,209,219,0)" /></radialGradient>
