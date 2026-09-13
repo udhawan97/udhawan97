@@ -208,36 +208,41 @@ IMPACTS = [
 ]
 
 
-def impact_mark(cx: int, cy: int, value: str, label: str, detail: str, color: str,
-                mobile: bool, index: int) -> str:
-    radius = 48 if mobile else 44
-    value_size = 31 if len(value) > 2 else 38
-    color_token = color.replace("_", "-")
-    body = f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="var(--paper-2)" stroke="var(--{color_token})" stroke-width="2" class="enter d{min(index,3)}"/>'
-    body += f'<circle cx="{cx}" cy="{cy}" r="{radius - 8}" fill="none" stroke="var(--{color_token})" stroke-width="1" stroke-dasharray="3 6" opacity=".55"/>'
-    body += txt(cx, cy + 10, value, value_size, "display", "ink", 600, "middle")
-    body += txt(cx, cy + radius + 33, label, 16 if mobile else 17, "mono", "ink", 750, "middle")
-    body += txt(cx, cy + radius + 58, detail, 14 if mobile else 15, "", "muted", 500, "middle")
-    return body
-
-
 def impact(mobile: bool, animated: bool) -> tuple[int, int, str]:
+    # Values have open typographic space, never a fixed-radius enclosure.
     if mobile:
-        width, height = 360, 604
-        body = txt(24, 38, "SELECTED DELIVERY IMPACT", 14, "mono", "accent", 750)
-        body += txt(24, 67, "Work carried forward from the profile record.", 14, "", "muted", 500)
-        body += rule(24, 88, 336, 88)
-        positions = [(100, 162), (260, 162), (100, 405), (260, 405)]
-        for index, (item, pos) in enumerate(zip(IMPACTS, positions)):
-            body += impact_mark(*pos, *item, True, index)
+        width, height = 360, 632
+        body = txt(24, 38, "SELECTED DELIVERY IMPACT", 14, "mono", "accent", 700)
+        body += txt(24, 76, "Experience, in practice.", 27, "display", "ink", 400)
+        body += rule(24, 100, 336, 100)
+        labels = ["Locations", "Audit findings", "Cloud products", "Continents"]
+        details = [("Retail platform", "shipped"), ("Federal cloud", "delivery"),
+                   ("Quality", "leadership"), ("Worked with", "teams")]
+        for index, ((value, _, _, color), label, detail) in enumerate(zip(IMPACTS, labels, details)):
+            y = 134 + index * 119
+            body += rule(24, y, 56, y, color, 3, "draw", 'pathLength="1"')
+            body += txt(24, y + 55, value, 40 if value == "ZERO" else 46, "display", color, 400)
+            body += txt(162, y + 18, label, 20, "", "ink", 650)
+            for line_index, words in enumerate(detail):
+                body += txt(162, y + 48 + line_index * 28, words, 18, "", "muted", 400)
+            if index < 3:
+                body += rule(24, y + 94, 336, y + 94)
+        body += txt(24, 609, "PROFILE RECORD · 2022—NOW", 13, "mono", "faint", 500)
         return width, height, body
 
-    width, height = 1200, 308
-    body = txt(48, 42, "SELECTED DELIVERY IMPACT", 15, "mono", "accent", 750)
-    body += txt(1152, 42, "PROFILE RECORD · 2022—NOW", 14, "mono", "faint", 650, "end")
-    body += rule(48, 63, 1152, 63)
-    for index, (cx, item) in enumerate(zip((166, 456, 746, 1036), IMPACTS)):
-        body += impact_mark(cx, 137, *item, False, index)
+    width, height = 1200, 356
+    body = txt(48, 42, "SELECTED DELIVERY IMPACT", 15, "mono", "accent", 700)
+    body += txt(1152, 42, "PROFILE RECORD · 2022—NOW", 14, "mono", "faint", 500, "end")
+    body += txt(48, 92, "Experience, in practice.", 38, "display", "ink", 400)
+    body += rule(48, 119, 1152, 119)
+    for index, (value, label, detail, color) in enumerate(IMPACTS):
+        x = 48 + index * 282
+        if index:
+            body += rule(x - 22, 151, x - 22, 315)
+        body += rule(x, 151, x + 36, 151, color, 3, "draw", 'pathLength="1"')
+        body += txt(x, 212, value, 62 if value == "ZERO" else 72, "display", color, 400)
+        body += txt(x, 280, label.title(), 26, "", "ink", 650)
+        body += txt(x, 313, detail, 20, "", "muted", 400)
     return width, height, body
 
 

@@ -13,7 +13,7 @@ assessment and a developer deciding which repository to explore.
 5. Show every project with its animated app identity and a concise outcome.
    Keep deeper stories and workflow illustrations in native disclosure blocks.
 6. Explain the engineering practice and Agent Toolkit; put career history and
-   the preserved impact seals together. Keep commit activity in an optional
+   the delivery-impact ledger together. Keep commit activity in an optional
    disclosure at the end. Project order no longer implies a commit-count ranking.
 
 The four top-level section numbers match the focus index in the masthead. The
@@ -45,7 +45,9 @@ Three opening/impact families produce 24 additional self-contained SVG files:
 
 - **Masthead:** an asymmetric editorial introduction and four-part focus index.
 - **AI with guardrails:** a contained pixel-wizard scene with stationary copy.
-- **Selected delivery impact:** four profile-record figures without certification framing.
+- **Selected delivery impact:** an open four-column typographic ledger with large
+  color-coded figures. Mobile uses four spacious rows with wrapped descriptions.
+  Fixed-radius seals no longer constrain the values.
 
 Meaningful mobile labels use a 360-unit canvas sized for a 288–320px rendered
 image. Effects stay inside local scene clips, connector paths use empty lanes,
@@ -109,3 +111,26 @@ variants, generated dimensions, and project-mark provenance.
 
 GitHub picture support: [GitHub documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#the-picture-element).
 SVG image restrictions: [MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_as_an_image).
+
+## September 13 follow-up: reported text bleeding
+
+The two screenshot defects are repaired in their generators and all 16 outputs.
+The impact design replaces undersized circles with open metric columns, an
+editorial heading, and quieter rules. The delivery diagram uses numbered stages
+and a continuous rounded return circuit with a dedicated outer gutter. Captions
+and the feedback line no longer share space. Text is stationary; only route and
+accent strokes draw in. Both families retain their existing README paths,
+source facts, light/dark palettes, and explicit static variants.
+
+For the focused browser regression check, serve the repository and open
+`design/readme-refresh/check_layout.html`. It inspects actual SVG text bounds in
+Safari for every changed variant under native, Arial and Times fallback fonts,
+and samples the delivery connectors for text clearance. It bypasses the browser
+fetch cache so earlier artwork cannot produce a misleading result. The visible
+art uses external images, matching README embedding. The width controls inspect
+image columns, not physical phone viewports or native picture selection.
+
+See `evidence/svg-layout-repair.json` for the precise checks performed. A geometry
+pass is supplemented by visual inspection; the rectangle test conservatively
+includes font ascent/descent space. These are local checks, not a publication or
+live GitHub acceptance claim.

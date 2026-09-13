@@ -221,30 +221,48 @@ def cutaway(kind,mobile):
 
 
 def delivery(mobile):
-    w,h=(600,640) if mobile else (1120,250)
-    s=label(32 if mobile else 40,41,'BUILD BEYOND THE DEMO','gold',15)
-    steps=[('Define','The outcome'),('Build','The workflow'),('Verify','The failure modes'),('Ship','The whole product')]
+    steps = [('Define', 'The outcome'), ('Build', 'The workflow'),
+             ('Verify', 'The failure modes'), ('Ship', 'The whole product')]
+    colors = ['gold', 'blue', 'teal', 'gold']
     if mobile:
-        w,h=360,560
-        s=label(20,36,'BUILD BEYOND THE DEMO','gold',15)
-        for i,(title,desc) in enumerate(steps):
-            y=92+101*i
-            s+=dot(38,y+4,['gold','blue','teal','gold'][i],6)
-            if i<3:s+=path(f'M38 {y+18}V{y+88}','edge',2,extra=f'class="trace t{i%3}" pathLength="1"')
-            s+=text(65,y+12,title,26,weight=600)+text(65,y+39,desc,17,'muted')
-        s+=path('M330 416V83H317M324 77L317 83L324 89','gold',1.5,extra='class="trace t2" pathLength="1"')
-        s+=line(20,500,340,500)
-        s+=text(20,532,'Lessons shape the next version.',17,'muted')
+        w, h = 360, 600
+        s = label(24, 36, 'BUILD BEYOND THE DEMO', 'gold', 14)
+        s += text(24, 78, 'From intent to release.', 28, family='serif')
+        # The feedback circuit stays outside every text block, in its own gutter.
+        s += path('M42 450V482Q42 498 58 498H312Q328 498 328 482V118Q328 102 312 102H58Q42 102 42 118V126',
+                  'gold', 1.5, extra='class="trace t2" pathLength="1" data-connector="return"')
+        s += path('M37 119L42 126L47 119', 'gold', 1.5)
+        for i, (title, desc) in enumerate(steps):
+            y = 146 + i * 100
+            if i < 3:
+                s += path(f'M42 {y+20}V{y+80}', 'edge', 2,
+                          extra='class="trace" pathLength="1" data-connector="forward"')
+            s += dot(42, y, 'panel', 19)
+            s += text(42, y+6, str(i+1), 18, colors[i], 600, 'mono', 'middle')
+            s += text(78, y+6, title, 28, weight=600)
+            s += text(78, y+34, desc, 19, 'muted')
+        s += text(24, 543, 'Lessons shape', 20, weight=600)
+        s += text(24, 570, 'the next version.', 19, 'muted')
     else:
-        s+=path('M57 106H861','edge',2)
-        s+=path('M57 106H861','gold',2,extra='class="trace" pathLength="1"')
-        for i,(title,desc) in enumerate(steps):
-            x=56+i*270
-            s+=dot(x,106,['gold','blue','teal','gold'][i],6,extra='class="endpoint"')
-            s+=text(x,153,title,27,weight=600)+text(x,182,desc,19,'muted')
-        s+=path('M1006 160V216H55V201M49 207L55 201L61 207','edge',1.5,extra='class="trace t2" pathLength="1"')
-        s+=text(540,239,'Lessons return to the next version.',14,'muted',anchor='middle')
-    return w,h,s
+        w, h = 1120, 356
+        s = label(40, 38, 'BUILD BEYOND THE DEMO', 'gold', 15)
+        s += text(40, 84, 'From intent to release.', 38, family='serif')
+        centers = [166, 428, 690, 952]
+        s += path('M166 142H952', 'edge', 2)
+        s += path('M166 142H952', 'gold', 2,
+                  extra='class="trace" pathLength="1" data-connector="forward"')
+        # Rounded return lane is outside the captions, with generous bottom space.
+        s += path('M974 142H1062Q1082 142 1082 162V258Q1082 278 1062 278H58Q38 278 38 258V162Q38 142 58 142H138',
+                  'gold', 1.5, extra='class="trace t2" pathLength="1" data-connector="return"')
+        s += path('M130 137L138 142L130 147', 'gold', 1.5)
+        for i, ((title, desc), x) in enumerate(zip(steps, centers)):
+            s += dot(x, 142, 'panel', 22)
+            s += f'<circle cx="{x}" cy="142" r="22" fill="none" stroke="{C[colors[i]]}" stroke-width="1.5"/>'
+            s += text(x, 149, str(i+1), 20, colors[i], 600, 'mono', 'middle')
+            s += text(x, 208, title, 32, weight=600, anchor='middle')
+            s += text(x, 241, desc, 22, 'muted', anchor='middle')
+        s += text(560, 323, 'Lessons shape the next version.', 21, 'muted', anchor='middle')
+    return w, h, s
 
 
 for theme in PALETTES:

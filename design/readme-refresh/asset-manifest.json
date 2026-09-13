@@ -61,9 +61,9 @@
     "mobile": false,
     "motion": true,
     "width": 1120,
-    "height": 250,
+    "height": 356,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 4661
+    "bytes": 5930
   },
   {
     "file": "delivery-loop-dark-static.svg",
@@ -72,9 +72,9 @@
     "mobile": false,
     "motion": false,
     "width": 1120,
-    "height": 250,
+    "height": 356,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 4252
+    "bytes": 5521
   },
   {
     "file": "systems-atlas-mobile-dark.svg",
@@ -138,9 +138,9 @@
     "mobile": true,
     "motion": true,
     "width": 360,
-    "height": 560,
+    "height": 600,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 4876
+    "bytes": 5952
   },
   {
     "file": "delivery-loop-mobile-dark-static.svg",
@@ -149,9 +149,9 @@
     "mobile": true,
     "motion": false,
     "width": 360,
-    "height": 560,
+    "height": 600,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 4467
+    "bytes": 5543
   },
   {
     "file": "systems-atlas-light.svg",
@@ -215,9 +215,9 @@
     "mobile": false,
     "motion": true,
     "width": 1120,
-    "height": 250,
+    "height": 356,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 4661
+    "bytes": 5930
   },
   {
     "file": "delivery-loop-light-static.svg",
@@ -226,9 +226,9 @@
     "mobile": false,
     "motion": false,
     "width": 1120,
-    "height": 250,
+    "height": 356,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 4252
+    "bytes": 5521
   },
   {
     "file": "systems-atlas-mobile-light.svg",
@@ -292,9 +292,9 @@
     "mobile": true,
     "motion": true,
     "width": 360,
-    "height": 560,
+    "height": 600,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 4876
+    "bytes": 5952
   },
   {
     "file": "delivery-loop-mobile-light-static.svg",
@@ -303,8 +303,8 @@
     "mobile": true,
     "motion": false,
     "width": 360,
-    "height": 560,
+    "height": 600,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 4467
+    "bytes": 5543
   }
 ]

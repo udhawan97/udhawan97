@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SVG repair · visual acceptance</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:24px;background:#080d14;color:#eee;font:16px/1.5 system-ui}nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px}a{color:#a9caf9}main{max-width:100%;margin:auto}img{display:block;width:100%;height:auto;margin-bottom:24px}h1{font-size:18px}pre{white-space:pre-wrap;font-size:13px}.probe{position:absolute;left:-20000px;top:0;visibility:hidden}body.light{background:#f2f4f6;color:#202d3c}
+</style>
+<nav><a href="?theme=dark">Dark desktop</a><a href="?theme=light">Light desktop</a><a href="?theme=dark&width=288&mobile=1">Dark 288px</a><a href="?theme=light&width=320&mobile=1">Light 320px</a><a href="?theme=dark&motion=1">Animated</a><a href="?theme=dark&width=640">Desktop 640px</a></nav>
+<main><h1></h1><div id="art"></div><pre id="result">Checking every variant and fallback font…</pre></main>
+<script>
+const params=new URLSearchParams(location.search),theme=params.get('theme')==='light'?'light':'dark',width=Number(params.get('width'))||900,mobile=params.has('mobile'),motion=params.has('motion');
+document.body.className=theme;document.querySelector('main').style.width=width+'px';document.querySelector('h1').textContent=`${theme} · ${width}px image column · ${motion?'animated':'static'} · ${mobile?'mobile':'desktop'}`;
+const bases=['/assets/impact-seals','/assets/profile-refresh/delivery-loop'];
+for(const base of bases){const img=new Image();img.alt=base.includes('impact')?'Selected delivery impact':'Build beyond the demo';img.src=base+(mobile?'-mobile':'')+'-'+theme+(motion?'':'-static')+'.svg?revision=ledger-v3';document.querySelector('#art').append(img)}
+const results=[];
+function overlap(a,b,pad=0){return a.x<b.x+b.width+pad&&a.x+a.width+pad>b.x&&a.y<b.y+b.height+pad&&a.y+a.height+pad>b.y}
+async function check(url){
+ const source=await (await fetch(url,{cache:'no-store'})).text(),wrap=document.createElement('div');wrap.className='probe';wrap.innerHTML=source;document.body.append(wrap);const svg=wrap.querySelector('svg');
+ // Inspect the settled geometry; motion only changes stroke reveal, never text position.
+ const stop=document.createElementNS('http://www.w3.org/2000/svg','style');stop.textContent='*{animation:none!important}';svg.append(stop);
+ const fonts=['native','Arial','Times New Roman'];
+ for(const font of fonts){const override=document.createElementNS('http://www.w3.org/2000/svg','style');if(font!=='native')override.textContent=`text{font-family:"${font}"!important}.display{font-family:"Times New Roman"!important}.mono{font-family:"Courier New"!important}`;svg.append(override);await document.fonts.ready;
+ const texts=[...svg.querySelectorAll('text')].map(el=>({el,text:el.textContent,box:el.getBBox()}));const faults=[];const vb=svg.viewBox.baseVal;
+ for(const t of texts){const b=t.box;if(b.x<16||b.y<16||b.x+b.width>vb.width-16||b.y+b.height>vb.height-16)faults.push('frame clearance: '+t.text)}
+ for(let i=0;i<texts.length;i++)for(let j=i+1;j<texts.length;j++)if(overlap(texts[i].box,texts[j].box,3))faults.push('text collision: '+texts[i].text+' / '+texts[j].text);
+ for(const route of svg.querySelectorAll('[data-connector]')){const len=route.getTotalLength();for(let d=0;d<=len;d+=2){const p=route.getPointAtLength(d);for(const t of texts){if(/^[1-4]$/.test(t.text))continue;if(overlap({x:p.x-5,y:p.y-5,width:10,height:10},t.box)){faults.push('connector clearance: '+t.text);break}}}}
+ results.push({file:url,font,texts:texts.length,failures:[...new Set(faults)]});override.remove();}
+ wrap.remove();
+}
+(async()=>{for(const base of bases)for(const size of ['', '-mobile'])for(const theme of ['dark','light'])for(const still of ['', '-static'])await check(base+size+'-'+theme+still+'.svg');const failed=results.filter(r=>r.failures.length);document.querySelector('#result').textContent=JSON.stringify({status:failed.length?'FAIL':'PASS',variants:16,fontChecks:results.length,textBoxes:results.reduce((s,r)=>s+r.texts,0),checks:'16-unit outer inset; 3-unit text separation; 5-unit connector clearance; native, Arial and Times fallback fonts',failures:[...new Set(failed.flatMap(r=>r.failures))]},null,2);window.layoutResults=results;})();
+</script></html>

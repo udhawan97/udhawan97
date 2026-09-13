@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-13",
+  "status": "pass",
+  "scope": "Impact ledger and delivery loop; all 16 theme, layout, and motion variants",
+  "browser": "Native Safari via local HTTP fixture; Obscura rejected loopback",
+  "geometry": {
+    "variants": 16,
+    "font_checks": 48,
+    "text_boxes": 780,
+    "fonts": [
+      "native stacks",
+      "Arial with Times/Courier display and mono fallbacks",
+      "Times New Roman with Courier mono fallback"
+    ],
+    "minimum_outer_inset_svg_units": 16,
+    "minimum_text_separation_svg_units": 3,
+    "connector_clearance_svg_units": 5,
+    "connector_sample_interval_svg_units": 2,
+    "failures": []
+  },
+  "visual_inspection": [
+    {
+      "theme": "dark",
+      "image_width_px": 900,
+      "layout": "desktop",
+      "motion": "static and animated entrance/settled states"
+    },
+    {
+      "theme": "light",
+      "image_width_px": 900,
+      "layout": "desktop",
+      "motion": "static"
+    },
+    {
+      "theme": "dark",
+      "image_width_px": 640,
+      "layout": "desktop",
+      "motion": "static"
+    },
+    {
+      "theme": "dark",
+      "image_width_px": 288,
+      "layout": "mobile",
+      "motion": "static"
+    },
+    {
+      "theme": "light",
+      "image_width_px": 320,
+      "layout": "mobile",
+      "motion": "static"
+    }
+  ],
+  "structural_validation": {
+    "command": "python3 design/readme-refresh/validate_assets.py",
+    "status": "pass",
+    "svg_count": 75,
+    "readme_svg_count": 60,
+    "deterministic_generators": true,
+    "raster_render_failures": []
+  },
+  "limitations": [
+    "Image-column checks are not physical-device testing or live GitHub acceptance.",
+    "Static siblings were inspected; OS reduced-motion settings were not changed.",
+    "Geometry checks inspect settled text bounds and sample marked delivery paths; visual inspection remains necessary."
+  ],
+  "sha256": {
+    "assets/impact-seals-dark-static.svg": "374a110cb6d774b2a8a7d14179f5697d194fcb1b9655fc315f4aa9fec268a9fc",
+    "assets/impact-seals-dark.svg": "f9d0ba10782c7bb17f054c495ad655c5d009e6ffed3487efd6554dd1f3dece13",
+    "assets/impact-seals-light-static.svg": "9a907e56a3c5dae19066949bcd857a3a53d9e403ce78d56f1db33304b2df0a9a",
+    "assets/impact-seals-light.svg": "6f89b2462d99a2e0c537b5494d050b5ab9b73399dffb15663f6bdfd4a4e42ce3",
+    "assets/impact-seals-mobile-dark-static.svg": "01f6485da501daa5d7871fc819581c6e95579b1ec97da34bd23dfb47db701ea7",
+    "assets/impact-seals-mobile-dark.svg": "8b04b48c9b3c6f677cb71d085840f4f867188ec3058ac25485cf0583dca98a75",
+    "assets/impact-seals-mobile-light-static.svg": "466095e6a9a1985fb20728d0ce484001e26576ea8ec2e4ecd7f71f0113b9bd63",
+    "assets/impact-seals-mobile-light.svg": "e0ff64b834f356f519d7036cf7569ec869d1c9de159bc55a8ba8d8d520692e36",
+    "assets/profile-refresh/delivery-loop-dark-static.svg": "30125656fcf5540c70ba297c820cfca77e7d8482825808c6cc235ee38c6be6fd",
+    "assets/profile-refresh/delivery-loop-dark.svg": "c398d4dae7dae02ffbac58f43b6574b457e1fc824b1bc430d7c0437c9c7bc0cf",
+    "assets/profile-refresh/delivery-loop-light-static.svg": "cc3224d2312e69540bb66c3e16f3f8f11be6f27d8940a8daf215216042cf0ba0",
+    "assets/profile-refresh/delivery-loop-light.svg": "390ee0bb56d455d2ad64ad011b482970833f59c330886c8aed773b1cbeb38b9e",
+    "assets/profile-refresh/delivery-loop-mobile-dark-static.svg": "ac64972c6b6dae8a7d03a72a1fe7a6e09a77cc62a933151fc66d0b663fa71cda",
+    "assets/profile-refresh/delivery-loop-mobile-dark.svg": "40675050e800b52cffad8cef4e964c6c2b35573e1e19dd102bb08d6d09cc87f1",
+    "assets/profile-refresh/delivery-loop-mobile-light-static.svg": "27b5004b633c1cd6d2586cb60449c27e71f5f552234ced0fb9ef026599f5799e",
+    "assets/profile-refresh/delivery-loop-mobile-light.svg": "cf0cddf4a0a7dc8b40016507a6dc8643bef304f122b0ad0fba0f99bf1f4fc419"
+  }
+}
