@@ -8,3 +8,10 @@
 - `udhawan97/Voyalier`: a documentation fallback passed the main CI, CodeQL, and analysis checks, but the security-hygiene check discovered `RUSTSEC-2026-0285` in locked `rustls 0.23.41`; the advisory reports `>=0.23.45` as patched. The pull request was not merged because its required security check was red and a resolver-generated, fully validated lockfile repair was not safely available in this run.
 - Validation state: this profile repository has no required status checks or workflow runs on its current default-branch head; this entry changes documentation only.
 - Next step: prioritize a focused Voyalier security PR that updates the Rust lockfile through the repository's normal resolver, then require the full CI, security-hygiene, and CodeQL checks to pass before merge.
+
+### Security-remediation workflow test
+
+- Revalidated Voyalier `main` at `19d2c55451923a5c07443b59322295331c97a8f1`: `Cargo.lock` still resolves `rustls 0.23.41`, and Security hygiene continues to fail `rustsec/audit-check` for `RUSTSEC-2026-0285`.
+- Reviewed current Dependabot PR #106; its resolver-generated update changes `jiff`, `uuid`, `ureq`, and `ureq-proto` but does not update `rustls`, so it is not a remediation for that advisory.
+- The intended targeted Cargo repair could not be generated because this execution environment could not reach GitHub/crates.io. No lockfile was hand-edited; existing Voyalier issue #104 was updated with the current dependency-path evidence and blocker.
+- Next step: generate a targeted `rustls >=0.23.45` resolution in a Cargo-capable environment, inspect the complete lock/dependency-tree diff, and require the full Voyalier CI, Security hygiene, and CodeQL gates before merge.
