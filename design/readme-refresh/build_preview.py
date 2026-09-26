@@ -2,7 +2,6 @@
 
 from pathlib import Path
 import json
-import hashlib
 import re
 import shutil
 import subprocess
@@ -32,9 +31,8 @@ else:
 (HERE / "evidence" / "github-rendered.html").write_text(rendered)
 body = rendered.replace("./assets/profile-refresh/", "/assets/profile-refresh/")
 body = body.replace("./assets/", "/assets/")
-# Keep native picture media rules while preventing stale local asset previews.
-body = re.sub(r'/assets/[^"<> ]+\.svg', lambda match: match[0] + '?v=' +
-              hashlib.sha256((ROOT / match[0].lstrip('/')).read_bytes()).hexdigest()[:12], body)
+# Preserve native asset URLs as well as picture media rules for acceptance.
+# A preview should exercise the same SVG resource paths as the README.
 
 
 
@@ -95,6 +93,6 @@ width_options = "".join(
 html = f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Umang Dhawan · README design review</title><style>{css}</style><body>
 <div class="toolbar"><strong>README / DESIGN REVIEW</strong><button id="theme">Gallery: dark</button><button id="motion">Gallery motion: on</button><label>Review column <select id="width">{width_options}</select></label><button id="view">Asset gallery</button></div>
 <div class="notice">{render_label}. The native view preserves the README's picture sources; the gallery provides explicit variant inspection.</div>
-<main><div class="repo-label">udhawan97 / README.md</div><p class="mode-note"></p><pre class="diagnostics"></pre><article class="markdown-body">{body}</article><section class="gallery">{gallery}<div class="icon-grid">{icons}</div></section></main><script>{script}</script></body></html>'''
+<main><div class="repo-label">udhawan97 / README.md</div><details><summary>Preview diagnostics</summary><p class="mode-note"></p><pre class="diagnostics"></pre></details><article class="markdown-body">{body}</article><section class="gallery">{gallery}<div class="icon-grid">{icons}</div></section></main><script>{script}</script></body></html>'''
 (HERE / "preview.html").write_text(html)
 print("Preview created from", source.name)

@@ -3,7 +3,7 @@
 <defs><style>/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
 /* Hallmark · genre: editorial · macrostructure: Map / Diagram · theme: Atelier · enrichment: hand-built SVG · nav: N6 · footer: Ft2 */
 text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-kerning:normal}
-.display{font-family:Georgia,'Times New Roman',serif;font-style:normal}
+.display{font-family:Georgia,'Times New Roman',serif;font-style:normal;letter-spacing:-.6px}
 .mono{font-family:'SFMono-Regular',Consolas,monospace;letter-spacing:1.4px}
 
 .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw .8s cubic-bezier(.16,1,.3,1) both}
@@ -14,7 +14,7 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fo
 @media(prefers-reduced-motion:reduce){.draw,.enter,.wizard-motion,.spell-motion{animation:none!important;stroke-dashoffset:0!important;opacity:1!important;transform:none!important}}
 </style>
 <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111719"/><stop offset="1" stop-color="#223137"/></linearGradient>
-<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#3B4948" stroke-width=".6" opacity=".22"/></pattern>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#3B4948" stroke-width=".6" opacity=".14"/></pattern>
 <clipPath id="frame"><rect width="360" height="440" rx="20"/></clipPath></defs>
 <g clip-path="url(#frame)"><rect width="360" height="440" fill="url(#surface)"/><rect width="360" height="440" fill="url(#grid)"/><text x="24" y="37" class="mono" fill="#E58B78" font-size="14" font-weight="700" text-anchor="start" >AI, WITH GUARDRAILS</text>
 <style>
@@ -32,5 +32,5 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fo
 <path d="M43 102H98L116 137H27Z" fill="#99B5CB"/><path d="M61 101H81L87 137H55Z" fill="#F5F0E8" opacity=".86"/><rect x="65" y="109" width="13" height="13" fill="#E58B78"/><rect x="22" y="105" width="32" height="23" rx="2" fill="#111719" stroke="#97A39F"/><path d="M26 110H48M26 116H43" stroke="#A5BBA7" stroke-width="3"/>
 <path d="M94 101H112V111H126V121H109V112H94Z" fill="#99B5CB"/><rect x="122" y="109" width="11" height="11" fill="#E58B78"/><path d="M130 112L151 67" stroke="#E58B78" stroke-width="5" stroke-linecap="square"/></g>
 <g class="spell-motion"><path d="M151 61H162V50H171V61H182V70H171V81H162V70H151Z" fill="#E58B78"/><path d="M171 65C187 52 200 72 218 57" fill="none" stroke="#A5BBA7" stroke-width="4" stroke-linecap="round"/><circle cx="197" cy="45" r="4" fill="#CCAC72"/><circle cx="211" cy="83" r="3" fill="#99B5CB"/></g></g></g><text x="24" y="255" class="display enter d1" fill="#F5F0E8" font-size="25" font-weight="600" text-anchor="start" >AI can draft the spell.</text><text x="24" y="288" class="display enter d2" fill="#B7C2BD" font-size="23" font-weight="500" text-anchor="start" >I still review the blast radius.</text><path d="M24 316L86 316" fill="none" stroke="#E58B78" stroke-width="3" stroke-linecap="round" class="" /><text x="24" y="349" class="mono" fill="#97A39F" font-size="14" font-weight="700" text-anchor="start" >CAST · CHECK · SHIP</text><text x="24" y="391" class="mono" fill="#B7C2BD" font-size="13" font-weight="650" text-anchor="start" >DP: LAYLA · MY BERNEDOODLE</text><text x="24" y="414" class="mono" fill="#E58B78" font-size="13" font-weight="700" text-anchor="start" >AKA “BEAR”</text></g>
-<rect x=".75" y=".75" width="358.5" height="438.5" rx="19.25" fill="none" stroke="#3B4948" stroke-width="1.5"/>
+<rect x=".5" y=".5" width="359" height="439" rx="19.5" fill="none" stroke="#3B4948" stroke-width="1"/>
 </svg>

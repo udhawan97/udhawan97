@@ -8,7 +8,7 @@
     "width": 1200,
     "height": 446,
     "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
-    "bytes": 10410
+    "bytes": 11120
   },
   {
     "file": "engineering-workbench-dark-static.svg",
@@ -19,7 +19,7 @@
     "width": 1200,
     "height": 446,
     "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
-    "bytes": 8229
+    "bytes": 8939
   },
   {
     "file": "systems-atlas-dark.svg",
@@ -30,7 +30,7 @@
     "width": 1200,
     "height": 864,
     "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
-    "bytes": 263900
+    "bytes": 264062
   },
   {
     "file": "systems-atlas-dark-static.svg",
@@ -41,7 +41,7 @@
     "width": 1200,
     "height": 864,
     "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
-    "bytes": 261719
+    "bytes": 261881
   },
   {
     "file": "orifold-cutaway-dark.svg",
@@ -52,7 +52,7 @@
     "width": 1120,
     "height": 320,
     "alt": "Conceptual illustration: mixed input files enter a local Mac document workflow and emerge as a finished document. The diagram is an editorial illustration, not an application screenshot.",
-    "bytes": 9027
+    "bytes": 9018
   },
   {
     "file": "voyalier-cutaway-dark.svg",
@@ -63,7 +63,7 @@
     "width": 1120,
     "height": 320,
     "alt": "Conceptual illustration: reservations, official advice and plans are assembled into a reviewed, offline-ready departure brief. This is an editorial illustration, not an application screenshot.",
-    "bytes": 5732
+    "bytes": 5723
   },
   {
     "file": "golavo-cutaway-dark.svg",
@@ -74,7 +74,7 @@
     "width": 1120,
     "height": 320,
     "alt": "Conceptual illustration: a forecast is sealed before kickoff, then the result is observed and the track record is scored forward. No forecast probabilities or performance results are invented.",
-    "bytes": 4939
+    "bytes": 4930
   },
   {
     "file": "delivery-loop-dark.svg",
@@ -85,7 +85,7 @@
     "width": 1120,
     "height": 356,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 5930
+    "bytes": 5921
   },
   {
     "file": "delivery-loop-dark-static.svg",
@@ -96,7 +96,7 @@
     "width": 1120,
     "height": 356,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 5521
+    "bytes": 5512
   },
   {
     "file": "engineering-workbench-mobile-dark.svg",
@@ -107,7 +107,7 @@
     "width": 360,
     "height": 752,
     "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
-    "bytes": 9402
+    "bytes": 9393
   },
   {
     "file": "engineering-workbench-mobile-dark-static.svg",
@@ -118,7 +118,7 @@
     "width": 360,
     "height": 752,
     "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
-    "bytes": 7221
+    "bytes": 7212
   },
   {
     "file": "systems-atlas-mobile-dark.svg",
@@ -129,7 +129,7 @@
     "width": 360,
     "height": 1385,
     "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
-    "bytes": 263010
+    "bytes": 263001
   },
   {
     "file": "systems-atlas-mobile-dark-static.svg",
@@ -140,7 +140,7 @@
     "width": 360,
     "height": 1385,
     "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
-    "bytes": 260829
+    "bytes": 260820
   },
   {
     "file": "orifold-cutaway-mobile-dark.svg",
@@ -151,7 +151,7 @@
     "width": 360,
     "height": 560,
     "alt": "Conceptual illustration: mixed input files enter a local Mac document workflow and emerge as a finished document. The diagram is an editorial illustration, not an application screenshot.",
-    "bytes": 6334
+    "bytes": 6325
   },
   {
     "file": "voyalier-cutaway-mobile-dark.svg",
@@ -162,7 +162,7 @@
     "width": 360,
     "height": 560,
     "alt": "Conceptual illustration: reservations, official advice and plans are assembled into a reviewed, offline-ready departure brief. This is an editorial illustration, not an application screenshot.",
-    "bytes": 6364
+    "bytes": 6355
   },
   {
     "file": "golavo-cutaway-mobile-dark.svg",
@@ -173,7 +173,7 @@
     "width": 360,
     "height": 560,
     "alt": "Conceptual illustration: a forecast is sealed before kickoff, then the result is observed and the track record is scored forward. No forecast probabilities or performance results are invented.",
-    "bytes": 4537
+    "bytes": 4528
   },
   {
     "file": "delivery-loop-mobile-dark.svg",
@@ -184,7 +184,7 @@
     "width": 360,
     "height": 600,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 5952
+    "bytes": 5943
   },
   {
     "file": "delivery-loop-mobile-dark-static.svg",
@@ -195,7 +195,7 @@
     "width": 360,
     "height": 600,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 5543
+    "bytes": 5534
   },
   {
     "file": "engineering-workbench-light.svg",
@@ -206,7 +206,7 @@
     "width": 1200,
     "height": 446,
     "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
-    "bytes": 10410
+    "bytes": 11120
   },
   {
     "file": "engineering-workbench-light-static.svg",
@@ -217,7 +217,7 @@
     "width": 1200,
     "height": 446,
     "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
-    "bytes": 8229
+    "bytes": 8939
   },
   {
     "file": "systems-atlas-light.svg",
@@ -228,7 +228,7 @@
     "width": 1200,
     "height": 864,
     "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
-    "bytes": 263900
+    "bytes": 264062
   },
   {
     "file": "systems-atlas-light-static.svg",
@@ -239,7 +239,7 @@
     "width": 1200,
     "height": 864,
     "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
-    "bytes": 261719
+    "bytes": 261881
   },
   {
     "file": "orifold-cutaway-light.svg",
@@ -250,7 +250,7 @@
     "width": 1120,
     "height": 320,
     "alt": "Conceptual illustration: mixed input files enter a local Mac document workflow and emerge as a finished document. The diagram is an editorial illustration, not an application screenshot.",
-    "bytes": 9027
+    "bytes": 9018
   },
   {
     "file": "voyalier-cutaway-light.svg",
@@ -261,7 +261,7 @@
     "width": 1120,
     "height": 320,
     "alt": "Conceptual illustration: reservations, official advice and plans are assembled into a reviewed, offline-ready departure brief. This is an editorial illustration, not an application screenshot.",
-    "bytes": 5732
+    "bytes": 5723
   },
   {
     "file": "golavo-cutaway-light.svg",
@@ -272,7 +272,7 @@
     "width": 1120,
     "height": 320,
     "alt": "Conceptual illustration: a forecast is sealed before kickoff, then the result is observed and the track record is scored forward. No forecast probabilities or performance results are invented.",
-    "bytes": 4939
+    "bytes": 4930
   },
   {
     "file": "delivery-loop-light.svg",
@@ -283,7 +283,7 @@
     "width": 1120,
     "height": 356,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 5930
+    "bytes": 5921
   },
   {
     "file": "delivery-loop-light-static.svg",
@@ -294,7 +294,7 @@
     "width": 1120,
     "height": 356,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 5521
+    "bytes": 5512
   },
   {
     "file": "engineering-workbench-mobile-light.svg",
@@ -305,7 +305,7 @@
     "width": 360,
     "height": 752,
     "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
-    "bytes": 9402
+    "bytes": 9393
   },
   {
     "file": "engineering-workbench-mobile-light-static.svg",
@@ -316,7 +316,7 @@
     "width": 360,
     "height": 752,
     "alt": "A tool palette: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. GitHub Actions, AWS and Azure support delivery and cloud work. Original document, chassis, graph and browser-window illustrations represent tool categories, not shared application infrastructure.",
-    "bytes": 7221
+    "bytes": 7212
   },
   {
     "file": "systems-atlas-mobile-light.svg",
@@ -327,7 +327,7 @@
     "width": 360,
     "height": 1385,
     "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
-    "bytes": 263010
+    "bytes": 263001
   },
   {
     "file": "systems-atlas-mobile-light-static.svg",
@@ -338,7 +338,7 @@
     "width": 360,
     "height": 1385,
     "alt": "A conceptual portfolio map. Orifold, Voyalier, FolioOrb and Golavo address workflows and decisions. Codemble, Dusori and Nindova explore learning, research and finite play. Nimanto, Vidha and PalDawn focus on evidence and deliberate boundaries. Three etched planes and ten nodes represent the shared engineering practice, not shared application infrastructure. Every product is shown with its own app icon and purpose.",
-    "bytes": 260829
+    "bytes": 260820
   },
   {
     "file": "orifold-cutaway-mobile-light.svg",
@@ -349,7 +349,7 @@
     "width": 360,
     "height": 560,
     "alt": "Conceptual illustration: mixed input files enter a local Mac document workflow and emerge as a finished document. The diagram is an editorial illustration, not an application screenshot.",
-    "bytes": 6334
+    "bytes": 6325
   },
   {
     "file": "voyalier-cutaway-mobile-light.svg",
@@ -360,7 +360,7 @@
     "width": 360,
     "height": 560,
     "alt": "Conceptual illustration: reservations, official advice and plans are assembled into a reviewed, offline-ready departure brief. This is an editorial illustration, not an application screenshot.",
-    "bytes": 6364
+    "bytes": 6355
   },
   {
     "file": "golavo-cutaway-mobile-light.svg",
@@ -371,7 +371,7 @@
     "width": 360,
     "height": 560,
     "alt": "Conceptual illustration: a forecast is sealed before kickoff, then the result is observed and the track record is scored forward. No forecast probabilities or performance results are invented.",
-    "bytes": 4537
+    "bytes": 4528
   },
   {
     "file": "delivery-loop-mobile-light.svg",
@@ -382,7 +382,7 @@
     "width": 360,
     "height": 600,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 5952
+    "bytes": 5943
   },
   {
     "file": "delivery-loop-mobile-light-static.svg",
@@ -393,6 +393,6 @@
     "width": 360,
     "height": 600,
     "alt": "An engineering practice: define the outcome, build the workflow, verify failure modes, then ship the documentation, installers and updates. Lessons return to the next definition. This describes an approach, not a claim that every project has every release artifact.",
-    "bytes": 5543
+    "bytes": 5534
   }
 ]

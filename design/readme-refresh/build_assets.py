@@ -86,25 +86,25 @@ text{font-kerning:normal}.trace{stroke-dasharray:1;stroke-dashoffset:0}.sheet{tr
 @keyframes ink-write{0%,12%{stroke-dashoffset:1;opacity:.2}60%,88%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:.2}}
 @keyframes node-light{0%,70%,100%{opacity:.25}25%,45%{opacity:1}}
 @keyframes cursor-blink{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}
-.atlas-plane{animation:atlas-float 6s ease-in-out infinite}
+.atlas-plane{animation:atlas-float 8s ease-in-out infinite}
 .atlas-plane.p1{animation-delay:-2s}.atlas-plane.p2{animation-delay:-4s}
 .atlas-orbit{animation:orbit-turn 18s linear infinite;transform-origin:0px 0px}
 .atlas-signal,.bench-signal{stroke-dasharray:7 93;animation:signal-run 4.5s linear infinite}
 .atlas-signal.p1{animation-delay:-1.5s}.atlas-signal.p2{animation-delay:-3s}
-.bench-rotor{animation:orbit-turn 12s linear infinite;transform-origin:55px 48px}
+.bench-rotor{animation:orbit-turn 20s linear infinite;transform-origin:55px 48px}
 .bench-ink{stroke-dasharray:1;animation:ink-write 6s ease-in-out infinite}
 .bench-node{animation:node-light 4s ease-in-out infinite}
 .bench-node.n1{animation-delay:.6s}.bench-node.n2{animation-delay:1.2s}.bench-node.n3{animation-delay:1.8s}.bench-node.n4{animation-delay:2.4s}
-.bench-cursor{animation:cursor-blink 1.2s steps(1,end) infinite}
+.bench-cursor{animation:cursor-blink 2.4s steps(1,end) infinite}
 @media(prefers-reduced-motion:reduce){.enso-stroke,.atlas-plane,.atlas-orbit,.atlas-signal,.bench-rotor,.bench-ink,.bench-node,.bench-cursor,.bench-signal{animation:none!important;transform:none!important;stroke-dashoffset:0!important;opacity:1!important}}
 '''
     grad = f'''<linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{C['bg']}"/><stop offset="1" stop-color="{C['low']}"/></linearGradient>
-<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="{C['edge']}" stroke-width=".6" opacity=".28"/></pattern>'''
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="{C['edge']}" stroke-width=".6" opacity=".14"/></pattern>'''
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title desc">
 <title id="title">{escape(TITLES[name])}</title><desc id="desc">{escape(desc)}</desc>
 <defs>{grad}<style>{css}</style><clipPath id="frame"><rect width="{w}" height="{h}" rx="20"/></clipPath></defs>
 <g clip-path="url(#frame)"><rect width="{w}" height="{h}" fill="url(#wash)"/><rect width="{w}" height="{h}" fill="url(#grid)"/>{content}</g>
-<rect x=".75" y=".75" width="{w-1.5}" height="{h-1.5}" rx="19.25" fill="none" stroke="{C['edge']}" stroke-width="1.5"/>
+<rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="19.5" fill="none" stroke="{C['edge']}" stroke-width="1"/>
 </svg>
 '''
 
@@ -216,7 +216,7 @@ def atlas(mobile):
         return w, h, s
 
     w, h = 1200, 864
-    s = label(44, 46, 'THE SYSTEMS ATLAS', 'gold', 15)
+    s = label(44, 46, 'THE SYSTEMS ATLAS', 'gold', 16)
     s += text(44, 117, 'Different problems.', 59, family='serif')
     s += text(44, 202, 'The same care.', 64, family='serif')
     s += text(47, 255, 'Ten independent products. One engineering practice.', 22, 'muted')
@@ -233,14 +233,18 @@ def atlas(mobile):
         s += line(x, 397, x, 774, 'edge', 1)
     for (title, subtitle, col, products), x in zip(ATLAS_GROUPS, [44, 436, 828]):
         s += label(x, 408, title, col, 16)
-        s += label(x, 434, subtitle, col, 14)
+        s += label(x, 434, subtitle, col, 16)
         for i, (name, detail) in enumerate(products):
             y = 481 + i * 82
             if i < len(products)-1:
                 s += line(x+25, y+33, x+25, y+77, col, 1, extra='opacity=".4"')
             s += atlas_icon(name, x, y-21, 50)
             s += text(x+68, y+3, name, 28, weight=600)
-            s += text(x+68, y+35, detail, 20, 'muted')
+            if name == 'PalDawn':
+                s += text(x+68, y+33, 'Explore disease', 20, 'muted')
+                s += text(x+68, y+59, 'mechanisms', 20, 'muted')
+            else:
+                s += text(x+68, y+35, detail, 20, 'muted')
     s += line(44, 793, 1156, 793)
     s += text(44, 833, 'Independent by design.', 26, family='serif')
     s += text(1156, 832, 'Explore the collection below ↓', 20, 'gold', anchor='end')
@@ -289,13 +293,14 @@ def workbench(mobile):
         s += text(24, 726, 'GitHub Actions · AWS · Azure', 18, 'muted')
     else:
         w, h = 1200, 446
-        s = label(44, 42, 'THE ENGINEERING WORKBENCH', 'gold', 15)
+        s = label(44, 42, 'THE ENGINEERING WORKBENCH', 'gold', 16)
         s += text(44, 93, 'Different tools. Deliberate choices.', 40, family='serif')
         for i, (name, detail, col) in enumerate(tools):
             x = 44 + i*284
             s += rect(x, 131, 260, 203, 'panel', 'edge', 14)
             s += bench_glyph(x+145, 151, name, col, .85)
             s += line(x+22, 157, x+60, 157, col, 3)
+            s += label(x+22, 197, ['NATIVE', 'SYSTEMS', 'DATA', 'WEB'][i], col, 14)
             s += text(x+22, 272, name, 29, weight=600)
             s += text(x+22, 307, detail, 21, 'muted')
             s += path(f'M{x+130} 334V365', col, 1.5,

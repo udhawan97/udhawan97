@@ -6,8 +6,8 @@
     "mobile": false,
     "motion": true,
     "width": 1200,
-    "height": 360,
-    "bytes": 4550
+    "height": 388,
+    "bytes": 4562
   },
   {
     "file": "profile-header-dark-static.svg",
@@ -16,8 +16,8 @@
     "mobile": false,
     "motion": false,
     "width": 1200,
-    "height": 360,
-    "bytes": 3990
+    "height": 388,
+    "bytes": 4002
   },
   {
     "file": "ai-spell-dark.svg",
@@ -27,7 +27,7 @@
     "motion": true,
     "width": 1200,
     "height": 230,
-    "bytes": 5206
+    "bytes": 5218
   },
   {
     "file": "ai-spell-dark-static.svg",
@@ -37,7 +37,7 @@
     "motion": false,
     "width": 1200,
     "height": 230,
-    "bytes": 4158
+    "bytes": 4170
   },
   {
     "file": "impact-seals-dark.svg",
@@ -47,7 +47,7 @@
     "motion": true,
     "width": 1200,
     "height": 356,
-    "bytes": 4922
+    "bytes": 4934
   },
   {
     "file": "impact-seals-dark-static.svg",
@@ -57,7 +57,7 @@
     "motion": false,
     "width": 1200,
     "height": 356,
-    "bytes": 4362
+    "bytes": 4374
   },
   {
     "file": "profile-header-mobile-dark.svg",
@@ -66,8 +66,8 @@
     "mobile": true,
     "motion": true,
     "width": 360,
-    "height": 488,
-    "bytes": 4732
+    "height": 500,
+    "bytes": 4744
   },
   {
     "file": "profile-header-mobile-dark-static.svg",
@@ -76,8 +76,8 @@
     "mobile": true,
     "motion": false,
     "width": 360,
-    "height": 488,
-    "bytes": 4172
+    "height": 500,
+    "bytes": 4184
   },
   {
     "file": "ai-spell-mobile-dark.svg",
@@ -87,7 +87,7 @@
     "motion": true,
     "width": 360,
     "height": 440,
-    "bytes": 5294
+    "bytes": 5306
   },
   {
     "file": "ai-spell-mobile-dark-static.svg",
@@ -97,7 +97,7 @@
     "motion": false,
     "width": 360,
     "height": 440,
-    "bytes": 4246
+    "bytes": 4258
   },
   {
     "file": "impact-seals-mobile-dark.svg",
@@ -107,7 +107,7 @@
     "motion": true,
     "width": 360,
     "height": 632,
-    "bytes": 5330
+    "bytes": 5342
   },
   {
     "file": "impact-seals-mobile-dark-static.svg",
@@ -117,7 +117,7 @@
     "motion": false,
     "width": 360,
     "height": 632,
-    "bytes": 4770
+    "bytes": 4782
   },
   {
     "file": "profile-header-light.svg",
@@ -126,8 +126,8 @@
     "mobile": false,
     "motion": true,
     "width": 1200,
-    "height": 360,
-    "bytes": 4550
+    "height": 388,
+    "bytes": 4562
   },
   {
     "file": "profile-header-light-static.svg",
@@ -136,8 +136,8 @@
     "mobile": false,
     "motion": false,
     "width": 1200,
-    "height": 360,
-    "bytes": 3990
+    "height": 388,
+    "bytes": 4002
   },
   {
     "file": "ai-spell-light.svg",
@@ -147,7 +147,7 @@
     "motion": true,
     "width": 1200,
     "height": 230,
-    "bytes": 5206
+    "bytes": 5218
   },
   {
     "file": "ai-spell-light-static.svg",
@@ -157,7 +157,7 @@
     "motion": false,
     "width": 1200,
     "height": 230,
-    "bytes": 4158
+    "bytes": 4170
   },
   {
     "file": "impact-seals-light.svg",
@@ -167,7 +167,7 @@
     "motion": true,
     "width": 1200,
     "height": 356,
-    "bytes": 4922
+    "bytes": 4934
   },
   {
     "file": "impact-seals-light-static.svg",
@@ -177,7 +177,7 @@
     "motion": false,
     "width": 1200,
     "height": 356,
-    "bytes": 4362
+    "bytes": 4374
   },
   {
     "file": "profile-header-mobile-light.svg",
@@ -186,8 +186,8 @@
     "mobile": true,
     "motion": true,
     "width": 360,
-    "height": 488,
-    "bytes": 4732
+    "height": 500,
+    "bytes": 4744
   },
   {
     "file": "profile-header-mobile-light-static.svg",
@@ -196,8 +196,8 @@
     "mobile": true,
     "motion": false,
     "width": 360,
-    "height": 488,
-    "bytes": 4172
+    "height": 500,
+    "bytes": 4184
   },
   {
     "file": "ai-spell-mobile-light.svg",
@@ -207,7 +207,7 @@
     "motion": true,
     "width": 360,
     "height": 440,
-    "bytes": 5294
+    "bytes": 5306
   },
   {
     "file": "ai-spell-mobile-light-static.svg",
@@ -217,7 +217,7 @@
     "motion": false,
     "width": 360,
     "height": 440,
-    "bytes": 4246
+    "bytes": 4258
   },
   {
     "file": "impact-seals-mobile-light.svg",
@@ -227,7 +227,7 @@
     "motion": true,
     "width": 360,
     "height": 632,
-    "bytes": 5330
+    "bytes": 5342
   },
   {
     "file": "impact-seals-mobile-light-static.svg",
@@ -237,6 +237,6 @@
     "motion": false,
     "width": 360,
     "height": 632,
-    "bytes": 4770
+    "bytes": 4782
   }
 ]

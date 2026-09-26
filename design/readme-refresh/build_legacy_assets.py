@@ -63,7 +63,7 @@ def token_css(theme: str, animated: bool) -> str:
     return f"""/* {CRITIQUE} */
 /* {STAMP} */
 text{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-kerning:normal}}
-.display{{font-family:Georgia,'Times New Roman',serif;font-style:normal}}
+.display{{font-family:Georgia,'Times New Roman',serif;font-style:normal;letter-spacing:-.6px}}
 .mono{{font-family:'SFMono-Regular',Consolas,monospace;letter-spacing:1.4px}}
 {motion}"""
 
@@ -82,10 +82,10 @@ def frame(title: str, desc: str, width: int, height: int, body: str, theme: str,
 <title id="title">{escape(title)}</title><desc id="desc">{escape(desc)}</desc>
 <defs><style>{css}</style>
 <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="var(--paper)"/><stop offset="1" stop-color="var(--paper-2)"/></linearGradient>
-<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="var(--rule)" stroke-width=".6" opacity=".22"/></pattern>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="var(--rule)" stroke-width=".6" opacity=".14"/></pattern>
 <clipPath id="frame"><rect width="{width}" height="{height}" rx="20"/></clipPath></defs>
 <g clip-path="url(#frame)"><rect width="{width}" height="{height}" fill="url(#surface)"/><rect width="{width}" height="{height}" fill="url(#grid)"/>{body}</g>
-<rect x=".75" y=".75" width="{width - 1.5}" height="{height - 1.5}" rx="19.25" fill="none" stroke="var(--rule)" stroke-width="1.5"/>
+<rect x=".5" y=".5" width="{width - 1}" height="{height - 1}" rx="19.5" fill="none" stroke="var(--rule)" stroke-width="1"/>
 </svg>
 '''
     return resolve_tokens(svg, theme)
@@ -110,21 +110,21 @@ def rule(x1, y1, x2, y2, color="rule", width=1.5, cls="", extra=""):
 
 def masthead(mobile: bool, animated: bool) -> tuple[int, int, str]:
     if mobile:
-        width, height = 360, 488
+        width, height = 360, 500
         body = rule(24, 24, 336, 24, "accent", 1.5, "draw", 'pathLength="1"')
         body += txt(24, 52, "CHICAGO · BUILDING IN PUBLIC", 13, "mono enter", "muted", 700)
-        body += txt(24, 112, "Umang Dhawan", 36, "display enter d1", "ink", 600)
+        body += txt(24, 112, "Umang Dhawan", 37, "display enter d1", "ink", 500)
         body += txt(24, 148, "Technology consultant", 20, "enter d2", "ink", 700)
         body += txt(24, 176, "Open-source product builder", 18, "enter d2", "blue", 650)
         body += txt(24, 213, "Complex ideas, made reliable", 16, "enter d3", "muted", 500)
         body += txt(24, 239, "enough to ship.", 16, "enter d3", "muted", 500)
         body += rule(24, 258, 336, 258)
-        body += txt(24, 286, "FOCUS / 01—04", 13, "mono", "accent", 700)
+        body += txt(24, 288, "FOCUS / 01—04", 13, "mono", "accent", 600)
         cells = [
-            (24, 316, "01", "PRODUCT SYSTEMS", "Strategy through software", "accent"),
-            (200, 316, "02", "QUALITY ENG.", "Evidence before claims", "blue"),
-            (24, 393, "03", "CLOUD", "Observable and resilient", "teal"),
-            (200, 393, "04", "APPLIED AI", "Useful and bounded", "accent_2"),
+            (24, 323, "01", "PRODUCT SYSTEMS", "Strategy through software", "accent"),
+            (200, 323, "02", "QUALITY ENG.", "Evidence before claims", "blue"),
+            (24, 410, "03", "CLOUD", "Observable and resilient", "teal"),
+            (200, 410, "04", "APPLIED AI", "Useful and bounded", "accent_2"),
         ]
         for x, y, number, title, detail, color in cells:
             body += txt(x, y, number, 13, "mono", color, 700)
@@ -132,24 +132,24 @@ def masthead(mobile: bool, animated: bool) -> tuple[int, int, str]:
             body += txt(x, y + 46, detail, 13, "", "muted", 500)
         return width, height, body
 
-    width, height = 1200, 360
+    width, height = 1200, 388
     body = rule(52, 30, 1148, 30, "accent", 1.5, "draw", 'pathLength="1"')
     body += txt(52, 62, "CHICAGO · BUILDING IN PUBLIC", 15, "mono enter", "muted", 700)
-    body += txt(52, 139, "Umang Dhawan", 68, "display enter d1", "ink", 600)
+    body += txt(52, 141, "Umang Dhawan", 72, "display enter d1", "ink", 500)
     body += txt(54, 181, "Technology consultant  ·  Open-source product builder", 23, "enter d2", "ink", 650)
-    body += txt(54, 217, "I turn complex ideas into reliable systems that ship.", 19, "enter d3", "muted", 500)
-    body += rule(54, 246, 1146, 246)
-    body += txt(54, 277, "FOCUS / 01—04", 14, "mono", "accent", 700)
+    body += txt(54, 221, "I turn complex ideas into reliable systems that ship.", 20, "enter d3", "muted", 400)
+    body += rule(54, 254, 1146, 254)
+    body += txt(54, 286, "FOCUS / 01—04", 15, "mono", "accent", 600)
     items = [
         (54, "PRODUCT SYSTEMS", "Strategy through software", "accent"),
-        (330, "QUALITY ENGINEERING", "Evidence before claims", "blue"),
-        (651, "CLOUD RELIABILITY", "Observable and resilient", "teal"),
-        (953, "APPLIED AI", "Useful and bounded", "accent_2"),
+        (334, "QUALITY ENGINEERING", "Evidence before claims", "blue"),
+        (614, "CLOUD RELIABILITY", "Observable and resilient", "teal"),
+        (894, "APPLIED AI", "Useful and bounded", "accent_2"),
     ]
     for index, (x, title, detail, color) in enumerate(items, 1):
-        body += txt(x, 314, f"0{index}", 14, "mono", color, 700)
-        body += txt(x + 38, 314, title, 16, "", "ink", 750)
-        body += txt(x + 38, 338, detail, 14, "", "muted", 500)
+        body += txt(x, 326, f"0{index}", 15, "mono", color, 600)
+        body += txt(x + 36, 326, title, 16, "", "ink", 650)
+        body += txt(x + 36, 354, detail, 16, "", "muted", 400)
     return width, height, body
 
 
