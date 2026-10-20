@@ -28,6 +28,14 @@ Outside client work, I build open-source products in **Swift, Rust, Python, and 
 
 ## 02 · Products, with a point of view
 
+### Start here
+
+- **[Orifold](https://udhawan97.github.io/Orifold/)** — finish and protect documents in one native Mac workflow. [Explore the source](https://github.com/udhawan97/Orifold).
+- **[Voyalier](https://udhawan97.github.io/Voyalier/)** — leave with a reviewed, offline-ready trip brief. [Explore the source](https://github.com/udhawan97/Voyalier).
+- **[Codemble](https://udhawan97.github.io/Codemble/)** — learn a real codebase through guided, playable challenges. [Explore the source](https://github.com/udhawan97/Codemble).
+
+### The full collection
+
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-refresh/systems-atlas-mobile-dark-static.svg">
   <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 700px)" srcset="./assets/profile-refresh/systems-atlas-mobile-light-static.svg">
@@ -40,11 +48,7 @@ Outside client work, I build open-source products in **Swift, Rust, Python, and 
   <img src="./assets/profile-refresh/systems-atlas-light-static.svg" width="100%" alt="Ten independent products, grouped by workflows and decisions; learning and exploration; and evidence and boundaries. Explore the linked projects below.">
 </picture>
 
-### The full collection
-
-A few places to start: **[Orifold](https://udhawan97.github.io/Orifold/)** for native Mac document workflows, **[Voyalier](https://udhawan97.github.io/Voyalier/)** for travel planning, or **[Codemble](https://udhawan97.github.io/Codemble/)** for understanding a codebase.
-
-Open a collection for all project links and descriptions.
+Open a collection for project descriptions, websites, and source code. These are independent projects at different stages; each repository documents its current scope and limitations.
 
 <details>
 <summary><strong>Workflows &amp; decisions</strong> — Orifold · Voyalier · FolioOrb · Golavo</summary>
@@ -53,18 +57,25 @@ Open a collection for all project links and descriptions.
 
 Finish and protect documents in one native Mac workflow.
 
+[Source code](https://github.com/udhawan97/Orifold)
+
 #### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/voyalier-static.svg"><img src="./assets/profile-refresh/icons/voyalier.svg" width="40" height="40" alt="Voyalier app icon" align="middle"></picture> **[Voyalier](https://udhawan97.github.io/Voyalier/)**
 
 Leave with a reviewed, offline-ready trip brief.
+
+[Source code](https://github.com/udhawan97/Voyalier)
 
 #### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/folioorb-static.svg"><img src="./assets/profile-refresh/icons/folioorb.svg" width="40" height="40" alt="FolioOrb app icon" align="middle"></picture> **[FolioOrb](https://udhawan97.github.io/FolioOrb/)**
 
 Understand portfolio risk and reasoning with local decision support.
 
+[Source code](https://github.com/udhawan97/FolioOrb)
+
 #### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/golavo-static.svg"><img src="./assets/profile-refresh/icons/golavo.svg" width="40" height="40" alt="Golavo app icon" align="middle"></picture> **[Golavo](https://udhawan97.github.io/Golavo/)**
 
 Inspect football forecasts and their forward track record.
 
+[Source code](https://github.com/udhawan97/Golavo)
 
 </details>
 
@@ -75,14 +86,19 @@ Inspect football forecasts and their forward track record.
 
 Learn a real codebase through guided, playable challenges.
 
+[Source code](https://github.com/udhawan97/Codemble)
+
 #### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/dusori-static.svg"><img src="./assets/profile-refresh/icons/dusori.svg" width="40" height="40" alt="Dusori app icon" align="middle"></picture> **[Dusori](https://udhawan97.github.io/Dusori/app/)**
 
 Turn scattered sources into cited research briefs.
+
+[Source code](https://github.com/udhawan97/Dusori)
 
 #### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/nindova-static.svg"><img src="./assets/profile-refresh/icons/nindova.svg" width="40" height="40" alt="Nindova app icon" align="middle"></picture> **[Nindova](https://udhawan97.github.io/Nindova/)**
 
 Enjoy private, finite games designed to end.
 
+[Source code](https://github.com/udhawan97/Nindova)
 
 </details>
 
@@ -93,14 +109,19 @@ Enjoy private, finite games designed to end.
 
 Explore job matches with evidence and candidate control.
 
+[Source code](https://github.com/udhawan97/Nimanto)
+
 #### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/vidha-static.svg"><img src="./assets/profile-refresh/icons/vidha.svg" width="40" height="40" alt="Vidha app icon" align="middle"></picture> **[Vidha](https://github.com/udhawan97/Vidha)**
 
 Rehearse contingency plans in a local, synthetic pre-alpha prototype.
+
+[Source code](https://github.com/udhawan97/Vidha)
 
 #### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/paldawn-static.svg"><img src="./assets/profile-refresh/icons/paldawn.svg" width="40" height="40" alt="PalDawn app icon" align="middle"></picture> **[PalDawn](https://udhawan97.github.io/PalDawn/)**
 
 Explore source-linked disease mechanisms in conceptual 3D journeys.
 
+[Source code](https://github.com/udhawan97/PalDawn)
 
 </details>
 
@@ -222,3 +243,5 @@ Commit counts describe repository activity, not product quality or adoption. The
 Let's talk about the product it could become—and the engineering it would take to make it dependable.
 
 [Portfolio & case studies](https://udhawan97.github.io/) · [LinkedIn](https://www.linkedin.com/in/umangdhawan97) · [Email](mailto:umangdhawan97@gmail.com)
+
+<sub>About this profile: [design and artwork](https://github.com/udhawan97/udhawan97/blob/main/design/readme-refresh/DESIGN.md) · [maintenance guide](https://github.com/udhawan97/udhawan97/blob/main/CONTRIBUTING.md)</sub>

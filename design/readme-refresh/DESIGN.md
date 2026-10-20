@@ -7,9 +7,10 @@ assessment and a developer deciding which repository to explore.
 
 1. Clean typographic name masthead; contact links immediately below.
 2. A concise introduction, current role, and four working navigation anchors.
-3. The illustrated ten-product atlas, three direct starting points, and three
-   expandable collections. Each project opens into an icon heading and description,
-   avoiding narrow table columns on phones.
+3. Three visible project starting points with source links, followed by the
+   illustrated ten-product atlas and three expandable collections. Each project
+   opens into an icon heading, description, and source link, avoiding narrow
+   table columns on phones.
 4. The delivery loop and four concise engineering principles.
 5. The animated engineering workbench, the personal AI/wizard note, and Agent Toolkit.
 6. Delivery impact, career history, education, optional activity, and a closing invitation.
@@ -82,6 +83,10 @@ the owner's existing README. They were not independently audited in this refresh
 No adoption, performance, quality, or forecast-accuracy metrics were invented.
 
 ## Maintenance
+
+See [CONTRIBUTING.md](../../CONTRIBUTING.md) for the editing workflow, validation
+requirements, and browser review checklist. The Profile validation GitHub Actions
+workflow runs the existing SVG validator with rasterization on pushes and pull requests.
 
 From the repository root:
 
