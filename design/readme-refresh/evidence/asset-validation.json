@@ -1,6 +1,7 @@
 {
   "status": "pass",
   "svg_count": 91,
+  "inspected_svg_count": 88,
   "readme_svg_count": 11,
   "generated_svg_count": 88,
   "missing_references": [],

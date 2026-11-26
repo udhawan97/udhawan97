@@ -225,6 +225,7 @@ def main() -> None:
     evidence = {
         "status": "pass" if not failures else "fail",
         "svg_count": len(list((ROOT / "assets").rglob("*.svg"))),
+        "inspected_svg_count": len(inspected),
         "readme_svg_count": len(active),
         "generated_svg_count": len(generated),
         "missing_references": missing,

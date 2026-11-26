@@ -42,7 +42,7 @@ I like the parts that make a product dependable: a clear workflow, an honest exp
 - **[Dusori](https://github.com/udhawan97/Dusori)** — turn scattered sources into cited research briefs.
 - **[Nindova](https://github.com/udhawan97/Nindova)** — private, finite games with deliberate stopping points.
 - **[Vidha](https://github.com/udhawan97/Vidha)** — rehearse contingency plans with synthetic data in a local pre-alpha prototype.
-- **[PalDawn](https://github.com/udhawan97/PalDawn)** — source-linked conceptual disease journeys; qualified review of the separate anatomy candidate remains pending.
+- **[PalDawn](https://github.com/udhawan97/PalDawn)** — source-linked conceptual disease journeys, with anatomy work held for qualified medical review.
 
 Each repository documents its current scope, installation options, and limitations.
 
@@ -53,8 +53,8 @@ Each repository documents its current scope, installation options, and limitatio
 I organize recurring AI-assisted development into four roles. The point is to keep useful work moving, verify what actually landed, and turn recurring mistakes into better tests and instructions.
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-studio/maintenance-mobile-dark-static.svg">
-  <source media="(max-width: 700px)" srcset="./assets/profile-studio/maintenance-mobile-light-static.svg">
+  <source media="(prefers-color-scheme: dark) and (max-width: 1000px)" srcset="./assets/profile-studio/maintenance-mobile-dark-static.svg">
+  <source media="(max-width: 1000px)" srcset="./assets/profile-studio/maintenance-mobile-light-static.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-studio/maintenance-dark-static.svg">
   <img src="./assets/profile-studio/maintenance-light-static.svg" width="100%" alt="Four maintenance roles form a feedback loop: Daily Elf finds upkeep, Mobster builds a slice, Auditor challenges the evidence, and CAPO reconciles progress and carries lessons back into tests and guidance. These are responsibilities, not live run statuses.">
 </picture>
@@ -68,8 +68,8 @@ I organize recurring AI-assisted development into four roles. The point is to ke
 
 ### Follow the evidence
 
-- **[Nimanto security release](https://github.com/udhawan97/Nimanto/releases/tag/v0.10.1)** — input and local-access boundaries, dependency repairs, and published checksums.
-- **[FolioOrb comparison service](https://github.com/udhawan97/FolioOrb/pull/124)** — saved review bundles compared without changing portfolio data. Independent agent review caught an arithmetic-context edge case that green CI had missed.
+- **[Nimanto security release](https://github.com/udhawan97/Nimanto/releases/tag/v0.10.1)** — input and local-access boundaries, dependency repairs, and published dependency-inventory checksums.
+- **[FolioOrb comparison service](https://github.com/udhawan97/FolioOrb/pull/124)** — saved review bundles compared without changing portfolio data. Independent agent review caught a calculation bug before merge, despite passing CI.
 - **[FolioOrb valuation consistency](https://github.com/udhawan97/FolioOrb/pull/114)** — explain partial financial data consistently across review surfaces.
 
 **[Agent Toolkit](https://github.com/udhawan97/agent-toolkit)** packages reusable playbooks and tooling for Codex and Claude Code. It keeps setup, permissions, and cleanup understandable. [Browse the workflows](https://github.com/udhawan97/agent-toolkit#what-you-get).

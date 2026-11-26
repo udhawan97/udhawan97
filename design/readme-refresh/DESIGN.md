@@ -27,6 +27,8 @@ reduced-motion users receive the same still artwork. No remote font, JavaScript,
 CSS import, SVG foreignObject or external image is required by the new artwork.
 The desktop maintenance diagram abbreviates Mobster at Work to Mobster; its full
 name and responsibilities remain in the adjacent selectable copy.
+The masthead switches to its mobile composition at 700px; the maintenance diagram
+switches at 1000px so its labels remain readable beside GitHub's tablet sidebar.
 
 ## Typography, tokens and provenance
 
@@ -74,7 +76,7 @@ performance or efficiency figures, customer logos, or endorsements were invented
 
 The scheduled-role section describes the owner's working approach, not a live
 scheduler dashboard or a claim that every saved automation was inspected.
-The real evidence includes Nimanto's v0.10.1 source release and FolioOrb PRs114/124.
+The real evidence includes Nimanto's v0.10.1 source release and FolioOrb PRs 114/124.
 An agent review is not independent human approval. Source checks, native artifact
 acceptance and release publication remain separate facts.
 
