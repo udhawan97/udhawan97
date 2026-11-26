@@ -60,6 +60,7 @@ def referenced_svgs() -> list[Path]:
 
 def generated_svgs() -> list[Path]:
     paths = list((ROOT / "assets" / "profile-refresh").glob("*.svg"))
+    paths.extend((ROOT / "assets" / "profile-studio").glob("*.svg"))
     paths.extend((ROOT / "assets" / "profile-refresh" / "icons").glob("*.svg"))
     for family in ("profile-header", "ai-spell", "impact-seals"):
         paths.extend((ROOT / "assets").glob(f"{family}*.svg"))
@@ -67,7 +68,7 @@ def generated_svgs() -> list[Path]:
 
 
 def run_generators() -> None:
-    for script in ("build_legacy_assets.py", "build_icons.py", "build_assets.py"):
+    for script in ("build_legacy_assets.py", "build_icons.py", "build_assets.py", "build_profile_assets.py"):
         subprocess.run(["python3", str(HERE / script)], cwd=ROOT, check=True, capture_output=True, text=True)
 
 
@@ -122,6 +123,7 @@ def main() -> None:
         if "-mobile-" in path.name and path.parent.name != "icons":
             view_box = root.get("viewBox", "").split()
             text_sizes = [float(node.get("font-size")) for node in root.iter() if node.tag == f"{SVG_NS}text" and node.get("font-size")]
+            text_sizes.extend(float(node.get("data-font-size")) for node in root.iter() if node.get("data-font-size"))
             if len(view_box) == 4 and text_sizes:
                 canvas_width = float(view_box[2])
                 rendered_min = min(text_sizes) * 288 / canvas_width
@@ -139,10 +141,21 @@ def main() -> None:
         if not path.exists():
             failures.append(f"missing legacy variant: {path.relative_to(ROOT)}")
 
+    expected_profile = {
+        ROOT / "assets" / "profile-studio" / f"{family}{mobile}-{theme}-static.svg"
+        for family in ("masthead", "maintenance")
+        for mobile in ("", "-mobile")
+        for theme in ("dark", "light")
+    }
+    for path in sorted(expected_profile):
+        if not path.exists():
+            failures.append(f"missing profile variant: {path.relative_to(ROOT)}")
+
     contrast_results: dict[str, float] = {}
     palette_specs = (
         ("legacy", palettes("build_legacy_assets.py"), ("paper", "paper_2"), ("ink", "muted", "faint", "accent", "accent_2", "blue", "teal")),
         ("profile-refresh", palettes("build_assets.py"), ("bg", "panel"), ("text", "muted", "gold", "blue", "teal")),
+        ("profile-studio", palettes("build_profile_assets.py"), ("bg", "panel"), ("ink", "muted")),
     )
     for family, themes, background_names, foreground_names in palette_specs:
         for theme, colors in themes.items():
@@ -154,11 +167,21 @@ def main() -> None:
                     if ratio < 4.5:
                         failures.append(f"text contrast below 4.5:1: {name}: {ratio:.2f}:1")
 
+    for theme, colors in palettes("build_profile_assets.py").items():
+        name = f"profile-studio/{theme}/accent_ink-on-accent"
+        ratio = contrast(colors["accent_ink"], colors["accent"])
+        contrast_results[name] = round(ratio, 2)
+        if ratio < 4.5:
+            failures.append(f"text contrast below 4.5:1: {name}: {ratio:.2f}:1")
+
     before = {str(path.relative_to(ROOT)): digest(path) for path in generated}
+    tokens_before = digest(ROOT / "tokens.css") if (ROOT / "tokens.css").exists() else None
     run_generators()
     after = {str(path.relative_to(ROOT)): digest(path) for path in generated_svgs()}
     if before != after:
         failures.append("asset generators are not deterministic or outputs were stale")
+    if tokens_before != digest(ROOT / "tokens.css"):
+        failures.append("portable palette tokens were stale")
 
     renderer = shutil.which("rsvg-convert")
     render_failures: list[str] = []
@@ -177,9 +200,11 @@ def main() -> None:
         warnings.append("rsvg-convert unavailable; raster validation skipped")
 
     readme = README.read_text()
-    for family in ("profile-header", "ai-spell", "impact-seals", "systems-atlas", "delivery-loop", "engineering-workbench"):
-        if f"{family}-mobile-dark-static.svg" not in readme:
-            failures.append(f"README missing reduced-motion mobile source: {family}")
+    # The new art is static in every theme and viewport, including reduced motion.
+    # Keep validating archived assets above without requiring them on the profile.
+    for path in sorted(expected_profile):
+        if f'./{path.relative_to(ROOT)}' not in readme:
+            failures.append(f"README missing static profile source: {path.name}")
 
     preview = HERE / "preview.html"
     node = shutil.which("node")
@@ -214,7 +239,7 @@ def main() -> None:
             "no scripts, foreignObject, remote dependencies, or unresolved paint/font CSS variables",
             "no active animation in static siblings",
             "mobile text floor at a 288px rendered image width",
-            "WCAG text contrast across both generated palettes",
+            "WCAG text contrast across active and archived palettes",
             "repeatable generator output",
             "rsvg rasterization at 320px when available",
             "generated review-page JavaScript syntax",

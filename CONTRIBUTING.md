@@ -2,17 +2,26 @@
 
 This repository publishes the GitHub profile README for `udhawan97`. Keep the
 profile useful to someone choosing a project to explore: a short introduction,
-three visible starting points, and links to the complete collection.
+three visible starting points, concrete evidence of maintenance, visual learning,
+and links to the complete collection. This repo publishes the profile README;
+`udhawan97.github.io` is a separate website and must not be changed implicitly.
 
 ## Editing guide
 
 - Edit profile copy and destinations in `README.md`. Verify new product claims
   against the project's current documentation; preserve maturity qualifiers.
-- Edit illustrations in `design/readme-refresh/build_assets.py`, masthead and
-  impact artwork in `build_legacy_assets.py`, and icon handling in `build_icons.py`.
-  Regenerate the SVGs instead of hand-editing their outputs.
-- Keep light, dark, mobile, and reduced-motion variants together. Retain useful
-  image alt text and SVG titles and descriptions.
+- Edit active illustrations and palette tokens in
+  `design/readme-refresh/build_profile_assets.py`; regenerate their SVGs and
+  `tokens.css`. Existing generators maintain archived artwork and pinned icons.
+  Do not hand-edit generated SVGs or the glyph table.
+- Keep light/dark and mobile/desktop variants together. All active artwork is
+  static, so reduced motion needs no animation fallback. Retain useful image alt
+  text, SVG titles/descriptions and selectable explanations next to diagrams.
+- Describe automation responsibilities as responsibilities. Verify any new
+  completion claim against a concrete PR, release or run; do not imply that CI
+  proves native acceptance or that agent review is independent human approval.
+- Keep Learnings via Graphics links source-only and beginner-friendly. Never
+  infer permission to enable its Actions, Pages or releases from a profile edit.
 - Keep employment, education, and impact figures owner-supplied. Repository
   activity is not evidence of adoption or product quality.
 

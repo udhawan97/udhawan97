@@ -1,247 +1,114 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/profile-header-mobile-dark-static.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/profile-header-mobile-light-static.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/profile-header-dark-static.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/profile-header-light-static.svg">
-    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/profile-header-mobile-dark.svg">
-    <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/profile-header-mobile-light.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg">
-    <img src="./assets/profile-header-dark-static.svg" alt="Umang Dhawan — technology consultant and open-source product builder. Focus: product systems, quality engineering, cloud reliability, and applied AI." width="100%">
-  </picture>
-</p>
-
-<p align="center">
-  <a href="https://udhawan97.github.io/"><strong>Portfolio &amp; case studies</strong></a> ·
-  <a href="https://www.linkedin.com/in/umangdhawan97">LinkedIn</a> ·
-  <a href="mailto:umangdhawan97@gmail.com">Email</a>
-</p>
-
-## 01 · Strategy, meet engineering
-
-I'm **Umang**, a **Senior Consultant at EY Studio+ in Chicago**. My work connects product strategy with cloud reliability, quality engineering, and applied AI.
-
-Outside client work, I build open-source products in **Swift, Rust, Python, and TypeScript**—from native document tools to travel planning and codebase learning. I care about the whole product: the workflow, the failure modes, and what happens after someone starts relying on it.
-
-**Explore:** [Products](#02--products-with-a-point-of-view) · [Project links](#the-full-collection) · [Engineering approach](#03--how-i-build) · [Experience](#04--experience-in-brief)
-
-## 02 · Products, with a point of view
-
-### Start here
-
-- **[Orifold](https://udhawan97.github.io/Orifold/)** — finish and protect documents in one native Mac workflow. [Explore the source](https://github.com/udhawan97/Orifold).
-- **[Voyalier](https://udhawan97.github.io/Voyalier/)** — leave with a reviewed, offline-ready trip brief. [Explore the source](https://github.com/udhawan97/Voyalier).
-- **[Codemble](https://udhawan97.github.io/Codemble/)** — learn a real codebase through guided, playable challenges. [Explore the source](https://github.com/udhawan97/Codemble).
-
-### The full collection
-
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-refresh/systems-atlas-mobile-dark-static.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 700px)" srcset="./assets/profile-refresh/systems-atlas-mobile-light-static.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/profile-refresh/systems-atlas-dark-static.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/profile-refresh/systems-atlas-light-static.svg">
-  <source media="(prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-refresh/systems-atlas-mobile-dark.svg">
-  <source media="(prefers-color-scheme: light) and (max-width: 700px)" srcset="./assets/profile-refresh/systems-atlas-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-refresh/systems-atlas-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-refresh/systems-atlas-light.svg">
-  <img src="./assets/profile-refresh/systems-atlas-light-static.svg" width="100%" alt="Ten independent products, grouped by workflows and decisions; learning and exploration; and evidence and boundaries. Explore the linked projects below.">
+  <source media="(prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-studio/masthead-mobile-dark-static.svg">
+  <source media="(max-width: 700px)" srcset="./assets/profile-studio/masthead-mobile-light-static.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-studio/masthead-dark-static.svg">
+  <img src="./assets/profile-studio/masthead-light-static.svg" width="100%" alt="Umang Dhawan. Product thinking. Engineering care. Chicago · consulting and open-source work.">
 </picture>
 
-Open a collection for project descriptions, websites, and source code. These are independent projects at different stages; each repository documents its current scope and limitations.
+I'm **Umang**, a **Senior Consultant at EY Studio+ in Chicago**. I work across product strategy, quality engineering, cloud reliability, and applied AI. Outside client work, I build open-source tools and keep improving them after the first release.
+
+I like the parts that make a product dependable: a clear workflow, an honest explanation, a safe update, and a useful way back when something fails.
+
+**[LinkedIn](https://www.linkedin.com/in/umangdhawan97)** · **[Email](mailto:umangdhawan97@gmail.com)** · **[Portfolio](https://udhawan97.github.io/)**
+
+[Work](#selected-work) / [Maintenance](#scheduled-maintenance) / [Learning](#visual-learning) / [Experience](#experience)
+
+## Selected work
+
+### <a href="https://github.com/udhawan97/Orifold"><img src="./assets/profile-refresh/icons/orifold-static.svg" width="44" height="44" alt="Orifold source"></a> &nbsp; Orifold
+
+**Many files. One clear PDF.** A native Mac workspace for combining, reading, annotating, and signing documents. Local files, careful recovery, and the details that make a desktop app feel at home.
+
+`Swift` `PDFKit` `macOS` &nbsp; [Explore](https://udhawan97.github.io/Orifold/) · [Source](https://github.com/udhawan97/Orifold)
+
+### <a href="https://github.com/udhawan97/FolioOrb"><img src="./assets/profile-refresh/icons/folioorb-static.svg" width="44" height="44" alt="FolioOrb source"></a> &nbsp; FolioOrb
+
+**See the reasoning behind the number.** A local portfolio review tool that keeps holdings, valuation coverage, and decision history inspectable. Missing data stays visible; saved reviews preserve what was known at the time.
+
+`Python` `FastAPI` `SQLite` &nbsp; [Explore](https://udhawan97.github.io/FolioOrb/) · [Source](https://github.com/udhawan97/FolioOrb)
+
+### <a href="https://github.com/udhawan97/Codemble"><img src="./assets/profile-refresh/icons/codemble-static.svg" width="44" height="44" alt="Codemble source"></a> &nbsp; Codemble
+
+**Find your way through unfamiliar code.** Explore a real codebase as a galaxy or diagram, follow its structure, and check your understanding. The parser's evidence sets the boundary for what the map claims.
+
+`Python` `JavaScript` `Code analysis` &nbsp; [Explore](https://udhawan97.github.io/Codemble/) · [Source](https://github.com/udhawan97/Codemble)
 
 <details>
-<summary><strong>Workflows &amp; decisions</strong> — Orifold · Voyalier · FolioOrb · Golavo</summary>
+<summary><strong>More projects</strong></summary>
 
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/orifold-static.svg"><img src="./assets/profile-refresh/icons/orifold.svg" width="40" height="40" alt="Orifold app icon" align="middle"></picture> **[Orifold](https://udhawan97.github.io/Orifold/)**
+- **[Voyalier](https://github.com/udhawan97/Voyalier)** — a local-first workspace for trip plans, confirmations, research, and travel-day readiness. Rust, Tauri, and TypeScript.
+- **[Nimanto](https://github.com/udhawan97/Nimanto)** — local job matching with inspectable evidence and candidate control. Source-distributed beta.
+- **[Golavo](https://github.com/udhawan97/Golavo)** — football forecasts with uncertainty and a recorded track record. Unsigned pre-alpha.
+- **[Dusori](https://github.com/udhawan97/Dusori)** — turn scattered sources into cited research briefs.
+- **[Nindova](https://github.com/udhawan97/Nindova)** — private, finite games with deliberate stopping points.
+- **[Vidha](https://github.com/udhawan97/Vidha)** — rehearse contingency plans with synthetic data in a local pre-alpha prototype.
+- **[PalDawn](https://github.com/udhawan97/PalDawn)** — source-linked conceptual disease journeys; qualified review of the separate anatomy candidate remains pending.
 
-Finish and protect documents in one native Mac workflow.
-
-[Source code](https://github.com/udhawan97/Orifold)
-
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/voyalier-static.svg"><img src="./assets/profile-refresh/icons/voyalier.svg" width="40" height="40" alt="Voyalier app icon" align="middle"></picture> **[Voyalier](https://udhawan97.github.io/Voyalier/)**
-
-Leave with a reviewed, offline-ready trip brief.
-
-[Source code](https://github.com/udhawan97/Voyalier)
-
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/folioorb-static.svg"><img src="./assets/profile-refresh/icons/folioorb.svg" width="40" height="40" alt="FolioOrb app icon" align="middle"></picture> **[FolioOrb](https://udhawan97.github.io/FolioOrb/)**
-
-Understand portfolio risk and reasoning with local decision support.
-
-[Source code](https://github.com/udhawan97/FolioOrb)
-
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/golavo-static.svg"><img src="./assets/profile-refresh/icons/golavo.svg" width="40" height="40" alt="Golavo app icon" align="middle"></picture> **[Golavo](https://udhawan97.github.io/Golavo/)**
-
-Inspect football forecasts and their forward track record.
-
-[Source code](https://github.com/udhawan97/Golavo)
+Each repository documents its current scope, installation options, and limitations.
 
 </details>
 
-<details>
-<summary><strong>Learning &amp; exploration</strong> — Codemble · Dusori · Nindova</summary>
+## Scheduled maintenance
 
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/codemble-static.svg"><img src="./assets/profile-refresh/icons/codemble.svg" width="40" height="40" alt="Codemble app icon" align="middle"></picture> **[Codemble](https://udhawan97.github.io/Codemble/)**
-
-Learn a real codebase through guided, playable challenges.
-
-[Source code](https://github.com/udhawan97/Codemble)
-
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/dusori-static.svg"><img src="./assets/profile-refresh/icons/dusori.svg" width="40" height="40" alt="Dusori app icon" align="middle"></picture> **[Dusori](https://udhawan97.github.io/Dusori/app/)**
-
-Turn scattered sources into cited research briefs.
-
-[Source code](https://github.com/udhawan97/Dusori)
-
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/nindova-static.svg"><img src="./assets/profile-refresh/icons/nindova.svg" width="40" height="40" alt="Nindova app icon" align="middle"></picture> **[Nindova](https://udhawan97.github.io/Nindova/)**
-
-Enjoy private, finite games designed to end.
-
-[Source code](https://github.com/udhawan97/Nindova)
-
-</details>
-
-<details>
-<summary><strong>Evidence &amp; boundaries</strong> — Nimanto · Vidha · PalDawn</summary>
-
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/nimanto-static.svg"><img src="./assets/profile-refresh/icons/nimanto.svg" width="40" height="40" alt="Nimanto app icon" align="middle"></picture> **[Nimanto](https://udhawan97.github.io/Nimanto/)**
-
-Explore job matches with evidence and candidate control.
-
-[Source code](https://github.com/udhawan97/Nimanto)
-
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/vidha-static.svg"><img src="./assets/profile-refresh/icons/vidha.svg" width="40" height="40" alt="Vidha app icon" align="middle"></picture> **[Vidha](https://github.com/udhawan97/Vidha)**
-
-Rehearse contingency plans in a local, synthetic pre-alpha prototype.
-
-[Source code](https://github.com/udhawan97/Vidha)
-
-#### <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-refresh/icons/paldawn-static.svg"><img src="./assets/profile-refresh/icons/paldawn.svg" width="40" height="40" alt="PalDawn app icon" align="middle"></picture> **[PalDawn](https://udhawan97.github.io/PalDawn/)**
-
-Explore source-linked disease mechanisms in conceptual 3D journeys.
-
-[Source code](https://github.com/udhawan97/PalDawn)
-
-</details>
-
-## 03 · How I build
+I organize recurring AI-assisted development into four roles. The point is to keep useful work moving, verify what actually landed, and turn recurring mistakes into better tests and instructions.
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-refresh/delivery-loop-mobile-dark-static.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 700px)" srcset="./assets/profile-refresh/delivery-loop-mobile-light-static.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/profile-refresh/delivery-loop-dark-static.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/profile-refresh/delivery-loop-light-static.svg">
-  <source media="(prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-refresh/delivery-loop-mobile-dark.svg">
-  <source media="(prefers-color-scheme: light) and (max-width: 700px)" srcset="./assets/profile-refresh/delivery-loop-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-refresh/delivery-loop-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-refresh/delivery-loop-light.svg">
-  <img src="./assets/profile-refresh/delivery-loop-light-static.svg" width="100%" alt="Define the outcome → build the workflow → verify failure modes → ship the whole product. Feed lessons into the next version.">
+  <source media="(prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-studio/maintenance-mobile-dark-static.svg">
+  <source media="(max-width: 700px)" srcset="./assets/profile-studio/maintenance-mobile-light-static.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-studio/maintenance-dark-static.svg">
+  <img src="./assets/profile-studio/maintenance-light-static.svg" width="100%" alt="Four maintenance roles form a feedback loop: Daily Elf finds upkeep, Mobster builds a slice, Auditor challenges the evidence, and CAPO reconciles progress and carries lessons back into tests and guidance. These are responsibilities, not live run statuses.">
 </picture>
 
-- **Start with the job.** Make every feature earn its place in a workflow someone needs to finish.
-- **Show the reasoning.** Keep sources, calculations, and history close enough to inspect and challenge.
-- **Preserve ownership.** Prefer durable files, reversible changes, and deliberate sharing.
-- **Design for the difficult parts.** Treat failure handling, observability, documentation, and updates as product work.
+- **Daily Elf · upkeep.** Find a worthwhile small fix, check recent work, and leave a clear handoff.
+- **Mobster at Work · delivery.** Build a bounded feature or repair, with acceptance criteria and tests.
+- **Auditor · challenge.** Check behavior, look for regressions, and verify that results match the evidence.
+- **CAPO · continuity.** Reconcile the work, prioritize blockers, finish ready phases, and qualify useful changes for release.
 
-### Working stack
+**I set the direction and permissions.** The workflow preserves active work, uses disposable test data, and keeps repository checks and required reviews in place. A source merge, a verified installer, and a published release are separate milestones. Lessons feed back into the next run.
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-refresh/engineering-workbench-mobile-dark-static.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 700px)" srcset="./assets/profile-refresh/engineering-workbench-mobile-light-static.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/profile-refresh/engineering-workbench-dark-static.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/profile-refresh/engineering-workbench-light-static.svg">
-  <source media="(prefers-color-scheme: dark) and (max-width: 700px)" srcset="./assets/profile-refresh/engineering-workbench-mobile-dark.svg">
-  <source media="(prefers-color-scheme: light) and (max-width: 700px)" srcset="./assets/profile-refresh/engineering-workbench-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-refresh/engineering-workbench-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-refresh/engineering-workbench-light.svg">
-  <img src="./assets/profile-refresh/engineering-workbench-light-static.svg" width="100%" alt="Working stack: Swift and PDFKit; Rust and Tauri; Python, FastAPI and SQLite; TypeScript and Astro. Delivery and cloud: GitHub Actions, AWS and Azure.">
-</picture>
+### Follow the evidence
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-dark-static.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-light-static.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/ai-spell-dark-static.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/ai-spell-light-static.svg">
-    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-dark.svg">
-    <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/ai-spell-mobile-light.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/ai-spell-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/ai-spell-light.svg">
-    <img src="./assets/ai-spell-dark-static.svg" alt="AI, with guardrails — AI can draft the spell. I still review the blast radius." width="100%">
-  </picture>
-</p>
+- **[Nimanto security release](https://github.com/udhawan97/Nimanto/releases/tag/v0.10.1)** — input and local-access boundaries, dependency repairs, and published checksums.
+- **[FolioOrb comparison service](https://github.com/udhawan97/FolioOrb/pull/124)** — saved review bundles compared without changing portfolio data. Independent agent review caught an arithmetic-context edge case that green CI had missed.
+- **[FolioOrb valuation consistency](https://github.com/udhawan97/FolioOrb/pull/114)** — explain partial financial data consistently across review surfaces.
 
-### Reusable agent workflows
+**[Agent Toolkit](https://github.com/udhawan97/agent-toolkit)** packages reusable playbooks and tooling for Codex and Claude Code. It keeps setup, permissions, and cleanup understandable. [Browse the workflows](https://github.com/udhawan97/agent-toolkit#what-you-get).
 
-**[Agent Toolkit](https://github.com/udhawan97/agent-toolkit)** is the reusable tooling behind my agent-assisted development: technical-debt review, user-flow review, and council review, packaged for Codex and Claude Code. Each workflow has explicit ownership and cleanup boundaries.
+## Visual learning
 
-[Setup and documentation](https://github.com/udhawan97/agent-toolkit#readme) · [Validation workflow](https://github.com/udhawan97/agent-toolkit/actions/workflows/validate.yml)
+**[Learnings via Graphics](https://github.com/udhawan97/learnings-via-graphics)** is my beginner-friendly visual newsletter: make a prediction, reveal an explanation, and follow accessible sources or a short video to go deeper. Topics rotate across engineering, frontier technology, everyday life, and work & money.
+
+**Try a 20-second question.** Two paths rise 40 metres. One spans 100 metres horizontally; the other spans 400. Which has the gentler average grade?
 
 <details>
-<summary>Agent Toolkit · architecture and operating boundaries</summary>
+<summary><strong>Reveal the answer</strong></summary>
 
-<img src="https://github.com/udhawan97/agent-toolkit/raw/stable/assets/brand/agent-toolkit-hero.png" width="100%" alt="Agent Toolkit routes portable skills through native Codex and Claude Code paths.">
+The 400-metre path: its average grade is 10%, compared with 40% for the shorter path. The footing still needs a separate check.
 
-A canonical skill payload keeps the owned workflows aligned across clients. Native manifests preserve each client's discovery, permissions, and authentication. Setup records the state it owns so updates and removal can remain scoped.
+[See the illustrated contour lesson](https://github.com/udhawan97/learnings-via-graphics/blob/main/editions/2026-11-15-reading-contours/brief.md) · [Try the three-story issue](https://github.com/udhawan97/learnings-via-graphics/blob/main/issues/2026-11-15.md)
 
 </details>
 
-## 04 · Experience in brief
+[Browse the library](https://github.com/udhawan97/learnings-via-graphics/blob/main/archive.md). Briefs and answer reveals open on GitHub; the full interactive guides run locally from the downloaded source.
 
-My consulting work spans enterprise product delivery, federal cloud implementation, and quality leadership across distributed teams.
+## Experience
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-dark-static.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-light-static.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/impact-seals-dark-static.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/impact-seals-light-static.svg">
-    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-dark.svg">
-    <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/impact-seals-mobile-light.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/impact-seals-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/impact-seals-light.svg">
-    <img src="./assets/impact-seals-dark-static.svg" alt="Selected delivery impact: retail platform shipped to 100+ locations, zero findings on a federal cloud audit, quality leadership across 4 cloud products, and work with teams on 3 continents." width="100%">
-  </picture>
-</p>
+**EY Studio+ · Senior Consultant · 2025–present**<br>
+Cloud quality leadership, observability, and applied AI strategy.
 
-**Senior Consultant · EY Studio+ · 2025 — now**<br>
-Cloud quality leadership · observability · applied AI strategy
+**EY · Consultant · 2022–2025**<br>
+Quality and performance engineering; federal cloud delivery.
 
-**Consultant · EY · 2022 — 2025**<br>
-Quality and performance engineering · federal cloud delivery
+**SAP America · IT Leadership Intern · 2021**<br>
+SAFe product delivery with teams in Germany, the US, and India.
 
-**IT Leadership Intern · SAP America · 2021**<br>
-SAFe product delivery across Germany, the US, and India
-
-**Education**<br>
-MS, Information Systems — Kelley School of Business<br>
-BS, Informatics — Indiana University
-
-<details>
-<summary>Repository activity · supporting context</summary>
-
-Commit counts describe repository activity, not product quality or adoption. The badges below are provided by Shields and can be cached. Follow a badge to inspect the actual history.
-
-[![Orifold commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/Orifold?style=flat-square&label=Orifold)](https://github.com/udhawan97/Orifold/commits/main)
-[![Voyalier commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/Voyalier?style=flat-square&label=Voyalier)](https://github.com/udhawan97/Voyalier/commits/main)
-[![FolioOrb commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/FolioOrb?style=flat-square&label=FolioOrb)](https://github.com/udhawan97/FolioOrb/commits/main)
-[![Golavo commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/Golavo?style=flat-square&label=Golavo)](https://github.com/udhawan97/Golavo/commits/main)
-[![Codemble commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/Codemble?style=flat-square&label=Codemble)](https://github.com/udhawan97/Codemble/commits/main)
-[![Dusori commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/Dusori?style=flat-square&label=Dusori)](https://github.com/udhawan97/Dusori/commits/main)
-[![Nindova commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/Nindova?style=flat-square&label=Nindova)](https://github.com/udhawan97/Nindova/commits/main)
-[![Nimanto commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/Nimanto?style=flat-square&label=Nimanto)](https://github.com/udhawan97/Nimanto/commits/main)
-[![Vidha commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/Vidha?style=flat-square&label=Vidha)](https://github.com/udhawan97/Vidha/commits/main)
-[![PalDawn commit activity](https://img.shields.io/github/commit-activity/t/udhawan97/PalDawn?style=flat-square&label=PalDawn)](https://github.com/udhawan97/PalDawn/commits/main)
-
-</details>
+**MS, Information Systems** · Kelley School of Business<br>
+**BS, Informatics** · Indiana University
 
 ---
 
-### Have a difficult workflow in mind?
+If you're working on a difficult product or an engineering problem that needs careful follow-through, I'd like to hear about it.
 
-Let's talk about the product it could become—and the engineering it would take to make it dependable.
+**[Let's connect](https://www.linkedin.com/in/umangdhawan97)** · **[Send a note](mailto:umangdhawan97@gmail.com)**
 
-[Portfolio & case studies](https://udhawan97.github.io/) · [LinkedIn](https://www.linkedin.com/in/umangdhawan97) · [Email](mailto:umangdhawan97@gmail.com)
-
-<sub>About this profile: [design and artwork](https://github.com/udhawan97/udhawan97/blob/main/design/readme-refresh/DESIGN.md) · [maintenance guide](https://github.com/udhawan97/udhawan97/blob/main/CONTRIBUTING.md)</sub>
+<sub>Built for GitHub, with original vector artwork. [Design notes](design/readme-refresh/DESIGN.md) · [Maintenance guide](CONTRIBUTING.md)</sub>

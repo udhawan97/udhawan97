@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "svg_count": 83,
-  "readme_svg_count": 68,
-  "generated_svg_count": 80,
+  "svg_count": 91,
+  "readme_svg_count": 11,
+  "generated_svg_count": 88,
   "missing_references": [],
   "render_failures": [],
   "deterministic_generators": true,
@@ -55,7 +55,17 @@
     "profile-refresh/light/muted-on-panel": 6.42,
     "profile-refresh/light/gold-on-panel": 6.39,
     "profile-refresh/light/blue-on-panel": 6.42,
-    "profile-refresh/light/teal-on-panel": 6.02
+    "profile-refresh/light/teal-on-panel": 6.02,
+    "profile-studio/light/ink-on-bg": 10.72,
+    "profile-studio/light/muted-on-bg": 6.03,
+    "profile-studio/light/ink-on-panel": 9.88,
+    "profile-studio/light/muted-on-panel": 5.55,
+    "profile-studio/dark/ink-on-bg": 14.08,
+    "profile-studio/dark/muted-on-bg": 8.7,
+    "profile-studio/dark/ink-on-panel": 11.59,
+    "profile-studio/dark/muted-on-panel": 7.16,
+    "profile-studio/light/accent_ink-on-accent": 7.92,
+    "profile-studio/dark/accent_ink-on-accent": 8.52
   },
   "checks": [
     "XML, unique IDs, and fragment references",
@@ -64,7 +74,7 @@
     "no scripts, foreignObject, remote dependencies, or unresolved paint/font CSS variables",
     "no active animation in static siblings",
     "mobile text floor at a 288px rendered image width",
-    "WCAG text contrast across both generated palettes",
+    "WCAG text contrast across active and archived palettes",
     "repeatable generator output",
     "rsvg rasterization at 320px when available",
     "generated review-page JavaScript syntax"

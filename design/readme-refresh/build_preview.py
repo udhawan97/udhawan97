@@ -31,6 +31,7 @@ else:
 (HERE / "evidence" / "github-rendered.html").write_text(rendered)
 body = rendered.replace("./assets/profile-refresh/", "/assets/profile-refresh/")
 body = body.replace("./assets/", "/assets/")
+body = re.sub(r'href="(?![#/]|https?:|mailto:)([^\"]+)"', r'href="/\1"', body)
 # Preserve native asset URLs as well as picture media rules for acceptance.
 # A preview should exercise the same SVG resource paths as the README.
 
@@ -45,8 +46,8 @@ def heading(match):
 
 body = re.sub(r"<h([1-6])([^>]*)>(.*?)</h\1>", heading, body)
 
-css = """/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
-/* Hallmark · macrostructure: Map / Diagram · tone: editorial · anchor hue: gold */
+css = """/* Local GitHub README preview; the host owns page typography and chrome. */
+/* Artwork system: Marquee Hero, custom petrol/citrus, static throughout. */
 :root{color-scheme:light;--color-page:#f6f8fa;--color-surface:#fffefa;--color-ink:#1f2328;--color-muted:#59636e;--color-line:#d1d9e0;--color-link:#0969da;--color-hover:#eef3f8;--space-2xs:4px;--space-xs:8px;--space-sm:12px;--space-md:16px;--space-lg:20px;--space-xl:24px;--space-2xl:32px;--space-4xl:64px;--radius-sm:6px;--radius-md:8px;--review-width:914px}
 :root[data-theme=dark]{color-scheme:dark;--color-page:#080d14;--color-surface:#0d1117;--color-ink:#f0f6fc;--color-muted:#a9b1ba;--color-line:#3d444d;--color-link:#79b8ff;--color-hover:#172333}
 *{box-sizing:border-box}html,body{overflow-x:clip}body{margin:0;background:var(--color-page);color:var(--color-ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--color-link);text-decoration:none}a:hover{text-decoration:underline}button,select{min-height:44px;font:inherit;border:1px solid var(--color-line);border-radius:var(--radius-sm);outline:2px solid transparent;background:var(--color-surface);color:var(--color-ink);padding:var(--space-xs) var(--space-sm);cursor:pointer}button:hover,select:hover{background:var(--color-hover)}button:active,select:active{background:var(--color-page)}button:disabled,select:disabled{opacity:.55;cursor:not-allowed}button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--color-link);outline-offset:1px}
@@ -57,15 +58,8 @@ css = """/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
 """
 
 gallery_families = [
-    ("/assets/profile-header", "profile header"),
-    ("/assets/ai-spell", "AI wizard"),
-    ("/assets/impact-seals", "selected delivery impact"),
-    ("/assets/profile-refresh/systems-atlas", "systems atlas"),
-    ("/assets/profile-refresh/orifold-cutaway", "Orifold cutaway"),
-    ("/assets/profile-refresh/voyalier-cutaway", "Voyalier cutaway"),
-    ("/assets/profile-refresh/golavo-cutaway", "Golavo cutaway"),
-    ("/assets/profile-refresh/delivery-loop", "delivery loop"),
-    ("/assets/profile-refresh/engineering-workbench", "engineering workbench"),
+    ("/assets/profile-studio/masthead", "profile masthead"),
+    ("/assets/profile-studio/maintenance", "maintenance loop"),
 ]
 gallery = "".join(
     f'<figure><img class="gallery-asset" data-base="{path}" data-label="{label}" alt="{label}"><figcaption>{label}</figcaption></figure>'
@@ -80,7 +74,7 @@ script = """
 const root=document.documentElement,main=document.querySelector('main'),article=document.querySelector('article'),gallery=document.querySelector('.gallery'),diagnostics=document.querySelector('.diagnostics');
 let theme=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light',motion=!matchMedia('(prefers-reduced-motion:reduce)').matches,showGallery=false,width=914;
 const staticFamilies=/profile-header|ai-spell|impact-seals|systems-atlas|delivery-loop|engineering-workbench/;
-function gallerySource(base){const mobile=width<=700;if(base.includes('/icons/'))return `${base}${motion?'':'-static'}.svg`;let src=`${base}${mobile?'-mobile':''}-${theme}`;if(!motion&&staticFamilies.test(base))src+='-static';return src+'.svg'}
+function gallerySource(base){const mobile=width<=700;if(base.includes('/profile-studio/'))return `${base}${mobile?'-mobile':''}-${theme}-static.svg`;if(base.includes('/icons/'))return `${base}${motion?'':'-static'}.svg`;let src=`${base}${mobile?'-mobile':''}-${theme}`;if(!motion&&staticFamilies.test(base))src+='-static';return src+'.svg'}
 function updateDiagnostics(){const rows=[...article.querySelectorAll('picture img')].map((img,index)=>`${String(index+1).padStart(2,'0')} · ${img.clientWidth}px · ${img.currentSrc.split('/').pop()||'not loaded'}`);diagnostics.textContent=`Native picture selection · viewport ${innerWidth}px · review column ${main.clientWidth}px · system theme ${matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'} · system motion ${matchMedia('(prefers-reduced-motion:reduce)').matches?'reduced':'regular'}\\n`+rows.join('\\n')}
 function apply(){root.dataset.theme=theme;root.style.setProperty('--review-width',`${width}px`);document.querySelectorAll('.gallery-asset,.gallery-icon').forEach(img=>img.src=gallerySource(img.dataset.base));article.hidden=showGallery;gallery.classList.toggle('visible',showGallery);diagnostics.hidden=showGallery;document.querySelector('.mode-note').textContent=showGallery?'Forced gallery: theme, motion, and mobile assets follow the controls.':'Native acceptance: picture sources remain intact and follow the browser’s real media preferences.';document.querySelector('#view').textContent=showGallery?'Native README':'Asset gallery';document.querySelector('#theme').textContent=`Gallery: ${theme}`;document.querySelector('#motion').textContent=`Gallery motion: ${motion?'on':'still'}`;requestAnimationFrame(updateDiagnostics)}
 document.querySelector('#theme').onclick=()=>{theme=theme==='dark'?'light':'dark';apply()};document.querySelector('#motion').onclick=()=>{motion=!motion;apply()};document.querySelector('#width').onchange=e=>{width=Number(e.target.value);apply()};document.querySelector('#view').onclick=()=>{showGallery=!showGallery;apply();scrollTo(0,0)};addEventListener('resize',()=>requestAnimationFrame(updateDiagnostics));apply();
@@ -90,7 +84,7 @@ width_options = "".join(
     f'<option value="{width}"{(" selected" if width == 914 else "")}>{label}</option>'
     for width, label in ((914, "README column"), (768, "768 px"), (414, "414 px"), (390, "390 px"), (375, "375 px"), (320, "320 px"))
 )
-html = f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Umang Dhawan · README design review</title><style>{css}</style><body>
+html = f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Umang Dhawan · README design review</title><link rel="stylesheet" href="/tokens.css"><style>{css}</style><body>
 <div class="toolbar"><strong>README / DESIGN REVIEW</strong><button id="theme">Gallery: dark</button><button id="motion">Gallery motion: on</button><label>Review column <select id="width">{width_options}</select></label><button id="view">Asset gallery</button></div>
 <div class="notice">{render_label}. The native view preserves the README's picture sources; the gallery provides explicit variant inspection.</div>
 <main><div class="repo-label">udhawan97 / README.md</div><details><summary>Preview diagnostics</summary><p class="mode-note"></p><pre class="diagnostics"></pre></details><article class="markdown-body">{body}</article><section class="gallery">{gallery}<div class="icon-grid">{icons}</div></section></main><script>{script}</script></body></html>'''
