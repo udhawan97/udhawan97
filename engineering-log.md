@@ -41,3 +41,13 @@
 - Recovery decision: a repo-specific write failure must not be promoted to an account-wide write outage without independent evidence; subsequent backup repos and the ledger path must continue.
 - Next action: resume the clean carry-forward queue, starting with Nindova and PalDawn, while keeping product/security changes behind their normal CI gates.
 - Elf note: the barber keeps cutting; the elf now knows the broom is part of the job.
+
+
+## 2026-11-25 — Profile README and maintenance practice
+
+- Scope: `udhawan97/udhawan97` only. The owner clarified that the separate `udhawan97.github.io` site belongs to another chat's revert. No website or automation settings were changed.
+- Replaced the active Japanese editorial artwork with a custom typographic masthead, interlocking U/D mark and static maintenance loop. Light/dark and mobile/desktop variants use local licensed outlines; existing art remains archived. Selected projects, accessible links, concrete engineering evidence and beginner newsletter interaction lead the page.
+- Process improvement: the source guide now distinguishes scheduled responsibilities from live run state, identifies agent review accurately, and separates source checks, native artifact acceptance and release publication. New claims must link to actual evidence; profile permission does not authorize changes to the website or source-only newsletter hosting.
+- Baseline main: `abc505e5762d0b434dcff58449cd82a8bca49cbb`. Current product descriptions were checked against public README blobs recorded in `design/readme-refresh/profile-sources.json`; employment and education remain owner-supplied. No success metrics were invented.
+- Local validation inspects 88 SVGs, including all 11 active references, from an inventory of 91. It checks safe content, accessible metadata, contrast (minimum 4.82:1 across tested palettes), static/mobile variants, deterministic regeneration and rasterization. WebKit checks 20 viewport/theme/motion combinations; actual Safari checks navigation/disclosures separately. Independent councils, hosted validation and live-profile verification are integration gates, recorded with the delivery PR.
+- Next action: keep the proof links and project maturity accurate when meaningful work lands. Preserve the short selected-work section, retain archived artwork for rollback, and avoid adding activity counters or repetitive status-only commits.

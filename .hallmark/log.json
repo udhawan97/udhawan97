@@ -1,5 +1,36 @@
 [
-  { "date": "2026-09-13", "macrostructure": "Map / Diagram", "theme": "Atelier", "enrichment": "hand-built SVG", "brief": "Repair profile SVG overflow and improve the public visual system", "scope": "redesign" },
-  { "date": "2026-08-29", "macrostructure": "Index-First", "theme": "Cobalt", "enrichment": "product marks", "brief": "GitHub profile README · redesign scope: gallery index → icon-tile tables per group", "scope": "redesign" },
-  { "date": "2026-08-29", "macrostructure": "Index-First", "theme": "Cobalt", "enrichment": "product marks", "brief": "GitHub profile README · redesign scope: lists/layout → label-rail tables", "scope": "redesign" }
+  {
+    "date": "2026-11-25",
+    "macrostructure": "Marquee Hero",
+    "theme": "custom",
+    "theme_axes": "cool-light / heavy-grotesque / citrus",
+    "vibe": "graphic portfolio, precise and quietly confident",
+    "enrichment": "custom U/D monogram and static maintenance loop",
+    "brief": "Profile README only: selected products, scheduled roles, inspected evidence and beginner learning",
+    "scope": "redesign"
+  },
+  {
+    "date": "2026-09-13",
+    "macrostructure": "Map / Diagram",
+    "theme": "Atelier",
+    "enrichment": "hand-built SVG",
+    "brief": "Repair profile SVG overflow and improve the public visual system",
+    "scope": "redesign"
+  },
+  {
+    "date": "2026-08-29",
+    "macrostructure": "Index-First",
+    "theme": "Cobalt",
+    "enrichment": "product marks",
+    "brief": "GitHub profile README \u00b7 redesign scope: gallery index \u2192 icon-tile tables per group",
+    "scope": "redesign"
+  },
+  {
+    "date": "2026-08-29",
+    "macrostructure": "Index-First",
+    "theme": "Cobalt",
+    "enrichment": "product marks",
+    "brief": "GitHub profile README \u00b7 redesign scope: lists/layout \u2192 label-rail tables",
+    "scope": "redesign"
+  }
 ]

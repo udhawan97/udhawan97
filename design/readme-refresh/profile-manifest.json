@@ -1,0 +1,74 @@
+{
+  "families": [
+    "masthead",
+    "maintenance"
+  ],
+  "generator": "design/readme-refresh/build_profile_assets.py",
+  "font": "type/provenance.json",
+  "assets": [
+    {
+      "path": "assets/profile-studio/masthead-light-static.svg",
+      "sha256": "a31bad8eb1f3006494723b63b1839a1efd4e349e307c8669e6bd11db16dbb98a",
+      "bytes": 14634,
+      "theme": "light",
+      "mobile": false,
+      "motion": "none"
+    },
+    {
+      "path": "assets/profile-studio/masthead-mobile-light-static.svg",
+      "sha256": "357312f05a4cfec74d6e14fa55521f7f16c172dcd6c77927e24af858dc469a7d",
+      "bytes": 14458,
+      "theme": "light",
+      "mobile": true,
+      "motion": "none"
+    },
+    {
+      "path": "assets/profile-studio/masthead-dark-static.svg",
+      "sha256": "d707717a19c92d395ee4578d8dd962cb8ffbe728c428404cdb2e1cb3e2f2fcc2",
+      "bytes": 14634,
+      "theme": "dark",
+      "mobile": false,
+      "motion": "none"
+    },
+    {
+      "path": "assets/profile-studio/masthead-mobile-dark-static.svg",
+      "sha256": "77f8c34eb1a9eae73b6a84d941a32f91f882727de8d687dcfa55e686e5762617",
+      "bytes": 14458,
+      "theme": "dark",
+      "mobile": true,
+      "motion": "none"
+    },
+    {
+      "path": "assets/profile-studio/maintenance-light-static.svg",
+      "sha256": "cf1db8e3bc443c6a4c56c4d701ddd571d6d325a2d410e91e593d548613d3da59",
+      "bytes": 17587,
+      "theme": "light",
+      "mobile": false,
+      "motion": "none"
+    },
+    {
+      "path": "assets/profile-studio/maintenance-mobile-light-static.svg",
+      "sha256": "944ab6c79d1ee3ebbf6365ca2631761ab8da4d91983d69838c43783497c0e39a",
+      "bytes": 21328,
+      "theme": "light",
+      "mobile": true,
+      "motion": "none"
+    },
+    {
+      "path": "assets/profile-studio/maintenance-dark-static.svg",
+      "sha256": "29d454fcb16530398216957550be2260bf5d0863b7cdda1e72ac9cb5dcd74b5c",
+      "bytes": 17587,
+      "theme": "dark",
+      "mobile": false,
+      "motion": "none"
+    },
+    {
+      "path": "assets/profile-studio/maintenance-mobile-dark-static.svg",
+      "sha256": "119c84110347a3e07ae2e78d884c6ae949b08f36c6944db82d9d5f7de28538e3",
+      "bytes": 21328,
+      "theme": "dark",
+      "mobile": true,
+      "motion": "none"
+    }
+  ]
+}

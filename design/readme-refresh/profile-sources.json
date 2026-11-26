@@ -1,0 +1,72 @@
+{
+  "checked_date_chicago": "2026-11-25",
+  "scope": "Public documentation claims; not native product acceptance",
+  "repositories": [
+    {
+      "repository": "udhawan97/Codemble",
+      "readme_blob_sha": "37a035d39a061c5a5fee700d8a99dee9a862dc76",
+      "url": "https://github.com/udhawan97/Codemble#readme"
+    },
+    {
+      "repository": "udhawan97/Dusori",
+      "readme_blob_sha": "7d46d77cf928cdd24c37055fb06ea48f01da249a",
+      "url": "https://github.com/udhawan97/Dusori#readme"
+    },
+    {
+      "repository": "udhawan97/FolioOrb",
+      "readme_blob_sha": "b0fca95e6ddc1cbf0ff2f38c592b9b99e1b717a4",
+      "url": "https://github.com/udhawan97/FolioOrb#readme"
+    },
+    {
+      "repository": "udhawan97/Golavo",
+      "readme_blob_sha": "d48881d0a3f886e5c842ee9c87758a2f8f7d6ca4",
+      "url": "https://github.com/udhawan97/Golavo#readme"
+    },
+    {
+      "repository": "udhawan97/Nimanto",
+      "readme_blob_sha": "26c753041b375c3c2f7f365e219cf499805e2dbc",
+      "url": "https://github.com/udhawan97/Nimanto#readme"
+    },
+    {
+      "repository": "udhawan97/Nindova",
+      "readme_blob_sha": "25047b826b0fd18ab810c77a2802041d673fd824",
+      "url": "https://github.com/udhawan97/Nindova#readme"
+    },
+    {
+      "repository": "udhawan97/Orifold",
+      "readme_blob_sha": "f1695034515597529ad35e524cb21cbf77448f4f",
+      "url": "https://github.com/udhawan97/Orifold#readme"
+    },
+    {
+      "repository": "udhawan97/PalDawn",
+      "readme_blob_sha": "d0f8c4b252a074b02a56ec2c80a446d1712a4e3c",
+      "url": "https://github.com/udhawan97/PalDawn#readme"
+    },
+    {
+      "repository": "udhawan97/Vidha",
+      "readme_blob_sha": "290e82d26e69d1a808c29bc767837af80d954df9",
+      "url": "https://github.com/udhawan97/Vidha#readme"
+    },
+    {
+      "repository": "udhawan97/Voyalier",
+      "readme_blob_sha": "126bf0213eba2a7f707721fbff0b97d67beab35e",
+      "url": "https://github.com/udhawan97/Voyalier#readme"
+    },
+    {
+      "repository": "udhawan97/agent-toolkit",
+      "readme_blob_sha": "2b456e0eaccc555e1612232e2b86e5d509221c75",
+      "url": "https://github.com/udhawan97/agent-toolkit#readme"
+    },
+    {
+      "repository": "udhawan97/learnings-via-graphics",
+      "readme_blob_sha": "0365016db4c70857daba7dfe544adf95065cdd01",
+      "url": "https://github.com/udhawan97/learnings-via-graphics#readme"
+    }
+  ],
+  "proof_links": [
+    "https://github.com/udhawan97/Nimanto/releases/tag/v0.10.1",
+    "https://github.com/udhawan97/FolioOrb/pull/114",
+    "https://github.com/udhawan97/FolioOrb/pull/124"
+  ],
+  "owner_facts": "Employment and education carried forward from original profile README at abc505e5762d0b434dcff58449cd82a8bca49cbb."
+}

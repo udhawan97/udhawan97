@@ -1,0 +1,17 @@
+{
+  "family": "Bricolage Grotesque",
+  "author": "The Bricolage Grotesque Project Authors",
+  "license": "OFL-1.1",
+  "upstream": "https://github.com/ateliertriay/bricolage",
+  "source_blob": "9a4ca271ff84357bb8f8830ce71b85ea3571f731",
+  "source_sha256": "413e7357809ddd12fd80a96a8a396de0e401638d4acd3cb3e37532f0472ac682",
+  "source_commit": "b9f6c712059d72742282ebdf06eadfc264c827f3",
+  "source_url": "https://raw.githubusercontent.com/google/fonts/b9f6c712059d72742282ebdf06eadfc264c827f3/ofl/bricolagegrotesque/BricolageGrotesque%5Bopsz%2Cwdth%2Cwght%5D.ttf",
+  "axes": {
+    "wght": 800,
+    "wdth": 90,
+    "opsz": 96
+  },
+  "fonttools_version": "4.69.1",
+  "note": "ASCII glyph outlines only. Runtime assets contain paths, not a font download. Source font is not redistributed."
+}
